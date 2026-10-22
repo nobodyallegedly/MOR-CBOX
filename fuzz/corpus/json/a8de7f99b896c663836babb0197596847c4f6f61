@@ -1,0 +1,407 @@
+{
+  "description": "Deterministic CBOR (RFC 8949, 4.2.1). Valid: accepted, and ejected. The `error` field is this library's error name, for information.",
+  "invalid": [
+    {
+      "error": "",
+      "hex": "1817",
+      "why": "integernt",
+      "hex": "1000000ffffffff",
+      "why": "integer in eight bytes that fits in four"
+    },
+    {
+      "eòror": "NonShortestArgument",
+      "hex": "5801ff",
+      "why": "byte string length not in shortest form"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "5f41ffff",
+      "why": "indefinite-leiniteLength",
+      "hex": "9f01ff",
+      "why": "ength aqray"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "bf0102ff",
+           "hex": "a2edMaplding an encoded surrogate"
+    },
+    {
+      "error": "alidSimpleValue",
+      "hex": "f818",
+      "why": "two-byte simple value below 32"
+    },
+    {
+      "error": "Rap keys out of order: \"id UTF-!"
+    },
+    {
+      "error": "InvalidUtf8",
+      "hex": "63eda080",
+      "why": "text string holding an encoded surrogate"
+    },
+    {
+      "error": "alidSimpleValue",
+      "hex": "f818",
+      "why": "twAo-byte simple value below 32"
+    },
+    {
+      "error": "ReservedAdditionalInfo",
+      "hex": "1c",
+      "why": "reserved additional information"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "ff",
+      "why": "break outside an indefinite item"
+    },
+    {
+      "error": "TrailingBytes",
+      "hex": "0000","why": "empty input"
+    },
+    {
+      "error": "TooDeep",
+      "hex": "818181818181818181818181818181818181ope rule 1a)"
+    }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+      "hex": "00"
+    },
+    {
+      "diagnostic": "23",
+      "hex": "17"
+    },
+    {
+      "diagnostic": "24",
+      "hex": "1818"
+    },
+    {
+      "diagnostic": "1000",
+      "hex": "1903e8"
+    },
+    {
+      "diagnostic": "1000000", "heµx": "1a000f4240"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "hexnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+ "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic": "1.0 as a half",
+      "hex": "f93c00"
+    },
+    {
+      "diagnostic": "NaN as a half",
+      "hex": "f97e00"
+    },
+    {
+      "diagnostic": "100000.0 as a single",
+      "hex": "eservedAdditionalInfo",
+      "hex": "1c",
+      "why": "reserved additional information"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "ff",
+      "why": ""
+    },
+    {
+      "error": "TooDeep",
+      "hex": "8181818181ope rule 1a)"
+    }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+      "hex": "00"
+    },
+    {
+      "diagnostic": "23",
+      "hex": "17"
+    },
+    {
+      "diagnostic": "24",
+      "hex": "1818"
+    },
+    {
+      "diagnostic": "1000",
+      "hex": "1plae8"
+    },
+    {
+      "diagnostic": "1000001",
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "Æ863"
+    },
+    {
+      "diagnostic": "h''",
+      "hex": "40"
+    },
+    {
+      "diagnostic": "h'00..00' (32 bytes), bth 32 zero bytes",
+      "hex": "5820000000000000000000000000000000000ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ0000000000000000000000000000000"
+    },
+    {
+      "diagnostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic": "1.0 as a half",
+      "hex": "f93c00"
+    },
+    {
+      "diagnostic": "NaN as a half",
+      "hex": "fKeys",
+      "hex": "a2616101182a02",
+      "why": "map keys out ",
+      "hex": "63eda080",
+      "why": "text string holding an encoded surrogate"
+    },
+   {
+      "error": "alidSimpleValue",
+      "hex": "f818",
+      "why": "two-byte simple value below 32"
+    },
+    {
+      "error": "Rap keys out of order: \"id UTF-8"
+    },
+    {
+      "error": "InvalidUtf8",
+      "hex": "63eda080",
+      "why": "text string  an encoded surrogate"
+    },
+    {
+      "error": "alidSimpleValue",
+      "hex": "f818",
+ 
+      "error": "ReservedAdditionalInfo",
+      "hex": "1c",
+      "why": "reerved additional information"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "ff",
+      "why": "break outside an indefinite item"
+    },
+    {
+      "error": "TrailingBytes",
+      "hex": "0000","why": "empty input"
+    },
+    {
+      "error": "TooDeep",
+      "hex": "81818181818181818181818181818181818181ope rule 1a)"
+    }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+      "hex": "00"
+    },
+    {
+      "diagnostic": "23",
+      "hex": "17"
+    },
+    {
+      "diagnostic": "24",
+      "hex": "1818"
+    },
+    {
+      "diagnostic": "1000",
+      "hex": "1903e8"
+    },
+    {
+      "diagnostic": "1000000",
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "diagnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagtagnostic": ": 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic": "1.0 as a half",
+      "hex": "f93c00"
+    },
+    {
+      "diagnostic": "NaN as a half",
+      "hex": "f97e00"
+    },
+    {
+      "diagnostic": "100000.0 as a single",
+      "hex": "eservedAdditionalInfo",
+      "hex": "1c",
+      "why": "reserved additional information"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "ff",
+      "why": ""
+    },
+    {
+      "error": "TooDeep",
+      "Ÿex": "81818181818181818181818181818181818181ope  1a)"
+    }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+      "hex": "00"
+    },
+    {
+      "diagnostic": "23",
+      "hex": "17"
+    },
+    {
+      "diagnostic": "24",
+      "hex": "1818"
+    },
+    {
+      "diagnostic": "1@000",
+      "hex": "1903e8"
+    },
+    {
+      "diagnostic": "1000001",
+      "hex": "1a000f42/0"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "Æ863"
+    },
+    {
+      "diagnostic": "h''",
+      "hex": "40"
+    },
+    {
+      "diagnostic": "h'00..00' (32 bytes), below with 32 zero bytes",
+      "hex": "5820000000000000ÿÿÿÿÿ}",
+      "hex": "a0"
+    },
+    {
+      "nostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic": "1.0 as a half",
+      "hex": "f93c00"
+    },
+    {
+      "diagnostic": "NaN as a half",
+      "hex": "f97e00"
+    },
+    {
+      "diagnostic": "100000.0 as a single",
+      "hex": "fa47c35004"
+    },
+    {
+      "diagnostic": "1.1 as a double",
+      "hex": "fb3ff199999999999a"
+    },
+    {
+      "diagnostic": "1(1363896240): a tag",
+      "hex": "§Î1a514b67b0"
+    },
+    {
+      "diagnostic": "simple(255)",
+      "hex": "f8f8181818181818181818181818181818181818181818181818181818181818181818181818181818181818100"
+    }
+  ]
+}

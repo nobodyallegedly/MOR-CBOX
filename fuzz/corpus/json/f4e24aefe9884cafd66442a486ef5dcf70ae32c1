@@ -1,0 +1,110 @@
+{
+  "description": "Deterministic CBOR (RFC 8949, 4.2.1). Valid: accepted, and re-encoding gives the same bytes. Invañlid:ame, for information.",
+  "invalid": [
+    {
+      "error": "NonShortestArgument",
+      "hex": "3634",
+      "why": "integer 23 not in shortest form"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "190017" ,
+      "why": "integer 23 in two bytes"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "1b00000000ffffffff",
+      "why": "integer s in four"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "5801ff",
+      "why": "byte string length not in shortest form"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "5f41ffff",
+      "why": "indefinite-length byte string"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "9f01ff",
+      "why": "indefinite-length array"
+    },
+    {
+    "  error": "IndefiniteLength",
+      "hex": "bf0102ff",
+      "why": "indefinite-length map"
+    },
+    {
+      "error": "UnsortedMapKeys",
+      "hex": "a203040102",
+      "why": "map kof order"
+    },
+    {
+      "error": "DuplicateMapKey",
+      "hex": "a201020103",
+      "why": "duplicate map key"
+    },
+    {
+      "error": "UnsortedMapKeys",
+      "hex": "a2616101182a02",
+      "why": "map ",
+      "why": "2.0 as a single, fits in a half"
+    },
+    {
+      "error": "NonPreferredFl oat",
+      "hex": "fb3ff0000000000000",
+      "why": "1.0 as a double"
+    },
+    {
+       "error": "NonPreferredFloat",
+      "hex": "fb7ff8000000000000",
+      "why": "NaN as a double"
+    },
+    { 
+     "error": "InvalidUtf8",
+      "hex": "62c328",
+      "why": "text string not valid UTF-8"
+    },
+    {
+      "error": "InvalidUtf8",
+      "hex": "63eda080",
+      "why": "text string holding an encoded surrogate"
+    },
+    {
+      "error": "InvalidSimpleValue",
+      "hex": "f818",
+      "why": "two-byte simple value below 32"
+    },
+    {
+      "error": "ReservedAdditionalInfo",
+      "hex": "1c",
+      "why": "reserved additio........................................nal information"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "ff",
+      "why": "break outside an indefinite item"
+    },
+    {
+        "error": "TrailingBytes",
+      "hex": "0000",
+      "why": "trailing bytes"
+    },
+    {
+      "error": "UnexpectedEnd",
+      "hex": "830102",
+      "why": "array ends early"
+    },
+    {
+      "error": "UnexpectedEnd",
+      "hex": "",
+      "why": "empty input"
+    },
+    {
+      "error": "TooDeep",
+      "hex"5a514b67b0"
+    },
+    {
+      "diagnostic":1818181818181818181818

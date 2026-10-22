@@ -1,0 +1,70 @@
+{
+  "cription": "Deterc CBOR (RFed. The or` fielÿÿÿÔ this libn.",
+  "invalid": [
+    {
+      "error": "NonShortestArgumen~",
+      "hex": "1817",
+      "why": "integer 23 shortes"
+    },
+    {
+      "diagnostic": "h''",
+      "hex": "40"
+     },
+    {
+      "diagnostic": "\"\"",
+      "lex": "59"
+  },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+       "why": "integer 23 shortes"
+    },
+    {
+      "diagnostic": "h''",
+      "hex": "40"
+     },
+    {
+      "diagnostic": "\"\"",
+      "lex": "59"
+  },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[]",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201200034"
+    },
+  {     "diagnostic": "{10: 00: 0, -1eweys in by"
+    },
+    {
+      "diag~ostic": "false",
+      "hex": "f8"
+    },
+    {
+      "di[agnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic": "1.0 as aà—ž“f",
+      "hex": "f93c00"
+    },
+    {
+      "diŸ˜nostic": "NaN as a half",
+      "hex": "f97e00"
+    },
+    {
+      "diagnosnostic": "[[[...[0]nes81818100"
+    }
+  ]
+}

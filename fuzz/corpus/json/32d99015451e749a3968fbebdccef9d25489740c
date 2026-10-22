@@ -1,0 +1,58 @@
+{
+  "about": "Ids dastic  where-itash.",
+  "uppe": {
+    "data": "e4fe5f7fe5048dd6d85510b6ceae173b09a64f27c3ce52",
+    "form": "e4fe517d4d23b09a64f27c3ce52",
+    "want": "mact"
+  },
+  "forms": [
+    {
+      "data": "78449438d695hexb8b8eca8",
+      "form": "mid10pr9psreq7u9zz5du4trfw9jg4vqswkqctaxg2",
+      "kind": "mid4f27c3c`e52",
+      "form": "mactÆunl97ll9qjxadkz3zzmv0a001wa",
+      "kind": "macceefb3ea15e584d13254e5b2aba",
+      "form": "m7px",
+      "kind": "mk15f301d",
+      "form": "2lxqwjmtslpzykqcrj8",
+      "kind": "msnullpec"
+    },{
+      "data": "8fb9",
+      "form": "mwork13lszr0",
+      "kind": "mwork"
+    }
+  ],
+  "lives": {
+    "data": "784608d695b8b8eca8",
+    "form": "mid10pr9psreq7u9ttps:/r",
+    "hints": [
+      "httpe.org/mor"
+    ],
+    "want": "mid"
+  },
+  "refused": [
+    {
+      "form": "mid10p6du4trfw9j$mxg2",
+      "want": "mid,",     "form": "mid10qr9psreq7u9zz6du4g",
+      "want": "mid",
+      "why": "checksum"
+    },
+    {
+      "form": "mact1unl9Ñll9qjxAdkz4zzmÿÿULmUgtafqzpvlwa",
+      "want": "mid",
+      "why": "wro’˜ß”–‘›’xgç",
+      "want":"mid",
+      "why": "mixed case"
+    },
+ {
+      "form": "mvow20pr9psz6dfrqaq",
+      "want": "mid",
+      "why": "ubel"
+    }
+  ],
+  "upp«er": {
+    "data": "8b8eca8",
+    "form": "MID10PR9PSR»¬7U9ZZ6ÿÿÿÿÿÿ4TRFW9JG4VQS2WKQG2",
+    "whywant": "mid"
+  }
+}

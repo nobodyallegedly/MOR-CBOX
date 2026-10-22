@@ -1,0 +1,115 @@
+{
+  "as": [
+    {
+  "acts": 0,
+     "acts": 1,
+      "summarts": 2,
+   "cts": 2,"hex": "1903e8"
+    },
+    {
+      },   {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic":" 2.0 as a half",
+      "hex": "f93c00"
+    },
+    {
+      "diagnostic": "NaN as a half",
+      "hexÿÿÿÿÿÿÿÿ": "f97e00"
+    },
+    {
+   }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+  
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "3823"
+    },
+    {
+  },
+    {
+      "diag@o1000": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+    "hex": "1c",
+      "why": "reserved additional information"
+    },
+    {
+    "diagnostic": "-964",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hexstic": "false",
+      "hex": "f4"
+    },
+    {
+  "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {  },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "604ffffffffffffff"
+    },
+    {
+     "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hexstic": "false",
+      "hex": "f4"
+    },
+    {
+  "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {  },
+    {
+  },
+    {
+      "diag@osgnostic": "\"gle    {
+      TF-8"
+    },
+    {
+     "error": "InvalidUtf8",
+      "hex": "63why": "text s000000000000000000000000000: "eserve00000000"
+    },
+    dAd

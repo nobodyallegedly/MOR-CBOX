@@ -95,7 +95,27 @@ Toolchain: clang 18.1.3 (release, sanitizers, libFuzzer) and gcc 13.3 (`make gcc
 
 The corpora were seeded again from the second edition's vectors, are kept in `fuzz/corpus/<target>/` (minimised), and every crash is kept in `fuzz/regressions/` and replayed by `make regress`.
 
-FUZZ-RESULTS
+The campaign ran on 22 October 2026, on 4 cores:
+- `fuzz/run.sh 1800`, 17:24-18:54 UTC: each target for 30 minutes;
+- 18:54-19:24 UTC: world and engine, the slow targets whose inputs are whole sets of acts, for a second 30 minutes each, with two workers, on the final build.
+
+The first round ran on a build from before my last two small changes (a kept tip whose line is not held is kept by its name; a clone's objects name its parent). The second round of world and engine ran on the final code. "Features" is libFuzzer's measure of distinct behaviour reached.
+
+| Target | Time | Executions | Exec/s | Features | Corpus kept (minimised) | Crashes, leaks, timeouts |
+| --- | --- | --- | --- | --- | --- | --- |
+| `cbor` | 30 min | 180,796,285 | 100,386 | 1,138 | 441 | none |
+| `text` | 30 min | 645,674,345 | 358,508 | 415 | 88 | none |
+| `act` | 30 min | 48,700,819 | 27,040 | 2,050 | 424 | none |
+| `world` | 30 min + 30 min (2 workers) | 878,836 + 1,626,407 | 487 / 386 | 8,170 / 8,316 | 901 | none |
+| `engine` | 30 min + 30 min (2 workers) | 5,327,732 + 9,858,185 | 2,958 / 2,799 | 7,610 / 7,875 | 1,343 | none |
+| `people` | 30 min | 99,980,316 | 55,513 | 501 | 151 | none |
+| `sealed` | 30 min | 81,242,131 | 45,109 | 875 | 292 | none |
+| `spec` | 30 min | 146,775,832 | 81,496 | 1,778 | 521 | none |
+| `json` | 30 min | 14,010,657 | 7,779 | 1,271 | 428 | none |
+
+In total: about 1.23 billion executions over 5.5 target-hours, with no crash, leak, sanitizer report or timeout. The world and engine targets reached more features than in the first edition's campaign (8,316 against 5,805, and 7,875 against 6,465): that is the new code (Money's both-ways rule, "belongs to" at any depth, endings, the chain of judgment) being reached.
+
+The two crashes found in the first edition's smoke runs stay in `fuzz/regressions/` and still pass (`make regress`). The first edition's campaign (about 835 million executions, nothing found) is in that edition's report on `claude/c-verifier`.
 
 ## What is not implemented, and why
 
