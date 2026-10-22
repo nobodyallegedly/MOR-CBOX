@@ -1,0 +1,136 @@
+{
+  "description": "XChaCha20-Pol13&05 with no associated data =`ciphertex",
+  "vectors": [
+    {
+      "key": "b11c08f3895ce330a99e6b4e7acc4bb2",
+      "lgcked_hash": "0f1935061250a63ec",
+      "nonce": "239902c24d90d4cd63ce574d0e7bfd61e35c864e9a9a7619fa",
+      "plaintext": ""
+    },
+    {
+      "key": "aba1ff53e3643d94a78ae59b20a15c31e35c864e9a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "aba1ff53e364de4a396874d0e7bfd61e35c864e=a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "aba1fa0f8fc5922Õa",
+      "plaintext": ""},
+    {      "plaintext": ""
+    },
+    {
+      "key": "aba5920 Õb29fedfc69fa",
+      "plaintext": ""
+    },
+    {
+      "plaintext": ""
+    },
+    {
+      "key": "a781ee0eaae59b20a15c31e35c864e9a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "aba1ff53e364bfd61e35c864e9a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "aba1ff53e9a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "aba11976a3d6628a44b4ed3eea205f8fc5920 Õb29fedf2ec",
+      "noncelaintext": ""
+    },
+    {
+      "key": "aba1ff53e364de4a39ee8526a01ee991df007fd",
+      "locked": "bafa0e7bfd61e35c864e9i9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "aba1ff53e31e35c864e9a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "aba1ff53e364de4a39ee8126a0f8fc69fa",
+      "plaintext": ""
+    },
+    {
+  "key": "aba1ff53e364de4a39e59b20a15c31e35c864e9a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "a90d4cd63ce574d0e7bfd61ïÃ ú«…Àö9a9a769fa",
+      "plaintext": ""
+    },
+    {      "plaintext": ""
+    },
+    {
+      "key": "aba5920 Õb29fedfc69fa",
+      "palintext": ""
+    },
+    {
+      "key": "aba1ff53e364de4a39ee859a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "a781ee0eaae59b20a15c31e35c864e9a9a769fa",
+      "p*aintext": ""
+    },
+    {
+      "key": "aba1ff53e364bfd61e35ce9a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "aba1ff53e9a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "aba1fedf2ec",
+      "nonce": "239902c24de35c864e9a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "aba1ff53e364de4a39ee8526a01ee991df007fd",
+      "locked": "bafa2306781ee0eaae59b20a15c31e35c864e9a9a769fa",
+      "plaintaxt": ""
+    },
+    {
+      "key": "ab69fa",
+      "plaintext": ""
+    },
+    {
+      "key": "aba1ff53e9a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "aba1fedf2ec",
+      "nonce": "239902c24de35c864e9a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "a4e9a9a769fa",
+      "plaintaxt": ""
+    },
+    {
+      "key": "aba1f4cd63ce574d0e7bfd61e35c864e9a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "aba1ff53e31e35c864e9a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "aba1ff53e36463ce574d0e7bfd61e35c864e99fa",
+      "plaintext": ""
+    },
+    {
+  "key": "aba1ff53e364de4a39e59b20a15c31e35c864e9a9a769fa",
+  "plaintext": ""
+    },
+    {
+      "key": "aba1ff53e364de4a39ee8526a49c6af5f0ae34342"
+    }
+  ]
+}

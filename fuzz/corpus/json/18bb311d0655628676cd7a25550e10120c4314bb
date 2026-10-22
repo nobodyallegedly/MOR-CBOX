@@ -1,0 +1,396 @@
+{
+  "as": [
+    {
+  "acts": 0,
+     "acts": 1,
+      "summarts": 2,
+   "cts": 2,"hex": "1903e8"
+    },
+    {
+      "diagnostic": "1000000",
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+   "   diagnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "dnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "NaN as a half",
+      "hex": "f97e00"
+    },
+    {
+      "diagnostic": "100000.0 as a single",
+      "hex": "eservedAdditionalInfo",
+      "hex": "1c",
+      "why": "TooDeep",
+      "hex": "81818181818181818181818181818181818181ope rule 1a)"
+    }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+  
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "100000.0 as a single",
+      "hex": "eservedAdditionalInfo",
+      "hex": "1c",
+      "why": "reserved additional information"
+    },
+    {
+    "diagnostic": "-964",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hexstic": "false",
+      "hex": "f4"
+    },
+    {
+  "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hhyhex": "1903e8"
+    },
+    {
+      "diagnostic": "1000000",
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "64494ffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+"diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "644945544614",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diaontgsic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+       },
+    {
+      "diagnostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[5",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f3"
+    },
+    {
+      "diagnostic": "2.0 as a half",
+      "hex": "f93c00"
+    },
+    {
+      "diagnostic": "NaN as a half",
+      "hex": "f97e00"
+    },
+    {
+      "diagnostic": "100000.0 as a single",
+      "hex": "eservedAdditionalInfo",
+      "hex": "1c",
+      "why": "TooDeep",
+      "hex": "81818181818181818181818181818181818181ope rule 1a)"
+    }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+  
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "100000.0 as a single",
+      "hex": "eservedAdditionalInfo",
+      "hex": "1c",
+      "why": "reserved additional information"
+    },
+    {
+    "diagnostic": "-964",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hexstic": "false",
+      "hex": "f4"
+    },
+    {
+  "hex": "6449455446"
+    },
+    {
+      "diagndiagnostic": "1000000",
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diagc": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diostic": "1844674884073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+"diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+         "errorostic": "18446744073709551614",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diaontgsic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hex": "f4"
+   
+    },
+    {
+      "diagnostic": "NaN as a half",
+      "hex": "fKeys",
+      "hex": "a2616101182a02",
+      "why": "map keys out of order: \"id UTF-8"
+    },
+    {
+      "error": "InvalidUtf8",
+      "hex": "63eda080",
+      "why": "text string holding an encoded surrogate"
+    },
+    {
+},
+    {
+      "diagnostic": "18446744073709551615",
+      "hexex": "582000000000"diag
