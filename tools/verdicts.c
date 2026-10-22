@@ -175,6 +175,34 @@ static void render_chain(mor_world *w, const uint8_t id[32], char *out, size_t c
 	snprintf(out + n, cap - n, "],\"next\":\"%s\"}", c ? mor_next_name(c->next) : "unknown");
 }
 
+/* A JSON value as CBOR: numbers as unsigned integers, strings as the bytes
+ * their hex spells, arrays as arrays. -1 for anything else. */
+static int json_to_cbor(const json *j, mor_buf *b, mor_arena *a)
+{
+	switch (j->type) {
+	case JSON_NUM:
+		if (j->i < 0)
+			return -1;
+		mor_cbor_put_uint(b, (uint64_t)j->i);
+		return 0;
+	case JSON_STR: {
+		size_t n;
+		const uint8_t *d = hex_decode(j->s, &n, a);
+		if (!d)
+			return -1;
+		mor_cbor_put_bytes(b, d, n);
+		return 0;
+	}
+	case JSON_ARR:
+		mor_cbor_put_head(b, 4, j->len);
+		for (size_t i = 0; i < j->len; i++)
+			if (json_to_cbor(json_at(j, i), b, a))
+				return -1;
+		return 0;
+	default: return -1;
+	}
+}
+
 static int cmp_act_id(const void *x, const void *y)
 {
 	return memcmp((*(const mor_act *const *)x)->id, (*(const mor_act *const *)y)->id, 32);
@@ -307,12 +335,14 @@ static void answer(vrun *r, const json *root, const json *c, char *got, size_t c
 		uint8_t(*k)[32] = mor_arena_array(r->a, ks->len + 1, 32);
 		for (size_t i = 0; i < ks->len; i++)
 			hex_fixed(json_str(json_at(ks, i)), k[i], 32);
-		/* the rule, in terms field 3's form: 0 is [0] */
+		/* the keepers' rule, as terms field 3 writes it: [0] / [1, n] / [2, [ids]] */
 		const json *rj = json_get(ask, "rule");
-		static const uint8_t rule0[2] = { 0x81, 0x00 };
+		static uint8_t rbuf[4096];
+		mor_buf rb;
+		mor_buf_init(&rb, rbuf, sizeof rbuf);
 		const mor_cbor *rule = NULL;
-		if (rj && rj->type == JSON_NUM && rj->i == 0)
-			mor_cbor_decode(rule0, 2, r->a, &rule);
+		if (rj && !json_to_cbor(rj, &rb, r->a) && !rb.overflow)
+			mor_cbor_decode(rbuf, rb.len, r->a, &rule);
 		size_t clen;
 		const uint8_t *clock = hex_decode(json_str(json_get(ask, "clock")), &clen, r->a);
 		int d = mor_deadline(&w, id, (const uint8_t(*)[32])k, ks->len, rule, clock, clen,

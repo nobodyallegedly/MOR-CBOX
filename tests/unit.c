@@ -5,6 +5,7 @@
 #include <string.h>
 
 #include "../src/agreements.h"
+#include "../src/money.h"
 #include "../src/cbor.h"
 #include "../src/crypto.h"
 #include "../src/development.h"
@@ -478,44 +479,83 @@ static void test_variations(void)
 	mor_world w;
 	size_t mark = mor_arena_mark(&A);
 	/* identity[2] without its receipt: the rotation is pending */
-	case_world(&w, "identity", 2, "a793587d", NULL);
-	CHECK(mor_status(&w, idp("5a770188"), 0) == MOR_ST_PENDING, "a rotation whose receipt is not held: pending");
+	case_world(&w, "identity", 2, "0d040566", NULL);
+	CHECK(mor_status(&w, idp("9e325226"), 0) == MOR_ST_PENDING, "a rotation whose receipt is not held: pending");
 	mor_arena_reset(&A, mark);
 	/* identity[6] without the kept tip: its line cannot be rebuilt */
-	case_world(&w, "identity", 6, "265b9760", NULL);
-	CHECK(mor_status(&w, idp("c89f26d2"), 0) == MOR_ST_UNKNOWN, "the kept tip not held: unknown, never void");
+	case_world(&w, "identity", 6, "bd25d8f4", NULL);
+	CHECK(mor_status(&w, idp("9d01639f"), 0) == MOR_ST_UNKNOWN, "the kept tip not held: unknown, never void");
 	mor_arena_reset(&A, mark);
 	/* identity[8] asked plainly: without Agreements' keepers it is void */
 	case_world(&w, "identity", 8, NULL, NULL);
-	CHECK(mor_status(&w, idp("37685485"), 0) == MOR_ST_VOID, "status without keepers: void");
+	CHECK(mor_status(&w, idp("4d88ed90"), 0) == MOR_ST_VOID, "status without keepers: void");
 	mor_arena_reset(&A, mark);
-	/* identity[13]: the third home's receipt missing; the second alone cannot meet two of three */
-	case_world(&w, "identity", 13, "b1d83b29", NULL);
+	/* identity[15]: the third home's receipt missing; the second alone cannot meet two of three */
+	case_world(&w, "identity", 15, "478dfb4f", NULL);
 	{
-		const mor_chain *c = mor_chain_get(&w, idp("866ce6c0"));
+		const mor_chain *c = mor_chain_get(&w, idp("059f2c13"));
 		CHECK(c && c->npos == 2 && c->next == MOR_NEXT_CONTESTED, "home 1 conflicted, home 3 silent: contested at 2 (npos %zu next %s)",
 		      c ? c->npos : 0, c ? mor_next_name(c->next) : "-");
 	}
 	mor_arena_reset(&A, mark);
 	/* text[5] without the collective's genesis: unknown */
-	case_world(&w, "text", 5, "f6c5debc", NULL);
-	CHECK(mor_status(&w, idp("a5e29e6d"), 0) == MOR_ST_UNKNOWN, "a collective's text, its chain not held");
+	case_world(&w, "text", 5, "50fa4eb5", NULL);
+	CHECK(mor_status(&w, idp("090943b0"), 0) == MOR_ST_UNKNOWN, "a collective's text, its chain not held");
 	mor_arena_reset(&A, mark);
 	/* agreements[6]: without the revocation, the act is backed */
-	case_world(&w, "agreements", 6, "26364aeb", NULL);
-	CHECK(mor_backing(&w, idp("906a9643")) == MOR_BK_BACKED, "no revocation held: backed");
+	case_world(&w, "agreements", 6, "a46bd725", NULL);
+	CHECK(mor_backing(&w, idp("2a48cf66")) == MOR_BK_BACKED, "no revocation held: backed");
 	mor_arena_reset(&A, mark);
 	/* agreements[5] without the grantee's acceptance: not backed */
-	case_world(&w, "agreements", 5, "10f113d6", NULL);
-	CHECK(mor_backing(&w, idp("4eafa2ef")) == MOR_BK_NOT_BACKED, "a grant its grantee never accepted");
+	case_world(&w, "agreements", 5, "9fa68dc1", NULL);
+	CHECK(mor_backing(&w, idp("01774c69")) == MOR_BK_NOT_BACKED, "a grant its grantee never accepted");
 	mor_arena_reset(&A, mark);
 	/* agreements[1] holding a third signature from a stranger changes nothing */
 	case_world(&w, "agreements", 0, NULL, NULL);
-	CHECK(mor_agreement_exists(&w, idp("8036edf3")) == MOR_AGR_NOT, "one party unsigned");
+	CHECK(mor_agreement_exists(&w, idp("cb5bc23c")) == MOR_AGR_NOT, "one party unsigned");
 	mor_arena_reset(&A, mark);
 	/* agreements[4] dropping the first holder's signature: one of two */
-	case_world(&w, "agreements", 4, "5a502fa7", NULL);
-	CHECK(mor_consent_counts(&w, idp("e0ec8805")) == 0, "one holder of two");
+	case_world(&w, "agreements", 4, "68602a92", NULL);
+	CHECK(mor_consent_counts(&w, idp("b2a48e83")) == 0, "one holder of two");
+	mor_arena_reset(&A, mark);
+	/* second edition: the heavy rules, varied */
+	case_world(&w, "agreements", 19, "a0fb5b0e", NULL);
+	CHECK(mor_ending_complete(&w, idp("5800d7bc")) == -1, "a closing whose kept tip is not held: unknown, never not complete");
+	mor_arena_reset(&A, mark);
+	case_world(&w, "agreements", 21, "5800d7bc", NULL);
+	CHECK(mor_consent_counts(&w, idp("575011ad")) == 1, "the same act with no closing held: it counts");
+	mor_arena_reset(&A, mark);
+	case_world(&w, "agreements", 29, "216514ac", NULL);
+	{
+		uint8_t v[32];
+		CHECK(mor_deal_version_in_force(&w, idp("51733b8c"), v) == 0 && !memcmp(v, idp("51733b8c"), 32),
+		      "a judge's settlement naming a request not held settles nothing: the reference");
+	}
+	mor_arena_reset(&A, mark);
+	case_world(&w, "agreements", 29, "bbfe9faf", NULL);
+	{
+		uint8_t v[32];
+		CHECK(mor_deal_version_in_force(&w, idp("51733b8c"), v) == 0 && !memcmp(v, idp("51733b8c"), 32),
+		      "no settlement held: a fork stays on its reference");
+	}
+	mor_arena_reset(&A, mark);
+	case_world(&w, "identity", 13, "68b8d3cf", NULL);
+	{
+		mor_succ sc;
+		CHECK(mor_succession(&w, idp("bcb68525"), &sc) == MOR_SUCC_UNKNOWN,
+		      "a confirmation whose signer's chain is not held: unknown");
+	}
+	mor_arena_reset(&A, mark);
+	case_world(&w, "money", 11, "8f0bf7d5", NULL);
+	{
+		uint8_t pay[32], to[32], unit[32];
+		memcpy(pay, idp("0136fd76"), 32);
+		memcpy(to, idp("dde9350c"), 32);
+		hex_fixed("5c380c6fd229b390edc531a69fde3e2e4cddb8b147c5037635a7050fd3bd2a01", unit, 32);
+		CHECK(mor_money_refund_repaid(&w, pay, to, unit) == 0, "no repayment held: nothing repaid");
+		case_world(&w, "money", 11, NULL, NULL);
+		CHECK(mor_money_refund_repaid(&w, pay, to, unit) == 300, "the repayment held: 300 repaid");
+	}
 	mor_arena_reset(&A, mark);
 	/* deadlines: rule [1, 1] (any one keeper) with one anchored record */
 	{
@@ -524,24 +564,24 @@ static void test_variations(void)
 		static const uint8_t b11[3] = { 0x82, 0x01, 0x01 }, b0[2] = { 0x81, 0x00 };
 		size_t clen;
 		const uint8_t *clock = hex_decode("8258204c8d82437c02a1ad62aeac389c2e110f7fd480d5db553f72fb55e1a31f3caee200", &clen, &A);
-		memcpy(k[0], idp("ff49dada"), 32);
-		memcpy(k[1], idp("46ce1d38"), 32);
+		memcpy(k[0], idp("edfb2f3f"), 32);
+		memcpy(k[1], idp("189639a3"), 32);
 		mor_cbor_decode(b11, 3, &A, &r11);
 		mor_cbor_decode(b0, 2, &A, &r0);
-		case_world(&w, "agreements", 14, NULL, NULL);
+		case_world(&w, "agreements", 34, NULL, NULL);
 		mor_anchor an;
-		memcpy(an.act, idp("00bf42cc"), 32);
+		memcpy(an.act, idp("ddd8872b"), 32);
 		an.clock = clock;
 		an.clock_len = clen;
 		an.point = 95;
 		w.anchors = &an;
 		w.nanchors = 1;
-		CHECK(mor_deadline(&w, idp("63bcbe53"), (const uint8_t(*)[32])k, 2, r0, clock, clen, 100) == MOR_DL_UNDETERMINED,
+		CHECK(mor_deadline(&w, idp("8a3b3aaf"), (const uint8_t(*)[32])k, 2, r0, clock, clen, 100) == MOR_DL_UNDETERMINED,
 		      "one keeper of two showing it met, rule all: undetermined");
-		CHECK(mor_deadline(&w, idp("63bcbe53"), (const uint8_t(*)[32])k, 2, r11, clock, clen, 100) == MOR_DL_MET_KEEPERS,
+		CHECK(mor_deadline(&w, idp("8a3b3aaf"), (const uint8_t(*)[32])k, 2, r11, clock, clen, 100) == MOR_DL_MET_KEEPERS,
 		      "one keeper of two showing it met, rule any one: met");
 		an.point = 101;
-		CHECK(mor_deadline(&w, idp("63bcbe53"), (const uint8_t(*)[32])k, 2, r11, clock, clen, 100) == MOR_DL_UNDETERMINED,
+		CHECK(mor_deadline(&w, idp("8a3b3aaf"), (const uint8_t(*)[32])k, 2, r11, clock, clen, 100) == MOR_DL_UNDETERMINED,
 		      "a record of the act anchored past the point shows nothing");
 		mor_arena_reset(&A, mark);
 	}
@@ -549,7 +589,7 @@ static void test_variations(void)
 
 static void test_mir_hashes(void)
 {
-	/* The six drafts' spec hashes as their files stand, status lines dropped. */
+	/* The six drafts' texts read as canonical text, as Development rule 26 hashes them. */
 	static const char *files[] = { "spec/MIR-identity-draft-15.md", "spec/MIR-envelopes-draft-11.md",
 				       "spec/MIR-text-draft-11.md", "spec/MIR-money-draft-11.md",
 				       "spec/MIR-agreements-draft-17.md", "spec/MIR-development-draft-11.md" };
