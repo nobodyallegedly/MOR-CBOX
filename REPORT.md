@@ -162,4 +162,4 @@ The vectors reach the core and a chosen set of verdicts. What follows is built o
 
 ## Manifest
 
-MANIFEST-RESULT
+`sha256sum -c MANIFEST.sha256` was run at the start of this session, right after merging `main` (the second edition), and again at the end (22 October 2026, 19:25 UTC, after the last change to code and corpora). Both times all 22 files it lists were OK: `README.md`, `SNAPSHOT.md`, the eight texts in `spec/` and the twelve files in `vectors/`. `git diff origin/main` on those paths is empty.

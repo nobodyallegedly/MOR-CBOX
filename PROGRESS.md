@@ -34,7 +34,8 @@ Kept current so that a new session, started with the same prompt, can continue f
 - Agreements formats Part four (l.2810+): terms 0, signature 1 ({0: act, ?1: signing-key}, objects [[signed, signed]]), keeper record 2 ({0: [act, signer]}), grant 9 / revocation 10 (l.3407), liveness 12, record 17 (l.3647), collectives in the identity chain (declaration kind 0, l.3787). Rules: 1 (exists when every party signed), 6, 33 (deadline, l.977), 36-42 (keepers, l.1057), 45-47 (clones, deal forks, l.1128-1305), 57-60 (done, two chains, areas, l.1527-1722), 65 (counting, l.1842), 72 (agreement in force, l.2104), 73-80 (grants, l.2131-2285), "Belongs to" (l.98).
 - The verdict cases' acts can be dumped with `build/rel/morv pool vectors/verdicts.json`.
 
+10. Fuzz campaign: every target 30 minutes, then world and engine 30 more on the final build: about 1.23 billion executions, nothing found; corpora minimised and committed. `REPORT.md` complete. Manifest OK at the start and at the end.
+
 ## Next
 
-1. The fuzz campaign over every target (30 minutes each, started 17:24 UTC), then world and engine again; record it in REPORT.md; fix and keep any crash; minimise and commit the corpora.
-2. REPORT.md for the second edition; final `sha256sum -c MANIFEST.sha256`; push; open the pull request.
+Nothing left for the vectors: all 334 of the second edition's checks agree. The pull request for `claude/c-verifier-2` is open, not merged. Further work would be the rules `REPORT.md` lists as not built.
