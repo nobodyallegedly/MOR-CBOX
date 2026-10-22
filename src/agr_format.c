@@ -546,6 +546,13 @@ static int terms_format(const mor_world *w, const mor_act *a, const char **why)
 	if (clone) {
 		if (!f_mark(f))
 			FAIL("terms: a clone's field 4 is not a mark");
+		/* objects names the parent as chain; the predecessor, any act of its
+		 * chain, the latest its signer's client held (client conformance) */
+		int named = 0;
+		for (uint64_t i = 0; a->objects && i < a->objects->v; i++)
+			named |= is_hash(mor_pl(a, 11)) && !memcmp(a->objects->items[i].items[0].data, mor_pl(a, 11)->data, 32);
+		if (!named)
+			FAIL("terms: a clone whose objects do not name its parent as chain");
 	} else if (!(arr_n(f, 1) && is_uint(&f->items[0]) && f->items[0].v == 0)) {
 		FAIL("terms: founding terms' field 4 is not [0]");
 	}

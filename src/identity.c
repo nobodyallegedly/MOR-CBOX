@@ -911,7 +911,11 @@ static int judged_by(mor_world *w, const mor_act *a, const mor_act *rot, int fla
 	for (uint64_t i = 0; kept && i < kept->v; i++) {
 		int on = 0;
 		int r = rebuild_line(w, &kept->items[i], rot->signer, a, &on);
-		if (r < 0)
+		/* Where the line is not held, the tip itself is kept by its name and
+		 * what lies below it is unknown (rotation check 7). */
+		if (r < 0 && !memcmp(kept->items[i].items[0].data, a->id, 32))
+			found = 1;
+		else if (r < 0)
 			unbuilt = 1;
 		else if (r == 1 && on)
 			found = 1;
