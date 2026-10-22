@@ -208,7 +208,7 @@ static int cmd_engine_seeds(const char *path, const char *outdir, mor_arena *a)
 				if (mor_act_decode(&act, b, bn, NULL, a) != MOR_OPEN_OK || !act.sig_shape_ok ||
 				    act.sig.kind != MOR_SCHEME_NUM || act.sig.key_len != 32)
 					continue;
-				size_t rl = 1 + (act.signer ? 32 : 0) + (act.binding ? 32 : 0) + 24 + 32 + 1 + 32 + act.inside_len;
+				size_t rl = 1u + (act.signer ? 32u : 0u) + (act.binding ? 32u : 0u) + 24u + 32 + 1 + 32 + act.inside_len;
 				if (o + 2 + rl > sizeof out || rl > 0xffff)
 					break;
 				out[o++] = (uint8_t)(rl >> 8);

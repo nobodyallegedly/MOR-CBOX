@@ -3,6 +3,7 @@
 #   make check      unit tests and every vector, under ASan and UBSan
 #   make fuzz       libFuzzer targets in build/fuzz/
 #   make deps       fetch and build the pinned libraries (deps/build-deps.sh)
+#   make gcc-check  the release CLI built with gcc and its warnings, as errors
 CC      := clang
 DEPS    := deps/prefix
 WARN    := -Wall -Wextra -Werror -Wpedantic -Wshadow -Wstrict-prototypes -Wmissing-prototypes \
@@ -74,7 +75,7 @@ deps:
 	./deps/build-deps.sh
 
 gcc-check:
-	$(MAKE) CC=gcc WARN="-Wall -Wextra -Werror -Wpedantic -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wformat=2 -Wcast-qual -Wpointer-arith -Wvla -Wconversion -Wsign-conversion -Wimplicit-fallthrough -Wundef -Wdouble-promotion -Wnull-dereference -Wswitch-enum -Wmissing-variable-declarations" REL=build/gcc build/gcc/morv
+	$(MAKE) CC=gcc WARN="-Wall -Wextra -Werror -Wpedantic -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wformat=2 -Wcast-qual -Wpointer-arith -Wvla -Wconversion -Wsign-conversion -Wimplicit-fallthrough -Wundef -Wdouble-promotion -Wnull-dereference -Wswitch-enum -Wmissing-declarations -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wjump-misses-init" REL=build/gcc build/gcc/morv
 
 clean:
 	rm -rf build
