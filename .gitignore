@@ -1,0 +1,4 @@
+deps/src/
+deps/prefix/
+build/
+*.o
