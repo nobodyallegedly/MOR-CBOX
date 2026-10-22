@@ -93,48 +93,85 @@ static void add_unique(const uint8_t **out, size_t *n, size_t max, const uint8_t
 		out[(*n)++] = id;
 }
 
-size_t mor_belongs_to(mor_world *w, const mor_act *a, const uint8_t **out, size_t max)
+/* The steps "belongs to" takes from an act: each objects entry, and each act
+ * it answers (a Money record's claim and what it fulfils, an obligation's
+ * agreement or offer, an offer's agreement). */
+static size_t belong_steps(const mor_world *w, const mor_act *y, const uint8_t **next, size_t max)
 {
 	size_t n = 0;
+	for (uint64_t i = 0; y->objects && i < y->objects->v; i++)
+		for (int k = 0; k < 2 && n < max; k++)
+			next[n++] = y->objects->items[i].items[k].data;
+	if (mor_world_is_mir(w, y, MOR_MONEY)) {
+		const mor_cbor *pur = mor_pl(y, 9);
+		if (pur && n < max)
+			next[n++] = pur->items[0].data;
+		const uint8_t *ful = y->type == 2 ? mor_pl_hash(y, 5) : (y->type == 3 || y->type == 1) ? mor_pl_hash(y, 4) : NULL;
+		if (ful && n < max)
+			next[n++] = ful;
+	}
+	if (is_agr(w, y, 6) && mor_pl_hash(y, 0) && n < max)
+		next[n++] = mor_pl_hash(y, 0);
+	return n;
+}
+
+size_t mor_belongs_to(mor_world *w, const mor_act *a, const uint8_t **out, size_t max, int *unknown)
+{
+	size_t n = 0;
+	*unknown = 0;
 	if (!a || a->open != MOR_OPEN_OK)
 		return 0;
-	/* An agreement, or an act of its chain, named in objects. */
-	for (uint64_t i = 0; a->objects && i < a->objects->v; i++) {
-		const mor_cbor *o = &a->objects->items[i];
-		for (int k = 0; k < 2; k++) {
-			const uint8_t *x = o->items[k].data;
-			if (terms_of(w, x)) {
-				add_unique(out, &n, max, x);
+	/* Every action and decision of a collective belongs to its agreement. */
+	const mor_cbor *decl;
+	if (a->signer && !mor_is_chain_act(w, a) && !mor_world_is_mir(w, a, MOR_IDENTITY) &&
+	    mor_identity_agreement(w, a->signer, &decl) == 1) {
+		const mor_cbor *v = decl && decl->type == MOR_CBOR_ARRAY && decl->v ? &decl->items[0] : decl;
+		if (mor_cbor_is_hash(v))
+			add_unique(out, &n, max, v->data);
+	}
+	/* A lone seller's offer is itself the agreement its payments belong to. */
+	if (is_agr(w, a, 6) && !mor_pl_hash(a, 0))
+		add_unique(out, &n, max, a->id);
+	/* From act to act, at no fixed depth, as far as the acts held allow. */
+	size_t mark = mor_arena_mark(w->a);
+	size_t cap = w->nacts + 1, head = 0, tail = 0;
+	const mor_act **q = mor_arena_array(w->a, cap, sizeof *q);
+	uint8_t *seen = mor_arena_alloc(w->a, cap);
+	if (!q || !seen) {
+		*unknown = 1;
+		goto out;
+	}
+	memset(seen, 0, cap);
+	q[tail++] = a;
+	seen[(size_t)(a - w->acts)] = 1;
+	while (head < tail) {
+		const mor_act *y = q[head++];
+		const uint8_t *next[2 * MAX_LIST];
+		size_t nn = belong_steps(w, y, next, 2 * MAX_LIST);
+		for (size_t i = 0; i < nn; i++) {
+			const mor_act *t = mor_world_get(w, next[i]);
+			if (!t) {
+				*unknown = 1; /* beyond an act not held, unknown */
 				continue;
 			}
-			const mor_act *e = mor_world_get(w, x);
-			for (uint64_t j = 0; e && e->objects && j < e->objects->v; j++) {
-				const uint8_t *c = e->objects->items[j].items[0].data;
-				if (terms_of(w, c))
-					add_unique(out, &n, max, c);
+			if (is_agr(w, t, 0)) {
+				add_unique(out, &n, max, t->id);
+				continue;
 			}
+			if (is_agr(w, t, 6) && !mor_pl_hash(t, 0))
+				add_unique(out, &n, max, t->id);
+			/* an identity's genesis, rotations and Identity acts belong to none */
+			if (mor_world_is_mir(w, t, MOR_IDENTITY))
+				continue;
+			size_t idx = (size_t)(t - w->acts);
+			if (seen[idx] || tail >= cap)
+				continue;
+			seen[idx] = 1;
+			q[tail++] = t;
 		}
 	}
-	/* Through the act it answers (Money receipts, claims and obligations; offers). */
-	if (mor_world_is_mir(w, a, MOR_MONEY)) {
-		const mor_cbor *pur = mor_pl(a, 9);
-		if (pur && terms_of(w, pur->items[0].data))
-			add_unique(out, &n, max, pur->items[0].data);
-		const uint8_t *ful = a->type == 2 ? mor_pl_hash(a, 5) : a->type == 3 ? mor_pl_hash(a, 4) :
-				    a->type == 1 ? mor_pl_hash(a, 4) : NULL;
-		if (ful) {
-			const mor_act *f = mor_world_get(w, ful);
-			if (terms_of(w, ful))
-				add_unique(out, &n, max, ful);
-			else if (f && mor_world_is_mir(w, f, MOR_MONEY) && f->type == 1 && mor_pl_hash(f, 4) &&
-				 terms_of(w, mor_pl_hash(f, 4)))
-				add_unique(out, &n, max, mor_pl_hash(f, 4));
-			else if (f && is_agr(w, f, 6))
-				add_unique(out, &n, max, mor_pl_hash(f, 0) ? mor_pl_hash(f, 0) : f->id);
-		}
-	}
-	if (is_agr(w, a, 6))
-		add_unique(out, &n, max, mor_pl_hash(a, 0) ? mor_pl_hash(a, 0) : a->id);
+out:
+	mor_arena_reset(w->a, mark);
 	return n;
 }
 
@@ -199,20 +236,54 @@ static int keepers_rule_met(const mor_cbor *ops, const mor_cbor *rule, const int
 	return 1;
 }
 
-/* The version in force for the act of an agreement it belongs to: for a deal,
- * the version it names (the latest complete version its history holds on
- * that line is not followed further in MOR 1 vectors; see QUESTIONS.md). */
-static const mor_act *version_in_force(mor_world *w, const uint8_t *agreement)
+static int complete_version(mor_world *w, const mor_act *t, int depth);
+
+/* How many versions lie between t and v on v's line (t a clone of a clone
+ * ... of v), or -1 when t is not on it. */
+static int line_depth(mor_world *w, const mor_act *t, const uint8_t *v)
 {
-	return terms_of(w, agreement);
+	for (int d = 0; t && d < 64; d++) {
+		if (!memcmp(t->id, v, 32))
+			return d;
+		const uint8_t *p = mor_pl_hash(t, 11);
+		t = p ? terms_of(w, p) : NULL;
+	}
+	return -1;
+}
+
+/* The version in force for an act of an agreement it belongs to ("Belongs
+ * to"): for a deal, the latest complete version, on the line of the version
+ * the act names, that the act's history holds, or the version it names; for
+ * a collective, the agreement its chain declares (named already). */
+static const mor_act *version_in_force(mor_world *w, const uint8_t *agreement, const mor_act *a)
+{
+	const mor_act *named = terms_of(w, agreement);
+	if (!named || mor_pl(named, 12))
+		return named;
+	const mor_act *best = named;
+	int bd = 0;
+	for (size_t i = 0; i < w->nacts; i++) {
+		const mor_act *c = &w->acts[i];
+		if (!is_agr(w, c, 0) || c == named)
+			continue;
+		int d = line_depth(w, c, agreement);
+		if (d <= bd || !mor_history_holds(w, a, NULL, c->id))
+			continue;
+		if (complete_version(w, c, 0) != MOR_AGR_EXISTS)
+			continue;
+		best = c;
+		bd = d;
+	}
+	return best;
 }
 
 int mor_keepers_rescue(mor_world *w, const mor_act *a, const mor_act *ending)
 {
 	const uint8_t *agrs[MAX_LIST];
-	size_t na = mor_belongs_to(w, a, agrs, MAX_LIST);
+	int unknown = 0;
+	size_t na = mor_belongs_to(w, a, agrs, MAX_LIST, &unknown);
 	for (size_t i = 0; i < na; i++) {
-		const mor_act *t = version_in_force(w, agrs[i]);
+		const mor_act *t = version_in_force(w, agrs[i], a);
 		const mor_cbor *kp = t ? mor_pl(t, 3) : NULL;
 		if (!kp)
 			continue;
@@ -226,7 +297,8 @@ int mor_keepers_rescue(mor_world *w, const mor_act *a, const mor_act *ending)
 		if (keepers_rule_met(ops, rule, ok, 0))
 			return 1;
 	}
-	return 0;
+	/* Beyond a step to an act not held, whether a keeper speaks for it cannot be told. */
+	return unknown ? -1 : 0;
 }
 
 /* ---- agreements: signatures and completeness ---- */
@@ -246,8 +318,6 @@ static int signed_by(mor_world *w, const uint8_t act[32], const uint8_t party[32
 	}
 	return 0;
 }
-
-static int complete_version(mor_world *w, const mor_act *t, int depth);
 
 int mor_agreement_exists(mor_world *w, const uint8_t terms[32])
 {
@@ -712,7 +782,7 @@ int mor_backing(mor_world *w, const uint8_t id[32])
 		held_by_all = 0;
 		/* racing it or after it: void, unless another identity (never the
 		 * grantee) acknowledged it, or a keeper recorded it before the revocation */
-		if (!mor_acknowledged_by_other(w, x, mor_pl_hash(g, 0)) && !mor_keepers_rescue(w, x, v))
+		if (!mor_acknowledged_by_other(w, x, mor_pl_hash(g, 0)) && mor_keepers_rescue(w, x, v) != 1)
 			rescued = 0;
 	}
 	if (!any)

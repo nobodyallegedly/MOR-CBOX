@@ -9,6 +9,7 @@
  * the act belongs to rescue it from `ending` (a rotation that voided it, or a
  * grant's revocation), each keeper's record of the act lying before its own
  * record of the ending, counted by the agreement's keepers' rule? */
+/* 1: a keeper's record rescues the act; 0: none; -1: cannot tell. */
 int mor_keepers_rescue(mor_world *w, const mor_act *a, const mor_act *ending);
 
 /* Agreements rule 1: an agreement exists once its signing rule is met. */
@@ -47,7 +48,7 @@ int mor_deadline(mor_world *w, const uint8_t act[32], const uint8_t (*keepers)[3
 		 const mor_cbor *rule, const uint8_t *clock, size_t clock_len, uint64_t point);
 
 /* "Belongs to": the agreements an act belongs to (up to max), by id. */
-size_t mor_belongs_to(mor_world *w, const mor_act *a, const uint8_t **out, size_t max);
+size_t mor_belongs_to(mor_world *w, const mor_act *a, const uint8_t **out, size_t max, int *unknown);
 
 /* Does `from`'s history (what it cites through prev and objects on `chain`,
  * transitively) hold `id`? */

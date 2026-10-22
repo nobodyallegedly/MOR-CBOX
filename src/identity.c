@@ -916,8 +916,13 @@ static int judged_by(mor_world *w, const mor_act *a, const mor_act *rot, int fla
 		return MOR_ST_UNKNOWN;
 	if (acknowledged_by_other(w, a, NULL))
 		return MOR_ST_DISPUTED;
-	if ((flags & MOR_Q_KEEPERS) && mor_keepers_rescue(w, a, rot))
-		return MOR_ST_DISPUTED;
+	if (flags & MOR_Q_KEEPERS) {
+		int k = mor_keepers_rescue(w, a, rot);
+		if (k == 1)
+			return MOR_ST_DISPUTED;
+		if (k < 0)
+			return MOR_ST_UNKNOWN;
+	}
 	return MOR_ST_VOID;
 }
 
