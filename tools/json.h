@@ -23,5 +23,7 @@ int json_parse(const char *text, size_t len, mor_arena *a, const json **out);
 const json *json_get(const json *obj, const char *key);
 const json *json_at(const json *arr, size_t i);
 const char *json_str(const json *j); /* NULL unless a string */
+/* Compact rendering, object keys sorted bytewise; strings unescaped where safe. */
+size_t json_render(const json *j, char *out, size_t cap);
 
 #endif

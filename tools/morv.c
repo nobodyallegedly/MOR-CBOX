@@ -7,7 +7,9 @@
 #include "../src/cbor.h"
 #include "../src/people.h"
 #include "../src/text.h"
+#include "diag.h"
 #include "hex.h"
+#include "json.h"
 #include "vectors.h"
 
 static void usage(void)
@@ -100,6 +102,60 @@ static int cmd_form(const char *s, const char *want, mor_arena *a)
 	return 0;
 }
 
+/* Dump every act of a verdicts.json pool, decoded, with short names. */
+static int cmd_pool(const char *path, mor_arena *a)
+{
+	FILE *f = fopen(path, "rb");
+	if (!f)
+		return 2;
+	static char text[1 << 21];
+	size_t n = fread(text, 1, sizeof text, f);
+	fclose(f);
+	const json *root;
+	if (json_parse(text, n, a, &root))
+		return 2;
+	const json *pool = json_get(root, "pool"), *mirs = json_get(root, "mirs");
+	size_t cap = (pool ? pool->len : 0) + 8;
+	uint8_t(*hs)[32] = mor_arena_array(a, cap, 32);
+	const char **names = mor_arena_array(a, cap, sizeof *names);
+	size_t k = 0;
+	for (size_t i = 0; mirs && i < mirs->len; i++) {
+		hex_fixed(json_str(&mirs->items[i]), hs[k], 32);
+		names[k++] = mirs->keys[i];
+	}
+	for (size_t i = 0; pool && i < pool->len; i++) {
+		hex_fixed(pool->keys[i], hs[k], 32);
+		char *nm = mor_arena_alloc(a, 9);
+		memcpy(nm, pool->keys[i], 8);
+		names[k++] = nm;
+	}
+	diag_names dn = { (const uint8_t(*)[32])hs, names, k };
+	for (size_t i = 0; pool && i < pool->len; i++) {
+		size_t bn;
+		mor_act act;
+		const uint8_t *b = hex_decode(json_str(&pool->items[i]), &bn, a);
+		int o = mor_act_decode(&act, b, bn, NULL, a);
+		printf("== %.8s open=%s", pool->keys[i], mor_open_name(o));
+		if (act.outside) {
+			printf(" outside=");
+			diag_print(stdout, act.outside, &dn);
+		}
+		if (o == MOR_OPEN_OK) {
+			printf("\n   inside=");
+			diag_print(stdout, act.inside, &dn);
+			int s = mor_act_sig_verify(&act);
+			printf("\n   sig scheme=%llu keylen=%zu sig=%s", (unsigned long long)act.sig.num, act.sig.key_len,
+			       s == 1 ? "valid" : s == 0 ? "INVALID" : "unknown-scheme");
+			if (act.sig.key_len == 32) {
+				printf(" key=");
+				hex_print(act.sig.key, 8);
+			}
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
 int main(int argc, char **argv)
 {
 	if (argc < 2) {
@@ -140,6 +196,8 @@ int main(int argc, char **argv)
 		r = cmd_text(argv[2], &a);
 	else if (!strcmp(argv[1], "act"))
 		r = cmd_act(argv[2], &a);
+	else if (!strcmp(argv[1], "pool"))
+		r = cmd_pool(argv[2], &a);
 	else if (!strcmp(argv[1], "form"))
 		r = cmd_form(argv[2], argc > 3 ? argv[3] : NULL, &a);
 	else

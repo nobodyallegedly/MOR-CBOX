@@ -14,7 +14,7 @@ LIBS    := $(DEPS)/lib/libcrypto.a $(DEPS)/lib/libsodium.a $(DEPS)/lib/libsecp25
            $(DEPS)/lib/libutf8proc.a -lpthread -ldl
 
 SRC     := $(wildcard src/*.c)
-TOOLSRC := tools/json.c tools/hex.c tools/vectors.c tools/verdicts.c
+TOOLSRC := tools/json.c tools/hex.c tools/diag.c tools/vectors.c tools/verdicts.c
 REL     := build/rel
 SAN     := build/san
 FUZ     := build/fuzz

@@ -296,3 +296,107 @@ const char *json_str(const json *j)
 {
 	return j && j->type == JSON_STR ? j->s : NULL;
 }
+
+typedef struct rbuf {
+	char *p;
+	size_t cap, len;
+} rbuf;
+
+static void rput(rbuf *b, const char *s, size_t n)
+{
+	for (size_t i = 0; i < n; i++) {
+		if (b->len + 1 < b->cap)
+			b->p[b->len] = s[i];
+		b->len++;
+	}
+}
+
+static void rputs(rbuf *b, const char *s)
+{
+	rput(b, s, strlen(s));
+}
+
+static void rstr(rbuf *b, const char *s, size_t n)
+{
+	rput(b, "\"", 1);
+	for (size_t i = 0; i < n; i++) {
+		char c = s[i];
+		if (c == '"' || c == '\\') {
+			rput(b, "\\", 1);
+			rput(b, &c, 1);
+		} else if ((unsigned char)c < 0x20) {
+			char e[8];
+			e[0] = '\\';
+			e[1] = 'u';
+			e[2] = '0';
+			e[3] = '0';
+			e[4] = "0123456789abcdef"[(unsigned char)c >> 4];
+			e[5] = "0123456789abcdef"[(unsigned char)c & 15];
+			rput(b, e, 6);
+		} else {
+			rput(b, &c, 1);
+		}
+	}
+	rput(b, "\"", 1);
+}
+
+static void rval(rbuf *b, const json *j)
+{
+	switch (j->type) {
+	case JSON_NULL: rputs(b, "null"); break;
+	case JSON_TRUE: rputs(b, "true"); break;
+	case JSON_FALSE: rputs(b, "false"); break;
+	case JSON_NUM: rputs(b, j->s); break;
+	case JSON_STR: rstr(b, j->s, j->len); break;
+	case JSON_ARR:
+		rput(b, "[", 1);
+		for (size_t i = 0; i < j->len; i++) {
+			if (i)
+				rput(b, ",", 1);
+			rval(b, &j->items[i]);
+		}
+		rput(b, "]", 1);
+		break;
+	case JSON_OBJ: {
+		/* keys sorted; small objects, so selection is enough */
+		size_t done[64];
+		size_t nd = 0;
+		rput(b, "{", 1);
+		for (size_t k = 0; k < j->len && k < 64; k++) {
+			size_t best = j->len;
+			for (size_t i = 0; i < j->len; i++) {
+				int used = 0;
+				for (size_t d = 0; d < nd; d++)
+					if (done[d] == i)
+						used = 1;
+				if (used)
+					continue;
+				if (best == j->len || strcmp(j->keys[i], j->keys[best]) < 0)
+					best = i;
+			}
+			done[nd++] = best;
+			if (k)
+				rput(b, ",", 1);
+			rstr(b, j->keys[best], strlen(j->keys[best]));
+			rput(b, ":", 1);
+			rval(b, &j->items[best]);
+		}
+		rput(b, "}", 1);
+		break;
+	}
+	default: break;
+	}
+}
+
+size_t json_render(const json *j, char *out, size_t cap)
+{
+	rbuf b = { out, cap, 0 };
+	if (j->type == JSON_STR) {
+		rput(&b, j->s, j->len);
+	} else {
+		rval(&b, j);
+	}
+	if (cap)
+		out[b.len < cap ? b.len : cap - 1] = 0;
+	return b.len;
+}
