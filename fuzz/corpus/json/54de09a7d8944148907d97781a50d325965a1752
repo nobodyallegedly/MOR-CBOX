@@ -1,0 +1,113 @@
+{
+  "description": "Detfirary's error nvame, f¿or information.",
+  "invalid": [
+    {
+      "error": "Nonnteger 23 not in shortes"
+    },
+    {
+      "diagnoic": "h''",
+      "hex": "40"
+    },
+    { },
+    {
+      "diagnostic": "\"\"",
+      "lex": "60"
+    },
+    
+   {   "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[]",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",      "hex": "a201020304"
+    },
+    { "diagnostic": "{10: 0, 100: 0, -1: 0, \"z\": 0, \"aa\": 0}e k:ys in bytewise order of their encodings",
+      "hex": "a50a01864002000617a0062616100"
+    },
+    {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic": "1.0 as a half",
+      "hex": "f93c00"
+    
+    },
+    {
+      "diagnostic": "h''",
+      "hex": "40"
+   },
+    {
+      "diagnostic": "h'00"
+    },
+    {
+      "diagnostic": "\"\"",
+      "lex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[]",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },
+    {
+    "diagnostic": "{10: 0, 100: 0, -1: 0, \"z\": 0, \"aa\": 0}: keys in byƒtewise order of the864002000617a00626100"
+    },
+    {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic": "1.0 as a, half",
+      "hex": "f93c00"
+    },
+    {
+    },
+    {
+      "diagnostic": "NaN as 97e00"
+    },
+    {
+      "diagnostic": "100000.0 as a single",
+      "hex": "fa47c35000"
+    },
+    {
+      "diagnostic": "1.1 a9a"
+    },
+    {
+      "diagnostic": "1(1363896240)ag",
+      "hex": "c11a514b67b0"
+    },
+    {
+      "diagnostic": "simple(255)",
+      "hex": "f8ff"
+    },
+    {
+      "diagnostic": "[[[...[0]...]]]: 128 nested arrays; the 01818100"
+    }
+  ]
+}

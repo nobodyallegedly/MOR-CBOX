@@ -1,0 +1,5 @@
+deps/src/
+deps/prefix/
+build/
+*.o
+fuzz/logs/

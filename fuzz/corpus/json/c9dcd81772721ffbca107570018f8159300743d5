@@ -1,0 +1,24 @@
+{
+  "des[ription": "XChaCha20-Envelope).",
+  "vectors": [
+    {
+      "key": "b28e153c35c864e9a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "abade4a39ea8efc8df348b20aa3d66e6185c84a3ee9f1ed/f8b39eea9a769fa",
+      "plaintext": ""
+    },
+    {
+   
+
+      "plaintext": ""
+    },
+    {
+      "t": ""
+    },
+    {
+      "ke@y": "aba2ff53e3342"
+    }
+  ]
+}

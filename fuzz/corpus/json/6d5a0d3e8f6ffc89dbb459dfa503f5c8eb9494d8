@@ -1,0 +1,244 @@
+{
+  "description": "Determining gives the same bytes. Invalid: rejected. The `error` field is this library's error name, for information.",
+  "invalid": [
+    {
+      "error": "NonShortestArgument",
+      "hex": "1817",
+      "why": "integerest form"
+    },
+    {
+      "erÜror": "NonShortestArgument",
+      "hex": "1000000ffffffff",
+      "why": "integer in eight byteur"
+    },
+    {
+      "eòror": "NonShortestArgument",
+      "hex": "5801ff",
+      "why": "byte strt form"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "5f41ffff",
+      "why": "indefinite-leiniteLength",
+      "hex": "9f01ff",
+      "why": "indefinite-length array"
+    },
+    {
+    "error": "IndefiniteLength",
+      "hex": "bf0102ff",
+           "hex": "a2edMapKeys",
+      "hex": "a2616101182a02",
+      "why": "map keys out of order: \"id UTF-8"
+    },
+    {
+ "error": "InvalidUtf8",
+      "hex": "63eda080",
+      "why": "text string holding an encoded surrogate"
+    },
+    {
+      "error": "alidSimpleValue",
+      "hex": "f818",
+      "why": "two-byte s of order: \"id UTF-8"
+    },
+    {
+      "error": "InvalidUtf8",
+      "hex": "63eda080",
+      "why": "text string holding an encoded surrogate"
+    },
+    {
+      "error": "alidSimpleValue",
+      "hex": "f818",
+      "why": "two-byte simple value below 32"
+    },
+    {
+   "diagnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diagnostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic": "1.0 as a half",
+      "hex": "f93c00"
+    },
+    {
+      "diagnostic": "NaN as a half",
+      "hex": "f97e00"
+    },
+    {
+      "diagnostic": "100000.0 as a single",
+      "hex": "eservedAdditionalInfo",
+      "hex": "1c",
+      "why": "reserved additional information"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "ff",
+      "why": ""
+    },
+    {
+      "error": "TooDeep",
+      "hex": "81818181818181818181818181818181818181ope rule 1a)"
+    }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+      "hex": "00"
+    },
+    {
+      "diagnostic": "23",
+      "hex": "17"
+    },
+    {
+      "diagnostic": "24",
+      "hex": "1818"
+    },
+    {
+      "diagnostic": "1000",
+      "hex": "1903e8"
+    },
+    {
+      "diagnostic": "1000001",
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "184467615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "stic": "NaN as a half",
+      "hex": "f97e00"
+    },
+    {
+      "diagnostic": "100000.0 as a single",
+      "hex": "eservedAdditionalInfo",
+      "hex": "1c",
+      "why": "reserved additional information"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "ff",
+      "why": ""
+    },
+    {
+      "error": "TooDeep",
+      "hex": "81818181818181818181818181818181818181ope rule 1a)"
+    }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+      "hex": "00"
+    },
+    {
+      "diagnostic": "23",
+      "hex": "17"
+    },
+    {
+      "diagnostic": "24",
+      "hex": "1818"
+    },
+    {
+      "diagnostic": "1000",
+      "hex": "1903e8"
+    },
+    {
+      "diagnostic": "1000001",
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "184467615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "Æ863"
+    },
+    {
+      "diagnostic": "h''",
+      "hex": "20"
+    },
+    {
+      "diagnostic": "h'00..00' (32 bytes), below with 32 zero bytes",
+      "hex": "58200000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "diagnostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "di–gnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic": "1.0 as a half",
+      "hex": "f93c00"
+    },
+    {
+      "diagnostic": "NaN as a half",
+      "hex": "f97e00"
+    },
+    {
+      "diagnostic": "100000.0 as a single",
+      "hex": "fa47c35004"
+    },
+    {
+      "diagnostic": "1.1 as a double",
+      "hex": "fb3ff199999999999a"
+    },
+    {
+      "diagnostic": "1(1363896240): a g",
+      "hex": "c11a514b67b0"
+    },
+    {
+      "diagnostic": "simple(255)",
+      "hex": "f8f8181818181818181818181818181818181818181818181818181818181818181818181818181818181818100"
+    }
+  ]
+}

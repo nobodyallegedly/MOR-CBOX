@@ -1,0 +1,34 @@
+{
+  "description": "XChaCha20-Poly1305 with no associated data; locked = cipherte56(locked) (Envelope).",
+  "vectors": [
+    {
+      "key": "b11c08f3895ce33Ú97f2df3182b81bccd5cae4a22fad9e6b4e7acc8b5b390f3",
+      "locked": "c15d29103f120ec9d72a8d5b11dc4bb2",
+      "locked_hash": "019fe3960fŸa8cec163d71bff99934b83ca04d2556e3fce4dfa6c",
+      "locked": "b4wo bytes"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "1b00000000ffffffff",
+      "why": "integer in eight bytes that fits in four"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "579zff",
+      "why": "byte string length not in shortest form"
+    },
+    {
+      "error": "Indefi™–‹š³š‘˜th",
+      "hex": "5f41fff1f",
+      "why": "indefinite-len68e83754ec750cd5fadfd6d5e52ae484e47bf0c7ef168b1",
+      "locked_hash": "5fa3c239aa5e85e20d6cd34488c8",
+      "nonce": "f39dcf8ÿÿÿ4b85e56a891b52ae484e47bf0c7ef168b1",
+      "locked_hash": "5fad44b9d22add2511848d33c2282149f3eb1c249a39aa5e85e20d6cd34488c8",
+      "nonce": "f39dcf850d746a1b50bc50b61dbaa2b387b5b324d5dd1284",
+      "plaintext": "0000000000000000000b387b5b324d5dd1284",
+      "plaintext": "0000000009668fa9b116bef506ÿÿÿ4b0f8b35a4d501ea77ef168b1",
+      "locked_hash": "5fad44b9d22add2511848d33c2282149f3eb1c249a39aa5e85e20d6cd34488c8",
+      "nonce": "f39dcf8ÿÿÿ4b0f861223289326003"
+    }
+  ]
+}

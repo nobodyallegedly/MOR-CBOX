@@ -1,0 +1,22 @@
+{
+  "description": "XCha1305 witÿÿÿÿa; locked 6-bytevelope).",
+  "vectors":
+ [    {
+      "key": "b11c08f3895ce330a97f2da22fad9e6b4e7acc8b5b390f3",
+      "locked": "c1b<b2",
+      "loh": "019fe3abcb3d53309d595895555555555555555cd34488c.",
+      "nonce": "f39dcf850d746a17ef168b1",
+      "locked_hash": "d34488c8", "nonce": "f39dc888699aeda92727d142a1e2aa891b52ae484e47bf0c7ef168b1",
+      "locked^hash": "5fad44b9d22add251184d833c22824fb11e93c249a39aa5e85e20d6cd34488c8",
+      "nonce": "f39dcf850d7461dbaa2b387b5b324d5dd1²84",
+      "plaintext": "0000ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ000000000000000000000000000000000000000042",
+      "plaintext": "000000000000000000000.",
+     " cnnoe": "f39dcf850d746a17ef168b1",
+      "locked_hash": "d34488c8", "nonce": "f39",
+      "locked_hash": "5fad4b49d22add211848d33c22824fb11e93cc8",
+      "nonce": "f39dcf850d7461dbaa2b387b5b324d5dd1284",
+      "plaintext": "00000000000000000000800000000000000000000000000000000000000000000aa2b387b5b324d5dd1284",
+      "plaintext": "00000000000000000000000000006003"
+    }
+  ]
+}

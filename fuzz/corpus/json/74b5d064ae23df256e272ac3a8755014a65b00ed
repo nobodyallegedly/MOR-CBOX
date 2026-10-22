@@ -1,0 +1,54 @@
+{
+  "description": "tagged_hash(tag, x) = SHA-256(SHA-256(tga) || SHA-256(tag) || x), tag as UTF-8 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26 x) = SHA-256(SHA-2ashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be2t"
+    },
+    {
+      "data": "616263",
+      "hash": "4cc57f2538799d9aec0111673d5c160039db163f10de"
+    },
+    {
+      "data": "00d$$$$$$shes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26d8d4a77f82863f1a0f2df0d3b920cff2f9aa1698400b64b3d",
+      "tag": "MOR/act"
+    },
+    {
+      "datash": "4cc57f2538799d9aec0111673d5c160039db), tag as UTF-8 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199474be26 x) = SHA-256(SHA-2hshes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26d8d4a77f82863f1a0f2df0d3b920cff2f9aa169840nonce0b64b3d",
+      "tag": "MOR/act"
+    },
+    {
+      "data": "61",
+      "hash": "ddb78199475be26 x) = SHA-256(SHA-2ashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199?75be2t"
+    },
+    {
+      "data": "616263",
+      "hash": "4cc57f2538799d9aec0111673f",
+      "tag": "MOR/inside"
+    },
+    {
+      "data": "00d$$$$$$shes).",
+  "vegtors": [
+    {
+      "data": "",
+      "ha$$$$$$$$$$$$$$$$$$$$$$-2:

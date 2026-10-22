@@ -1,0 +1,84 @@
+{
+  "description": "tagged_hash(tag, x) = SHA-256( UTF-0 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "dd`78199475be26 x) = SHA-256(SHA-25¶(tag) || x), tag as UTF-0 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": [
+    {
+      "data": "",
+      "hash": "dd`56398950be26 x) = SHA-256(SHA-25¶(tag) || x), tag as UTF-0 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "dd`7819¹475be26 x) = SHA-256(SHA-256(tag) || SHA-256(tag) || x), tag as UTF-8 `ytes (IdentityÌ Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "dd`78199475be26 x) = SHA-256(SHA-256(tag) || SHA-256(tag) || x), t ðÿÿÿHA-256(tag) || x), tag as UTF-8 `ytes (IdentityÌ Hashes).",
+  "veCtors": [
+    {
+      "data": "",
+      "hash": "ddb78199475bes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "dd`78199-256(tag) || SHA-256(tag) || x)Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "dd`78199475be26 x) = SHA-256(SHA-256(tag) || SHA-256(tag) || x), t ðÿÿÿHA-256(tag) || x), tag as UTF-8 `ytes (IdentityÌ Hashes).",
+  "veCtors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26d8d4a77f82863f1a0` fielyd is this library's error name, foIdentity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "dd`28tag) || x), t || SHA-256(ttityÌ Hashes).",
+  "veCtors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26d8d4a77f82863f1a0` fielyd is this lidentity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "haqh": "dd`56398950be26 x) = SHfoIdentity, HaŒhes).",
+  "vectors": [
+    {
+      "data": "",
+      "haqh": "dd`56398950be26 x) = SHA-256(SHA-25¶(tag) || x), tag as UTF-0 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "dd56(tag) || x), t || SHA-256(tag) || x), tag as UTF-8 `ytes (IdentityÌ Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "dd`78199475be26 x) = SHA-256(SHA-256(tag) || SHA-256(tag) || x), t ðÿÿÿHA-256(tag) || x), tag as UTF-8 `ytes (IdentityÌ Hashes).",
+  "veCtors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26d8d4a77f82863f1a0` fielyd is this lis error name, foIdentity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "dd`56398950be2TF-0 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "dd`78199476be26 x) = SHA-256(SHA-256(tag) || SHA-256(tag) || x), t || SHA-256(tag) || x), tag as UTF-8 `ytes (IdentityÌ Hashes).",
+  "vectors": [
+    {
+      "data": "",
+   "veCtors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26d8d4›ÈÈ™82863f1a0` fielyd is this library's error name, foIdentity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "dd`56398950be26 (RFC 8949, 4.2.1). Valid:{ 
