@@ -372,6 +372,7 @@ Clients and key Modules SHOULD keep the signing key and the chain key separate, 
 4. A new signing key and a next chain-key commitment are present; the position (field 1) is at least 1; a homeless rotation (field 11) declares a new set of homes (field 6).
 5. Any new home rule or audit requirement meets the conditions for genesis, counted against the new set of homes if one is given. A home rule the rotation leaves in place must meet them too, against the new set of homes; if it does not, the rotation is invalid. *The owner's client sends a rule that fits, or null for the default, whenever it changes the homes; it never quietly changes a protection the owner chose.*
 6. A closure flag is valid on any rotation; it has effect only for identities whose declared homes name the signer as operator.
+7. A kept tip fits when the running summary the rotation records for it is the running summary of its sequence up to and including the tip (Envelopes, "The running summary"); a verifier can tell only where it holds every act of that sequence up to the tip. A tip that does not fit keeps nothing, itself included; where the verifier does not hold the sequence, the tip itself is kept by its name, and what lies below it is unknown to the verifier (section 6). This check decides what the rotation keeps, never whether the rotation is valid: a tip that does not fit never makes the rotation invalid, whatever the verifier holds, and is no failure of the rotation checks under rule 29. *A thief holding the chain key already chooses what to keep; a summary that does not fit gives nobody anything, and comes only from a broken client. A rotation's validity stays fixed by its bytes: a home receipts it without holding the owner's private lines, so no check that needs them can decide whether it is valid, and so whether it can count. Stated cost: an owner's broken client voids its own line at a change of keys; others' reliance survives by acknowledgement and keepers, and the owner rotates again with the next chain key.*
 
 #### Which rotation counts
 
@@ -384,6 +385,12 @@ For each position n of an identity chain, starting at 1 (a chain signature count
    - **Threshold k:** a rotation counts if homes of at least k distinct operators have receipts for it.
 4. If no rotation counts at position n under the rule, a homeless rotation at n may count under the homeless procedure (section 10).
 5. If nothing counts at position n, later positions are not evaluated: the latest act that counts is the one at n minus one.
+
+**A rotation that does not count.** A rotation that passes the rotation checks but does not count at its position, because another counts there and no objection voids it, is neither invalid nor void: it is **not counting**, and a client shows it so. The acts bound to it are judged by the chain the rotation that counts leaves: they fail everyday check 2, their binding naming no act that counts, and are invalid.
+
+**What stops a chain.** Resolving an identity chain gives the act that counts at each position and the reason the chain stops, which a verifier names, one of seven, by its name: **no genesis** (no genesis is held); **the genesis unknown** (the genesis is signed under a scheme the verifier lacks, and no check it can apply fails: Envelopes rule 30); **the genesis invalid** (the genesis fails its checks); **the end of what is held** (nothing that can count is held for the next position); **pending** (acts that can count are held for the next position, and none counts yet); **contested** (the next position is contested); or **cannot tell** (whether one counts there cannot be told: section 6, "A verifier that cannot tell answers unknown"). Two verifiers holding the same acts and evidence, and having made the same attempts to reach homes (section 6, "Every verifier gives the same answer"), name the same reason.
+
+Where more than one reason fits, the verifier names the first in this order. Before the first position: no genesis, then the genesis unknown, then the genesis invalid. At a position: the end of what is held; then contested, where two or more homeless rotations there are final; then cannot tell; then contested, where the contest is under the home rule (rules 40 and 44, and rule 4's two rotations served at a self-hosted identity), or between homeless rotations there that are still provisional; then pending. The order follows one principle: what no later act can change comes before what a later act could decide, and that before waiting. *A contest among final rotations comes before cannot tell because no objection can undo it; a contest under the home rule yields to cannot tell because the objection whose status cannot be told could still make a homeless rotation count there.*
 
 ### 6. What a rotation keeps
 
@@ -402,7 +409,7 @@ If it lies outside the kept ancestry, or within it but listed as disowned, it is
 - another identity acknowledged it (Envelopes; by an act of a type the Identity, Money or Agreements MIR defines, such as a witness act);
 - or a named keeper recorded it before recording the rotation (Agreements: the keeper record, type 2, and Agreements rules 41 and 42);
 
-then it is valid and shown as disputed. A keeper record or acknowledgement counts only alongside the act it names (Envelopes, Agreements), and only while its own signer's chain keeps it valid (below), save the exception stated there for keeper records.
+then it is valid and shown as disputed. A keeper record or acknowledgement counts only alongside the act it names (Envelopes, Agreements), and only while its own signer's chain keeps it valid (below), save the exception stated there for keeper records. For this rule, an acknowledgement counts only when signed with the acknowledging identity's signing key, never with a scoped key: reliance is the identity's, not a grantee's.
 
 *Disowning an act does not cost the owner the genuine acts that followed it: later acts in the line stay valid, because their validity rests on being inside the kept ancestry, not on the disowned act's.*
 
@@ -432,9 +439,9 @@ An answer that rests on the verifier's own failed attempts is marked as such ("r
 
 #### A verifier that cannot tell answers unknown
 
-A verifier that holds the acts a rule needs answers as the rule says. One that does not (a kept tip whose line it cannot rebuild, a scoped key whose installing act it has not held, a chain it cannot resolve) answers unknown, never valid, void or invalid, unless a rule it can apply shows the act invalid (invalid beats unknown, Envelopes rule 30).
+A verifier that holds the acts a rule needs answers as the rule says. One that does not (an act below a kept tip whose line it cannot rebuild, a scoped key whose installing act it has not held, a chain it cannot resolve) answers unknown, never valid, void or invalid, unless a rule it can apply shows the act invalid (invalid beats unknown, Envelopes rule 30). *Stated cost: a tip kept by its name can turn from valid to void (or disputed, where relied on) once its line arrives and does not fit (rotation check 7, and the paragraph below), which only the owner's own broken client can bring about.*
 
-Void needs every kept line of the rotation rebuilt and the act on none of them. Invalid is only for a rule the verifier can apply and sees fail. *What follows from this paragraph: an act the verifier does not hold is unknown to it; a rotation built on a rotation it does not hold, and every act bound to it, is unknown; and where an objection that would void a homeless rotation has a status the verifier cannot tell, whether that rotation counts cannot be told either, and the position is unknown (not pending, and not voided).*
+Void needs the line of every kept tip of the rotation rebuilt, and the act in the kept ancestry of none of them. Invalid is only for a rule the verifier can apply and sees fail. *What follows from this paragraph: an act the verifier does not hold is unknown to it; a rotation built on a rotation it does not hold, and every act bound to it, is unknown; and where an objection that would void a homeless rotation has a status the verifier cannot tell, whether that rotation counts cannot be told either, and the position is unknown (not pending, and not voided).*
 
 *A verdict that flips from void to valid, or from invalid to scoped, as acts arrive is a verdict given with part of the picture; a reader that trusts it goes dark. Unknown is the word this MIR already uses for a link nobody can fetch and for a scheme a client lacks. Disputed is void but relied on, so it waits on void as well. An act bound to a rotation the verifier can check, of a chain whose genesis is signed under a scheme it lacks, is unknown, as is every act under it that no rule the verifier can apply shows invalid. A shorter proof that an act lies within a kept ancestry (the peaks of the running summary and a path) can follow after MOR 1 without changing any act; until then its absence costs a reader unknown, never void.*
 
@@ -507,7 +514,7 @@ With several homes and no declared rule, the default of rule 2 applies.
 
 #### Rule 42. A contested rotation's rule waits
 
-A rule changed in a contested rotation takes effect only once the contest is settled. An invalid rotation never counts.
+A rule changed in a contested rotation takes effect only once the contest is settled, and an act bound to a contested rotation is pending, never valid and not invalid, until the contest ends, by settlement or, at a self-hosted identity, by the escape; it is then judged as everyday check 2 says. An invalid rotation never counts.
 
 #### Rule 43. An outvoted home
 
@@ -1082,5 +1089,5 @@ Components exercised (freeze test suite v30; scenario and step numbers are the s
 - A position contested at a self-hosted home: a thief's rotation and the owner's served at one position; contested, nobody wins; the air-gapped Module signs the owner's escape only on the competing rotation's bytes, never on the online side's word; the escape counts: 5.7f.
 - A rotation invalid for a home rule left in place that no longer fits, and the owner's next signature with the same chain key; the air-gapped Module signs it only on the identity chain from genesis to the rotation's predecessor, checked offline by the Module itself, never on the online side's report: 5.7g.
 - A reader holding the rotation and the kept tip but not the whole line: the first post unknown, never void, until the line arrives; a scoped act whose binding is not held, unknown, never invalid: 5.5c.
-- An identity born under a signing scheme a client lacks: its rotation the client can verify, and every act under it, unknown, never invalid: 8.4.
+- An identity born under a signing scheme a client lacks: its rotation the client can verify, and every act under it, unknown, never invalid; what the client shows past the genesis it cannot verify (rotations it can check in form) is display, not resolution, for the chain's resolution stops at the genesis unknown: 8.4.
 - A succession declared to the journalist by a stranger's rotation: shown as declared, never followed, until the journalist confirms by a link confirmation or a witness act naming the rotation: 5.8b.
