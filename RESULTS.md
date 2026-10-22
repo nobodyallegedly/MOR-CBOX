@@ -1,14 +1,14 @@
 # Results
 
-Every published vector, by file and case: the answer the vectors give, the answer this verifier gives, and whether they agree.
+Every vector of the box's **second edition**, by file and case: the answer the vectors give, the answer this verifier gives, and whether they agree.
 
-**285 of 285 checks agree. There are no mismatches.**
+**334 of 334 checks agree. There are no mismatches.**
 
 | File | Checks | Agree |
 | --- | --- | --- |
 | `tagged-hash.json` | 7 | 7 |
-| `cbor.json` | 46 | 46 |
-| `canonical-text.json` | 37 | 37 |
+| `cbor.json` | 48 | 48 |
+| `canonical-text.json` | 39 | 39 |
 | `lock.json` | 12 | 12 |
 | `running-summary.json` | 12 | 12 |
 | `sequence-three-acts.json` | 31 | 31 |
@@ -16,14 +16,25 @@ Every published vector, by file and case: the answer the vectors give, the answe
 | `textual-forms.json` | 19 | 19 |
 | `signatures.json` | 43 | 43 |
 | `sealed.json` | 6 | 6 |
-| `verdicts.json` (63 cases: Identity 14, Text 8, Envelopes 5, Money 6, Agreements 18, Development 7, MIR hashes 5) | 63 | 63 |
-| **Total** | **285** | **285** |
+| `verdicts.json` (108 cases: Identity 27, Text 8, Envelopes 5, Money 17, Agreements 38, Development 7, MIR hashes 6) | 108 | 108 |
+| **Total** | **334** | **334** |
 
-How to reproduce: `make deps && make && build/rel/morv vectors vectors` (summary); `build/rel/morv vectors --md vectors` prints the table below; `-v` prints every case. The same run under AddressSanitizer and UndefinedBehaviorSanitizer is part of `make check`.
+**Before any change**, the first edition's verifier agreed with 279 of these 334 checks. The 55 that did not were:
+- 25 canonical-text cases: the rules are now numbered 7 to 12;
+- 1 MIR hash: the status line is now part of the text;
+- 6 Identity cases;
+- 9 Money cases;
+- 14 Agreements cases.
 
-What a "check" is: one published value or verdict. A vector that pins several values (an act's inside, commitment, locked bytes, outside, id and summary in `sequence-three-acts.json`, say) counts once per value. `README.md` is not a vector file. In `verdicts.json` the MIR hashes are the published stand-ins (`"mirs"`), as the vectors' README says they must be until the freeze.
+Each fell to a change in the texts or to a rule I had not built. `PROGRESS.md` lists the order of the work, and `QUESTIONS.md` marks each reading the second edition settled.
 
-Where a vector settled a reading the texts left open, `QUESTIONS.md` names it ("Vectors: decided by …").
+How to reproduce:
+- `make deps && make && build/rel/morv vectors vectors` gives the summary;
+- `build/rel/morv vectors --md vectors` prints the table below;
+- `-v` prints every case;
+- `make check` runs the same under AddressSanitizer and UndefinedBehaviorSanitizer.
+
+What a "check" is: one published value or verdict. A vector that pins several values counts once per value. In `verdicts.json` the MIR hashes are the published stand-ins (`"mirs"`), as the vectors' README says they stay until the freeze.
 
 ## Every check
 
@@ -55,11 +66,12 @@ Where a vector settled a reading the texts left open, `QUESTIONS.md` names it ("
 | `cbor.json` | valid[16] null | `accepted, re-encodes the same` | `accepted, re-encodes the same` | yes |  |
 | `cbor.json` | valid[17] 1.0 as a half | `accepted, re-encodes the same` | `accepted, re-encodes the same` | yes |  |
 | `cbor.json` | valid[18] NaN as a half | `accepted, re-encodes the same` | `accepted, re-encodes the same` | yes |  |
-| `cbor.json` | valid[19] 100000.0 as a single | `accepted, re-encodes the same` | `accepted, re-encodes the same` | yes |  |
-| `cbor.json` | valid[20] 1.1 as a double | `accepted, re-encodes the same` | `accepted, re-encodes the same` | yes |  |
-| `cbor.json` | valid[21] 1(1363896240): a tag | `accepted, re-encodes the same` | `accepted, re-encodes the same` | yes |  |
-| `cbor.json` | valid[22] simple(255) | `accepted, re-encodes the same` | `accepted, re-encodes the same` | yes |  |
-| `cbor.json` | valid[23] [[[...[0]...]]]: 128 nested arrays; the 0 is 128 levels belo | `accepted, re-encodes the same` | `accepted, re-encodes the same` | yes |  |
+| `cbor.json` | valid[19] a NaN whose payload needs single width, as a single: the sho | `accepted, re-encodes the same` | `accepted, re-encodes the same` | yes |  |
+| `cbor.json` | valid[20] 100000.0 as a single | `accepted, re-encodes the same` | `accepted, re-encodes the same` | yes |  |
+| `cbor.json` | valid[21] 1.1 as a double | `accepted, re-encodes the same` | `accepted, re-encodes the same` | yes |  |
+| `cbor.json` | valid[22] 1(1363896240): a tag | `accepted, re-encodes the same` | `accepted, re-encodes the same` | yes |  |
+| `cbor.json` | valid[23] simple(255) | `accepted, re-encodes the same` | `accepted, re-encodes the same` | yes |  |
+| `cbor.json` | valid[24] [[[...[0]...]]]: 128 nested arrays; the 0 is 128 levels belo | `accepted, re-encodes the same` | `accepted, re-encodes the same` | yes |  |
 | `cbor.json` | invalid[0] integer 23 not in shortest form | `rejected (NonShortestArgument)` | `rejected (NonShortestArgument)` | yes |  |
 | `cbor.json` | invalid[1] integer 23 in two bytes | `rejected (NonShortestArgument)` | `rejected (NonShortestArgument)` | yes |  |
 | `cbor.json` | invalid[2] integer in eight bytes that fits in four | `rejected (NonShortestArgument)` | `rejected (NonShortestArgument)` | yes |  |
@@ -73,52 +85,55 @@ Where a vector settled a reading the texts left open, `QUESTIONS.md` names it ("
 | `cbor.json` | invalid[10] 1.0 as a single, fits in a half | `rejected (NonPreferredFloat)` | `rejected (NonPreferredFloat)` | yes |  |
 | `cbor.json` | invalid[11] 1.0 as a double | `rejected (NonPreferredFloat)` | `rejected (NonPreferredFloat)` | yes |  |
 | `cbor.json` | invalid[12] NaN as a double | `rejected (NonPreferredFloat)` | `rejected (NonPreferredFloat)` | yes |  |
-| `cbor.json` | invalid[13] text string not valid UTF-8 | `rejected (InvalidUtf8)` | `rejected (InvalidUtf8)` | yes |  |
-| `cbor.json` | invalid[14] text string holding an encoded surrogate | `rejected (InvalidUtf8)` | `rejected (InvalidUtf8)` | yes |  |
-| `cbor.json` | invalid[15] two-byte simple value below 32 | `rejected (InvalidSimpleValue)` | `rejected (InvalidSimpleValue)` | yes |  |
-| `cbor.json` | invalid[16] reserved additional information | `rejected (ReservedAdditionalInfo)` | `rejected (ReservedAdditionalInfo)` | yes |  |
-| `cbor.json` | invalid[17] break outside an indefinite item | `rejected (IndefiniteLength)` | `rejected (IndefiniteLength)` | yes |  |
-| `cbor.json` | invalid[18] trailing bytes | `rejected (TrailingBytes)` | `rejected (TrailingBytes)` | yes |  |
-| `cbor.json` | invalid[19] array ends early | `rejected (UnexpectedEnd)` | `rejected (UnexpectedEnd)` | yes |  |
-| `cbor.json` | invalid[20] empty input | `rejected (UnexpectedEnd)` | `rejected (UnexpectedEnd)` | yes |  |
-| `cbor.json` | invalid[21] 129 nested arrays: the 0 is 129 levels below the outermost i | `rejected (TooDeep)` | `rejected (TooDeep)` | yes |  |
+| `cbor.json` | invalid[13] the same single-width NaN as a double: longer than the short | `rejected (NonPreferredFloat)` | `rejected (NonPreferredFloat)` | yes |  |
+| `cbor.json` | invalid[14] text string not valid UTF-8 | `rejected (InvalidUtf8)` | `rejected (InvalidUtf8)` | yes |  |
+| `cbor.json` | invalid[15] text string holding an encoded surrogate | `rejected (InvalidUtf8)` | `rejected (InvalidUtf8)` | yes |  |
+| `cbor.json` | invalid[16] two-byte simple value below 32 | `rejected (InvalidSimpleValue)` | `rejected (InvalidSimpleValue)` | yes |  |
+| `cbor.json` | invalid[17] reserved additional information | `rejected (ReservedAdditionalInfo)` | `rejected (ReservedAdditionalInfo)` | yes |  |
+| `cbor.json` | invalid[18] break outside an indefinite item | `rejected (IndefiniteLength)` | `rejected (IndefiniteLength)` | yes |  |
+| `cbor.json` | invalid[19] trailing bytes | `rejected (TrailingBytes)` | `rejected (TrailingBytes)` | yes |  |
+| `cbor.json` | invalid[20] array ends early | `rejected (UnexpectedEnd)` | `rejected (UnexpectedEnd)` | yes |  |
+| `cbor.json` | invalid[21] empty input | `rejected (UnexpectedEnd)` | `rejected (UnexpectedEnd)` | yes |  |
+| `cbor.json` | invalid[22] 129 nested arrays: the 0 is 129 levels below the outermost i | `rejected (TooDeep)` | `rejected (TooDeep)` | yes |  |
 | `canonical-text.json` | pinned Unicode version | `Unicode 17.0.0` | `Unicode 17.0.0` | yes |  |
 | `canonical-text.json` | [0] the empty string is canonical | `canonical` | `canonical` | yes |  |
 | `canonical-text.json` | [1] plain ASCII | `canonical` | `canonical` | yes |  |
 | `canonical-text.json` | [2] LF line breaks and an empty line | `canonical` | `canonical` | yes |  |
 | `canonical-text.json` | [3] a leading LF is allowed | `canonical` | `canonical` | yes |  |
 | `canonical-text.json` | [4] precomposed e acute (NFC) | `canonical` | `canonical` | yes |  |
-| `canonical-text.json` | [5] e plus combining acute: not NFC | `not canonical, rule 6` | `not canonical, rule 6` | yes |  |
-| `canonical-text.json` | [6] ANGSTROM SIGN: a singleton, not NFC (NFC is U+00C5) | `not canonical, rule 6` | `not canonical, rule 6` | yes |  |
-| `canonical-text.json` | [7] Hangul L+V jamo: not NFC (composes to U+AC00) | `not canonical, rule 6` | `not canonical, rule 6` | yes |  |
+| `canonical-text.json` | [5] e plus combining acute: not NFC | `not canonical, rule 12` | `not canonical, rule 12` | yes |  |
+| `canonical-text.json` | [6] ANGSTROM SIGN: a singleton, not NFC (NFC is U+00C5) | `not canonical, rule 12` | `not canonical, rule 12` | yes |  |
+| `canonical-text.json` | [7] Hangul L+V jamo: not NFC (composes to U+AC00) | `not canonical, rule 12` | `not canonical, rule 12` | yes |  |
 | `canonical-text.json` | [8] Hangul syllable GA: NFC | `canonical` | `canonical` | yes |  |
 | `canonical-text.json` | [9] two marks new in Unicode 17.0, in canonical order (220 before 230): NFC | `canonical` | `canonical` | yes |  |
-| `canonical-text.json` | [10] the same two marks out of canonical order: not NFC under the pinned Unicode 17.0 tables; a | `not canonical, rule 6` | `not canonical, rule 6` | yes |  |
+| `canonical-text.json` | [10] the same two marks out of canonical order: not NFC under the pinned Unicode 17.0 tables; a | `not canonical, rule 12` | `not canonical, rule 12` | yes |  |
 | `canonical-text.json` | [11] a private use character: canonical | `canonical` | `canonical` | yes |  |
 | `canonical-text.json` | [12] U+E0001 LANGUAGE TAG, a deprecated format character: canonical (clients may warn) | `canonical` | `canonical` | yes |  |
-| `canonical-text.json` | [13] rule 1: U+FEFF inside the text | `not canonical, rule 1` | `not canonical, rule 1` | yes |  |
-| `canonical-text.json` | [14] rule 1: a byte order mark at the start | `not canonical, rule 1` | `not canonical, rule 1` | yes |  |
-| `canonical-text.json` | [15] rule 2: CR | `not canonical, rule 2` | `not canonical, rule 2` | yes |  |
-| `canonical-text.json` | [16] rule 2: LINE SEPARATOR | `not canonical, rule 2` | `not canonical, rule 2` | yes |  |
-| `canonical-text.json` | [17] rule 2: PARAGRAPH SEPARATOR | `not canonical, rule 2` | `not canonical, rule 2` | yes |  |
-| `canonical-text.json` | [18] rule 3: TAB | `not canonical, rule 3` | `not canonical, rule 3` | yes |  |
-| `canonical-text.json` | [19] rule 3: NUL | `not canonical, rule 3` | `not canonical, rule 3` | yes |  |
-| `canonical-text.json` | [20] rule 3: DELETE | `not canonical, rule 3` | `not canonical, rule 3` | yes |  |
-| `canonical-text.json` | [21] rule 3: NEXT LINE (C1 control) | `not canonical, rule 3` | `not canonical, rule 3` | yes |  |
-| `canonical-text.json` | [22] rule 3: last C1 control | `not canonical, rule 3` | `not canonical, rule 3` | yes |  |
-| `canonical-text.json` | [23] rule 4: a line ending with a space | `not canonical, rule 4` | `not canonical, rule 4` | yes |  |
-| `canonical-text.json` | [24] rule 4: ending with NO-BREAK SPACE | `not canonical, rule 4` | `not canonical, rule 4` | yes |  |
-| `canonical-text.json` | [25] rule 4: a line ending with IDEOGRAPHIC SPACE | `not canonical, rule 4` | `not canonical, rule 4` | yes |  |
+| `canonical-text.json` | [13] rule 7: U+FEFF inside the text | `not canonical, rule 7` | `not canonical, rule 7` | yes |  |
+| `canonical-text.json` | [14] rule 7: a byte order mark at the start | `not canonical, rule 7` | `not canonical, rule 7` | yes |  |
+| `canonical-text.json` | [15] rule 8: CR | `not canonical, rule 8` | `not canonical, rule 8` | yes |  |
+| `canonical-text.json` | [16] rule 8: LINE SEPARATOR | `not canonical, rule 8` | `not canonical, rule 8` | yes |  |
+| `canonical-text.json` | [17] rule 8: PARAGRAPH SEPARATOR | `not canonical, rule 8` | `not canonical, rule 8` | yes |  |
+| `canonical-text.json` | [18] rule 9: TAB | `not canonical, rule 9` | `not canonical, rule 9` | yes |  |
+| `canonical-text.json` | [19] rule 9: NUL | `not canonical, rule 9` | `not canonical, rule 9` | yes |  |
+| `canonical-text.json` | [20] rule 9: DELETE | `not canonical, rule 9` | `not canonical, rule 9` | yes |  |
+| `canonical-text.json` | [21] rule 9: NEXT LINE (C1 control) | `not canonical, rule 9` | `not canonical, rule 9` | yes |  |
+| `canonical-text.json` | [22] rule 9: last C1 control | `not canonical, rule 9` | `not canonical, rule 9` | yes |  |
+| `canonical-text.json` | [23] rule 10: a line ending with a space | `not canonical, rule 10` | `not canonical, rule 10` | yes |  |
+| `canonical-text.json` | [24] rule 10: ending with NO-BREAK SPACE | `not canonical, rule 10` | `not canonical, rule 10` | yes |  |
+| `canonical-text.json` | [25] rule 10: a line ending with IDEOGRAPHIC SPACE | `not canonical, rule 10` | `not canonical, rule 10` | yes |  |
 | `canonical-text.json` | [26] U+200B ZERO WIDTH SPACE is not on the space list: canonical (clients may warn) | `canonical` | `canonical` | yes |  |
 | `canonical-text.json` | [27] U+2800 BRAILLE PATTERN BLANK is not on the space list: canonical | `canonical` | `canonical` | yes |  |
-| `canonical-text.json` | [28] rule 4: a final line break | `not canonical, rule 4` | `not canonical, rule 4` | yes |  |
-| `canonical-text.json` | [29] rule 4: only a line break | `not canonical, rule 4` | `not canonical, rule 4` | yes |  |
-| `canonical-text.json` | [30] rule 4: only a space | `not canonical, rule 4` | `not canonical, rule 4` | yes |  |
-| `canonical-text.json` | [31] rule 5: noncharacter U+FDD0 | `not canonical, rule 5` | `not canonical, rule 5` | yes |  |
-| `canonical-text.json` | [32] rule 5: noncharacter U+FFFE | `not canonical, rule 5` | `not canonical, rule 5` | yes |  |
-| `canonical-text.json` | [33] rule 5: noncharacter U+10FFFF | `not canonical, rule 5` | `not canonical, rule 5` | yes |  |
-| `canonical-text.json` | [34] bidirectional controls are canonical (shown visibly before signing terms) | `canonical` | `canonical` | yes |  |
-| `canonical-text.json` | [35] an emoji sequence with ZERO WIDTH JOINER: canonical | `canonical` | `canonical` | yes |  |
+| `canonical-text.json` | [28] rule 10: a final line break | `not canonical, rule 10` | `not canonical, rule 10` | yes |  |
+| `canonical-text.json` | [29] rule 10: only a line break | `not canonical, rule 10` | `not canonical, rule 10` | yes |  |
+| `canonical-text.json` | [30] rule 10: only a space | `not canonical, rule 10` | `not canonical, rule 10` | yes |  |
+| `canonical-text.json` | [31] rule 11: noncharacter U+FDD0 | `not canonical, rule 11` | `not canonical, rule 11` | yes |  |
+| `canonical-text.json` | [32] rule 11: noncharacter U+FFFE | `not canonical, rule 11` | `not canonical, rule 11` | yes |  |
+| `canonical-text.json` | [33] rule 11: noncharacter U+10FFFF | `not canonical, rule 11` | `not canonical, rule 11` | yes |  |
+| `canonical-text.json` | [34] rules 9 and 7 both broken, the control character first: the rule named is 7, the first in  | `not canonical, rule 7` | `not canonical, rule 7` | yes |  |
+| `canonical-text.json` | [35] rules 10, 11 and 8 broken, in that order along the string: the rule named is 8 | `not canonical, rule 8` | `not canonical, rule 8` | yes |  |
+| `canonical-text.json` | [36] bidirectional controls are canonical (shown visibly before signing terms) | `canonical` | `canonical` | yes |  |
+| `canonical-text.json` | [37] an emoji sequence with ZERO WIDTH JOINER: canonical | `canonical` | `canonical` | yes |  |
 | `lock.json` | [0] locked bytes | `c15d29103f120ec9d72a8d5b11dc4bb2` | `c15d29103f120ec9d72a8d5b11dc4bb2` | yes |  |
 | `lock.json` | [0] locked hash | `019fe3993e1b73ffe09c9cabcb3d53309d595892baf77589e3d94af30a22ec3f` | `019fe3993e1b73ffe09c9cabcb3d53309d595892baf77589e3d94af30a22ec3f` | yes |  |
 | `lock.json` | [0] opens to the plaintext | `` | `` | yes |  |
@@ -253,7 +268,7 @@ Where a vector settled a reading the texts left open, `QUESTIONS.md` names it ("
 | `sealed.json` | the container rebuilt from its fixed inputs | `82815820f7afdb94b093e0eba3ffa9e5bcb3fa1dff7cf2f3df9e3b100fc53d22a1ecaceb5906a3838182590460fe25f55a3c37f4fca311eb753175354cbe09908e77c4130898fd488861bbdb8a044492eb746fe78f0fc5441f6f34517952cd48c3eac7987b4e9e98068d70824d46ec1a9df7383d8055df1dfd1d0d3f89f921355896d800d53deec091d5be3c4a02f41275c31324e6bcb5f917f7cc63beec32653cf3dee805bb841273630c7d060bb44289b91a9ce2cfd36e23a4bb534d79e31d42aaa0fc4d557607a3e280dae22c024926f4ce18bd222900f09aaa163fcd1bebfb19befc9f0bf8f55b9f5c087f81ff78c24d69c6fd89f8cac1038f806e80f5e42c75d4ad1fe77b0546b99048cea24808afea5d4d37fb53fc70b7a8e3c61f692d6936b67edf1cd390e80bfe46e54daba1f78df382b36fab78b2871080eb061251913b9a6ddbc4d89b5ff4c758c2c54984b87a9550055c9760f832e49032abeb2f4b18088f5a772d8f7a3570f1d677333ef5c0ce987076aa8483bcb172dc8601d1e2375b6122cfb405cc26e5108c20308ec4b1842fb776363b812042ac0fe179611ebd5f934218a5c850fcffccb17b7902a90ccb28f480c65ebd37a4b0f13bef5da80372b2885c097908394a96f3755c4fdcd33497c87fc2df9ab8cfd585813fb26d51ae9e2723f621800d1f70a971460901d590ed86fef765ed2a32d4b82f28a268cbb9f9c2c17a738587e2adf8cb1186f3bb8b09ab99edfb84641758caa3c7652ce39193355cd945a251eb85c0bab74eb46a719942976d5bcfd3038456be301564be3af1148fa03ad98b3bd25688645b8b5cf4f1f2a7b40958007ab6b6b0f57ae6e114309950db4b9fc7e37d6fdd0730bcdda67bfb6d1295abb8535c72f02c4cc795cd2323ca31a9198b9b662214af6cccd20c5a438deaa07182a0ba907f10ee39684336e8efc7d9038d0929c3d62546dbf33fdf1c09756a4e804c4ab70f5ae05b62f01008910e1864584b72d11833d614ccc8445509266938a8fd24d25048bae3aea8fe781f893dfe53e6c7c41117042ea5c331ccb8876ca117d8527e6ae0125ab04e3db80abcb40aa6bf1a49dfe93255b06d9e7ab6897c73a8478329013c4348a89c94fb8fa50d68cfd54bd4fed6816821c7a00e2971124e5abe151673ce7bd28f8fff78b45b8ddad999645a17d3b7bb3de882ef086ba03cbd5586763d6afc7a89f2d3286945c93074339f93854f9db75d8c702fd3fd4bc423d1136425373af29e8234b6bfb60aa5a458a982f0588e7bb0c3382de6d5bee2e2acb86ebc77a0a6b796b82532e58f5c53f35efccbc77a307da991c57636b89cfc08c31afbf26a745c2d7b0bdd656c4edbb3551e3c33ce4a1ebafe60b4bc7543ce424f98285daa1f6bbe46f109494fdba4999dd806f296cb5d68be61c7c0fcd7833f9fb793edbf1b2c0816392c2f9d48b41820d35146ac3c55a0c9ddecf435839edf219e2b674e6659223fdbedfec0f1423ae22c1653f669a72c7677d024658f23683060c17ec9c8a551d7cd260a94c7d6a6cc81af2f5023cea664353759510bd9bd25786327bd6163c26fc936dca82a2cc52a151f2b9727fcac83cde2c59e3608595379f60a0b7efdf9a427a2b95cde8027f934583084260b06fa4be20f3d265a99e4268cf4a5d78c91cbeda3e22129d83d7c69cd22fac3fd0802f110b2c3b3787c70b81a695818c067e1d79f70215c02094db2c9f8d4cb09e47c19951414415901ee081236f0cbd0efc61cb909e619ea4d7d671042de0f9d02d3fa55bed29660960185b712ace26c549e3c4ab6639e214c91b7f43c6e1f72244f1bf49ecd82c6125c9e55e88ea73b929272d1debf305bcc3e49ae2d769d6a78001441accd8cfdc0cd43c03a011499a86304fba1ea1f78c0939310ee8f59265dce114b82289e61d35fda7a00e7f0fec1dfbf06a7ddbf1873c307e34e758f99bc6a9c4713393d556c87552b76b8f2c74ce49fb33c245f5089f4b0db32d3db23190f6f8acf0157e343f6b0ca29183d27daff5041c053bf52f4561fa9400445281c83badbef6841acba443459fd48ba2510c425995da20cd40ab0df1a8292a661de14b7b450e6b02b463163752aba78d2ba47a05c9f09beb7805b6359097feda94652e88328038ac2bc4fb05c1611ee38066d32e72e7a829726bfc16539a27eb1ce6ea4f4ac4138b8fa44ef8961c881b69efb2e4b285fe5386acd47c11672beb2093da6bd13a37f52cb3ff9d1f2b3dd1eb258eb8fe1a3564e71da4b724b709a8bf4acd529001086087f784401753d3eea02155b2cd36806108b1fc0d9208e803ee00f9c8db82e1927e52ca42eadedbe1d881d17b675caca155d74764b7a90a2aac596a59c2fd94612720907a4a38c9764346a9de4618b79d549b6cfd7d1df7874d9c037d859fabdb51b10fe09b2c8451ab752f93dd4c4f6cc` | `82815820f7afdb94b093e0eba3ffa9e5bcb3fa1dff7cf2f3df9e3b100fc53d22a1ecaceb5906a3838182590460fe25f55a3c37f4fca311eb753175354cbe09908e77c4130898fd488861bbdb8a044492eb746fe78f0fc5441f6f34517952cd48c3eac7987b4e9e98068d70824d46ec1a9df7383d8055df1dfd1d0d3f89f921355896d800d53deec091d5be3c4a02f41275c31324e6bcb5f917f7cc63beec32653cf3dee805bb841273630c7d060bb44289b91a9ce2cfd36e23a4bb534d79e31d42aaa0fc4d557607a3e280dae22c024926f4ce18bd222900f09aaa163fcd1bebfb19befc9f0bf8f55b9f5c087f81ff78c24d69c6fd89f8cac1038f806e80f5e42c75d4ad1fe77b0546b99048cea24808afea5d4d37fb53fc70b7a8e3c61f692d6936b67edf1cd390e80bfe46e54daba1f78df382b36fab78b2871080eb061251913b9a6ddbc4d89b5ff4c758c2c54984b87a9550055c9760f832e49032abeb2f4b18088f5a772d8f7a3570f1d677333ef5c0ce987076aa8483bcb172dc8601d1e2375b6122cfb405cc26e5108c20308ec4b1842fb776363b812042ac0fe179611ebd5f934218a5c850fcffccb17b7902a90ccb28f480c65ebd37a4b0f13bef5da80372b2885c097908394a96f3755c4fdcd33497c87fc2df9ab8cfd585813fb26d51ae9e2723f621800d1f70a971460901d590ed86fef765ed2a32d4b82f28a268cbb9f9c2c17a738587e2adf8cb1186f3bb8b09ab99edfb84641758caa3c7652ce39193355cd945a251eb85c0bab74eb46a719942976d5bcfd3038456be301564be3af1148fa03ad98b3bd25688645b8b5cf4f1f2a7b40958007ab6b6b0f57ae6e114309950db4b9fc7e37d6fdd0730bcdda67bfb6d1295abb8535c72f02c4cc795cd2323ca31a9198b9b662214af6cccd20c5a438deaa07182a0ba907f10ee39684336e8efc7d9038d0929c3d62546dbf33fdf1c09756a4e804c4ab70f5ae05b62f01008910e1864584b72d11833d614ccc8445509266938a8fd24d25048bae3aea8fe781f893dfe53e6c7c41117042ea5c331ccb8876ca117d8527e6ae0125ab04e3db80abcb40aa6bf1a49dfe93255b06d9e7ab6897c73a8478329013c4348a89c94fb8fa50d68cfd54bd4fed6816821c7a00e2971124e5abe151673ce7bd28f8fff78b45b8ddad999645a17d3b7bb3de882ef086ba03cbd5586763d6afc7a89f2d3286945c93074339f93854f9db75d8c702fd3fd4bc423d1136425373af29e8234b6bfb60aa5a458a982f0588e7bb0c3382de6d5bee2e2acb86ebc77a0a6b796b82532e58f5c53f35efccbc77a307da991c57636b89cfc08c31afbf26a745c2d7b0bdd656c4edbb3551e3c33ce4a1ebafe60b4bc7543ce424f98285daa1f6bbe46f109494fdba4999dd806f296cb5d68be61c7c0fcd7833f9fb793edbf1b2c0816392c2f9d48b41820d35146ac3c55a0c9ddecf435839edf219e2b674e6659223fdbedfec0f1423ae22c1653f669a72c7677d024658f23683060c17ec9c8a551d7cd260a94c7d6a6cc81af2f5023cea664353759510bd9bd25786327bd6163c26fc936dca82a2cc52a151f2b9727fcac83cde2c59e3608595379f60a0b7efdf9a427a2b95cde8027f934583084260b06fa4be20f3d265a99e4268cf4a5d78c91cbeda3e22129d83d7c69cd22fac3fd0802f110b2c3b3787c70b81a695818c067e1d79f70215c02094db2c9f8d4cb09e47c19951414415901ee081236f0cbd0efc61cb909e619ea4d7d671042de0f9d02d3fa55bed29660960185b712ace26c549e3c4ab6639e214c91b7f43c6e1f72244f1bf49ecd82c6125c9e55e88ea73b929272d1debf305bcc3e49ae2d769d6a78001441accd8cfdc0cd43c03a011499a86304fba1ea1f78c0939310ee8f59265dce114b82289e61d35fda7a00e7f0fec1dfbf06a7ddbf1873c307e34e758f99bc6a9c4713393d556c87552b76b8f2c74ce49fb33c245f5089f4b0db32d3db23190f6f8acf0157e343f6b0ca29183d27daff5041c053bf52f4561fa9400445281c83badbef6841acba443459fd48ba2510c425995da20cd40ab0df1a8292a661de14b7b450e6b02b463163752aba78d2ba47a05c9f09beb7805b6359097feda94652e88328038ac2bc4fb05c1611ee38066d32e72e7a829726bfc16539a27eb1ce6ea4f4ac4138b8fa44ef8961c881b69efb2e4b285fe5386acd47c11672beb2093da6bd13a37f52cb3ff9d1f2b3dd1eb258eb8fe1a3564e71da4b724b709a8bf4acd529001086087f784401753d3eea02155b2cd36806108b1fc0d9208e803ee00f9c8db82e1927e52ca42eadedbe1d881d17b675caca155d74764b7a90a2aac596a59c2fd94612720907a4a38c9764346a9de4618b79d549b6cfd7d1df7874d9c037d859fabdb51b10fe09b2c8451ab752f93dd4c4f6cc` | yes |  |
 | `verdicts.json` | agreements[0] a deal one party has not signed: does not exist | `does not exist` | `does not exist` | yes | Agreements rule 1 |
 | `verdicts.json` | agreements[1] a deal every party signed: exists | `exists` | `exists` | yes | Agreements rule 1 |
-| `verdicts.json` | agreements[2] two complete versions of one version: a fork, the version before it the reference | `{"branches":2,"reference":"8036edf3c6589b19f5e510d57713f3abe3ccb0b94a0ba654b7beeefbc6602749","tangled":false}` | `{"branches":2,"reference":"8036edf3c6589b19f5e510d57713f3abe3ccb0b94a0ba654b7beeefbc6602749","tangled":false}` | yes | Agreements rule 47 |
+| `verdicts.json` | agreements[2] two complete versions of one version: a fork, the version before it the reference | `{"branches":2,"reference":"cb5bc23cb3c49cdaa1947aff0390d8c026da201f5c9578534897835110b6e35c","tangled":false}` | `{"branches":2,"reference":"cb5bc23cb3c49cdaa1947aff0390d8c026da201f5c9578534897835110b6e35c","tangled":false}` | yes | Agreements rule 47 |
 | `verdicts.json` | agreements[3] a collective's act its area needs two holders for, signed by one: does not count | `false` | `false` | yes | Agreements rules 60 and 65 |
 | `verdicts.json` | agreements[4] the same signed by both holders: counts | `true` | `true` | yes | Agreements rules 60 and 65 |
 | `verdicts.json` | agreements[5] an act of a grant key within its reach, the grant accepted: backed | `backed` | `backed` | yes | Agreements rules 73 and 80 |
@@ -264,11 +279,31 @@ Where a vector settled a reading the texts left open, `QUESTIONS.md` names it ("
 | `verdicts.json` | agreements[10] an act the revocation misses, recorded by a keeper of a deal it belongs to before the revocation: disputed | `disputed` | `disputed` | yes | Agreements rule 76 |
 | `verdicts.json` | agreements[11] a deal's keeper recorded the act before the rotation: disputed | `disputed` | `disputed` | yes | Agreements rule 41; Identity rule 34 |
 | `verdicts.json` | agreements[12] the deal's keeper recorded the act only after the rotation: void | `void` | `void` | yes | Agreements rule 41; Identity rule 34 |
-| `verdicts.json` | agreements[13] a deadline met by an anchor of the act | `met, by an anchor of the act` | `met, by an anchor of the act` | yes | Agreements rule 33 |
-| `verdicts.json` | agreements[14] a deadline met by both keepers' records lying before their records anchored by the point | `met, by the keepers' anchored records` | `met, by the keepers' anchored records` | yes | Agreements rule 33 |
-| `verdicts.json` | agreements[15] a deadline missed: both keepers' sequences anchored past the point hold no record of the act | `missed` | `missed` | yes | Agreements rule 33 |
-| `verdicts.json` | agreements[16] a deadline with no anchor: undetermined | `undetermined` | `undetermined` | yes | Agreements rule 33 |
-| `verdicts.json` | agreements[17] an anchor of the act wins over the keepers' silence | `met, by an anchor of the act` | `met, by an anchor of the act` | yes | Agreements rule 33 |
+| `verdicts.json` | agreements[13] a keeper's record of an act belonging to its deal at depth two, before the rotation: disputed | `disputed` | `disputed` | yes | Agreements, "Belongs to" (no fixed depth); rules 41 and 42; Identity rule 34 |
+| `verdicts.json` | agreements[14] the same at a verifier not holding the obligation: unknown | `unknown` | `unknown` | yes | Agreements, "Belongs to": unknown beyond an act not held; Identity, "A verifier that cannot tell answers unknown" |
+| `verdicts.json` | agreements[15] an act naming the founding, its history holding a clone in force: the clone's keeper recorded it before the rotation: disputed | `disputed` | `disputed` | yes | Agreements, "Belongs to": its keepers are those of the version in force for the act; rules 41 and 42 |
+| `verdicts.json` | agreements[16] the same recorded only by the founding's keeper, whom the clone replaced: void | `void` | `void` | yes | Agreements, "Belongs to": its keepers are those of the version in force for the act; rules 41 and 42 |
+| `verdicts.json` | agreements[17] a collective's act of the payment cMIP an operational clone names, after the record putting that clone in force: counts | `true` | `true` | yes | Agreements, record (type 17): an operational clone recorded is in force at once; rules 60 and 65 |
+| `verdicts.json` | agreements[18] the same kind of act signed before the record: does not count | `false` | `false` | yes | Agreements, record (type 17); rule 60 |
+| `verdicts.json` | agreements[19] a collective's closing signed by every member with a chain signature: complete | `{"complete":true}` | `{"complete":true}` | yes | Agreements rule 47a; Identity, chain signatures |
+| `verdicts.json` | agreements[20] the same, one member's chain signature not held: not complete | `{"complete":false}` | `{"complete":false}` | yes | Agreements rule 47a |
+| `verdicts.json` | agreements[21] an act of the collective after its closing: it does not count | `false` | `false` | yes | Agreements rules 47a and 60 |
+| `verdicts.json` | agreements[22] an act of the collective before its closing: it still counts | `true` | `true` | yes | Agreements rules 47a and 60 |
+| `verdicts.json` | agreements[23] a collective's fork into two sides, each successor founded first, signed by every member with a chain signature: complete | `{"complete":true}` | `{"complete":true}` | yes | Agreements rule 47a; Identity, chain signatures |
+| `verdicts.json` | agreements[24] the same, one member's chain signature not held: not complete | `{"complete":false}` | `{"complete":false}` | yes | Agreements rule 47a |
+| `verdicts.json` | agreements[25] an act of the original after its fork: it does not count | `false` | `false` | yes | Agreements rules 47a and 60 |
+| `verdicts.json` | agreements[26] an act of the original before its fork: it still counts | `true` | `true` | yes | Agreements rules 47a and 60 |
+| `verdicts.json` | agreements[27] a deal one of whose parties is an agreement, signed by the other party and by every party of that agreement: exists | `exists` | `exists` | yes | Agreements rule 1; an agreement as a party, named by its line |
+| `verdicts.json` | agreements[28] the same without one party of the inner agreement signing it: does not exist | `does not exist` | `does not exist` | yes | Agreements rule 1 |
+| `verdicts.json` | agreements[29] a deal's fork settled by the judge its terms name, within its period: the version kept is in force | `d1b693e51018bd9d7ef9894b703305fecca2ca7c6f2bd4beb94f908e1f1a742f` | `d1b693e51018bd9d7ef9894b703305fecca2ca7c6f2bd4beb94f908e1f1a742f` | yes | Agreements rules 34a and 47 |
+| `verdicts.json` | agreements[30] the next link of the chain settling while the first judge's period runs: the deal stays on its reference | `51733b8cf9146e20e4ade3acdfbe424a112c7358ea8653776098822b86802685` | `51733b8cf9146e20e4ade3acdfbe424a112c7358ea8653776098822b86802685` | yes | Agreements rule 34a |
+| `verdicts.json` | agreements[31] the first judge's period passed with no answer: the next link settles, keeping B | `19149abc484faf6a1184de92a9469af82ee9857dc8c5f1a7c782d85e18eb2fb4` | `19149abc484faf6a1184de92a9469af82ee9857dc8c5f1a7c782d85e18eb2fb4` | yes | Agreements rule 34a |
+| `verdicts.json` | agreements[32] the first judge answering after its period: counts for nothing, the next link's settlement stands | `19149abc484faf6a1184de92a9469af82ee9857dc8c5f1a7c782d85e18eb2fb4` | `19149abc484faf6a1184de92a9469af82ee9857dc8c5f1a7c782d85e18eb2fb4` | yes | Agreements rule 34a |
+| `verdicts.json` | agreements[33] a deadline met by an anchor of the act | `met, by an anchor of the act` | `met, by an anchor of the act` | yes | Agreements rule 33 |
+| `verdicts.json` | agreements[34] a deadline met by both keepers' records lying before their records anchored by the point | `met, by the keepers' anchored records` | `met, by the keepers' anchored records` | yes | Agreements rule 33 |
+| `verdicts.json` | agreements[35] a deadline missed: both keepers' sequences anchored past the point hold no record of the act | `missed` | `missed` | yes | Agreements rule 33 |
+| `verdicts.json` | agreements[36] a deadline with no anchor: undetermined | `undetermined` | `undetermined` | yes | Agreements rule 33 |
+| `verdicts.json` | agreements[37] an anchor of the act wins over the keepers' silence | `met, by an anchor of the act` | `met, by an anchor of the act` | yes | Agreements rule 33 |
 | `verdicts.json` | development[0] a payment cMIP: field 2 lists Money's task 6 | `a specification` | `a specification` | yes | Development, "How the content is decoded" |
 | `verdicts.json` | development[1] a rail Module under a payment cMIP, with fields 11 and 13 | `a specification` | `a specification` | yes | Development, "A rail Module's kind and binding" |
 | `verdicts.json` | development[2] a rail Module under a payment cMIP without fields 11 and 13: no specification | `no specification` | `no specification` | yes | Development, "A rail Module's kind and binding" |
@@ -286,26 +321,51 @@ Where a vector settled a reading the texts left open, `QUESTIONS.md` names it ("
 | `verdicts.json` | identity[2] a rotation counting on its home's receipt | `valid` | `valid` | yes | Identity, "Which rotation counts"; receipt checks 1 to 6 |
 | `verdicts.json` | identity[3] a rotation not yet receipted: pending | `pending` | `pending` | yes | Identity rule 28 |
 | `verdicts.json` | identity[4] an act bound to a pending rotation: pending | `pending` | `pending` | yes | Identity rule 28; everyday check 2 |
-| `verdicts.json` | identity[5] two genuine rotations receipted by one home: contested | `{"counting":["6142d9a030392b310b94879792d8b7158dc3fe4482262dc5d0f7e80bcc15a88b"],"dishonest":[],"next":"contested"}` | `{"counting":["6142d9a030392b310b94879792d8b7158dc3fe4482262dc5d0f7e80bcc15a88b"],"dishonest":[],"next":"contested"}` | yes | Identity rule 44; "Conflicting receipts" 1 |
+| `verdicts.json` | identity[5] two genuine rotations receipted by one home: contested | `{"counting":["97f7df67b8e60c0ae8581ccb83a572333a7fca79a7432b0adf257ff16477d4ba"],"dishonest":[],"next":"contested"}` | `{"counting":["97f7df67b8e60c0ae8581ccb83a572333a7fca79a7432b0adf257ff16477d4ba"],"dishonest":[],"next":"contested"}` | yes | Identity rule 44; "Conflicting receipts" 1 |
 | `verdicts.json` | identity[6] an act a rotation disowns: void | `void` | `void` | yes | Identity rule 34 |
 | `verdicts.json` | identity[7] a disowned act another identity acknowledged: disputed | `disputed` | `disputed` | yes | Identity rule 34 |
 | `verdicts.json` | identity[8] a disowned act its deal's keeper recorded before the rotation: disputed | `disputed` | `disputed` | yes | Identity rule 34; Agreements rules 41 and 42, "Belongs to", "Keeper record (type 2)" |
 | `verdicts.json` | identity[9] the same recorded by a keeper the deal does not name: void | `void` | `void` | yes | Agreements rule 42; Identity rule 34 |
 | `verdicts.json` | identity[10] an escape: a homeless rotation endorsed by the signing key | `valid` | `valid` | yes | Identity, "The homeless procedure", the escape |
 | `verdicts.json` | identity[11] a rotation declaring a successor: it counts, the succession declared | `valid` | `valid` | yes | Identity, "Succession" |
-| `verdicts.json` | identity[12] a receipt from an operator that is no home of the identity changes nothing | `pending` | `pending` | yes | Identity, receipt check 3 |
-| `verdicts.json` | identity[13] a home receipting two genuine rotations at one position, both under cosigned summaries: proven dishonest there | `{"counting":["866ce6c0fdf6a7e5788a72c92534b3300f547413022a4f40da0d8425d47df340","e265d9f7ca45d19a64d5d66d8ff912071fbbcb495a255ea1a562038d98e26fe0","7a8c67b59e1af274b1a6f0917607df442391610ecc6c284a56c44467ea5857ce"],"dishonest":[{"from_position":2,"operator":"7cbcdf4e8cbf9b7f16517634c2aefad0e329f92e063230119f879da27deb4f0f"}],"next":"end"}` | `{"counting":["866ce6c0fdf6a7e5788a72c92534b3300f547413022a4f40da0d8425d47df340","e265d9f7ca45d19a64d5d66d8ff912071fbbcb495a255ea1a562038d98e26fe0","7a8c67b59e1af274b1a6f0917607df442391610ecc6c284a56c44467ea5857ce"],"dishonest":[{"from_position":2,"operator":"7cbcdf4e8cbf9b7f16517634c2aefad0e329f92e063230119f879da27deb4f0f"}],"next":"end"}` | yes | Identity rule 45; "Conflicting receipts" 3 |
+| `verdicts.json` | identity[12] the succession, unconfirmed: declared, not followed | `{"seen":"declared","successor":"68b8d3cf11bc79126a22006fc6ea52a992d443eb28794f4898a99d557018bb16"}` | `{"seen":"declared","successor":"68b8d3cf11bc79126a22006fc6ea52a992d443eb28794f4898a99d557018bb16"}` | yes | Identity, "Succession" |
+| `verdicts.json` | identity[13] the succession confirmed by the successor's link confirmation naming the rotation: followed | `{"confirmation":"ff75b8e3440884830715d6cfdac20beb069104edf0b5d1c4cddbb11126507567","seen":"confirmed, followed","successor":"68b8d3cf11bc79126a22006fc6ea52a992d443eb28794f4898a99d557018bb16"}` | `{"confirmation":"ff75b8e3440884830715d6cfdac20beb069104edf0b5d1c4cddbb11126507567","seen":"confirmed, followed","successor":"68b8d3cf11bc79126a22006fc6ea52a992d443eb28794f4898a99d557018bb16"}` | yes | Identity, "Succession" |
+| `verdicts.json` | identity[14] a receipt from an operator that is no home of the identity changes nothing | `pending` | `pending` | yes | Identity, receipt check 3 |
+| `verdicts.json` | identity[15] a home receipting two genuine rotations at one position, both under cosigned summaries: proven dishonest there | `{"counting":["059f2c131eab77b8d395166260c4bd095d821d3bd73f7c44c2d8ca2ed753db3a","e5d6ca1cf434b2b27489ebc2a3ebdbc84adc328a0f40bb8c1b4444a6ef08865a","cde247e46d2d9c26ee7a7e8adba3dd10ac2eb80d68c114b52901590a3b3bffdb"],"dishonest":[{"from_position":2,"operator":"d298e733c2b1147b5c9ed3973da056c8ee966c00f81c574db77671c4c37640f6"}],"next":"end"}` | `{"counting":["059f2c131eab77b8d395166260c4bd095d821d3bd73f7c44c2d8ca2ed753db3a","e5d6ca1cf434b2b27489ebc2a3ebdbc84adc328a0f40bb8c1b4444a6ef08865a","cde247e46d2d9c26ee7a7e8adba3dd10ac2eb80d68c114b52901590a3b3bffdb"],"dishonest":[{"from_position":2,"operator":"d298e733c2b1147b5c9ed3973da056c8ee966c00f81c574db77671c4c37640f6"}],"next":"end"}` | yes | Identity rule 45; "Conflicting receipts" 3 |
+| `verdicts.json` | identity[16] two rotations at one position, both passing the checks, the home rule deciding for the other: not counting | `not counting` | `not counting` | yes | Identity, "Which rotation counts", a rotation that does not count; rules 40 and 41 |
+| `verdicts.json` | identity[17] an act bound to the rotation that does not count: invalid | `invalid` | `invalid` | yes | Identity, "Which rotation counts", a rotation that does not count; everyday check 2 |
+| `verdicts.json` | identity[18] an act bound to a contested rotation: pending | `pending` | `pending` | yes | Identity rule 42; rule 44; everyday check 2 |
+| `verdicts.json` | identity[19] a kept tip whose summary does not fit its line, the line held: the tip keeps nothing, itself void | `void` | `void` | yes | Identity, rotation check 7; rules 33 and 34 |
+| `verdicts.json` | identity[20] an act below that tip: void | `void` | `void` | yes | Identity, rotation check 7; rules 33 and 34 |
+| `verdicts.json` | identity[21] an act on the rotation's other tip, which fits: valid | `valid` | `valid` | yes | Identity, rotation check 7; rules 33 and 34 |
+| `verdicts.json` | identity[22] a rotation whose one kept tip does not fit its line, the line held: it stands, valid | `valid` | `valid` | yes | Identity, rotation check 7 |
+| `verdicts.json` | identity[23] its tip, which does not fit: void, kept by nothing | `void` | `void` | yes | Identity, rotation check 7; rule 34 |
+| `verdicts.json` | identity[24] a disowned act acknowledged only by an act signed with another identity's scoped key: void | `void` | `void` | yes | Identity rule 34 |
+| `verdicts.json` | identity[25] a private link claim, its key held, found at no home of its signer: unknown | `unknown` | `unknown` | yes | Identity, "Private links" (rule 17) |
+| `verdicts.json` | identity[26] the same found at its signer's own home: valid | `valid` | `valid` | yes | Identity, "Private links" (rule 17) |
 | `verdicts.json` | mir_hashes[0] a frozen text, no final line break | `ec1e24592603caf5947ad7b2105cb65dea5a60c794c9d46c25ffdb9d7eb67634` | `ec1e24592603caf5947ad7b2105cb65dea5a60c794c9d46c25ffdb9d7eb67634` | yes | Development rule 26 |
 | `verdicts.json` | mir_hashes[1] the same with one final line break, not part of the text | `ec1e24592603caf5947ad7b2105cb65dea5a60c794c9d46c25ffdb9d7eb67634` | `ec1e24592603caf5947ad7b2105cb65dea5a60c794c9d46c25ffdb9d7eb67634` | yes | Development rule 26 |
-| `verdicts.json` | mir_hashes[2] the same as a draft, its status line dropped from the header | `ec1e24592603caf5947ad7b2105cb65dea5a60c794c9d46c25ffdb9d7eb67634` | `ec1e24592603caf5947ad7b2105cb65dea5a60c794c9d46c25ffdb9d7eb67634` | yes | Development rule 26 |
-| `verdicts.json` | mir_hashes[3] two final line breaks: refused | `null` | `null` | yes | Development rule 26 |
-| `verdicts.json` | mir_hashes[4] a trailing space: refused | `null` | `null` | yes | Development rule 26 |
+| `verdicts.json` | mir_hashes[2] the same as a draft: its status line is part of the text, like every line of the file | `0f9e8a4acf770cd0f9098be4e376445e469898f3ba6bf91508350d517528890c` | `0f9e8a4acf770cd0f9098be4e376445e469898f3ba6bf91508350d517528890c` | yes | Development rule 26 |
+| `verdicts.json` | mir_hashes[3] an italic line after the title, then one final line break: the italic line is part of the text | `dc94f22d534e45f828d40444ace3ed10034156613704640a75ae7feebf75ca72` | `dc94f22d534e45f828d40444ace3ed10034156613704640a75ae7feebf75ca72` | yes | Development rule 26 |
+| `verdicts.json` | mir_hashes[4] two final line breaks: refused | `null` | `null` | yes | Development rule 26 |
+| `verdicts.json` | mir_hashes[5] a trailing space: refused | `null` | `null` | yes | Development rule 26 |
 | `verdicts.json` | money[0] a receipt and a claim of one payment agreeing: no question on the receiver | `0` | `0` | yes | Money rule 11 |
 | `verdicts.json` | money[1] a receipt for less than the claim: a question on the receiver | `1` | `1` | yes | Money rule 11 |
-| `verdicts.json` | money[2] a payee's receipt signed with its grant key: backed | `backed` | `backed` | yes | Money rule 7; Agreements rules 73 and 80 |
-| `verdicts.json` | money[3] a collective's receipt signed with the member key of its Money area's holder: counts | `true` | `true` | yes | Money rule 7; Agreements rules 60 and 73 |
-| `verdicts.json` | money[4] the same signed with the member key of a member holding no Money area: does not count | `false` | `false` | yes | Money rule 7; Agreements rule 73 |
-| `verdicts.json` | money[5] a transfer to one's vault naming the vault's declaration: valid, and it pays no obligation | `0` | `0` | yes | Money, "What a payment fulfils" |
+| `verdicts.json` | money[2] two receipts whose proofs differ in bytes, the rail saying one payment: counted once | `60` | `60` | yes | Money rule 12; rules 10 and 11 |
+| `verdicts.json` | money[3] the same two receipts, the rail saying two payments: both count | `120` | `120` | yes | Money rule 12; rules 10 and 11 |
+| `verdicts.json` | money[4] the same two receipts, no rail answer saying which payment each is: unknown | `unknown` | `unknown` | yes | Money rule 12; rules 10 and 11 |
+| `verdicts.json` | money[5] two receipts carrying byte-identical proofs, no rail answer saying which payment: unknown | `unknown` | `unknown` | yes | Money rule 12; rules 10 and 11 |
+| `verdicts.json` | money[6] the same, the rail saying the proof is one payment: counted once | `60` | `60` | yes | Money rule 12; rules 10 and 11 |
+| `verdicts.json` | money[7] a vow's sale, the rail's answer stated: one sale, pending | `{"sales":[{"act":"7ed755625c992fbb18c8f68e014a567b5afa98cccd27be8e7622a5015ca45cc5","buyer":"dde9350c751bf2ef6aa1af3ba96695599f53624758002a38561ace75d0411aca","state":"pending"}],"unknown":[],"unsigned":[]}` | `{"sales":[{"act":"7ed755625c992fbb18c8f68e014a567b5afa98cccd27be8e7622a5015ca45cc5","buyer":"dde9350c751bf2ef6aa1af3ba96695599f53624758002a38561ace75d0411aca","state":"pending"}],"unknown":[],"unsigned":[]}` | yes | Money rule 12; Envelopes, "Vows"; Agreements rule 13 |
+| `verdicts.json` | money[8] the same without the rail's answer: the sale stands, the receipt's place unknown | `{"sales":[{"act":"7ed755625c992fbb18c8f68e014a567b5afa98cccd27be8e7622a5015ca45cc5","buyer":"dde9350c751bf2ef6aa1af3ba96695599f53624758002a38561ace75d0411aca","state":"pending"}],"unknown":["0136fd76144ec4890d4bf9d7f39f1b0f68ae4c64075ca1c59741f477d83fd6bd"],"unsigned":[]}` | `{"sales":[{"act":"7ed755625c992fbb18c8f68e014a567b5afa98cccd27be8e7622a5015ca45cc5","buyer":"dde9350c751bf2ef6aa1af3ba96695599f53624758002a38561ace75d0411aca","state":"pending"}],"unknown":["0136fd76144ec4890d4bf9d7f39f1b0f68ae4c64075ca1c59741f477d83fd6bd"],"unsigned":[]}` | yes | Money rule 12; Envelopes, "Vows" |
+| `verdicts.json` | money[9] a sale confirmed by the buyer's later claim acknowledging the door's record, the rail's answer stated: confirmed | `{"sales":[{"act":"0e970f55fd2186c17d22c305044257e6f0808c5540da0f7a6c94cb140acb2aee","buyer":"dde9350c751bf2ef6aa1af3ba96695599f53624758002a38561ace75d0411aca","state":"confirmed"}],"unknown":[],"unsigned":[]}` | `{"sales":[{"act":"0e970f55fd2186c17d22c305044257e6f0808c5540da0f7a6c94cb140acb2aee","buyer":"dde9350c751bf2ef6aa1af3ba96695599f53624758002a38561ace75d0411aca","state":"confirmed"}],"unknown":[],"unsigned":[]}` | yes | Money rule 12; Envelopes, "Vows" |
+| `verdicts.json` | money[10] the same without the rail's answer: three records whose payment is not stated, so three pairs the vow depends on: unknown | `unknown` | `unknown` | yes | Money rule 12; Envelopes, "Vows" |
+| `verdicts.json` | money[11] a refund owed on a payment, repaid by the payer's receipt naming its claim of that payment, the rail's answer stated: repaid | `300` | `300` | yes | Money rules 10a and 12; Agreements, refunds |
+| `verdicts.json` | money[12] the same without the rail's answer: unknown | `unknown` | `unknown` | yes | Money rules 10a and 12 |
+| `verdicts.json` | money[13] a payee's receipt signed with its grant key: backed | `backed` | `backed` | yes | Money rule 7; Agreements rules 73 and 80 |
+| `verdicts.json` | money[14] a collective's receipt signed with the member key of its Money area's holder: counts | `true` | `true` | yes | Money rule 7; Agreements rules 60 and 73 |
+| `verdicts.json` | money[15] the same signed with the member key of a member holding no Money area: does not count | `false` | `false` | yes | Money rule 7; Agreements rule 73 |
+| `verdicts.json` | money[16] a payment to oneself naming one's own genesis: valid, and it pays no obligation | `0` | `0` | yes | Money, "What a payment fulfils" |
 | `verdicts.json` | text[0] a text act, canonical | `valid` | `valid` | yes | Text rules 1 and 7 to 12; "Text act (type 0)" |
 | `verdicts.json` | text[1] a text act whose text is not in NFC: invalid | `invalid` | `invalid` | yes | Text rule 12 |
 | `verdicts.json` | text[2] a text act carrying two objects: invalid | `invalid` | `invalid` | yes | Text rule 14 |
