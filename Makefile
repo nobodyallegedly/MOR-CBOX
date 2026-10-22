@@ -35,7 +35,7 @@ $(REL)/%.o: %.c $(wildcard src/*.h tools/*.h tests/*.h)
 $(SAN)/%.o: %.c $(wildcard src/*.h tools/*.h tests/*.h)
 	@mkdir -p $(dir $@)
 	$(CC) $(SAN_CFLAGS) -c $< -o $@
-$(FUZ)/%.o: %.c $(wildcard src/*.h tools/*.h)
+$(FUZ)/%.o: %.c $(wildcard src/*.h tools/*.h fuzz/*.h)
 	@mkdir -p $(dir $@)
 	$(CC) $(FUZ_CFLAGS) -c $< -o $@
 
@@ -59,7 +59,7 @@ $(FUZ)/fuzz_%: $(FUZ)/fuzz/fuzz_%.o $(FUZ)/tools/json.o $(FUZ)/libmor.a
 # The engine target links a library built with MOR_FUZZ_NOSIG (signatures
 # taken as valid), never the verifier's.
 FZN := build/fuzznosig
-$(FZN)/%.o: %.c $(wildcard src/*.h tools/*.h)
+$(FZN)/%.o: %.c $(wildcard src/*.h tools/*.h fuzz/*.h)
 	@mkdir -p $(dir $@)
 	$(CC) $(FUZ_CFLAGS) -DMOR_FUZZ_NOSIG -c $< -o $@
 $(FZN)/libmor.a: $(SRC:%.c=$(FZN)/%.o)

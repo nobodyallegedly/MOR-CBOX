@@ -1,0 +1,40 @@
+{
+  "description": "tagged_hash(tag, x) = SHA-256(SHA-256(tag) || SHA-256(tag) || x), tag as UTF-8 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26d8d4a77f82863f1a0f2df0d3b920cff2f9aa1698400b64b3d",
+      "tag": "MOR/act"
+    },
+    {
+      "data": "616263",
+      "hash": "4cc57f2538799d9aec0111673d5c160039db163f10f9a637b71f3ba4f1dc800f",
+      "tag": "MOR/inside"
+    },
+    {
+      "data": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "efbee68e67b0520764a20b2b8fbd40a04e6a299b4b0216bee1194d2b0b6b323c",
+      "tag": "MOR/mmr-leaf"
+    },
+    {
+      "data": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "fec65cf79c6c16b27c583087de39941abc515711b1aa6a6741feae028f9a6d20",
+      "tag": "MOR/mmr-node"
+    },
+    {
+      "data": "5468616e6b20796f75",
+      "hash": "68240dc771569485395972aed57f92a93d723174283c2abbe30b9c3b3b3e93e0",
+      "tag": "MOR/work"
+    },
+    {
+      "data": "a0",
+      "hash": "ecfed5fb0b06a2bf7809d3328f5b85767eec81e74ec361aa7b47520724289716",
+      "tag": "MOR/spec"
+    },
+    {
+      "data": "020202020202020202020202020202020202020202020202020202020202020202",
+      "hash": "30e5b63eb493f46eb28b8e136b13e6bbdcec27e0293ebb402e7e995e27e55464",
+      "tag": "MOR/safety"
+    }
+  ]
+}

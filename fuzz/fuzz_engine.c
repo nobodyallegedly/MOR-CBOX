@@ -13,6 +13,7 @@
 #include "../src/money.h"
 #include "../src/verdict.h"
 #include "fuzz_common.h"
+#include "fuzz_facts.h"
 
 static size_t build(uint8_t *out, size_t cap, const uint8_t *r, size_t n)
 {
@@ -103,6 +104,7 @@ int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size)
 	mor_world w;
 	if (mor_world_init(&w, a, fuzz_mir, acts, lens, k))
 		return 0;
+	fuzz_facts(&w, a);
 	static const uint8_t rule0[2] = { 0x81, 0x00 };
 	const mor_cbor *rule;
 	if (mor_cbor_decode(rule0, 2, a, &rule))
@@ -123,6 +125,7 @@ int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size)
 		uint8_t keepers[1][32];
 		memcpy(keepers[0], s, 32);
 		(void)mor_deadline(&w, x->id, (const uint8_t(*)[32])keepers, 1, rule, (const uint8_t *)"c", 1, 100);
+		fuzz_ask_more(&w, x);
 	}
 	return 0;
 }
