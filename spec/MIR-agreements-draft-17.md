@@ -100,7 +100,7 @@ No rule of a lower layer depends on Agreements. Where Agreements need a lower la
   - an obligation, through the agreement or offer it arises from (its field 4);
   - a standing offer, through the agreement it is made under (its field 0); a lone seller's offer is itself the agreement its payments belong to.
 
-  An act may belong to several agreements. An act that belongs to none (a post, a work claim alone, a rotation) has no keeper of its own: only an anchor places it.
+  An act may belong to several agreements. An act that belongs to none (a post, a work claim alone, a rotation) has no keeper of its own: only an anchor places it. A verifier follows "belongs to" from act to act, each `objects` entry or act answered being one step, as far as the acts it holds allow, at no fixed depth. What it finds through acts it holds stands; where a step names an act it does not hold, whether the act belongs to anything beyond that step is unknown to it.
 
   **Its keepers are those of the version in force for the act.** For a deal, the latest complete version, on the line of the version the act names, that the act's history holds (what its `prev` and `objects` name, followed back), or the version it names where its history holds none on that line; for a collective, the agreement in force at the act (rule 60). Every action and decision of a collective belongs to the collective's agreement, whatever it names: an act of the collective's own key, of a grant key the collective issued, or of a holder's member key (rule 73). Its genesis, its rotations and its Identity everyday acts belong to none, as every identity's. *A keeper a clone removed no longer speaks for acts under the clone; a keeper a clone added speaks from the version naming it.* *Every party's acts on an agreement, the payer's and the payee's alike, fall under its keepers; a keeper chosen for one deal never speaks for acts outside it.*
 - **Arbitrator or verifier.** A third party named by an agreement to judge content (escrow and milestones, arbitration, regulated checks). Unlike a keeper, it receives the keys of the acts it must judge, by ordinary key delivery.
@@ -1129,7 +1129,7 @@ Where a third party must judge content (escrow and milestones, arbitration, regu
 
 *In short: an agreement is never edited. A change is a new version, a clone, that names the version before it and comes into force only when everyone it needs has signed.*
 
-A clone is new terms naming the parent and the parent's latest act. Its mark (field 4) names each power its changes require (rule 64, or rule 47 for a deal). For each power, it names the parties whose signatures meet it (rule 65, or rule 47 for a deal).
+A clone is new terms naming the parent and the parent's latest act. *Client conformance:* the latest act is the latest the client holds; a verifier accepts any act of the parent's chain. Its mark (field 4) names each power its changes require (rule 64, or rule 47 for a deal). For each power, it names the parties whose signatures meet it (rule 65, or rule 47 for a deal).
 
 A clone is a draft until all of these hold:
 - every party its mark names has a valid signature act naming it, and every holder it names under a power counted among holders (`[5, stake]`, or a constitutional change rule counted among a stake's holders);
@@ -2877,7 +2877,8 @@ terms-payload = {
                             ; the form is under "Split plan and split"
   ? 9 => abandonment,       ; the abandonment clause
   ; 10, the concurrency rule, is withdrawn: rule 90's default stands; never reused
-  ? 11 => hash,             ; parent: the agreement this one clones (with its latest act in objects)
+  ? 11 => hash,             ; parent: the agreement this one clones; objects names it as chain and, as predecessor,
+                            ; an act of its chain, the latest the signer's client holds (rule 45)
   ? 12 => key-grammar,      ; present if this agreement founds a collective
   ? 13 => [+ hash],         ; arbitrators or verifiers named, who receive keys to judge content
   ? 14 => hash / [+ hash],  ; where incoming payments go to a split service: in a collective, its grant (one hash);

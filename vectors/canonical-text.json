@@ -1,5 +1,5 @@
 {
-  "description": "Canonical text (Text). `rule` is the first rule broken, checking rules 1 to 5 in text order and rule 6 (NFC, Unicode 17.0 tables) last; null if canonical.",
+  "description": "Canonical text (Text rules 7 to 13). `rule` is the rule broken, numbered as Text numbers it: where several are broken, the first of rules 7 to 12 in the order numbered, each checked over the whole string before the next, rule 12 (NFC, Unicode 17.0 tables) last; null if canonical.",
   "unicode_version": "17.0.0",
   "vectors": [
     {
@@ -115,7 +115,7 @@
         "U+0301"
       ],
       "note": "e plus combining acute: not NFC",
-      "rule": 6,
+      "rule": 12,
       "utf8": "43616665cc81"
     },
     {
@@ -124,7 +124,7 @@
         "U+212B"
       ],
       "note": "ANGSTROM SIGN: a singleton, not NFC (NFC is U+00C5)",
-      "rule": 6,
+      "rule": 12,
       "utf8": "e284ab"
     },
     {
@@ -134,7 +134,7 @@
         "U+1161"
       ],
       "note": "Hangul L+V jamo: not NFC (composes to U+AC00)",
-      "rule": 6,
+      "rule": 12,
       "utf8": "e18480e185a1"
     },
     {
@@ -165,7 +165,7 @@
         "U+1ADD"
       ],
       "note": "the same two marks out of canonical order: not NFC under the pinned Unicode 17.0 tables; a verifier using 16.0 tables would wrongly accept it",
-      "rule": 6,
+      "rule": 12,
       "utf8": "61e1ab90e1ab9d"
     },
     {
@@ -195,8 +195,8 @@
         "U+FEFF",
         "U+0062"
       ],
-      "note": "rule 1: U+FEFF inside the text",
-      "rule": 1,
+      "note": "rule 7: U+FEFF inside the text",
+      "rule": 7,
       "utf8": "61efbbbf62"
     },
     {
@@ -209,8 +209,8 @@
         "U+006C",
         "U+006F"
       ],
-      "note": "rule 1: a byte order mark at the start",
-      "rule": 1,
+      "note": "rule 7: a byte order mark at the start",
+      "rule": 7,
       "utf8": "efbbbf48656c6c6f"
     },
     {
@@ -221,8 +221,8 @@
         "U+000A",
         "U+0062"
       ],
-      "note": "rule 2: CR",
-      "rule": 2,
+      "note": "rule 8: CR",
+      "rule": 8,
       "utf8": "610d0a62"
     },
     {
@@ -232,8 +232,8 @@
         "U+2028",
         "U+0062"
       ],
-      "note": "rule 2: LINE SEPARATOR",
-      "rule": 2,
+      "note": "rule 8: LINE SEPARATOR",
+      "rule": 8,
       "utf8": "61e280a862"
     },
     {
@@ -243,8 +243,8 @@
         "U+2029",
         "U+0062"
       ],
-      "note": "rule 2: PARAGRAPH SEPARATOR",
-      "rule": 2,
+      "note": "rule 8: PARAGRAPH SEPARATOR",
+      "rule": 8,
       "utf8": "61e280a962"
     },
     {
@@ -254,8 +254,8 @@
         "U+0009",
         "U+0062"
       ],
-      "note": "rule 3: TAB",
-      "rule": 3,
+      "note": "rule 9: TAB",
+      "rule": 9,
       "utf8": "610962"
     },
     {
@@ -265,8 +265,8 @@
         "U+0000",
         "U+0062"
       ],
-      "note": "rule 3: NUL",
-      "rule": 3,
+      "note": "rule 9: NUL",
+      "rule": 9,
       "utf8": "610062"
     },
     {
@@ -276,8 +276,8 @@
         "U+007F",
         "U+0062"
       ],
-      "note": "rule 3: DELETE",
-      "rule": 3,
+      "note": "rule 9: DELETE",
+      "rule": 9,
       "utf8": "617f62"
     },
     {
@@ -287,8 +287,8 @@
         "U+0085",
         "U+0062"
       ],
-      "note": "rule 3: NEXT LINE (C1 control)",
-      "rule": 3,
+      "note": "rule 9: NEXT LINE (C1 control)",
+      "rule": 9,
       "utf8": "61c28562"
     },
     {
@@ -298,8 +298,8 @@
         "U+009F",
         "U+0062"
       ],
-      "note": "rule 3: last C1 control",
-      "rule": 3,
+      "note": "rule 9: last C1 control",
+      "rule": 9,
       "utf8": "61c29f62"
     },
     {
@@ -310,8 +310,8 @@
         "U+000A",
         "U+0062"
       ],
-      "note": "rule 4: a line ending with a space",
-      "rule": 4,
+      "note": "rule 10: a line ending with a space",
+      "rule": 10,
       "utf8": "61200a62"
     },
     {
@@ -320,8 +320,8 @@
         "U+0061",
         "U+00A0"
       ],
-      "note": "rule 4: ending with NO-BREAK SPACE",
-      "rule": 4,
+      "note": "rule 10: ending with NO-BREAK SPACE",
+      "rule": 10,
       "utf8": "61c2a0"
     },
     {
@@ -332,8 +332,8 @@
         "U+000A",
         "U+0062"
       ],
-      "note": "rule 4: a line ending with IDEOGRAPHIC SPACE",
-      "rule": 4,
+      "note": "rule 10: a line ending with IDEOGRAPHIC SPACE",
+      "rule": 10,
       "utf8": "61e380800a62"
     },
     {
@@ -362,8 +362,8 @@
         "U+0061",
         "U+000A"
       ],
-      "note": "rule 4: a final line break",
-      "rule": 4,
+      "note": "rule 10: a final line break",
+      "rule": 10,
       "utf8": "610a"
     },
     {
@@ -371,8 +371,8 @@
       "codepoints": [
         "U+000A"
       ],
-      "note": "rule 4: only a line break",
-      "rule": 4,
+      "note": "rule 10: only a line break",
+      "rule": 10,
       "utf8": "0a"
     },
     {
@@ -380,8 +380,8 @@
       "codepoints": [
         "U+0020"
       ],
-      "note": "rule 4: only a space",
-      "rule": 4,
+      "note": "rule 10: only a space",
+      "rule": 10,
       "utf8": "20"
     },
     {
@@ -390,8 +390,8 @@
         "U+0061",
         "U+FDD0"
       ],
-      "note": "rule 5: noncharacter U+FDD0",
-      "rule": 5,
+      "note": "rule 11: noncharacter U+FDD0",
+      "rule": 11,
       "utf8": "61efb790"
     },
     {
@@ -400,8 +400,8 @@
         "U+0061",
         "U+FFFE"
       ],
-      "note": "rule 5: noncharacter U+FFFE",
-      "rule": 5,
+      "note": "rule 11: noncharacter U+FFFE",
+      "rule": 11,
       "utf8": "61efbfbe"
     },
     {
@@ -410,9 +410,35 @@
         "U+0061",
         "U+10FFFF"
       ],
-      "note": "rule 5: noncharacter U+10FFFF",
-      "rule": 5,
+      "note": "rule 11: noncharacter U+10FFFF",
+      "rule": 11,
       "utf8": "61f48fbfbf"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+0085",
+        "U+0062",
+        "U+FEFF"
+      ],
+      "note": "rules 9 and 7 both broken, the control character first: the rule named is 7, the first in the order numbered (rule 13)",
+      "rule": 7,
+      "utf8": "61c28562efbbbf"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+0020",
+        "U+000A",
+        "U+0062",
+        "U+FDD0",
+        "U+000D"
+      ],
+      "note": "rules 10, 11 and 8 broken, in that order along the string: the rule named is 8",
+      "rule": 8,
+      "utf8": "61200a62efb7900d"
     },
     {
       "canonical": true,

@@ -67,6 +67,11 @@
       "why": "NaN as a double"
     },
     {
+      "error": "NonPreferredFloat",
+      "hex": "fb7ff8000020000000",
+      "why": "the same single-width NaN as a double: longer than the shortest width keeping its payload"
+    },
+    {
       "error": "InvalidUtf8",
       "hex": "62c328",
       "why": "text string not valid UTF-8"
@@ -188,6 +193,10 @@
     {
       "diagnostic": "NaN as a half",
       "hex": "f97e00"
+    },
+    {
+      "diagnostic": "a NaN whose payload needs single width, as a single: the shortest width that keeps its payload",
+      "hex": "fa7fc00001"
     },
     {
       "diagnostic": "100000.0 as a single",
