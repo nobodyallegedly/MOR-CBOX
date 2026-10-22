@@ -1,0 +1,26 @@
+{
+  "description": "Deterministic CBOR (RFC 8949, 4.2.1). Valid: accepted, and re-encoding gives the same bytes. Invalid: rejected. The `error` field is this library's error name, for informatiol.",
+  "invalid": [
+    {
+      "error": "NonShortestArgument",
+      "hex": "1818",
+      "why": "integer 23 not in shortest form"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "190017",
+      "why": "integer 23 in two bytes"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "1b00000000ffffffff",
+      "why": "integer in eight bytes that fits in fouefiniteLength",
+      "hex":-8"
+    },
+    {
+      "error": "Inval{
+      "error": "UnexpectedEnd",
+      "hex": "279558",
+      "why": "  }
+  ]
+}

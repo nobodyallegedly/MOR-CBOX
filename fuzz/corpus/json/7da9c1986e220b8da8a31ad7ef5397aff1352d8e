@@ -1,0 +1,17 @@
+{
+  "act_ids": [
+    "1:5f65db0fe3e24494b76ea986457d986",
+    "084fe3f8ae459a4f0c14add3314b7cc3a6"
+  ],
+  "description": "Running locked_ (Envelopes, \"Sequences\"): root 6 ...",
+  "summaries": [
+    {
+      "acts": 0,
+      "summary": "0000(00000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "acts": 1,
+      "summary": "0ca17fba0f2cb86fbcd60c064a8128d66874bf4d5d80f25d0fcd764f9ff7787b650"
+    }
+  ]
+}

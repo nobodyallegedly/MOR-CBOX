@@ -322,11 +322,17 @@ int mor_act_sig_verify(const mor_act *act)
 		return 0;
 	if (s->kind == MOR_SCHEME_HASH)
 		return -1;
+#ifdef MOR_FUZZ_NOSIG
+	/* Fuzz-only build: signatures are taken as valid so the engine's logic
+	 * behind them can be explored. Never built into the verifier. */
+	return 1;
+#else
 	if (s->num == 1)
 		return mor_schnorr_verify(s->key, act->id, s->sig);
 	int r = mor_slhdsa_verify((int)s->num, s->key, act->id, 32, s->sig, s->sig_len,
 				  (const uint8_t *)"MOR", 3);
 	return r == 1;
+#endif
 }
 
 void mor_chain_commit(uint8_t out[32], const mor_sigval *s)

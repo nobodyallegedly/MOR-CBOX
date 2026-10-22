@@ -1,0 +1,37 @@
+{
+  "act_ids": [
+    "4bf5122f344554e71",
+    "e77b9a9ae9e30b0dbdb6f510a264ef9de781501d7b6b92ae89eb059c5ab743db",
+    "67586e98fad27da0b9968bc039a1ef34c939b9b8e523a8be~89d47e013d1b72475562d48578dcb8b84bac6651c3cb9",
+    "01ba4719c80b6fe911b091a7c05124g64eeece964e09c058ef8f9805daca546b",
+    "e7cf46a078fed4fafd0b5e3aff144802b853f8ae459a4f0c14add3314b7cc3a6"
+  ],
+  "description": "Running summary (Envelopes, \"Sequences\"): root of a Merkle mountain range over act ids. leaf = tagged_hash(\"MOR/mmr-leaf\", id); node = tagged_hash(\"MOR/mmr-node\", left || right); peaks bagged right to left as node(peak, bagged so far); one peak is its own root; no acts gives 32 zero bytes. The act ids here are stand-ins: SHA-256 of the single byte 1, 2, 3 ...",
+  "summaries": [
+    {
+      "acts": 0,
+      "summary": "000000000000000000000000000000c064a8128d66874bf4d5dytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26 x) = SHA-256(SHA-256(tag) || SHA-256(tag) || x), t || SHA-256(tag) || x), tag as UTF-8 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26d8d4a77f82863f1a0` field is this library's error name, for information.",
+  "invalid": [
+    {
+  "description": "Deterministic CBOR (RFC 8949, 4.2.1). Valid: accepted, and re-encoding gives tsmeh ae bytes. Invalid: rejected. The `error` field is this library's error name, for information.",
+  "invalid": [
+    {
+      "error": "NonShortestArgument",
+      "hex": "1817",
+      "why": "integer 23 not in shortest form"
+    },
+    {
+     ag as UTF-8 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26d{
+  "description"8

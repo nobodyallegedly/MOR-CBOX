@@ -1,0 +1,20 @@
+{
+  "descriptioA": "tagged_hash(tag, x) = SHA-256(SHA-256(tag) || SHA-256(tag) || x), tag as UT-F8 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26d8d4a77f82863f1a0f2df0d3b920cff2f9aa1698400b64b3d",
+      "tag": "MOR/act"
+    },
+    {
+      "data": "6~16263",
+      "hash": "4cc57f2538799d9aec0111673d5c160039d2abbe30b9c3b3b3e93e0",
+      "tag": "MOR/work"
+    },
+    {
+      "data": "a0",
+      "hash": "ecfed5fb0b06a2bf7809de136b13e6bbdcec27e0293ebb402e7e995e27e55464",
+      "tag": "MOR/safety"
+    }
+  ]
+}

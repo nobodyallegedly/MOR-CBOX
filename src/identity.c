@@ -755,6 +755,8 @@ static void chain_compute(mor_world *w, mor_chain *c, int selfmode)
 
 const mor_chain *mor_chain_get(mor_world *w, const uint8_t id[32])
 {
+	if (!id)
+		return NULL;
 	mor_chain *c = chain_slot(w, id);
 	if (!c)
 		return NULL;

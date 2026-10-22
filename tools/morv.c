@@ -156,6 +156,67 @@ static int cmd_pool(const char *path, mor_arena *a)
 	return 0;
 }
 
+/* Write engine-fuzzer seeds: one file per verdict case, each act as the
+ * record fuzz/fuzz_engine.c reads (its outside fields and its inside). */
+static int cmd_engine_seeds(const char *path, const char *outdir, mor_arena *a)
+{
+	FILE *f = fopen(path, "rb");
+	if (!f)
+		return 2;
+	static char text[1 << 21];
+	size_t n = fread(text, 1, sizeof text, f);
+	fclose(f);
+	const json *root;
+	if (json_parse(text, n, a, &root))
+		return 2;
+	const json *pool = json_get(root, "pool"), *cases = json_get(root, "cases");
+	static uint8_t out[1 << 20];
+	int files = 0;
+	for (size_t l = 0; l < cases->len; l++)
+		for (size_t i = 0; i < cases->items[l].len; i++) {
+			const json *acts = json_get(json_at(&cases->items[l], i), "acts");
+			size_t o = 0;
+			for (size_t k = 0; acts && k < acts->len; k++) {
+				size_t bn;
+				mor_act act;
+				const uint8_t *b = hex_decode(json_str(json_get(pool, json_str(json_at(acts, k)))), &bn, a);
+				if (mor_act_decode(&act, b, bn, NULL, a) != MOR_OPEN_OK || !act.sig_shape_ok ||
+				    act.sig.kind != MOR_SCHEME_NUM || act.sig.key_len != 32)
+					continue;
+				size_t rl = 1 + (act.signer ? 32 : 0) + (act.binding ? 32 : 0) + 24 + 32 + 1 + 32 + act.inside_len;
+				if (o + 2 + rl > sizeof out || rl > 0xffff)
+					break;
+				out[o++] = (uint8_t)(rl >> 8);
+				out[o++] = (uint8_t)rl;
+				out[o++] = (uint8_t)((act.signer ? 1 : 0) | (act.binding ? 2 : 0));
+				if (act.signer) {
+					memcpy(out + o, act.signer, 32);
+					o += 32;
+				}
+				if (act.binding) {
+					memcpy(out + o, act.binding, 32);
+					o += 32;
+				}
+				memcpy(out + o, act.nonce, 24);
+				memcpy(out + o + 24, act.key, 32);
+				out[o + 56] = (uint8_t)(act.sig.num - 1);
+				memcpy(out + o + 57, act.sig.key, 32);
+				memcpy(out + o + 89, act.inside_bytes, act.inside_len);
+				o += 89 + act.inside_len;
+			}
+			char name[4096];
+			snprintf(name, sizeof name, "%s/%s-%zu", outdir, cases->keys[l], i);
+			FILE *g = fopen(name, "wb");
+			if (g) {
+				fwrite(out, 1, o, g);
+				fclose(g);
+				files++;
+			}
+		}
+	printf("%d seeds\n", files);
+	return 0;
+}
+
 int main(int argc, char **argv)
 {
 	if (argc < 2) {
@@ -196,6 +257,8 @@ int main(int argc, char **argv)
 		r = cmd_text(argv[2], &a);
 	else if (!strcmp(argv[1], "act"))
 		r = cmd_act(argv[2], &a);
+	else if (!strcmp(argv[1], "engine-seeds") && argc > 3)
+		r = cmd_engine_seeds(argv[2], argv[3], &a);
 	else if (!strcmp(argv[1], "pool"))
 		r = cmd_pool(argv[2], &a);
 	else if (!strcmp(argv[1], "form"))

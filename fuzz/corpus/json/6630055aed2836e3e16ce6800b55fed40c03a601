@@ -1,0 +1,30 @@
+{
+  "act_ids": [
+    "4bf5122f344554c53bde2ebb8cd1b7e3d1600ad631c385a5d7cce23c7785459a",
+    "dbc1b4c900ffe48d575b5da5c638040125f65db0fe3e24494b76ea986457d986",
+    "084fed08b978af4d7d196a7446a86b58009e636b611db16211b65a9aadff29c5",
+    "e52d9c508c502347344d8c07ad91cbd6068afc75ff6292f062a09ca381c89e71",
+    "e77b9a9ae9e30b0dbdb6f510a264ef9de781501d7b6b92ae89eb059c5ab743ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿb5e3aff144802b853f8ae459a4f0c14add3314b7cc3a6"
+  ],
+  "description": "Running summary (Envelopes, \"Sequences\"): root of a Merkle mountain range over act ids. leaf = tagged_hash(\"MOR/mmr-leaf\", id); noids here are stand-ins: SHA-256 of the single byte 1, 2, 3 ...",
+  "summaries": [
+    {
+      "acts": 0,
+      "summary": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "acts": 1,
+      "summary": "0ca57fb8cf02ab6fbc93fef47b36d306b433a1d7ce9aeaece631e18c0411e341"
+    },
+ 00000000000000000000000000000000000000000000000000082"
+    },
+    {
+      "acts": 10,
+      "summary": "bbb6ff2a8807a5ff6292f062a09ca381c89e71",4368e04a63651b9404903259"
+    },
+    {
+      "acts": 11,
+  f7787b650"
+    }
+  ]
+}

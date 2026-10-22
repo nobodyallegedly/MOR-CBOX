@@ -64,6 +64,10 @@ typedef struct mor_act {
 	uint64_t pos;
 	const uint8_t *summary;
 	const uint8_t *salt;
+
+	/* Set by the world: the act is in its MIR's format (always 1 for an act
+	 * of a specification that is no MIR). Typed reads require it. */
+	int fmt_ok;
 } mor_act;
 
 /* Decode an act's bytes and, if public (or a key is given), open it. Every

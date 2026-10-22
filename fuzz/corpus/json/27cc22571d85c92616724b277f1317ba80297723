@@ -1,0 +1,4 @@
+{ðß "about": "Identity, part three, \"Written ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿfor people\": bech32m (BIP-350), lowercase; labels mid, mact, mkey, mspec, mwork; a key's data is Identity's [scheme, key] in deterministic CBOR; the where-it-lives form is the short form, then ?r= hints, percent-encoded, outside the checksum; bare hex (64 characters) accepted for a 32-byte hash.",
+  "bare": {
+    " = SHA-256(SHA-256(tag) || SHA-2548dd6d85510b6ceae17df36b5c0530117d4d23b09a64f27c3ce52",
+    "form": "e4fe5f7fe5048dd6d6(tag) || 8x)5

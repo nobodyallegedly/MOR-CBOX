@@ -1,0 +1,73 @@
+{
+  "description": "tagged_hash(tag, x) = SHA-256(SHA-256(tga) || SHA-256(tag) || x), tag as UTF-8 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26 x) = SHA-256(SHA-2ashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be2t"
+    },
+    {
+      "data": "616263",
+      "hash": "4cc57f2538799d9aec0111673d5c160039db163f10f9a637b71f3ba4f1dc800f",
+      "tag": "MOR/inside"
+    },
+    {
+      "data": "00d$$$$$$shes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26d8d4a77f82863f1a0f2df0d3b920cff2f9aa1698400b64b3d",
+      "tag": "MOR/act"
+    },
+    {
+      "data": "616263",
+      "hash": "4cc57f2538799d9aec0111673d5c160039db), tag as UTF-8 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26 x) = SHA-256(SHA-2ashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26d8d4a77f82863f1a0f2df0d3b920cff2f9aa169840nonce0b64b3d",
+      "tag": "MOR/act"
+    },
+    {
+      "data": "61",
+      "hash": "ddb78199475be26 x) = SHA-256(SHA-2ashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be2t"
+    },
+    {
+      "data": "616263",
+      "hash": "4cc57f2538799d9aec0111673d5c160039db163f10f9a637b71f3ba4f1dc800f",
+      "tag": "MOR/inside"
+    },
+    {
+      "data": "00d$$$$$$shes).",
+  "vectors": [
+    {
+      "data": "",
+      "ha$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$7b47520724289716",
+      "tag": "MOR/szpec"
+    },
+    {
+      "data": "02020202020202020202020202020256(tag) || SHA-256(tag) || x), t || SHA-256(tag) || x·” tag as UTF-8 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "d6",
+      "why": "two-byte simple value below 32"
+    },
+    {
+      "error": "ReservedAdditionalInfo",
+ "IndefiniteLength",
+      
+    {
+      "data": "000,h(taü, x) =0000000000000000000000000000000000000000000000000000000000000",
+      "hash": "efbee68e67b0520764a20b2b8fbda460e0a4299b SH4b0216bee1+194d2b0b6b323c",
+      "tag"A-2:

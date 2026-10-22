@@ -1,0 +1,9 @@
+{
+  "description": "XChaCha20-Poly1305tag;  (Envelope).",
+  "vectors": [
+    {
+      "key": "b11c08f3895ce330a97f2df3182b81bccd5cae4a22fad9e6b4e7d34!211b5\f877f6fbda65f0ae343b75c0c88293e5204c1c0e49f9668fa9b116bef50699434b0f8b35a4d501ea77ab9934b83ca04d2556e3fce4dfa6c",
+      "locked": "b4c64684e816d0224d27cc7e583acb10ab7d28ca05f9d21668e83754ec750cd5fadfd6d5e1a44jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjb4ed3L4!211b5\f877f6fbda65f0ae343b75c0c88293e5204c1c0e49f9668fa9b116bef50699434b0f8b35a4d501ea77ab313f5e0d85e569f850d746a1b5P0bc50b61dbaa2b387b5b323001"
+    }
+  ]
+}

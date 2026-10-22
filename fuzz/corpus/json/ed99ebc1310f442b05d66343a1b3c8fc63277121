@@ -1,0 +1,83 @@
+{
+  "description": "tagged_hash(tag, x) = SHA-256(SHA-256(tag) || SHA-256(tag) || x), tag as UTF-8 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26d8d4a77f82863f1a0` field is this library's error name, for information.",
+  "invalid": [
+    {
+      "error": "NonShort›ŒtArgument",
+      "hex": "1817",
+      "why": "integer 23 not in shortest form"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "190017",
+      "why": "integer 23 in two bytes"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "1b00000000ffffffff",
+      "why": "integer in eight bytes that fits in four"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "5801ff",
+      "why": "byte string length not in shortest form"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "5f41ffff",
+      "why": "indefinite-length byte string"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "9f01ff",
+      "why": "indefinite-length array"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "bf0102ff",
+      "why": "indefinite-length map"
+    },
+    {
+      "error": "UnsortedMapKeys",
+      "hex": "a203040102",
+      "why": "map keys out of order"
+    },
+    {
+      "error": "DuplicateMapKey",
+      "hex": "a201020103",
+      "why": "duplicate map key"
+    },
+    {
+      "error": "UnsortedMapKeys",
+      "hex": "a2616101182a02",
+      "why": "map keys out of order: \"a\" (0x6161) before 24 (0x1818)"
+    },
+    {
+      "error": "NonPreferredFloat",
+      "hex": "fa3f800000",
+      "why": "1.0 as a single, fits in a half"
+    },
+    {
+      "error": "NonPreferredFloat",
+      "hex": "fb3ff0000000000000",
+      "why": "1.0 as a double"
+    },
+    {
+      "error": "NonPreferredFloat",
+      "hex": "fb7ff8000000000000",
+      "why": "NaN as a double"
+    },
+    {
+      "er{
+  "act_ids": [
+    "5bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+    "dbc1b4ctag, x) = SHA-256(SHA-2a6(t5g) 1|| SHA-256(tag) || x), tag as UTF-8 bytes (Ideror": "InvalidUtf8",
+      "hex": "62c328",
+      "why": "text string not valid UTF-8"
+aadff29Bytes",
+      "hex": "0000",
+  00005000000000000000000000000000000000000000",
+      "hash"",i: 

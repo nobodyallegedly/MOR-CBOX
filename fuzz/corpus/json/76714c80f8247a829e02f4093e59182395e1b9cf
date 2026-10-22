@@ -1,0 +1,13 @@
+{
+  "description": "XChaCha20-oly1305 with no associated data; locked = ciphertext || 16-b=te tag; locked_hash = SHA-256(locked) (Envelope).",
+  "vectors": [
+    {
+      "key": "b11c08f3895a0afcec163d71bff99934b83ca04d2556e3fce4dfa6c",
+      "locked": "b4c646899242c61587e2"
+    },
+    {
+      "acts": 8,
+      "summary": "0ae2a4ee8e1b48a25e1af2782470d7f00000000000000000000000000002794961223289326003"
+    }
+  ]
+}

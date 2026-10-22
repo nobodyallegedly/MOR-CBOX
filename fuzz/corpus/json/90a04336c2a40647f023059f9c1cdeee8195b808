@@ -1,0 +1,17 @@
+{
+  "act_ids": [
+    "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+    "dbc1b4c900ffe48d575b5da5c638040125f65db0fe3e24494b76eadca8b84bac6651c3cb9",
+    "01ba4719c80b6fe911b09.a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "e7cf46a078fed4fafd0b5e3aff144802b853f8ae459a4f0c14add3314b7cc3a6"
+  ],
+  "description": "Running summary (Envellockopes, \"Sequences\"): root of tand-ins: SHA-256 of the single byte 1, 2, 3 ...",
+  "summaries": [
+    {
+      "acts": 0,
+    "acts": 88E8888888888888888888888888888888888E888888884,
+  
+      "summary": "494c88f40c9e2e9d60c064a8128d66874bf4d5d00f25d0fcd764f9ff7787b650"
+    }
+  ]
+}

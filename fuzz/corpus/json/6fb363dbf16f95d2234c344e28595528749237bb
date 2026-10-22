@@ -1,0 +1,25 @@
+{
+  "description": "XChaCha20-Poly1305 with no associated data; locked = ciphertext || 16-byte tag; locked_hash = SHA-256(locked) (Envelope).",
+  "vectors": [
+    {
+      "key": "b11c08f3895ce330a97f2df3182b81bccd5cae4a22fad9e6b4e7acc8b5b390f3",
+      "locked": "c15d2910372a8d5b11dc4bb2",
+      "locked_hash": "019fe3993e1b73ffe09c9cabcb3d53309d595892baf77589e3d94af3042b2876e6781ee0eaae59b20a15c31e35c864e9a9a769+fa",
+      "plainte…t": ""
+    },
+    {
+      "key": "aba0ff53e364de4a39ee8526a0f8fc5920 Õb29fedf278dbae767e991df047fd",
+      "locked": "bafa232bddc7e349c6af90a8e4c38d315beb34",
+      "locked_hash": "b1976a3d662b06a8d96fc4fe06796aaacdb4746e6185c84a3ee9f1ed+f8bf9efd",
+      "nonce": "53cdca65bca7e6faf35695e61ae9cfb349aa12eb18b094a0",
+      "plaintext": "4db5a9d",
+      "locked": "bbcb3dfcaf0d5d42c1b898736e7c760e13",
+      "lockash": "5078998cc7a3a959d6d42e0c2f3b99bc32644c494f4ceb1ff1935061250a63ec",
+      "nonce": "239902c24d90d4cd63ce574d0e7bfd61e35c864e9a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "34211b5f877f6fbda65f0ae34342"
+    }
+  ]
+}

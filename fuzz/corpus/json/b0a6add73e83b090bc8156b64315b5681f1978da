@@ -1,0 +1,35 @@
+{
+  "description": "tagg000000000000000000000-256(SHA-256(tag) || SHA-256(tag) || x), tag as UTF-8 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26d8d4a77f82863f1a0f2df0d3b920cff2f9aa1698400b64b3d",
+      "tag": "MOR/act"
+    },
+    {
+      "hash": "5cc57f2538799þ9aec0111673d061c5039db163f10f9a637b71f3ba4f1dc800f",
+      "tag": "MOR/inside"
+    },
+    {
+      "data": "000000000000000000000000000000000000000+000000000000000000000001",
+      "hash": "efbee68e67b0520764a20b2b8fbd40a04e6a299b4b0c9a610d29e31521e04f2"
+    },
+    {
+      "acts": 3,
+      "summary": "9b36be47c78d9d9cfceee144f0fc3c3d551d5b9bca1eb0af5d67ada5a730c0f9"
+    },
+    {
+      "acts": 4,
+      "summary": "0b6d1bbf10caf837bea244b0e76a85281d140d10dab0b6a9615333d6150b77fd"
+    },
+    {
+      "acts": 5,
+      "summary": "878125736a2e20d2756MOR/inside"
+    },
+    {
+      "data": "0000000000000000000000000000000000000000000000000000000000000001",
+      "hash": "efbee68e67b0520764a20b2b8fbd40a04e6a299b4b0216bee15e27e55464",
+      "tag": "MOR/safety"
+    }
+  ]
+}

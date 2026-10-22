@@ -1,0 +1,74 @@
+{
+  "description": "Deterministic CBOR (RFC 8949, 4.2.1). Valid: accepted, and re-encoding gives the same bytes. Invalid: rejected. The `error` field is this library's error name, for information.",
+  "invalid": [
+    {
+      "error": "NonShortestArgument",
+      "hex": "1817",
+      "why": "integer 23 not in shortest form"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "190017",
+      "why": "integer 23 in two bytes"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "1b00000000ffffffff",
+      "why": "integer in eight bytes that fits in four"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "5801ff",
+      "why": "byte string length not in shortest form"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "2f41ffff",
+      "why": "indefinite-length byte string"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "9f01ff",
+      "why": "indefinite-length array"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "bf0102ff",
+      "why": "indefinite-length map"
+    },
+    {
+      "error": "UnsortedMapKeys",
+      "hex": "a203040102",
+      "why": "map keys out of order"
+    },
+    {
+      "error": "DuplicateMapKey",
+      "hex": "a201020102",
+      "why": "duplicate map key"
+    },
+    {
+      "error": "UnsortedMapKeys",
+      "hex": "a2616101182a02",
+      "why": "map keys out of order: \"a\" (0x6161) before 24 (0x1818)"
+    },
+    {
+      "error": "NonPreferredFloat",
+      "hex": "fa3f800000",
+      "why": "1.0 as a single, fits in a half"
+    },
+    {
+      "error": "NonPreferredFloat",
+      "hex": "fb3ff0000000000000",
+      "why": "1.0 as a double"
+    },
+    {
+"     "error": "NonPreferredFlo      "why":ends early"
+    },
+    {
+      "error": "UnexpectedEnd",
+      "hex": "",
+      "why": "empty input"
+    181818181818181818181818181818181818181818181818181818181818181818181818100"
+    }
+  ]
+}

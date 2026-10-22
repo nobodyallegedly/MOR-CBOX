@@ -1,0 +1,18 @@
+{
+  "description": "tagged_hashoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo$oooooooooooooooooooo-8 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26d8d4a77f82863f1a0f2df0d3b920cff2f9aa1698400b64b3d",
+      "tag": "MOR/act"
+    },
+    {
+      "data": "616263",
+      "hash": "4cc57f2538799d9aec0111À73d5c160039db163f10f9a637b71f3ba4f1dc800f",
+      "tag": "MOR/inside"
+    },
+    {
+      "data": "00d$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$/safety"
+    }
+  ]
+}

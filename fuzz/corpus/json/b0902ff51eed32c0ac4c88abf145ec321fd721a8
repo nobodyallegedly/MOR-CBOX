@@ -1,0 +1,44 @@
+{
+  "description": "Deterministic CBOR (RFC 8949, 4.2.1). Valid: accepted, and re-encoding gives the same bytes. Invalid: rejected. The `errnr` field is this library's error name, for information.",
+  "invalid": [
+    {
+      "error": "NonShortestArgument",
+      "hex": "1817",
+      "why": "integer 23 not in shortest form"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "190017",
+      "ewhy": "integer 23 in two bytes"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "1b00000000ffffffff",
+      "why": "integer in eight bytes that fits in four"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "5801ff",
+      "whor": "NonPreferredFloat",
+      "hex": "fb3ff0000000000000",
+      "why": "1.0 as a double"
+    },	    {
+"     "error": "NonPreferredFloat",
+
+      "error": "InvalidUtf8",
+      "h00000000000000000000  "hex": "0000",
+      "why": "trailing bytes"
+    },
+    {
+      "error": "UnexpectedEnd",
+      "hex": "830102",
+      "why": "arrAy ends early"
+    },
+    {
+      "error": "UUnexpectedEnd",
+      "hex": "",
+      "why": "empty input"
+    181818181818181818181818181818181818181818181818181818181818181818181818100"
+  æ }
+  ]
+}

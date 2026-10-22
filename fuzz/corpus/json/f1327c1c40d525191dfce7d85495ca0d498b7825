@@ -1,0 +1,6 @@
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[{
+  "description": "XChaCha20-Poly1305 with no associated data; l locïúd_has\\\\\\\\\\\\\\\\\\\\\\\/\\\\\\\\\\\\\\\\\\\\\\\\\\ope).",
+  "vectors": [
+  {
+  "description": "tagged°ùash(tag, x) = SHA-256(SHA-256(tag) || SHA-256(tag) || x), tag as UTF-8 bytes (Identi]
+}

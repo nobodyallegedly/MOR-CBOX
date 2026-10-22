@@ -51,10 +51,20 @@ $(SAN)/morv: $(SAN)/tools/morv.o $(TOOLSRC:%.c=$(SAN)/%.o) $(SAN)/libmor.a
 $(SAN)/unit: $(SAN)/tests/unit.o $(SAN)/tests/builder.o $(TOOLSRC:%.c=$(SAN)/%.o) $(SAN)/libmor.a
 	$(CC) $(SAN_CFLAGS) $^ $(LIBS) -o $@
 
-FUZZERS := $(patsubst fuzz/%.c,$(FUZ)/%,$(wildcard fuzz/fuzz_*.c))
+FUZZERS := $(filter-out $(FUZ)/fuzz_engine,$(patsubst fuzz/%.c,$(FUZ)/%,$(wildcard fuzz/fuzz_*.c)))
 $(FUZ)/fuzz_%: $(FUZ)/fuzz/fuzz_%.o $(FUZ)/tools/json.o $(FUZ)/libmor.a
 	$(CC) $(FUZ_CFLAGS) -fsanitize=fuzzer $^ $(LIBS) -o $@
-fuzz: $(FUZZERS)
+# The engine target links a library built with MOR_FUZZ_NOSIG (signatures
+# taken as valid), never the verifier's.
+FZN := build/fuzznosig
+$(FZN)/%.o: %.c $(wildcard src/*.h tools/*.h)
+	@mkdir -p $(dir $@)
+	$(CC) $(FUZ_CFLAGS) -DMOR_FUZZ_NOSIG -c $< -o $@
+$(FZN)/libmor.a: $(SRC:%.c=$(FZN)/%.o)
+	ar rcs $@ $^
+$(FUZ)/fuzz_engine: $(FZN)/fuzz/fuzz_engine.o $(FZN)/libmor.a
+	$(CC) $(FUZ_CFLAGS) -fsanitize=fuzzer $^ $(LIBS) -o $@
+fuzz: $(FUZZERS) $(FUZ)/fuzz_engine
 
 check: $(SAN)/unit $(SAN)/morv
 	$(SAN)/unit

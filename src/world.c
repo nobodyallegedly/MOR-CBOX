@@ -1,5 +1,7 @@
 #include "world.h"
 
+#include "formats.h"
+
 #include <string.h>
 
 const char *mor_status_name(int st)
@@ -64,6 +66,11 @@ int mor_world_init(mor_world *w, mor_arena *a, const uint8_t mir[MOR_NMIRS][32],
 		k++;
 	}
 	w->nacts = k;
+	for (size_t i = 0; i < k; i++) {
+		mor_act *x = &w->acts[i];
+		x->fmt_ok = x->open == MOR_OPEN_OK &&
+			    (mor_world_mir_of(w, x->spec) == MOR_MIR_NONE || mor_format_ok(w, x, NULL));
+	}
 	w->chains_cap = k + 1;
 	w->chains = mor_arena_array(a, w->chains_cap, sizeof *w->chains);
 	return w->chains ? 0 : -1;
@@ -99,7 +106,7 @@ int mor_world_mir_of(const mor_world *w, const uint8_t spec[32])
 
 int mor_world_is_mir(const mor_world *w, const mor_act *a, int mir)
 {
-	return a && a->open == MOR_OPEN_OK && mor_world_mir_of(w, a->spec) == mir;
+	return a && a->open == MOR_OPEN_OK && a->fmt_ok && mor_world_mir_of(w, a->spec) == mir;
 }
 
 const mor_cbor *mor_pl(const mor_act *a, uint64_t key)

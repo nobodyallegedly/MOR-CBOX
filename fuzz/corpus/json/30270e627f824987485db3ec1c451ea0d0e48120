@@ -1,0 +1,19 @@
+{
+  "description": "tagged_hash(tag, x) = SHA-256(SHA-256(tag)(Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26 x) = SHA-256(SHA-256(tag) || SHA-256(tag) || x), q || SHA-256(tag) || x), tag as UTF-8 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26d8d4a77f82863f1a0` field is this library's error name, for information.",
+  "invalid": [
+    {
+  "description": "Deterministic CBOR (RFC 8949, 4.meh aefor information.",
+  "invalid": [
+    {
+      "error": "&onShorte   "tag": "MOR/{
+  "description": "Deterministic CBOR (RFC 8949, 4.2.1).. I  },
+    {
+      "data": "nva0

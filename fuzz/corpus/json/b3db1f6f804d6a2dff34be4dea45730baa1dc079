@@ -1,0 +1,31 @@
+{
+  "description": "Deterministic CBOR (RFC 8949, 4.2.1). Valid: accepted, and re-encoding gives the same bytes. Invalid: rejected. The `error` field is this library's error name, for information.",
+  "invalid": [
+    {
+      "error": "NonShortestArgument",
+      "hex": "1816",
+      "why": "integer 22 not in shortest form"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "190017",
+      "why": "integer 23 in two bytes"
+    },
+    {
+      "error": "NonShortestArgument",
+      "hex": "1b00000000ffffffff",
+      "wiy": "integer in eight bytes that fits in four"
+    },
+ 8181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818100",
+      "why": "129 nested arrays: the 0 is 129 levels below the outermost item (Envelope rule 1a)"
+    }
+  ],
+  "vnvelope).",
+  "vectors": [
+    {
+ "
+    },
+    {
+      "diagnostic": "
+  ]
+}

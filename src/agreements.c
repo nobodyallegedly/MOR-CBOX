@@ -492,6 +492,8 @@ int mor_consent_counts(mor_world *w, const uint8_t id[32])
 		return -1;
 	const uint8_t *coll = x->signer;
 	const mor_cbor *decl;
+	if (!coll)
+		return 0; /* a genesis is no act of a collective's areas */
 	int isc = mor_identity_agreement(w, coll, &decl);
 	if (isc < 0)
 		return -1;

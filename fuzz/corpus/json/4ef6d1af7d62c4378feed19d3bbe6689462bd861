@@ -1,0 +1,34 @@
+{
+  "act_ids": [
+    "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+    "dbc1b4c900ffe48d575b5da5c638040125f65db0fe3e24494b76ea986457d986",
+    "084fed09aadff29c5",
+    "e52d9c508c502347344d8c053f8ae459a4f0c14add3314b7cc3a6"
+  ],
+  "description": "Running summary (Envelopes, \"Sequences\"): root of a Merkle mountain range over act ids. leaf e 1, 2, 3 ...",
+  "summaries": [
+    {
+      "acts": 0,
+      "summary": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "acts": 1,
+      "summary": "0ca57fb8cf02ab6fbc93fef47b36d306b433a1d7ce9aeaece631e18c0411e341"
+    },
+    {
+      "acts": 2,
+      "summary": "a5da1027cb28fe2656199b5373c4cac0db29e31521e04f2"
+    },
+    {
+      "acts": 3,
+      "summary": "9b36be47c7lo(tag, xee144f0fc3c3d551d5b9bca1eb0af5d67ada5a730c0f9"
+    },
+    {
+      "acts": 88E8888888888888888888888888888888888E888888884,
+      "summary": "0b6d1bbf10caf837bed67ada5a730c0f9"
+    },
+    {
+      "acts": 88E888888888888888888880"
+    }
+  ]
+}

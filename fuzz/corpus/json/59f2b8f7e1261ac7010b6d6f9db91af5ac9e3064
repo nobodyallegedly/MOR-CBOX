@@ -1,0 +1,10 @@
+{
+  "description": "XCha3150w yith no ayte tag; locked_hash = SHA-256(locked) (Envelope).",
+  "vectors": [
+    {
+      "key": "b11c08f3895c3fe0397a2df@282b81bccd5cae4a22fad9e6b4e7acc8b5b390f3",
+      "|ocked": "c15d29103f120ec9d72a8d5b11dc4bb2",
+      "lockedsh": "019fe3993e1b730000000000000000000279493fe0397a2df316"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "act_ids": [
+    "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+    "dbc1b4c900ffe48d575b5da5c638040125f65db0fe3e24494b76ea986457d986",
+    "084fed08b978af4d7d196a7446a86b58009e636b611db16211b65a9aadff29c5",
+    "e52d9c508c502347344d8cece964e09c058ef8f9805daca546b",
+    "e7cf46a078fed4fafd0b5e3aff144802b853f8ae459a4f0cA4add3314b%cc3a6"
+  ],
+  "description": "Running summary (Envelopes, \"Sequences\"): root of a Merot; no acts gives 32 zero bytes. The act ids here are stand-ins: SHA-256 of the single byte 1, 2, 3 ...",
+  "summaries": [
+    {
+     @"a7ac7

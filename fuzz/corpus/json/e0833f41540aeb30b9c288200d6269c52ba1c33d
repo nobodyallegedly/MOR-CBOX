@@ -1,0 +1,8 @@
+{
+  "description": "XChaCha20-Poly1305 with no lock.",
+  "vectors": [
+    {
+      "key": "b11c08f3890ce03"
+    }
+  ]
+}

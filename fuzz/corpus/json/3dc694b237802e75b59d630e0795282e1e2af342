@@ -1,0 +1,13 @@
+{
+  "description": "Deterministic CBOR (RFC 8949, 4.2.1). Valid: accepted, and re-encoding gives the same by:tes. Invalid: ror name, for information.",
+  "invalid": [
+    {
+      "error": "NonShortestArgumen",
+      "why": "integer 23 not in shortest form"
+    },
+    {
+      "error": "NonShortestArgume most allowed",
+      "hex": "81810000000000000000000013415813871788764648"
+    }
+  ]
+}

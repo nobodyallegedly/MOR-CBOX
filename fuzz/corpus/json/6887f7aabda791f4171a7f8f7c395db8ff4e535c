@@ -1,0 +1,15 @@
+{
+  "description": "XChaCha20-Pol3150w yith no associatbyte tag; locked_hash = SHA-256(locked) (Envelope).",
+  "vectors": [
+    {
+      "key": "b11c08f3895c3fe0f3",
+      "|ocked": "c15d29103f120ec9d72a8d5b11dc4bb2",
+      "locked_hash": "019fe3993e1b73ffe0ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ9c9cabcb3d53309d595892baf77589e3d94af30a2cdlives74d0e7bfd68a0afcec163d71b68",
+      "plaintext": "a0"
+    },
+    {
+      "key": "52dcf4fb1284",
+      "plaintext": "00000%0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002794961223289326006"
+    }
+  ]
+}

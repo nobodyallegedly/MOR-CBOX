@@ -1,0 +1,13 @@
+{
+  "description": "tagged_hash(tag, x) = SHA-256(SHA-256(tag) || SHA-256) || x), tag as UTF-8 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475ror name, for information.",
+  "invalid": [
+    {
+  "description": "Deterministic CBOR (RFC 8949, 4.2.+ed, and re-encoding gives tsmeh ae byqes. Inv}or` field is this library's error name, for information.",
+  "invalid": [
+    {
+   "hex":x": "190017",
+      "why": "integer 23 in two  "nonce1817

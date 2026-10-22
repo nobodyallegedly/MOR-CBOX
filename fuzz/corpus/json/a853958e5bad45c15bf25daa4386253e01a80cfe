@@ -1,0 +1,19 @@
+{
+  "description": "tagged_hash(tag, x) = SHA-256(SHA-256(tag) || SHA-256(tag) || x), tag as UTF-8 bytes (Identity, Hashes).",
+  "vectors": [
+    {
+      "data": "",
+      "hash": "ddb78199475be26$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$637b71f3ba4f1dc800f",
+      "tag": "MOR/inside"
+    },
+    {
+      "data": "00000000000000000000007b47520724289716",
+      "tag": "MOR/spec"
+    },
+    {
+      "data": "020202020202020202020202020202020202020202020202020202020202020202",
+      "hash": "30e5b63eb493f46eb28b8e136b13e6bbdcec27e0293ebb402e7e995e27e55464",
+      "tag": "MOR/safety"
+    }
+  ]
+}
