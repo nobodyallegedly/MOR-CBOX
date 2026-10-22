@@ -1,6 +1,7 @@
 /* verdicts.json: for each case, build the verifier's world from the acts and
  * facts it holds, ask the case's question, and compare the answer. */
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 #include "../src/agreements.h"
@@ -89,6 +90,35 @@ int vbuild_world(mor_arena *ar, const json *root, const json *c, mor_world *w, c
 			}
 		}
 	}
+	const json *rp = json_get(facts, "rail_payments");
+	if (rp && rp->len) {
+		w->payments = mor_arena_array(r->a, rp->len, sizeof *w->payments);
+		for (size_t i = 0; i < rp->len; i++) {
+			const json *x = json_at(rp, i);
+			mor_rail_payment *p = &w->payments[w->npayments++];
+			p->proof = hex_decode(json_str(json_get(x, "proof")), &p->proof_len, r->a);
+			p->payment = hex_decode(json_str(json_get(x, "payment")), &p->payment_len, r->a);
+			if (!p->proof || !p->payment)
+				return -1;
+		}
+	}
+	const json *ck = json_get(facts, "content_keys");
+	for (size_t i = 0; ck && i < ck->len; i++) {
+		uint8_t aid[32], key[32];
+		if (hex_fixed(ck->keys[i], aid, 32) || hex_fixed(json_str(&ck->items[i]), key, 32) ||
+		    mor_world_open_with(w, aid, key))
+			return -1;
+	}
+	const json *fh = json_get(facts, "found_at_home");
+	if (fh && fh->len) {
+		w->found = mor_arena_array(r->a, fh->len, sizeof *w->found);
+		for (size_t i = 0; i < fh->len; i++) {
+			const json *x = json_at(fh, i);
+			mor_found *f = &w->found[w->nfound++];
+			hex_fixed(json_str(json_get(x, "act")), f->act, 32);
+			hex_fixed(json_str(json_get(x, "operator")), f->operator, 32);
+		}
+	}
 	const json *un = json_get(facts, "unreached");
 	if (un && un->len) {
 		uint8_t(*u)[32] = mor_arena_array(r->a, un->len, 32);
@@ -125,6 +155,44 @@ static void render_chain(mor_world *w, const uint8_t id[32], char *out, size_t c
 				      (unsigned long long)c->dishonest[i].from, h);
 	}
 	snprintf(out + n, cap - n, "],\"next\":\"%s\"}", c ? mor_next_name(c->next) : "unknown");
+}
+
+static int cmp_act_id(const void *x, const void *y)
+{
+	return memcmp((*(const mor_act *const *)x)->id, (*(const mor_act *const *)y)->id, 32);
+}
+
+static int cmp_sale(const void *x, const void *y)
+{
+	return memcmp(((const mor_vow_sale *)x)->act->id, ((const mor_vow_sale *)y)->act->id, 32);
+}
+
+static void render_ids(const mor_act **l, size_t n, mor_arena *a, char *out, size_t cap, size_t *pos)
+{
+	qsort(l, n, sizeof *l, cmp_act_id);
+	for (size_t i = 0; i < n && *pos < cap; i++)
+		*pos += (size_t)snprintf(out + *pos, cap - *pos, "%s\"%s\"", i ? "," : "", hex_encode(l[i]->id, 32, a));
+}
+
+static void render_vow(mor_vow *v, mor_arena *a, char *out, size_t cap)
+{
+	static const char *states[] = { "pending", "confirmed", "contested" };
+	if (v->unknown_all) {
+		snprintf(out, cap, "unknown");
+		return;
+	}
+	if (v->nsales)
+		qsort(v->sales, v->nsales, sizeof *v->sales, cmp_sale);
+	size_t n = (size_t)snprintf(out, cap, "{\"sales\":[");
+	for (size_t i = 0; i < v->nsales && n < cap; i++)
+		n += (size_t)snprintf(out + n, cap - n, "%s{\"act\":\"%s\",\"buyer\":\"%s\",\"state\":\"%s\"}", i ? "," : "",
+				      hex_encode(v->sales[i].act->id, 32, a), hex_encode(v->sales[i].buyer, 32, a),
+				      states[v->sales[i].state]);
+	n += (size_t)snprintf(out + n, cap - n, "],\"unknown\":[");
+	render_ids(v->unknown, v->nunknown, a, out, cap, &n);
+	n += (size_t)snprintf(out + n, cap - n, "],\"unsigned\":[");
+	render_ids(v->unsigned_, v->nunsigned, a, out, cap, &n);
+	snprintf(out + n, cap - n, "]}");
 }
 
 static void answer(vrun *r, const json *root, const json *c, char *got, size_t cap)
@@ -182,6 +250,19 @@ static void answer(vrun *r, const json *root, const json *c, char *got, size_t c
 	} else if (!strcmp(q, "chain")) {
 		hex_fixed(json_str(json_get(ask, "identity")), id, 32);
 		render_chain(&w, id, got, cap);
+	} else if (!strcmp(q, "succession")) {
+		hex_fixed(json_str(json_get(ask, "identity")), id, 32);
+		mor_succ sc;
+		mor_succession(&w, id, &sc);
+		size_t n = 0;
+		n += (size_t)snprintf(got + n, cap - n, "{");
+		if (sc.confirmation)
+			n += (size_t)snprintf(got + n, cap - n, "\"confirmation\":\"%s\",",
+					      hex_encode(sc.confirmation->id, 32, r->a));
+		n += (size_t)snprintf(got + n, cap - n, "\"seen\":\"%s\"", mor_succession_name(sc.seen));
+		if (sc.successor)
+			n += (size_t)snprintf(got + n, cap - n, ",\"successor\":\"%s\"", hex_encode(sc.successor, 32, r->a));
+		snprintf(got + n, cap - n, "}");
 	} else if (!strcmp(q, "backing")) {
 		snprintf(got, cap, "%s", mor_backing_name(mor_backing(&w, id)));
 	} else if (!strcmp(q, "consent counts")) {
@@ -214,7 +295,26 @@ static void answer(vrun *r, const json *root, const json *c, char *got, size_t c
 		snprintf(got, cap, "%s", mor_deadline_name(d));
 	} else if (!strcmp(q, "disagreements")) {
 		hex_fixed(json_str(json_get(ask, "receiver")), id, 32);
-		snprintf(got, cap, "%d", mor_money_disagreements(&w, id));
+		int d = mor_money_disagreements(&w, id);
+		if (d < 0)
+			snprintf(got, cap, "unknown");
+		else
+			snprintf(got, cap, "%d", d);
+	} else if (!strcmp(q, "refund repaid")) {
+		uint8_t to[32], unit[32];
+		hex_fixed(json_str(json_get(ask, "payment")), id, 32);
+		hex_fixed(json_str(json_get(ask, "to")), to, 32);
+		hex_fixed(json_str(json_get(ask, "unit")), unit, 32);
+		int64_t v = mor_money_refund_repaid(&w, id, to, unit);
+		if (v < 0)
+			snprintf(got, cap, "unknown");
+		else
+			snprintf(got, cap, "%lld", (long long)v);
+	} else if (!strcmp(q, "vow")) {
+		hex_fixed(json_str(json_get(ask, "vow")), id, 32);
+		static mor_vow vw;
+		mor_money_vow(&w, id, &vw);
+		render_vow(&vw, r->a, got, cap);
 	} else if (!strcmp(q, "paid toward")) {
 		int64_t v = mor_money_paid_toward(&w, id);
 		if (v < 0)

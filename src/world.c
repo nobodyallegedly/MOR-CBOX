@@ -15,6 +15,7 @@ const char *mor_status_name(int st)
 	case MOR_ST_DISPUTED: return "disputed";
 	case MOR_ST_SCOPED: return "scoped";
 	case MOR_ST_CONTESTED: return "contested";
+	case MOR_ST_NOT_COUNTING: return "not counting";
 	default: return "?";
 	}
 }
@@ -76,22 +77,46 @@ int mor_world_init(mor_world *w, mor_arena *a, const uint8_t mir[MOR_NMIRS][32],
 	return w->chains ? 0 : -1;
 }
 
-const mor_act *mor_world_get(const mor_world *w, const uint8_t id[32])
+/* The index of the held act with this id, or nacts. */
+static size_t find_index(const mor_world *w, const uint8_t id[32])
 {
 	size_t lo = 0, hi = w->nacts;
 	if (!id)
-		return NULL;
+		return w->nacts;
 	while (lo < hi) {
 		size_t mid = lo + (hi - lo) / 2;
 		int c = memcmp(w->acts[mid].id, id, 32);
 		if (c == 0)
-			return &w->acts[mid];
+			return mid;
 		if (c < 0)
 			lo = mid + 1;
 		else
 			hi = mid;
 	}
-	return NULL;
+	return w->nacts;
+}
+
+const mor_act *mor_world_get(const mor_world *w, const uint8_t id[32])
+{
+	size_t i = find_index(w, id);
+	return i < w->nacts ? &w->acts[i] : NULL;
+}
+
+int mor_world_open_with(mor_world *w, const uint8_t id[32], const uint8_t key[32])
+{
+	size_t i = find_index(w, id);
+	if (i == w->nacts || w->acts[i].open != MOR_OPEN_NO_KEY)
+		return 0;
+	mor_act *x = &w->acts[i];
+	mor_act tmp;
+	int r = mor_act_decode(&tmp, x->bytes, x->len, key, w->a);
+	if (r == MOR_OPEN_NOMEM)
+		return -1;
+	if (tmp.open != MOR_OPEN_OK)
+		return 0;
+	*x = tmp;
+	x->fmt_ok = mor_world_mir_of(w, x->spec) == MOR_MIR_NONE || mor_format_ok(w, x, NULL);
+	return 0;
 }
 
 int mor_world_mir_of(const mor_world *w, const uint8_t spec[32])

@@ -209,27 +209,10 @@ int mor_mir_hash(const uint8_t *file, size_t len, uint8_t hash[32], uint64_t kin
 	uint8_t *t = mor_arena_alloc(a, len + 1);
 	if (!t)
 		return -1;
-	/* At the freeze the first line is the name alone: a draft's status line
-	 * (the italic line after the title, "*Draft ...*" or "*Version ...*") and
-	 * the blank line after it are not part of the frozen text. */
-	size_t n = 0, i = 0;
-	size_t l1 = 0;
-	while (l1 < len && file[l1] != '\n')
-		l1++;
-	if (l1 + 2 < len && file[l1 + 1] == '\n' && file[l1 + 2] == '*') {
-		size_t s = l1 + 2, e = s;
-		while (e < len && file[e] != '\n')
-			e++;
-		int status = e - s >= 3 && file[e - 1] == '*' &&
-			     ((e - s > 7 && !memcmp(file + s, "*Draft ", 7)) || (e - s > 9 && !memcmp(file + s, "*Version ", 9)));
-		if (status && e + 1 < len && file[e + 1] == '\n') {
-			memcpy(t, file, l1 + 2);
-			n = l1 + 2;
-			i = e + 2;
-		}
-	}
-	memcpy(t + n, file + i, len - i);
-	n += len - i;
+	/* Nothing else is dropped: a draft's status line is part of the text,
+	 * like every line of the file (Development rule 26). */
+	size_t n = len;
+	memcpy(t, file, len);
 	size_t mark = mor_arena_mark(a);
 	int r = mor_text_check(t, n, a);
 	mor_arena_reset(a, mark);

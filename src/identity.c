@@ -14,7 +14,10 @@ const char *mor_next_name(int n)
 	case MOR_NEXT_END: return "end";
 	case MOR_NEXT_PENDING: return "pending";
 	case MOR_NEXT_CONTESTED: return "contested";
-	default: return "unknown";
+	case MOR_NEXT_NO_GENESIS: return "no genesis";
+	case MOR_NEXT_GENESIS_UNKNOWN: return "genesis unknown";
+	case MOR_NEXT_GENESIS_INVALID: return "genesis invalid";
+	default: return "cannot tell";
 	}
 }
 
@@ -670,12 +673,12 @@ static void chain_compute(mor_world *w, mor_chain *c, int selfmode)
 	c->next = MOR_NEXT_END;
 	if (!g) {
 		c->genesis_status = MOR_ST_UNKNOWN;
-		c->next = MOR_NEXT_UNKNOWN;
+		c->next = MOR_NEXT_NO_GENESIS;
 		return;
 	}
 	c->genesis_status = genesis_checks(w, g);
 	if (c->genesis_status != MOR_ST_VALID) {
-		c->next = c->genesis_status == MOR_ST_UNKNOWN ? MOR_NEXT_UNKNOWN : MOR_NEXT_END;
+		c->next = c->genesis_status == MOR_ST_UNKNOWN ? MOR_NEXT_GENESIS_UNKNOWN : MOR_NEXT_GENESIS_INVALID;
 		return;
 	}
 	mor_chain_pos p0 = { g, mor_pl(g, 0), g, mor_pl(g, 1), mor_pl(g, 2), mor_pl(g, 3), mor_pl(g, 5), 0 };
@@ -743,10 +746,12 @@ static void chain_compute(mor_world *w, mor_chain *c, int selfmode)
 		}
 		if (done)
 			continue;
-		if (s.conflict)
-			c->next = MOR_NEXT_CONTESTED;
-		else if (s.unknown || any_unknown_cand)
+		/* The order "What stops a chain" gives: cannot tell before a contest
+		 * under the home rule, and that before pending. */
+		if (s.unknown || any_unknown_cand)
 			c->next = MOR_NEXT_UNKNOWN;
+		else if (s.conflict)
+			c->next = MOR_NEXT_CONTESTED;
 		else
 			c->next = MOR_NEXT_PENDING;
 		return;
@@ -879,8 +884,9 @@ static int acknowledged_by_other(mor_world *w, const mor_act *a, const uint8_t *
 			continue;
 		if (except && mor_hash_eq(k->signer, except))
 			continue;
-		int st = mor_status_act(w, k, 0);
-		if (st == MOR_ST_VALID || st == MOR_ST_SCOPED)
+		/* signed with the identity's signing key, never a scoped key: reliance
+		 * is the identity's, not a grantee's (rule 34) */
+		if (mor_status_act(w, k, 0) == MOR_ST_VALID)
 			return 1;
 	}
 	return 0;
@@ -954,9 +960,12 @@ static int chain_act_status(mor_world *w, const mor_act *a)
 		if (c->pos[n].act == a)
 			return MOR_ST_VALID;
 		/* Another act counts at its position. Built on the same predecessor and
-		 * valid, it lost; built on something that does not count, it is judged by that. */
-		if (mor_hash_eq(mor_pl_hash(a, 0), c->pos[n - 1].act->id))
-			return chain_act_checks(w, a, &c->pos[n - 1]) == MOR_ST_INVALID ? MOR_ST_INVALID : MOR_ST_VOID;
+		 * passing the checks, it is not counting ("Which rotation counts"); built
+		 * on something that does not count, it is judged by that. */
+		if (mor_hash_eq(mor_pl_hash(a, 0), c->pos[n - 1].act->id)) {
+			int st = chain_act_checks(w, a, &c->pos[n - 1]);
+			return st == MOR_ST_VALID ? MOR_ST_NOT_COUNTING : st;
+		}
 		const mor_act *p = mor_world_get(w, mor_pl_hash(a, 0));
 		return p ? MOR_ST_VOID : MOR_ST_UNKNOWN;
 	}
@@ -1031,6 +1040,25 @@ static int everyday_status(mor_world *w, const mor_act *a, int flags)
 	return MOR_ST_SCOPED;
 }
 
+static int private_link_unplaced(mor_world *w, const mor_act *a)
+{
+	if (!mor_world_is_mir(w, a, MOR_IDENTITY) || a->type < 6 || a->type > 8 || a->key)
+		return 0;
+	const mor_chain *c = mor_chain_get(w, a->signer);
+	if (!c || !c->npos)
+		return 1;
+	ops_t o;
+	ops_of(c->pos[c->npos - 1].homes, a->signer, &o);
+	for (size_t i = 0; i < w->nfound; i++) {
+		if (memcmp(w->found[i].act, a->id, 32))
+			continue;
+		for (size_t k = 0; k < o.n; k++)
+			if (!memcmp(o.op[k], w->found[i].operator, 32))
+				return 0;
+	}
+	return 1;
+}
+
 int mor_status_act(mor_world *w, const mor_act *a, int flags)
 {
 	if (!a)
@@ -1057,6 +1085,10 @@ int mor_status_act(mor_world *w, const mor_act *a, int flags)
 			else if (t == MOR_ST_UNKNOWN && inner != MOR_ST_PENDING)
 				unknown = 1;
 		}
+		/* A private link counts only once found at one of its signer's
+		 * homes (rule 17); found nowhere, unknown, never invalid. */
+		if (inner == MOR_ST_VALID && private_link_unplaced(w, a))
+			unknown = 1;
 		if (inner == MOR_ST_INVALID)
 			result = inner;
 		else if (unknown)
@@ -1074,4 +1106,56 @@ int mor_status(mor_world *w, const uint8_t id[32], int flags)
 	if (!a)
 		return MOR_ST_UNKNOWN;
 	return mor_status_act(w, a, flags);
+}
+
+const char *mor_succession_name(int s)
+{
+	switch (s) {
+	case MOR_SUCC_NONE: return "none";
+	case MOR_SUCC_DECLARED: return "declared";
+	case MOR_SUCC_FOLLOWED: return "confirmed, followed";
+	case MOR_SUCC_OTHER: return "another protocol's";
+	default: return "unknown";
+	}
+}
+
+int mor_succession(mor_world *w, const uint8_t id[32], mor_succ *out)
+{
+	memset(out, 0, sizeof *out);
+	const mor_chain *c = mor_chain_get(w, id);
+	if (!c || c->genesis_status != MOR_ST_VALID)
+		return out->seen = MOR_SUCC_UNKNOWN;
+	const mor_cbor *succ = NULL;
+	for (size_t i = c->npos; i-- > 1;) {
+		const mor_act *r = c->pos[i].act;
+		if (r->type == 1 && mor_pl(r, 9)) {
+			succ = mor_pl(r, 9);
+			out->rotation = r;
+			break;
+		}
+	}
+	if (!succ || mor_cbor_is_null(succ))
+		return out->seen = MOR_SUCC_NONE;
+	const mor_cbor *proto = &succ->items[0], *ident = &succ->items[1];
+	if (proto->v != 3 || memcmp(proto->data, "mor", 3) || ident->v != 32)
+		return out->seen = MOR_SUCC_OTHER;
+	out->successor = ident->data;
+	int unknown = 0;
+	for (size_t i = 0; i < w->nacts; i++) {
+		const mor_act *k = &w->acts[i];
+		if (!mor_world_is_mir(w, k, MOR_IDENTITY) || !mor_hash_eq(k->signer, out->successor))
+			continue;
+		int names = (k->type == 7 && mor_objects_has(k, id, out->rotation->id)) ||
+			    (k->type == 15 && mor_acks_name(k, out->rotation->id));
+		if (!names)
+			continue;
+		int st = mor_status_act(w, k, 0);
+		if (st == MOR_ST_VALID) {
+			out->confirmation = k;
+			return out->seen = MOR_SUCC_FOLLOWED;
+		}
+		if (st == MOR_ST_UNKNOWN || st == MOR_ST_PENDING)
+			unknown = 1;
+	}
+	return out->seen = unknown ? MOR_SUCC_UNKNOWN : MOR_SUCC_DECLARED;
 }

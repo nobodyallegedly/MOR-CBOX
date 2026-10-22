@@ -51,7 +51,7 @@ int mor_cbor_texts_canonical(const mor_cbor *c, mor_arena *a)
 		int r = mor_text_check(c->data, (size_t)c->v, a);
 		if (r == MOR_TEXT_NOMEM)
 			return -1;
-		return r ? 6 + r : 0;
+		return r;
 	}
 	case MOR_CBOR_ARRAY: n = c->v; break;
 	case MOR_CBOR_MAP: n = 2 * c->v; break;

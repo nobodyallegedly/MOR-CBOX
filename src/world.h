@@ -24,6 +24,7 @@ enum mor_status {
 	MOR_ST_DISPUTED,
 	MOR_ST_SCOPED,
 	MOR_ST_CONTESTED,
+	MOR_ST_NOT_COUNTING, /* a rotation passing its checks that another outcounted */
 };
 const char *mor_status_name(int st);
 
@@ -50,6 +51,20 @@ typedef struct mor_rail_answer {
 	uint8_t paid_to_flow[32]; /* the payee pointer it was paid to */
 } mor_rail_answer;
 
+/* The rail Module's answer of which payment a proof is (Money rule 12). */
+typedef struct mor_rail_payment {
+	const uint8_t *proof;
+	size_t proof_len;
+	const uint8_t *payment;
+	size_t payment_len;
+} mor_rail_payment;
+
+/* A private act found at a home, with that home's operator. */
+typedef struct mor_found {
+	uint8_t act[32];
+	uint8_t operator[32];
+} mor_found;
+
 typedef struct mor_spec_content {
 	uint8_t hash[32];
 	const uint8_t *bytes;
@@ -69,6 +84,10 @@ typedef struct mor_world {
 	size_t nrails;
 	mor_spec_content *specs;
 	size_t nspecs;
+	mor_rail_payment *payments;
+	size_t npayments;
+	mor_found *found;
+	size_t nfound;
 	/* Identity homes the verifier tried and failed to reach (by operator). */
 	const uint8_t (*unreached)[32];
 	size_t nunreached;
@@ -86,6 +105,10 @@ int mor_world_init(mor_world *w, mor_arena *a, const uint8_t mir[MOR_NMIRS][32],
 		   const size_t *lens, size_t n);
 
 const mor_act *mor_world_get(const mor_world *w, const uint8_t id[32]);
+/* Open a held private act with a content key its recipient holds. Returns 0
+ * when the act is held (opened or not: a key that does not open it leaves it
+ * as it was), -1 out of arena. */
+int mor_world_open_with(mor_world *w, const uint8_t id[32], const uint8_t key[32]);
 int mor_world_mir_of(const mor_world *w, const uint8_t spec[32]);
 int mor_world_is_mir(const mor_world *w, const mor_act *a, int mir);
 
