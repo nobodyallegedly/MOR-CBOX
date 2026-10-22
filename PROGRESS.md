@@ -11,8 +11,11 @@ Kept current so that a new session, started with the same prompt, can continue f
 
 ## Done
 
-- Library (`src/`): arena; strict deterministic CBOR decoder and encoder; canonical text (utf8proc, Unicode 17.0.0); SHA-256, tagged hash; XChaCha20-Poly1305; BIP-340; SLH-DSA (pure, context `MOR`); X-Wing (ML-KEM-768 + X25519, SHA3 combiner); act decode, open and shape (Envelopes Part three); running summary (MMR); written-for-people forms (bech32m); sealed container.
-- Vector files fully agreeing: tagged-hash, cbor, canonical-text, lock, running-summary, sequence-three-acts, open-act, textual-forms, signatures, sealed (222 checks).
+- Library (`src/`): arena; strict deterministic CBOR decoder and encoder; canonical text (utf8proc, Unicode 17.0.0); SHA-256, tagged hash; XChaCha20-Poly1305; BIP-340; SLH-DSA (pure, context `MOR`); X-Wing (ML-KEM-768 + X25519, SHA3 combiner); act decode, open and shape (Envelopes Part three); running summary (MMR); written-for-people forms (bech32m); sealed container; every MIR's formats; Identity chains and status (receipts, home rules, audits and inclusion proofs, conflicts, homeless and escape, kept ancestry, acknowledgements); Text rule 14; Money double entry and paid toward; Agreements (exists, deal fork, keepers, consent, backing, deadlines); Development (specification decoding, MIR hash).
+- Every vector file agrees: 285/285 (`RESULTS.md`).
+- Unit tests 112/112; `make check` (ASan+UBSan) clean; `make gcc-check` clean.
+- Fuzz targets for every untrusted decoder plus a structure-aware engine; two bugs found in smoke runs, fixed, kept in `fuzz/regressions/` (`make regress`).
+- `QUESTIONS.md` (49 questions), `RESULTS.md`, `REPORT.md` (draft: fuzz results and manifest result to fill).
 
 ## Reading notes (where the verdict logic lives in the texts)
 
@@ -23,6 +26,5 @@ Kept current so that a new session, started with the same prompt, can continue f
 
 ## Next
 
-1. Verdict layers for `verdicts.json` (63 cases): Identity (status, chain), Text rule 14, Envelopes (sequence shape, invalid beats unknown), Development (specification decoding, MIR hashes), Money (disagreements, backing, consent, paid toward), Agreements (agreement exists, deal fork, consent counts, backing, status after keepers, deadline).
-2. Unit tests, sanitizer run, fuzz targets and runs.
-3. QUESTIONS.md, RESULTS.md, REPORT.md; pull request.
+1. The long fuzz campaign (`./fuzz/run.sh 1800`: 30 minutes per target, 4 at a time, started 07:39 UTC) — record executions, coverage and findings in REPORT.md; fix and keep any crash; minimise and commit the corpora.
+2. Final `sha256sum -c MANIFEST.sha256`; push; open the pull request.
