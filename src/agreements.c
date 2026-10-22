@@ -303,9 +303,33 @@ int mor_keepers_rescue(mor_world *w, const mor_act *a, const mor_act *ending)
 
 /* ---- agreements: signatures and completeness ---- */
 
-/* Has `party` a valid signature act naming `act`? */
-static int signed_by(mor_world *w, const uint8_t act[32], const uint8_t party[32], int *unknown)
+#define MAX_NESTING 8
+
+static const mor_act *deal_in_force(mor_world *w, const mor_act *founding);
+
+/* Has `party` a valid signature act naming `act`? A party that is an
+ * agreement, named by its line (its founding version), signs where every
+ * party of its version in force signs, at most eight layers deep; a deeper
+ * or looping one cannot be told (rule 1, "Any agreement may be a party"). */
+static int signed_by_d(mor_world *w, const uint8_t act[32], const uint8_t party[32], int *unknown, int depth)
 {
+	const mor_act *inner = terms_of(w, party);
+	if (inner) {
+		if (depth >= MAX_NESTING || !memcmp(party, act, 32)) {
+			*unknown = 1;
+			return 0;
+		}
+		const mor_act *v = deal_in_force(w, inner);
+		if (!v) {
+			*unknown = 1;
+			return 0;
+		}
+		const mor_cbor *ps = mor_pl(v, 0);
+		for (uint64_t i = 0; i < ps->v; i++)
+			if (!signed_by_d(w, act, ps->items[i].data, unknown, depth + 1))
+				return 0;
+		return 1;
+	}
 	for (size_t i = 0; i < w->nacts; i++) {
 		const mor_act *s = &w->acts[i];
 		if (!is_agr(w, s, 1) || !mor_hash_eq(s->signer, party) || !mor_hash_eq(mor_pl_hash(s, 0), act))
@@ -317,6 +341,11 @@ static int signed_by(mor_world *w, const uint8_t act[32], const uint8_t party[32
 			*unknown = 1;
 	}
 	return 0;
+}
+
+static int signed_by(mor_world *w, const uint8_t act[32], const uint8_t party[32], int *unknown)
+{
+	return signed_by_d(w, act, party, unknown, 0);
 }
 
 int mor_agreement_exists(mor_world *w, const uint8_t terms[32])
@@ -394,6 +423,20 @@ static size_t complete_children(mor_world *w, const uint8_t v[32], const mor_act
 			out[n++] = c;
 	}
 	return n;
+}
+
+/* A deal's version in force on its line: from its founding, the one
+ * complete clone of each version, while there is exactly one. */
+static const mor_act *deal_in_force(mor_world *w, const mor_act *founding)
+{
+	const mor_act *cur = founding;
+	for (int d = 0; d < 64; d++) {
+		const mor_act *kids[2];
+		if (complete_children(w, cur->id, kids, 2) != 1)
+			break;
+		cur = kids[0];
+	}
+	return cur;
 }
 
 int mor_deal_fork(mor_world *w, const uint8_t version[32], mor_fork *out)
@@ -524,6 +567,42 @@ static const uint8_t *declared_at(mor_world *w, const uint8_t *coll, const mor_a
 	return found;
 }
 
+static int done_sealed(const mor_act *x, const mor_act *agr);
+
+/* The agreement in force for a collective's act, from the one its chain
+ * declares: an operational clone a record of the collective puts in force
+ * is in force at once for every act whose history holds that record
+ * (record, type 17; "Made before, made after"). */
+static const mor_act *recorded_in_force(mor_world *w, const uint8_t *coll, const mor_act *x, const mor_act *base)
+{
+	const mor_act *best = base;
+	int bd = 0;
+	for (size_t i = 0; i < w->nacts; i++) {
+		const mor_act *r = &w->acts[i];
+		if (!is_agr(w, r, 17) || !mor_hash_eq(r->signer, coll) || r == x || !mor_pl_hash(r, 0))
+			continue;
+		const mor_act *c = terms_of(w, mor_pl_hash(r, 0));
+		int d = c ? line_depth(w, c, base->id) : -1;
+		if (d <= bd || !done_sealed(r, best) || !mor_history_holds(w, x, NULL, r->id))
+			continue;
+		if (mor_status_act(w, r, 0) != MOR_ST_VALID)
+			continue;
+		/* the signature acts it names, valid, naming the clone */
+		const mor_cbor *sigs = mor_pl(r, 2);
+		int ok = sigs != NULL;
+		for (uint64_t k = 0; ok && k < sigs->v; k++) {
+			const mor_act *sg = mor_world_get(w, sigs->items[k].data);
+			ok = sg && is_agr(w, sg, 1) && mor_hash_eq(mor_pl_hash(sg, 0), c->id) &&
+			     mor_status_act(w, sg, 0) == MOR_ST_VALID;
+		}
+		if (!ok)
+			continue;
+		best = c;
+		bd = d;
+	}
+	return best;
+}
+
 /* Is every party of the agreement among the act's recipients, or the act public? */
 static int done_sealed(const mor_act *x, const mor_act *agr)
 {
@@ -596,6 +675,8 @@ int mor_consent_counts(mor_world *w, const uint8_t id[32])
 	const mor_act *agr = agr_id ? terms_of(w, agr_id) : NULL;
 	if (!agr)
 		return -1;
+	if (!mk)
+		agr = recorded_in_force(w, coll, x, agr);
 	if (mk && !mor_act_names_in(mor_pl(agr, 0), holder))
 		return 0;
 	/* Done: sealed to every member, or public, and on the collective's chain,
