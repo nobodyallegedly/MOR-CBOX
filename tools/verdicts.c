@@ -272,6 +272,9 @@ static void answer(vrun *r, const json *root, const json *c, char *got, size_t c
 		int e = mor_agreement_exists(&w, id);
 		snprintf(got, cap, "%s", e == MOR_AGR_EXISTS ? "exists" : e == MOR_AGR_NOT ? "does not exist" :
 					 e == MOR_AGR_INVALID ? "invalid" : "unknown");
+	} else if (!strcmp(q, "closing") || !strcmp(q, "fork")) {
+		int e = mor_ending_complete(&w, id);
+		snprintf(got, cap, "%s", e > 0 ? "{\"complete\":true}" : e == 0 ? "{\"complete\":false}" : "unknown");
 	} else if (!strcmp(q, "deal fork")) {
 		mor_fork f;
 		mor_deal_fork(&w, id, &f);

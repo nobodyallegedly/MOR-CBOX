@@ -80,6 +80,10 @@ typedef struct mor_succ {
 int mor_succession(mor_world *w, const uint8_t id[32], mor_succ *out);
 const char *mor_succession_name(int s);
 
+/* Does a kept tip [act, position, summary] fit the line its signer's acts
+ * held lead to? 1 yes, 0 no, -1 an act it needs is not held. */
+int mor_kept_tip_holds(mor_world *w, const mor_cbor *tip, const uint8_t *signer);
+
 /* The rotation that voided an act, when its standing is void or disputed
  * because of one (for Agreements' keepers). */
 const mor_act *mor_voiding_rotation(mor_world *w, const mor_act *a);

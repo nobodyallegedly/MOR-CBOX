@@ -47,6 +47,10 @@ const char *mor_deadline_name(int d);
 int mor_deadline(mor_world *w, const uint8_t act[32], const uint8_t (*keepers)[32], size_t nkeepers,
 		 const mor_cbor *rule, const uint8_t *clock, size_t clock_len, uint64_t point);
 
+/* A collective's fork (type 19) or closing (type 20): complete 1, not 0,
+ * unknown -1 (rule 91; "Fork (type 19)", "Closing (type 20)"). */
+int mor_ending_complete(mor_world *w, const uint8_t id[32]);
+
 /* "Belongs to": the agreements an act belongs to (up to max), by id. */
 size_t mor_belongs_to(mor_world *w, const mor_act *a, const uint8_t **out, size_t max, int *unknown);
 

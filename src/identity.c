@@ -872,6 +872,12 @@ static int rebuild_line_in(mor_world *w, const mor_cbor *tip, const uint8_t *sig
 	return 1;
 }
 
+int mor_kept_tip_holds(mor_world *w, const mor_cbor *tip, const uint8_t *signer)
+{
+	int on = 0;
+	return rebuild_line(w, tip, signer, NULL, &on);
+}
+
 /* An acknowledgement by another identity, by an act of a type that may
  * acknowledge, that counts while its signer's chain keeps it valid. */
 static int acknowledged_by_other(mor_world *w, const mor_act *a, const uint8_t *except)
