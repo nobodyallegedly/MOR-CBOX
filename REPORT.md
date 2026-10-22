@@ -59,7 +59,27 @@ Toolchain: clang 18.1.3 (release, sanitizers, libFuzzer) and gcc 13.3 (`make gcc
 
 A ninth, `engine`, is structure-aware. It builds well-formed acts from the fuzzer's bytes, with signature checks stubbed out in a separate build (`MOR_FUZZ_NOSIG`) so that the verdict logic past the signature is reachable. The corpora were seeded from the vectors (`fuzz/make-corpus.py`) and are kept in `fuzz/corpus/<target>/`. Every crash found is kept in `fuzz/regressions/` and replayed by `make regress`.
 
-FUZZ-RESULTS
+The campaign (`fuzz/run.sh 1800`, 4 cores, 22 October 2026, 07:39-09:09 UTC) ran each target for 30 minutes. World and engine are the slow targets: every input is a set of acts and their verdict logic, signatures and all. They then had a second 30-minute run each, with two workers (09:10-09:40 UTC). "Features" is libFuzzer's measure of distinct behaviour reached at the end of the run.
+
+| Target | Time | Executions | Exec/s | Features | Corpus kept (minimised) | Crashes, leaks, timeouts |
+| --- | --- | --- | --- | --- | --- | --- |
+| `cbor` | 30 min | 61,962,208 | 34,404 | 1,134 | 438 | none |
+| `text` | 30 min | 461,454,963 | 256,221 | 413 | 89 | none |
+| `act` | 30 min | 45,979,510 | 25,529 | 1,835 | 374 | none |
+| `world` | 30 min + 30 min (2 workers) | 762,735 + 2,159,784 | 423 / 391 | 5,551 / 5,805 | 662 | none |
+| `engine` | 30 min + 30 min (2 workers) | 5,821,145 + 9,575,410 | 3,232 / 2,726 | 6,100 / 6,465 | 1,161 | none |
+| `people` | 30 min | 59,538,104 | 33,058 | 501 | 160 | none |
+| `sealed` | 30 min | 80,157,538 | 44,507 | 874 | 283 | none |
+| `spec` | 30 min | 100,621,024 | 55,869 | 1,777 | 534 | none |
+| `json` | 30 min | 6,490,720 | 3,603 | 1,261 | 408 | none |
+
+In total that is about 835 million executions over 5.5 hours of fuzzing time, with no crash, leak, sanitizer report or timeout.
+
+Two bugs were found earlier, in the short smoke runs made while I wrote the targets. Both are fixed and kept in `fuzz/regressions/`:
+- `world-null-signer-consent`: asking a genesis for its consent led to a null chain lookup. Fixed with guards in `mor_chain_get` and the consent code.
+- `engine-unformatted-obligation`: Money code read typed payload fields of an act that was not in its format. Fixed by computing, when the world is built, whether each act is in its MIR's format, and making every typed read require it (`mor_world_is_mir`).
+
+The logs are not committed (`fuzz/logs/` is ignored), and the numbers above are copied from them. The `cbor` target's figures include its round trip through the encoder.
 
 ## What is not implemented, and why
 
@@ -102,4 +122,4 @@ The vectors reach the core pieces and a chosen set of verdicts. A great deal of 
 
 ## Manifest
 
-MANIFEST-RESULT
+`sha256sum -c MANIFEST.sha256` was run at the start of the work and again at the end (22 October 2026, 09:45 UTC, after the last commit to code). Both times all 22 files it lists were OK: `README.md`, `SNAPSHOT.md`, the eight texts in `spec/` and the twelve files in `vectors/`. `git status` shows no change to any of them.
