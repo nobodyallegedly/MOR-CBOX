@@ -19,15 +19,35 @@
 #include "../src/text.h"
 #include "hex.h"
 
+/* A table cell: line breaks written as \n, bars escaped. */
+static void md_cell(const char *s)
+{
+	for (; *s; s++) {
+		if (*s == '\n')
+			fputs("\\n", stdout);
+		else if (*s == '|')
+			fputs("\\|", stdout);
+		else
+			putchar(*s);
+	}
+}
+
 int vrecord(vrun *r, const char *casename, const char *expected, const char *got, const char *note)
 {
 	int ok = expected && got && !strcmp(expected, got);
 	r->total++;
 	r->agree += (unsigned)ok;
-	if (r->markdown)
-		printf("| `%s` | %s | `%s` | `%s` | %s |%s\n", r->file, casename, expected ? expected : "-",
-		       got ? got : "-", ok ? "yes" : "**NO**", note ? note : "");
-	else if (!ok || r->verbose)
+	if (r->markdown) {
+		printf("| `%s` | ", r->file);
+		md_cell(casename);
+		fputs(" | `", stdout);
+		md_cell(expected ? expected : "-");
+		fputs("` | `", stdout);
+		md_cell(got ? got : "-");
+		printf("` | %s | ", ok ? "yes" : "**NO**");
+		md_cell(note ? note : "");
+		fputs(" |\n", stdout);
+	} else if (!ok || r->verbose)
 		printf("%s %s: %s\n    expected: %s\n    got:      %s%s%s\n", ok ? "ok  " : "FAIL", r->file,
 		       casename, expected ? expected : "-", got ? got : "-", note ? "\n    note: " : "",
 		       note ? note : "");
@@ -568,7 +588,7 @@ int run_all_vectors(const char *dir, int markdown, int verbose)
 	r.markdown = markdown;
 	r.verbose = verbose;
 	if (markdown)
-		printf("| File | Case | Published | Verifier | Agrees |\n| --- | --- | --- | --- | --- |\n");
+		printf("| File | Case | Published | Verifier | Agrees | Rule |\n| --- | --- | --- | --- | --- | --- |\n");
 	for (size_t i = 0; i < sizeof files / sizeof files[0]; i++) {
 		char path[4096];
 		size_t n = 0;

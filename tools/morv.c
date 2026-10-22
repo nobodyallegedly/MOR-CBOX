@@ -5,6 +5,7 @@
 
 #include "../src/act.h"
 #include "../src/cbor.h"
+#include "../src/development.h"
 #include "../src/people.h"
 #include "../src/text.h"
 #include "diag.h"
@@ -19,7 +20,9 @@ static void usage(void)
 		"       morv cbor HEX                    decode deterministic CBOR strictly\n"
 		"       morv text HEX                    canonical text: the first rule broken\n"
 		"       morv act HEX                     decode and open an act, check its signature\n"
-		"       morv form STRING [mid|mact|mkey|mspec|mwork]   read a written-for-people form\n");
+		"       morv form STRING [mid|mact|mkey|mspec|mwork]   read a written-for-people form\n"
+		"       morv mir-hash FILE [KIND]        Development rule 26: a MIR's spec hash (kind 4; 6 MICS, 7 suite)\n"
+		"       morv pool VERDICTS.json          dump the pool of the verdict vectors, decoded\n");
 }
 
 static int cmd_cbor(const char *h, mor_arena *a)
@@ -156,6 +159,28 @@ static int cmd_pool(const char *path, mor_arena *a)
 	return 0;
 }
 
+/* Development rule 26: a MIR's (kind 4) or the MICS's (6) or a test
+ * suite's (7) spec hash from its file. */
+static int cmd_mir_hash(const char *path, uint64_t kind, mor_arena *a)
+{
+	FILE *f = fopen(path, "rb");
+	if (!f)
+		return 2;
+	static uint8_t buf[1 << 21];
+	size_t n = fread(buf, 1, sizeof buf, f);
+	fclose(f);
+	uint8_t h[32];
+	const uint8_t *t;
+	size_t tl;
+	if (mor_mir_hash(buf, n, h, kind, a, &t, &tl)) {
+		printf("refused: the text so read is not canonical\n");
+		return 1;
+	}
+	hex_print(h, 32);
+	printf("  %s\n", path);
+	return 0;
+}
+
 /* Write engine-fuzzer seeds: one file per verdict case, each act as the
  * record fuzz/fuzz_engine.c reads (its outside fields and its inside). */
 static int cmd_engine_seeds(const char *path, const char *outdir, mor_arena *a)
@@ -259,6 +284,8 @@ int main(int argc, char **argv)
 		r = cmd_act(argv[2], &a);
 	else if (!strcmp(argv[1], "engine-seeds") && argc > 3)
 		r = cmd_engine_seeds(argv[2], argv[3], &a);
+	else if (!strcmp(argv[1], "mir-hash"))
+		r = cmd_mir_hash(argv[2], argc > 3 ? (uint64_t)strtoull(argv[3], NULL, 10) : 4, &a);
 	else if (!strcmp(argv[1], "pool"))
 		r = cmd_pool(argv[2], &a);
 	else if (!strcmp(argv[1], "form"))
