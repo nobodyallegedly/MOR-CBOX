@@ -1302,3 +1302,100 @@ static int after_ending(mor_world *w, const uint8_t *coll, const mor_act *x)
 	}
 	return 0;
 }
+
+/* ---- a deal's version in force, settled by its chain of judgment (rules 35, 47) ---- */
+
+static int judge_lapsed(const mor_world *w, const uint8_t *judge, const uint8_t *question)
+{
+	for (size_t i = 0; i < w->nlapsed; i++)
+		if (!memcmp(w->lapsed[i].judge, judge, 32) && !memcmp(w->lapsed[i].question, question, 32))
+			return 1;
+	return 0;
+}
+
+static int out_of_turn(const mor_world *w, const uint8_t *id)
+{
+	for (size_t i = 0; i < w->nout_of_turn; i++)
+		if (!memcmp(w->out_of_turn[i], id, 32))
+			return 1;
+	return 0;
+}
+
+/* The links of the judge of forks' chain: the judge first, then the
+ * identities the reference's chain of judgment (field 21) names for it. */
+static size_t fork_judges(const mor_act *ref, const uint8_t **links, size_t max)
+{
+	const uint8_t *judge = mor_pl_hash(ref, 27);
+	size_t n = 0;
+	if (!judge)
+		return 0;
+	links[n++] = judge;
+	const mor_cbor *chains = mor_pl(ref, 21);
+	for (uint64_t i = 0; chains && i < chains->v; i++) {
+		const mor_cbor *j = &chains->items[i].items[0], *next = &chains->items[i].items[1];
+		if (j->items[0].v != 1 || memcmp(j->items[1].data, judge, 32))
+			continue;
+		for (uint64_t k = 0; k < next->v && n < max; k++)
+			links[n++] = next->items[k].items[0].data;
+	}
+	return n;
+}
+
+int mor_deal_version_in_force(mor_world *w, const uint8_t version[32], uint8_t out[32])
+{
+	const mor_act *ref = terms_of(w, version);
+	if (!ref)
+		return -1;
+	memcpy(out, version, 32);
+	const mor_act *cur = ref;
+	for (int d = 0; d < 64; d++) {
+		const mor_act *kids[MAX_LIST];
+		size_t n = complete_children(w, cur->id, kids, MAX_LIST);
+		if (n == 0)
+			break;
+		if (n == 1) {
+			cur = kids[0];
+			continue;
+		}
+		/* A fork at cur: the reference, until a settlement counts. A settling
+		 * version every party signed: a complete version naming in field 26
+		 * the tips it drops, on one branch. */
+		const mor_act *settled = NULL;
+		for (size_t i = 0; i < w->nacts && !settled; i++) {
+			const mor_act *v = &w->acts[i];
+			if (is_agr(w, v, 0) && mor_pl(v, 26) && line_depth(w, v, cur->id) > 0 &&
+			    complete_version(w, v, 0) == MOR_AGR_EXISTS)
+				settled = v;
+		}
+		if (!settled) {
+			/* The judge of forks, activated by a party's request, and the link of
+			 * its chain whose stage is open: the first not lapsed on the question. */
+			const uint8_t *links[MAX_LIST];
+			size_t nl = fork_judges(cur, links, MAX_LIST);
+			size_t active = 0;
+			while (active < nl && judge_lapsed(w, links[active], cur->id))
+				active++;
+			for (size_t i = 0; i < w->nacts && active < nl; i++) {
+				const mor_act *s = &w->acts[i];
+				if (!is_agr(w, s, 23) || !mor_hash_eq(s->signer, links[active]) || out_of_turn(w, s->id))
+					continue;
+				const mor_act *rq = mor_world_get(w, mor_pl_hash(s, 0));
+				int unk = 0;
+				if (!rq || !is_agr(w, rq, 22) || !mor_hash_eq(mor_pl_hash(rq, 0), cur->id) ||
+				    !signed_by(w, cur->id, rq->signer, &unk))
+					continue;
+				if (mor_status_act(w, s, 0) != MOR_ST_VALID || mor_status_act(w, rq, 0) != MOR_ST_VALID)
+					continue;
+				const mor_act *kept = terms_of(w, mor_pl_hash(s, 1));
+				if (!kept || line_depth(w, kept, cur->id) <= 0)
+					continue;
+				settled = kept;
+			}
+		}
+		if (!settled)
+			break;
+		cur = settled;
+	}
+	memcpy(out, cur->id, 32);
+	return 0;
+}

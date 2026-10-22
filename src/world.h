@@ -59,6 +59,12 @@ typedef struct mor_rail_payment {
 	size_t payment_len;
 } mor_rail_payment;
 
+/* The time reference's word that a judge's period on a question passed. */
+typedef struct mor_lapse {
+	uint8_t judge[32];
+	uint8_t question[32];
+} mor_lapse;
+
 /* A private act found at a home, with that home's operator. */
 typedef struct mor_found {
 	uint8_t act[32];
@@ -88,6 +94,11 @@ typedef struct mor_world {
 	size_t npayments;
 	mor_found *found;
 	size_t nfound;
+	mor_lapse *lapsed;
+	size_t nlapsed;
+	/* Settlements the time reference places before their link's stage opened. */
+	const uint8_t (*out_of_turn)[32];
+	size_t nout_of_turn;
 	/* Identity homes the verifier tried and failed to reach (by operator). */
 	const uint8_t (*unreached)[32];
 	size_t nunreached;

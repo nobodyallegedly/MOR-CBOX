@@ -119,6 +119,24 @@ int vbuild_world(mor_arena *ar, const json *root, const json *c, mor_world *w, c
 			hex_fixed(json_str(json_get(x, "operator")), f->operator, 32);
 		}
 	}
+	const json *jl = json_get(facts, "judges_lapsed");
+	if (jl && jl->len) {
+		w->lapsed = mor_arena_array(r->a, jl->len, sizeof *w->lapsed);
+		for (size_t i = 0; i < jl->len; i++) {
+			const json *x = json_at(jl, i);
+			mor_lapse *l = &w->lapsed[w->nlapsed++];
+			hex_fixed(json_str(json_get(x, "judge")), l->judge, 32);
+			hex_fixed(json_str(json_get(x, "question")), l->question, 32);
+		}
+	}
+	const json *so = json_get(facts, "settled_out_of_turn");
+	if (so && so->len) {
+		uint8_t(*u)[32] = mor_arena_array(r->a, so->len, 32);
+		for (size_t i = 0; i < so->len; i++)
+			hex_fixed(json_str(json_at(so, i)), u[i], 32);
+		w->out_of_turn = (const uint8_t(*)[32])u;
+		w->nout_of_turn = so->len;
+	}
 	const json *un = json_get(facts, "unreached");
 	if (un && un->len) {
 		uint8_t(*u)[32] = mor_arena_array(r->a, un->len, 32);
@@ -275,6 +293,10 @@ static void answer(vrun *r, const json *root, const json *c, char *got, size_t c
 	} else if (!strcmp(q, "closing") || !strcmp(q, "fork")) {
 		int e = mor_ending_complete(&w, id);
 		snprintf(got, cap, "%s", e > 0 ? "{\"complete\":true}" : e == 0 ? "{\"complete\":false}" : "unknown");
+	} else if (!strcmp(q, "version in force")) {
+		uint8_t v[32];
+		int k = mor_deal_version_in_force(&w, id, v);
+		snprintf(got, cap, "%s", k < 0 ? "unknown" : hex_encode(v, 32, r->a));
 	} else if (!strcmp(q, "deal fork")) {
 		mor_fork f;
 		mor_deal_fork(&w, id, &f);

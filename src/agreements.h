@@ -47,6 +47,13 @@ const char *mor_deadline_name(int d);
 int mor_deadline(mor_world *w, const uint8_t act[32], const uint8_t (*keepers)[32], size_t nkeepers,
 		 const mor_cbor *rule, const uint8_t *clock, size_t clock_len, uint64_t point);
 
+/* A deal's version in force from a version of it (rule 47): with one
+ * complete clone at each step, the latest; at a fork, the reference, until a
+ * settling version every party signed or the judge of forks (or the link of
+ * its chain of judgment whose stage is open, rule 35) settles it, the kept
+ * version's line then in force. 0, or -1 unknown. */
+int mor_deal_version_in_force(mor_world *w, const uint8_t version[32], uint8_t out[32]);
+
 /* A collective's fork (type 19) or closing (type 20): complete 1, not 0,
  * unknown -1 (rule 91; "Fork (type 19)", "Closing (type 20)"). */
 int mor_ending_complete(mor_world *w, const uint8_t id[32]);
