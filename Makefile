@@ -27,10 +27,10 @@ FUZ_CFLAGS := $(BASE) -O1 -g -fno-omit-frame-pointer -fsanitize=fuzzer-no-link,a
 
 all: $(REL)/morv
 
-$(REL)/%.o: %.c $(wildcard src/*.h tools/*.h)
+$(REL)/%.o: %.c $(wildcard src/*.h tools/*.h tests/*.h)
 	@mkdir -p $(dir $@)
 	$(CC) $(REL_CFLAGS) -c $< -o $@
-$(SAN)/%.o: %.c $(wildcard src/*.h tools/*.h)
+$(SAN)/%.o: %.c $(wildcard src/*.h tools/*.h tests/*.h)
 	@mkdir -p $(dir $@)
 	$(CC) $(SAN_CFLAGS) -c $< -o $@
 $(FUZ)/%.o: %.c $(wildcard src/*.h tools/*.h)
@@ -48,7 +48,7 @@ $(REL)/morv: $(REL)/tools/morv.o $(TOOLSRC:%.c=$(REL)/%.o) $(REL)/libmor.a
 	$(CC) $(REL_CFLAGS) $^ $(LIBS) -o $@
 $(SAN)/morv: $(SAN)/tools/morv.o $(TOOLSRC:%.c=$(SAN)/%.o) $(SAN)/libmor.a
 	$(CC) $(SAN_CFLAGS) $^ $(LIBS) -o $@
-$(SAN)/unit: $(SAN)/tests/unit.o $(TOOLSRC:%.c=$(SAN)/%.o) $(SAN)/libmor.a
+$(SAN)/unit: $(SAN)/tests/unit.o $(SAN)/tests/builder.o $(TOOLSRC:%.c=$(SAN)/%.o) $(SAN)/libmor.a
 	$(CC) $(SAN_CFLAGS) $^ $(LIBS) -o $@
 
 FUZZERS := $(patsubst fuzz/%.c,$(FUZ)/%,$(wildcard fuzz/fuzz_*.c))
@@ -70,3 +70,10 @@ clean:
 	rm -rf build
 
 .PHONY: all check fuzz deps clean gcc-check
+
+$(REL)/unit: $(REL)/tests/unit.o $(REL)/tests/builder.o $(TOOLSRC:%.c=$(REL)/%.o) $(REL)/libmor.a
+	$(CC) $(REL_CFLAGS) $^ $(LIBS) -o $@
+test: $(REL)/unit $(REL)/morv
+	$(REL)/unit
+	$(REL)/morv vectors vectors
+.PHONY: test

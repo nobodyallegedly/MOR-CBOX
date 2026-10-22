@@ -168,8 +168,13 @@ static int key_equals(const mor_sigval *s, const mor_cbor *sk)
  * format of its MIR. Returns VALID, INVALID or UNKNOWN (a scheme by hash). */
 static int every_act(const mor_world *w, const mor_act *a)
 {
+	if (a->open == MOR_OPEN_NO_KEY) {
+		/* A private act this verifier cannot open: its outside and signature
+		 * still decide invalid; nothing else can be read (Envelopes rule 10). */
+		return (!a->sig_shape_ok || mor_act_sig_verify(a) == 0) ? MOR_ST_INVALID : MOR_ST_UNKNOWN;
+	}
 	if (a->open != MOR_OPEN_OK)
-		return a->open == MOR_OPEN_NO_KEY ? MOR_ST_UNKNOWN : MOR_ST_INVALID;
+		return MOR_ST_INVALID;
 	int unknown = 0;
 	int s = mor_act_sig_verify(a);
 	if (s == 0)
@@ -1033,7 +1038,7 @@ int mor_status_act(mor_world *w, const mor_act *a, int flags)
 	w->depth++;
 	int st = every_act(w, a);
 	int result;
-	if (st == MOR_ST_INVALID) {
+	if (st == MOR_ST_INVALID || a->open != MOR_OPEN_OK) {
 		result = st;
 	} else {
 		int unknown = st == MOR_ST_UNKNOWN;

@@ -13,8 +13,13 @@
 
 static const char *mir_keys[MOR_NMIRS] = { "identity", "envelopes", "text", "money", "agreements", "development" };
 
-static int build_world(vrun *r, const json *root, const json *c, mor_world *w)
+/* Build the world of one case: its acts (less any whose id starts with
+ * `drop`), and the facts it holds beside them. */
+int vbuild_world(mor_arena *ar, const json *root, const json *c, mor_world *w, const char *drop)
 {
+	struct {
+		mor_arena *a;
+	} rr = { ar }, *r = &rr;
 	uint8_t mir[MOR_NMIRS][32];
 	const json *mirs = json_get(root, "mirs"), *pool = json_get(root, "pool");
 	for (int i = 0; i < MOR_NMIRS; i++)
@@ -26,13 +31,17 @@ static int build_world(vrun *r, const json *root, const json *c, mor_world *w)
 	size_t *lens = mor_arena_array(r->a, n + 1, sizeof *lens);
 	if (!bytes || !lens)
 		return -1;
+	size_t k = 0;
 	for (size_t i = 0; i < n; i++) {
-		const char *hx = json_str(json_get(pool, json_str(json_at(acts, i))));
-		bytes[i] = hex_decode(hx, &lens[i], r->a);
-		if (!bytes[i])
+		const char *id = json_str(json_at(acts, i));
+		if (drop && !strncmp(id, drop, strlen(drop)))
+			continue;
+		bytes[k] = hex_decode(json_str(json_get(pool, id)), &lens[k], r->a);
+		if (!bytes[k])
 			return -1;
+		k++;
 	}
-	if (mor_world_init(w, r->a, (const uint8_t(*)[32])mir, bytes, lens, n))
+	if (mor_world_init(w, r->a, (const uint8_t(*)[32])mir, bytes, lens, k))
 		return -1;
 	const json *facts = json_get(c, "facts");
 	const json *an = json_get(facts, "anchors");
@@ -60,8 +69,8 @@ static int build_world(vrun *r, const json *root, const json *c, mor_world *w)
 			p->index = (uint64_t)json_get(x, "index")->i;
 			const json *path = json_get(x, "path");
 			uint8_t(*pp)[32] = mor_arena_array(r->a, path->len + 1, 32);
-			for (size_t k = 0; k < path->len; k++)
-				hex_fixed(json_str(json_at(path, k)), pp[k], 32);
+			for (size_t q = 0; q < path->len; q++)
+				hex_fixed(json_str(json_at(path, q)), pp[q], 32);
 			p->path = (const uint8_t(*)[32])pp;
 			p->npath = path->len;
 		}
@@ -128,7 +137,7 @@ static void answer(vrun *r, const json *root, const json *c, char *got, size_t c
 	/* Development and MIR-hash cases carry no acts. */
 	if (json_get(c, "content")) {
 		const json *empty_root = root;
-		if (build_world(r, empty_root, c, &w)) {
+		if (vbuild_world(r->a, empty_root, c, &w, NULL)) {
 			snprintf(got, cap, "(world failed)");
 			return;
 		}
@@ -155,7 +164,7 @@ static void answer(vrun *r, const json *root, const json *c, char *got, size_t c
 			snprintf(got, cap, "%s", hex_encode(h, 32, r->a));
 		return;
 	}
-	if (build_world(r, root, c, &w)) {
+	if (vbuild_world(r->a, root, c, &w, NULL)) {
 		snprintf(got, cap, "(world failed)");
 		return;
 	}

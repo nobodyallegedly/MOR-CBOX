@@ -32,4 +32,7 @@ int v_signatures(vrun *r, const json *j);
 int v_sealed(vrun *r, const json *j);
 int v_verdicts(vrun *r, const json *j);
 
+struct mor_world;
+int vbuild_world(mor_arena *a, const json *root, const json *c, struct mor_world *w, const char *drop);
+
 #endif
