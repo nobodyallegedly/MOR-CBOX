@@ -22,9 +22,9 @@ Every vector of the box's **second edition**, by file and case: the answer the v
 **Before any change**, the first edition's verifier agreed with 279 of these 334 checks. The 55 that did not were:
 - 25 canonical-text cases: the rules are now numbered 7 to 12;
 - 1 MIR hash: the status line is now part of the text;
-- 6 Identity cases;
+- 5 Identity cases;
 - 9 Money cases;
-- 14 Agreements cases.
+- 15 Agreements cases.
 
 Each fell to a change in the texts or to a rule I had not built. `PROGRESS.md` lists the order of the work, and `QUESTIONS.md` marks each reading the second edition settled.
 
