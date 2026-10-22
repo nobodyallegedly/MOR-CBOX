@@ -36,5 +36,5 @@ Kept current so that a new session, started with the same prompt, can continue f
 
 ## Next
 
-1. The fuzz campaign over every target (30 minutes each, started 17:27 UTC), then world and engine again; record it in REPORT.md; fix and keep any crash; minimise and commit the corpora.
+1. The fuzz campaign over every target (30 minutes each, started 17:24 UTC), then world and engine again; record it in REPORT.md; fix and keep any crash; minimise and commit the corpora.
 2. REPORT.md for the second edition; final `sha256sum -c MANIFEST.sha256`; push; open the pull request.
