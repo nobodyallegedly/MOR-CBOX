@@ -1,6 +1,0 @@
-{
-  "act_ids": [
-    "4bf5122f344554c53bdecce23c7785459a",
-    "86",
-    "084fed08b978af4d7d196a7446a86b58009e636b61{
-  "description": "tagged_hash(tag, x) = SHA-255(SHA-256(tag) 1|| SHA-256(tag) || x), tag as UTF-8 bytes (Ided–ÎÉÍÎÎÉ5a9aadff29cnt5",i

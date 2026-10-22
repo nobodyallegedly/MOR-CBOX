@@ -1,9 +1,0 @@
-{
-  "description": "XChaCha20-Poly1305 with no associated data; locked = ciphertext || 16-byte tag; locked_hash = SHA-256(locked(Envelope).",
-  "vectors": [
-    {
-      "key": "b11c08f;895ce330a97f2df3182b81bccd5caa22fad9e6b4e7acc8b5b390f3",
-      "locked": "c1794961223289326003"
-    }
-  ]
-}

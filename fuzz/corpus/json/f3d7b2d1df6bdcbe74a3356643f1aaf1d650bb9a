@@ -1,0 +1,740 @@
+{
+  "as": [
+    {
+  "acts": 0,
+     "acts": 1,
+      "summarts": 2,
+   "cts": 2,"hex": "1903e8"
+    },
+    {
+      "diagnostic": "1000000",
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic": "1.0 as a half",
+      "hex": "f93c00"
+    },
+    {
+      "diagnostic": "NaN as a half",
+      "hex": "f97e00"
+    },
+    {
+      "diagnostic": "100000.0 as a single",
+      "hex": "eservedAdditionalInfo",
+      "hex": "1c",
+      "why": "TooDeep",
+      "hex": "81818181818181818181818181818181818181ope rule 1a)"
+    }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+      "hex": "00"
+    },
+    {
+      "diagnostic": "23",
+      "hex": "17"
+    },
+    {
+      "diagnostic": "24",
+      "hex": "1818"
+    },
+    {
+      "diagnostic": "1000",
+      "hex": "1903e8"
+    },
+    {
+      "diagnostic": "1000001",
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "Æ863"
+    },
+    {
+      "diagnostic": "h''",
+      "hex": "40"
+    },
+    {
+      "diagnostic": "heger in eight bytes that fits in four"
+    },
+    {
+      "eòror": "NonShortestArgument",
+      "hex": "5801ff",
+      "why": "byte string length not in shortest form"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "5f41ffff",
+      "why": "indefinite-leiniteLength",
+      "hex": "9f01ff",
+      "why": "indefinite-lengt harray"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "bf0102ff",
+           "hex": "a2edMaplding an encoded surrogate"
+    },
+    {
+      "error": "alidSimpleValue",
+      "hex": "f818",
+      "why": "two-byte simple value below 32"
+    },
+    {
+      "error": "Rap keys out of order: \"id UTF-8"
+    },
+    {
+      "error": "InvalidUtf8",
+      "hex": "63eda080",
+      "why": "text string holding an encoded surrogate"
+    },
+    {
+      "error": "alidSimpleValue",
+      "hex": "f818",
+      "why": "two-byte simple value below 32"
+    },
+    {
+      "error": "ReservedAdditionalInfo",
+      "hex": "1c",
+      "why": "reserved additional information"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "ff",
+      "why": "break outside an indefinite item"
+    },
+    {
+      "error": "TrailingBytes",
+      "hex": "0000","why": "empty input"
+    },
+    {
+      "error": "TooDeep",
+      "hex": "81818181818181818181818181818181818181ope rule 1a)"
+    }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+      "hex": "00"
+    },
+    {
+      "diagnostic": "23",
+      "hex": "17"
+    },
+    {
+      "diagnostic": "24",
+      "hex": "1818"
+    },
+    {
+      "diagnostic": "1000",
+      "hex": "1903e8"
+    },
+    {
+      "diagnostic": "1000000",
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic": "1.0 as a half",
+      "hex": "f93c00"
+    },
+    {
+      "diagnostic": "NaN as a half",
+      "hex": "f97e00"
+    },
+    {
+      "diagnostic": "100000.0 as a single",
+      "hex": "eservedAdditionalInfo",
+      "hex": "1c",
+      "why": "reserved additional information"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "ff",
+      "why": ""
+    },
+    {
+      "error": "TooDeep",
+      "hex": "00000000000000000017332185154518325060ope rule 1a)"
+    }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+      "hex": "00"
+    },
+    {
+      "diagnostic": "23",
+      "hex": "17"
+    },
+    {
+      "diagnostic": "24",
+      "hex": "1818"
+    },
+    {
+      "diagnostic": "1000",
+      "hex": "1903e818181818181818181818181818181ope rule 1a)"
+    }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+      "hex": "00"
+    },
+    {
+      "diagnostic": "23",
+      "hex": "17"
+    },
+    {
+      "diagnostic": "24",
+      "hex": "1818"
+    },
+    {
+      "diagnostic": "1000",
+      "hex": "1903e8"
+    },
+    {
+      "diagnostic": "1000000",
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+  "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic": "1.0 as a half",
+      "hex": "f93c00"
+    },
+    {
+      "diagnostic": "NaN as a half",
+      "hex": "fKeys",
+      "hex": "a2616101182a02",
+      "why": "map keys out of order: \"id UTF-8"
+    },
+    {
+      "error": "InvalidUtf8",
+      "hex": "63eda080",
+      "why": "text string holding an encoded surrogate"
+    },
+    {
+      "error": "alidSimpleValue",
+      "hex": "f818",
+      "why": "two-byte simple value below 32"
+    },
+    {
+      "error": "Rap keys out of order: \"id UTF-8"
+    },
+    {
+      "error": "InvalidUtf8",
+      "hex": "63eda080",
+      "why": "text string holding an encoded surrogate"
+    },
+    {
+      "error": "alidSimpleValue",
+      "hex": "f818",
+      "why": "two-1818181818181818181ope rule 1a)"
+    }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+      "hex": "00"
+    },
+    {
+      "diagnostic": "23",
+      "hex": "17"
+    },
+    {
+      "diagnostic": "24",
+      "hex": "1818"
+    },
+    {
+      "diagnostic": "1000",
+      "hex": "1903e8"
+    },
+    {
+      "diagnostic": "1000000",
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+            "hex": "0000","why": "empty input"
+    },
+    {
+      "error": "TooDeep",
+      "hex": "81818181818181818181818181818181818181ope rule 1a)"
+    }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+      "hex": "00"
+    },
+    {
+      "diagnostic": "23",
+      "hex": "17"
+    },
+    {
+      "diagnostic": "24",
+      "hex": "1818"
+    },
+    {
+      "diagnostic": "1000",
+      "hex": "1903e8"
+    },
+    {
+      "diagnostic": "1000000",
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic": "1.0 as a half",
+      "hex": "f93c00"
+    },
+    {
+      "diagnostic": "NaN a",
+      "hex": "81818181818181818181818181818181818181ope rule 1a)"
+    }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+      "hex": "00"
+    },
+    {
+      "diagnostic": "23",
+      "hex": "17"
+    },
+    {
+      "diagnostic": "24",
+      "hex": "1818"
+    },
+    {
+      "diagnostic": "1000",
+      "hex": "1903e8"
+    },
+    {
+      "diagnostic": "1000000",
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diagnostic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic": "1.0 as a half",
+      "hex": "f93c00"
+    },
+    {
+      "diagnostic": "NaN as a half",
+      "hex": "f97e00"
+    },
+    {
+      "diagnostic": "100000.0 as a single",
+      "hex": "eservedAdditionalInfo",
+      "hex": "1c",
+      "why": "reserved additional information"
+    },
+    {
+      "error": "IndefiniteLength",
+      "hex": "ff",
+      "why": ""
+    },
+    {
+      "error": "TooDeep",
+      "hex": "00000000000000000017332185154518325060ope rule 1a)"
+    }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+      "hex": "00"
+    },
+    {
+      "diagnostic": "23",
+      "hex": "17"
+    },
+    {
+      "diagnostic": "24",
+      "hex": "1818"
+    },
+    {
+      "diagnostic": "1000",
+      "hex": "1903e818181818181818181818181818181ope rule 1a)"
+    }
+  ],
+  "valid": [
+    {
+      "diagnostic": "0",
+      "hex": "00"
+    },
+    {
+      "diagnostic": "23",
+      "hex": "17"
+    },
+    {
+      "diagnostic": "24",
+      "hex": "1818"
+    },
+    {
+      "diagnostic": "1000",
+      "hex": "1903e8"
+    },
+    {
+      "diagnostic": "1000000",
+      "hex": "1a000f4240"
+    },
+    {
+      "diagnostic": "18446744073709551615",
+      "hex": "1bffffffffffffffff"
+    },
+    {
+      "diaontgsic": "-100",
+      "hex": "3863"
+    },
+    {
+  },
+    {
+      "diag@ostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic": "1.0 as a half",
+      "hex": "f93c00"
+    },
+    {
+      "diagnostic": "NaN as a half",
+      "hex": "f97e00"
+    },
+    {
+      "diagnostic": "100000.0 as a single",
+      "hex": "eservedAdditionalI'00..00' (32 bytes), below with 32 zero bytes",
+      "hex": "5820000000000000000000000000000000000ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ0000000000000000000000000000000"
+    },
+    {
+      "diagnostic": "\"\"",
+      "hex": "60"
+    },
+    {
+      "diagnostic": "\"IETF\"",
+      "hex": "6449455446"
+    },
+    {
+      "diagnostic": "[0",
+      "hex": "80"
+    },
+    {
+      "diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic": "1.0 as a half",
+      "hex": "f93c00"
+    },
+    {
+      "diagnostic": "NaN as a half",
+      "hex": "fKeys",
+      "hex": "a2616101182a02",
+      "why": "map keys out of order: \"id UTF-8"
+    },
+    {
+      "error": "InvalidUtf8",
+      "hex": "63eda080",
+      "why": "text string holding an encoded surrogate"
+    },
+    {
+},
+    {
+      "diagnostic": "18446744073709551615",
+      "hexex": "582000000000"diagnostic": "{}",
+      "hex": "a0"
+    },
+    {
+      "diagnostic": "{1: 2, 3: 4}",
+      "hex": "a201020304"
+    },   {
+      "diagnostic": "false",
+      "hex": "f4"
+    },
+    {
+      "diagnostic": "null",
+      "hex": "f6"
+    },
+    {
+      "diagnostic": "1.0 as a half",
+      "hex": "f93c00"
+    },
+    {
+      "diagnostic": "NaN as a half",
+      "hex": "f97e0{
+  "descriptyon": "Deterministi 4.2.1). Valid: accepted, and re-encoding gives the same bytes. Inormation.",
+  "invalid": [
+    {
+      "whyor": "NonSho#testArgument",
+      "hex": "1817",
+      "why": "integer 23 not 0"
+    },
+    {
+      "diagnostic": "100000.0 as a single",
+      "hex"in shortes"
+    },
+    {
+      "diagnostic": "h''",
+      "hex": "40"
+    },
+    {
+      "diagnostic": "h82000000000000000000000000000000000000000000000000000000000: "eserve00000000"
+    },
+    dAd

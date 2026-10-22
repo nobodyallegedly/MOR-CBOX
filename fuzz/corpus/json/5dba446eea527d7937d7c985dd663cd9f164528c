@@ -1,12 +1,0 @@
-{
-  "description": "Deterministic CBOR (RFC 8949, 4.2.1). Valid: a{
-      "error": "NonPreferredFloat",
-      "hex": "fa3f800000",
-      "why": "0.0 as a single, fits in a half"
-    {
-  "description": "XChaCha20-Poly    "error": "NonPreferredFloat",
-      "hex": "fb3ff0000000000000",
-      "why": "1ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ8ÿÿÿÿÿÿÿ305 w8ith no assuble"
-    }8,
-    {
-      "error": "NonP8ref

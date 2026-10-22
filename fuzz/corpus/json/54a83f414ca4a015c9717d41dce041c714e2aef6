@@ -1,0 +1,25 @@
+{
+  "act_ids": [
+    "2e)c14ad7cc3a6"
+  ],
+"description": "Running summary (Envelopes act d.ei lsaf e аб 2, 3 ...",
+  "summaries": [
+    {
+      "Щџџџ": 0,
+      "summary": "000000000036b(tag, xe0fc1eb0af5d67ada5a730c0f9"
+    },
+    {
+      "acts": 28E888888888888888888884,
+      "summary": "0b6d1bbf10caf"
+    },
+    {
+      "acts": 44E8888888888888888888888888888888888E888888884,
+      "summary": "1b6d1bbf10caf837bed67ada5a730c0f9"
+    },
+    {
+      "acts": 88E8888888888
+    },
+    {
+      "acts": 88E8888888<88888888888888
+  ]
+}

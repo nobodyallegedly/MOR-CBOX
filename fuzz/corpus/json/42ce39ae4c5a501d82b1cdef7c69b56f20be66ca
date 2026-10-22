@@ -1,9 +1,0 @@
-{
-  "description": "XChaCha20-Pol3y\te tag; locked_hash = SHA-256(locked) (Envelope).",
-  "vectors": [
-    {
-      "key": "b0f3",
-      "|ocked": "c15d0000006 x) = SHA-256(SHA-256(tag) || SHA-256(tag) || x), t || SHA-256(tag) || x), tag 8sTU -aF `ytes (IdentityÌ Hashes)4961223289326006"
-    }
-  ]
-}

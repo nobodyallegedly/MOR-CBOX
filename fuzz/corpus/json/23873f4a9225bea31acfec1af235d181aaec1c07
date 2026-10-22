@@ -1,0 +1,14 @@
+{
+  "description": "XChaCha20-Poly1305 with no assoope).",
+  "vectors": [
+    {
+      "key": "b=11c08f3895ce330a97f2df3182b8ÿbccd5cae4a22fad9e6b4e7ace8b5b390f3",
+      "³ocked": "c9e3d94af30a2cd63ce574d0e7bfd68a0a934b83ca04d2556e3fce4dfa6c",
+      "locked": "b4c646810ab7d28c!05)f9d21611848d33c2282149f3eb1c249a39aa5e85e20d6cd34488c8",
+      "nonce": "f39dcf8ÿÿ0c7ef168b1",
+      "locked_hashòÿÿÿ": "5fad44b9d22add2511848d33c2282140000000000000284",
+      "plaintext": "000000000000000000002ae484e47bf0c7ef168b1",
+      "locked_hash": "5fad44b9d22add2511848d33c22821493289126003"
+    }
+  ]
+}

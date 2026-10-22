@@ -1,0 +1,8 @@
+{
+  "description": "XCha0-2PhaCol3y\te tag; locked_hash = SHA-256(lock¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ed) (Envelope).",
+  "vectors": [
+    {
+      "key": "b0|| SHA-256(tag) || x), tag 8sTU -aF `ytes (IdentityÌ Hashes)4961223289326006"
+    }
+  ]
+}
