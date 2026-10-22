@@ -1,0 +1,33 @@
+{
+  "description": "XChaCha20-Poly1305 with no associated data; locked = ciphertext || 16-byte tag; locked_hash = SHA-256(locked) (Envelope).",
+  "vectors": [
+    {
+      "key": "b11c08f3895ce330a97f2df3182b81bccd5cae4a22fad9e6b4e7acc8b5b390f3",
+      "locked": "c15d29103f120ec9d72a8d5b11dc4bb2",
+      "locked_hash": "019fe3993e1b73ffe09c9cabcb3d53309d595892baf77589e3d94af30a22ec3f",
+      "nonce": "742b2876e6781ee0eaae59b20a15c31e35c864e9a9a769fa",
+      "plaintext": ""
+    },
+    {
+      "key": "aba1ff53e364de4a39ee8526a0f8fc592082b29fedf278dbae767e991df047fd",
+      "locked": "bafa230bddc7e349c6af90a8e4c38d315beb34",
+      "locked_hash": "b1976a3d662b06a8d96fc4fe06796aaacdb4746e6185c84a3ee9f1edf8bf9efd",
+      "nonce": "53cdca65bca7e6faf35695e61ae9cfb349aa12eb18b094a0",
+      "plaintext": "4d4f52"
+    },
+    {
+      "key": "e092058bc79ba885b7005985950861f64f3d27defb54d052eb0720fd05ab5a9d",
+      "locked": "bbcb3dfcaf0d5d42c1b898736e7c760e13",
+      "locked_hash": "5078998cc7a3a959d6d42e0c2f3b99bc32644c494f4ceb1ff1935061250a63ec",
+      "nonce": "239902c24d90d4cd63ce574d0e7bfd68a0afcec163d71b68",
+      "plaintext": "a0"
+    },
+    {
+      "key": "52dcf4fb18a7b78b67b079e57b9010944fff99934b83ca04d2556e3fce4dfa6c",
+      "locked": "b4c64684e816d0224d27cc7e583acb10ab7d28ca05f9d21668e83754ec750cd5fadfd6d5e8a44b4ed34211b5f877f6fbda65f0ae343b75c0c88293e5204c1c0e49f9668fa9b116bef50699434b0f8b35a4d501ea77ab313f5e0d85e5699aeda92727d142a1e2aa891b52ae484e47bf0c7ef168b1",
+      "locked_hash": "5fad44b9d22add2511848d33c2282149f3eb1c249a39aa5e85e20d6cd34488c8",
+      "nonce": "f39dcf850d746a1b50bc50b61dbaa2b387b5b324d5dd1284",
+      "plaintext": "42424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242"
+    }
+  ]
+}

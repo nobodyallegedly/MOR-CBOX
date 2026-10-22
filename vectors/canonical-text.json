@@ -1,0 +1,443 @@
+{
+  "description": "Canonical text (Text). `rule` is the first rule broken, checking rules 1 to 5 in text order and rule 6 (NFC, Unicode 17.0 tables) last; null if canonical.",
+  "unicode_version": "17.0.0",
+  "vectors": [
+    {
+      "canonical": true,
+      "codepoints": [],
+      "note": "the empty string is canonical",
+      "rule": null,
+      "utf8": ""
+    },
+    {
+      "canonical": true,
+      "codepoints": [
+        "U+0048",
+        "U+0065",
+        "U+006C",
+        "U+006C",
+        "U+006F",
+        "U+002C",
+        "U+0020",
+        "U+0077",
+        "U+006F",
+        "U+0072",
+        "U+006C",
+        "U+0064",
+        "U+002E"
+      ],
+      "note": "plain ASCII",
+      "rule": null,
+      "utf8": "48656c6c6f2c20776f726c642e"
+    },
+    {
+      "canonical": true,
+      "codepoints": [
+        "U+0046",
+        "U+0069",
+        "U+0072",
+        "U+0073",
+        "U+0074",
+        "U+0020",
+        "U+006C",
+        "U+0069",
+        "U+006E",
+        "U+0065",
+        "U+000A",
+        "U+000A",
+        "U+0054",
+        "U+0068",
+        "U+0069",
+        "U+0072",
+        "U+0064",
+        "U+0020",
+        "U+006C",
+        "U+0069",
+        "U+006E",
+        "U+0065"
+      ],
+      "note": "LF line breaks and an empty line",
+      "rule": null,
+      "utf8": "4669727374206c696e650a0a5468697264206c696e65"
+    },
+    {
+      "canonical": true,
+      "codepoints": [
+        "U+000A",
+        "U+0053",
+        "U+0074",
+        "U+0061",
+        "U+0072",
+        "U+0074",
+        "U+0073",
+        "U+0020",
+        "U+0077",
+        "U+0069",
+        "U+0074",
+        "U+0068",
+        "U+0020",
+        "U+0061",
+        "U+0020",
+        "U+006C",
+        "U+0069",
+        "U+006E",
+        "U+0065",
+        "U+0020",
+        "U+0062",
+        "U+0072",
+        "U+0065",
+        "U+0061",
+        "U+006B"
+      ],
+      "note": "a leading LF is allowed",
+      "rule": null,
+      "utf8": "0a53746172747320776974682061206c696e6520627265616b"
+    },
+    {
+      "canonical": true,
+      "codepoints": [
+        "U+0043",
+        "U+0061",
+        "U+0066",
+        "U+00E9"
+      ],
+      "note": "precomposed e acute (NFC)",
+      "rule": null,
+      "utf8": "436166c3a9"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0043",
+        "U+0061",
+        "U+0066",
+        "U+0065",
+        "U+0301"
+      ],
+      "note": "e plus combining acute: not NFC",
+      "rule": 6,
+      "utf8": "43616665cc81"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+212B"
+      ],
+      "note": "ANGSTROM SIGN: a singleton, not NFC (NFC is U+00C5)",
+      "rule": 6,
+      "utf8": "e284ab"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+1100",
+        "U+1161"
+      ],
+      "note": "Hangul L+V jamo: not NFC (composes to U+AC00)",
+      "rule": 6,
+      "utf8": "e18480e185a1"
+    },
+    {
+      "canonical": true,
+      "codepoints": [
+        "U+AC00"
+      ],
+      "note": "Hangul syllable GA: NFC",
+      "rule": null,
+      "utf8": "eab080"
+    },
+    {
+      "canonical": true,
+      "codepoints": [
+        "U+0061",
+        "U+1ADD",
+        "U+1AD0"
+      ],
+      "note": "two marks new in Unicode 17.0, in canonical order (220 before 230): NFC",
+      "rule": null,
+      "utf8": "61e1ab9de1ab90"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+1AD0",
+        "U+1ADD"
+      ],
+      "note": "the same two marks out of canonical order: not NFC under the pinned Unicode 17.0 tables; a verifier using 16.0 tables would wrongly accept it",
+      "rule": 6,
+      "utf8": "61e1ab90e1ab9d"
+    },
+    {
+      "canonical": true,
+      "codepoints": [
+        "U+0061",
+        "U+10FFFD"
+      ],
+      "note": "a private use character: canonical",
+      "rule": null,
+      "utf8": "61f48fbfbd"
+    },
+    {
+      "canonical": true,
+      "codepoints": [
+        "U+0061",
+        "U+E0001"
+      ],
+      "note": "U+E0001 LANGUAGE TAG, a deprecated format character: canonical (clients may warn)",
+      "rule": null,
+      "utf8": "61f3a08081"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+FEFF",
+        "U+0062"
+      ],
+      "note": "rule 1: U+FEFF inside the text",
+      "rule": 1,
+      "utf8": "61efbbbf62"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+FEFF",
+        "U+0048",
+        "U+0065",
+        "U+006C",
+        "U+006C",
+        "U+006F"
+      ],
+      "note": "rule 1: a byte order mark at the start",
+      "rule": 1,
+      "utf8": "efbbbf48656c6c6f"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+000D",
+        "U+000A",
+        "U+0062"
+      ],
+      "note": "rule 2: CR",
+      "rule": 2,
+      "utf8": "610d0a62"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+2028",
+        "U+0062"
+      ],
+      "note": "rule 2: LINE SEPARATOR",
+      "rule": 2,
+      "utf8": "61e280a862"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+2029",
+        "U+0062"
+      ],
+      "note": "rule 2: PARAGRAPH SEPARATOR",
+      "rule": 2,
+      "utf8": "61e280a962"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+0009",
+        "U+0062"
+      ],
+      "note": "rule 3: TAB",
+      "rule": 3,
+      "utf8": "610962"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+0000",
+        "U+0062"
+      ],
+      "note": "rule 3: NUL",
+      "rule": 3,
+      "utf8": "610062"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+007F",
+        "U+0062"
+      ],
+      "note": "rule 3: DELETE",
+      "rule": 3,
+      "utf8": "617f62"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+0085",
+        "U+0062"
+      ],
+      "note": "rule 3: NEXT LINE (C1 control)",
+      "rule": 3,
+      "utf8": "61c28562"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+009F",
+        "U+0062"
+      ],
+      "note": "rule 3: last C1 control",
+      "rule": 3,
+      "utf8": "61c29f62"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+0020",
+        "U+000A",
+        "U+0062"
+      ],
+      "note": "rule 4: a line ending with a space",
+      "rule": 4,
+      "utf8": "61200a62"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+00A0"
+      ],
+      "note": "rule 4: ending with NO-BREAK SPACE",
+      "rule": 4,
+      "utf8": "61c2a0"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+3000",
+        "U+000A",
+        "U+0062"
+      ],
+      "note": "rule 4: a line ending with IDEOGRAPHIC SPACE",
+      "rule": 4,
+      "utf8": "61e380800a62"
+    },
+    {
+      "canonical": true,
+      "codepoints": [
+        "U+0061",
+        "U+200B"
+      ],
+      "note": "U+200B ZERO WIDTH SPACE is not on the space list: canonical (clients may warn)",
+      "rule": null,
+      "utf8": "61e2808b"
+    },
+    {
+      "canonical": true,
+      "codepoints": [
+        "U+0061",
+        "U+2800"
+      ],
+      "note": "U+2800 BRAILLE PATTERN BLANK is not on the space list: canonical",
+      "rule": null,
+      "utf8": "61e2a080"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+000A"
+      ],
+      "note": "rule 4: a final line break",
+      "rule": 4,
+      "utf8": "610a"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+000A"
+      ],
+      "note": "rule 4: only a line break",
+      "rule": 4,
+      "utf8": "0a"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0020"
+      ],
+      "note": "rule 4: only a space",
+      "rule": 4,
+      "utf8": "20"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+FDD0"
+      ],
+      "note": "rule 5: noncharacter U+FDD0",
+      "rule": 5,
+      "utf8": "61efb790"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+FFFE"
+      ],
+      "note": "rule 5: noncharacter U+FFFE",
+      "rule": 5,
+      "utf8": "61efbfbe"
+    },
+    {
+      "canonical": false,
+      "codepoints": [
+        "U+0061",
+        "U+10FFFF"
+      ],
+      "note": "rule 5: noncharacter U+10FFFF",
+      "rule": 5,
+      "utf8": "61f48fbfbf"
+    },
+    {
+      "canonical": true,
+      "codepoints": [
+        "U+0061",
+        "U+202E",
+        "U+0062",
+        "U+202C"
+      ],
+      "note": "bidirectional controls are canonical (shown visibly before signing terms)",
+      "rule": null,
+      "utf8": "61e280ae62e280ac"
+    },
+    {
+      "canonical": true,
+      "codepoints": [
+        "U+1F468",
+        "U+200D",
+        "U+1F469",
+        "U+200D",
+        "U+1F467"
+      ],
+      "note": "an emoji sequence with ZERO WIDTH JOINER: canonical",
+      "rule": null,
+      "utf8": "f09f91a8e2808df09f91a9e2808df09f91a7"
+    }
+  ]
+}
