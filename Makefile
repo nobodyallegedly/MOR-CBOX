@@ -2,6 +2,7 @@
 #   make            release build: build/rel/morv and build/rel/libmor.a
 #   make check      unit tests and every vector, under ASan and UBSan
 #   make fuzz       libFuzzer targets in build/fuzz/
+#   make regress    every crash the fuzzers found, run again
 #   make deps       fetch and build the pinned libraries (deps/build-deps.sh)
 #   make gcc-check  the release CLI built with gcc and its warnings, as errors
 CC      := clang
@@ -67,6 +68,10 @@ $(FUZ)/fuzz_engine: $(FZN)/fuzz/fuzz_engine.o $(FZN)/libmor.a
 	$(CC) $(FUZ_CFLAGS) -fsanitize=fuzzer $^ $(LIBS) -o $@
 fuzz: $(FUZZERS) $(FUZ)/fuzz_engine
 
+# Every crash the fuzzers found, kept in fuzz/regressions/<target>-<name>, run again.
+regress: fuzz
+	for f in fuzz/regressions/*; do t=$${f##*/}; $(FUZ)/fuzz_$${t%%-*} $$f || exit 1; done
+
 check: $(SAN)/unit $(SAN)/morv
 	$(SAN)/unit
 	$(SAN)/morv vectors vectors
@@ -80,7 +85,7 @@ gcc-check:
 clean:
 	rm -rf build
 
-.PHONY: all check fuzz deps clean gcc-check
+.PHONY: all check fuzz regress deps clean gcc-check
 
 $(REL)/unit: $(REL)/tests/unit.o $(REL)/tests/builder.o $(TOOLSRC:%.c=$(REL)/%.o) $(REL)/libmor.a
 	$(CC) $(REL_CFLAGS) $^ $(LIBS) -o $@
