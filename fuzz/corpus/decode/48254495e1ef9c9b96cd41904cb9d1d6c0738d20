@@ -1,0 +1,21 @@
+mor-act 1ooooooooooooooooo
+type terms
+t
+sig ef00361156eaa89a8090f1b94a85a87e7157cb43f6a17e9bdb838beb7397e72c
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b185f302f57f447cf6ed0f3d201cac756e5
+
+mor-act 1
+type terms
+signer bob
+previous none
+party signer bob
+author signer bob
+in_force the-usual-rule
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 3825f5f698adfe15a58f9fc05e158ba4252fab5d9fde84b09ad1f4903aaf8ffa
+

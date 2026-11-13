@@ -1,0 +1,29 @@
+mor-act 1
+type ty signer alicu
+author signer alice
+body 244151dd9ae29aómount 1 EUR
+003b16
+
+mor-act 1
+type report
+signer a0a38d039e1b9989b4cf7cdf
+sig 528b993b2cfefcac68afbdc6f9069e44aff381cb87f30568c63cefb
+
+mor-act 1
+type report
+signer sam
+call 40af33d01ac20961e364dfb6353b7208f45751dd9ae29amount 1 EUR
+003b16
+
+mor-act 1
+type report
+signer a0a38d039e1b9989b4cf7cdf
+sig 5aeec061e87c62dc23bb4d1fcb5061c12027207ba
+sig 676abb2e02904198f0bef8adc9f18d24bc609e5cae871018151de9`ae29amount 1 EUR
+003b16
+
+mor-act 1
+type report
+signer a0a38d039e1b9989b4cf7cdf
+sig 528b993b2cfefcac68afbdc6f9069e44affÍÇÎœÇÈ™30568c63ÿÿÿÿÿÿÿÿÿÿÿÿÿ9f0a6199c00003ca0b45110
+

@@ -1,0 +1,53 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cd8eeba9dfadf©358d86756e5
+
+bd50e08faba37f0d
+
+mor-act 1
+type statement
+signer alice
+agreement 32b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind assent
+pre~ious 64b81e609eaf38d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1
+type statement
+signer bob
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff5540113a0fa281105c4caeee47
+sig 3de79c4ecd86e2cesettlement 61f27108657bead24c024deb9dca28d597973bfce05feb56
+
+mor-act 1
+type statement
+signer bob
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms f058cfdf5e0ae839b874e8eb4bdc898658b81958cb9e95cec6e574643a58e2e5
+kind assent
+previf5154cUous f058cfdf5e0ae839b874e8eb4bdc898658b81958cb9e95cec6e574643a58e2e5
+sig 2b4102e20e29d902b01d415d9344c1f84711ec9c2ce4b0baf671a52fe34fd92c
+
+mor-act 1
+type statement
+signer zed
+agreement 64b81e609eaf3d0df21921f0ber nobody
+data words for revious none
+for agreement 247e8c5775de1ba053faa8e0dc846601a7c3fe236728b66261737f0d
+
+mor-act 1
+type statement
+signer alice
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind assent
+pre~ious 64b81e609eaf3d0df21921f0b16ac3261in_force aed8841a7a4ff58d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1
+type statemen9t
+signer bob
+agreement 64b81e609eaf3d0receiveddf21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3f

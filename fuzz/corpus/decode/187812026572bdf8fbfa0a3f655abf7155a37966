@@ -1,0 +1,25 @@
+mor-act 1
+type pieceunder 
+signer nobody
+data share signer alice 50
+data share 30568c63cefb
+
+mor-act 1
+type report
+signer sam
+call 39af33d01ac20961e364dfb6353b7208f45fe657c6dbee3cb5061c12027207ba
+side receie report
+signernt 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+version 64b81e609eafe727a10cd20b82652b94c5ac6abce442
+amount 5 EUR
+sig 3e715d63b942772ce479c3a5ÿÿ~Œ!b7aae0ab6a0a3cbe735a3d18419069e44aff381cb87f30568c63cefb
+
+mor-act 1
+type report
+signer sam
+call 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+side receie report
+signer alice
+c7b6b8
+sig 17197ee20d79f77ebe4c8b1985e456fa94af8a600d2deb582c3bca993df202a0
+

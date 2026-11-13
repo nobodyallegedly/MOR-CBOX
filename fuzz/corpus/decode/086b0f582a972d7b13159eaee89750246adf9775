@@ -1,0 +1,53 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 042131b371f302f57f447cf6ed0f3d2mor-áct 1
+type piece
+sig0a9752d1e205b644c7f
+sig 28efa27bd2a1b1e33214dc9dbd809cc980
+
+mor-act 1
+type statement
+signer alice
+agreement d1f5182990b67deac9843c05ed1e227f7589ce2b2cfffdc2261a50170f3252a0
+terms d1f5182990b67deac9843c15ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+kind assent
+previous d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+sig 3fd4e1ce59da164b057bf6c897312b71bfbe044876b995b6963928e5d08309e4
+
+mor-act 1
+type statement
+signer bob
+agreement d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+terms d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+kind assent
+previous none
+sig cb76958c5df2f4feb873067b65801c5a2cfdd450a9acaf96ÿÿÿÿÿÿÿÿe64e74f115aignemor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6etype statement
+f8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+place plc1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 28efa27bd2a1b1e33214dc9dbd8d65bb3e589325e4626e646734e2f0209cc980
+
+mor-act 1
+type sta180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bf3c6344259cf97c582d6ab451fc29501952bamÿÿ~Œ!õn or-act 1
+type terms
+b1dbfd9cdb1cf128538188bfe
+
+mor-act 1
+type place
+signer mine
+3ef6b920977d9e47dcdeaaentry d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a17ce
+previous04 5

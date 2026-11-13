@@ -1,0 +1,142 @@
+mor-act 1
+type envelope
+signer sealer
+baker alice
+sig 255agre5e0e3fbbd8dc1d91952e94045c71e67e24952f1edbe6bd7fa241e5a6f
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+envelope 6e432939529db2882f3bf860a6718412873ea9f60eb15e7512df95ffc556207c
+receiver signermor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+mor-act 1
+type statement
+signer alice
+agreememor-act 1
+type piece
+place plc1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 28efa27bd2a1b1e33214dc9dbd8d65bb3e589325e4626e646734e2f0209cc98.
+
+mor-act 1
+type statement
+signer aliceŸdfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role buyer received a9ea89c8bf06cd3143b44d19f0fd01b97b745e1db25b44d75db5820a80fe6034 a19fa71c2fad322e2387eae240725792ab1c64a63df18145d5c3aa65f517d8f2 many
+author signer alice
+in_force 1afa5ed21fa61966bb858d05a02d7d8f87d3aacbaf732949c72b99c9306a9eae 1 signer alice
+power replaces 289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 alice
+condition 4abe04080a4c8bf8effd16b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63d8f87d3aacbaf732949c72b99c9306a9eae 1 signer alice
+power replaces 289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 alice
+condition 4abe04080a4c8bf8effd16b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd0984701ö6dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 371b30283c1d91ea53a28a16444614a4d5eec13fea035dba05f48660a735409d
+
+mor-act 1
+type statement
+signer alice
+agreememor-act 1
+type piece
+signer cbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644cmor-f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party 7f
+sig 28efa27bd2a1b1e33214dc9dbd8d65bb3e589325e4626e646734e2f0209cc98.
+
+mor-act 1
+type statement
+signer aliceŸdfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role buyer received a9ea89c8bf06cd3143b44d19f0fd01b97b745e1db25b44d75db5820a80fe6034 a19fa71c2fad322e2387eae240725792ab1c64a63df18145d5c3aa65f517d8f2 many
+author signer alice
+in_force 1afa5ed21fa61966bb858d05a02d7d8f87d3aacbaf732949c72b99c9306a9eae 1 signer alice
+power replaces 289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 alice
+condition 4abe04080a4c8bf8effd16b8bafr people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9df
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type teype statement
+signer aliceŸdfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role buyer received a9ea89c8bf06cd3143b44d19f0fd01b97b745e1db25b44d75db5820a80fe6034 a19fa71c2fad322e2387eae240725792ab1c64a63df18145d5c3aa65f517d8f2 many
+author signer alice
+in_force 1afa5ed21fa61966bb858d05a02d7d8f87d3aacbaf732949c72b99c9306a9eae 1 signer alice
+power replaces 289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 alice
+condition 4abe04080a4c8bf8effd16b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63d8f87d3aacbaf732949c72b99c9306a9eae 1 signer alice
+power replaces 289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 alice
+condition 4abe04080a4c8bf8effd16b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd0984701ö6dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 371b30283c1d91ea53a28a16444614a4d5eec13fea035dba05f48660a735409d
+
+mor-act 1
+type statement
+signer alice
+agreememor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer sam
+previous none
+party signer sam
+aue
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+signer alice
+party signer bob
+author signer alcie
+place plc1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 28efa27bd2a1b1e33214dc9dbd8d65bb3e58932
+mor-act 1
+type terms
+si5e4626e646734gneer 2sam
+prevfi

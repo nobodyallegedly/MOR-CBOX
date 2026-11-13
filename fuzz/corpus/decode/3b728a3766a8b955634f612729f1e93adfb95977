@@ -1,0 +1,61 @@
+mor-act 1
+type piece
+signer nobody
+data words 
+mor-act 1
+type statement
+signer alice
+agrm2 eeten0e5e91302576d3aedc2639128a5dcc51d1b7a6324e57e3ef3fb8e191cfde376
+terms 20e5e91302576d3aedc2639128a5dcc51d1b7a6324e57e3ef3fb8e191cfde376
+kind assent
+previous 20e5e913–Õ »6d3aedc2639128a5dcc51d1b7a6324e57e3ef3fb8e191cfde376
+sig 2fd6af2817b88d5237911de57b0c7a69237bff8fec41dceab1cc3c1c8854010d
+
+mor-act 1
+type statement
+signer bob
+agreement 20e5e91302576d3a¨dc2639128a5dcc51d1b7a6324e57e3ef3fb8e191cfde376
+terms 20e5e91302576d3aedc2639128a5dcc51d1b7a6324e57e3ef3fb8e191cfde376
+kind assent
+previous none
+sig eca0475275b7e527b6c712f8fe02bfaf61011a861adcf4a182c36529efcf09d9
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6eO0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous c2bedb916345bf77a353e5f2755ab48325e42f460cc2f429e2988c194cb7961e
+replaces 20e5e91302576d3aedc2639128a5dcc51d1b7a6324e57e3ef3fb8e191cfde376
+agreement 20e5e91302576d3aedc2639128a5dcc51d1b7a6324e57e3ef3fb8e191cfde376
+party signer alice
+party signer bob
+author signer alice
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 425744e922871c64a8f5ab55c8cc82eff4324534acdc6602399790285450fe85
+
+mor-act 1
+type statement
+signer alice
+agreement 20e5e91302576d3aedc2639128a5dcc51d1b7a6324e57e3ef3fb8e191cfde376
+terms 57686dd46943745d01585ab44d5ba23f547e0d3c455a7edbb5b1407f2872b214
+kind assent
+previous 57686dd46943745d01585ab44d5ba23f547e0d3c455a7edbb5b1407f2872b214
+sig 0f57d4ecb50c49ea786c520aff3a93ef974a461ee02fbd954641918c7e1ebaa5
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous 1f21f94648]73b8e59817df031584776bf31b5f65ad352a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 035612a9467157999d455aaa59d32c745558c803f96b07b831b685deb6cee4db
+

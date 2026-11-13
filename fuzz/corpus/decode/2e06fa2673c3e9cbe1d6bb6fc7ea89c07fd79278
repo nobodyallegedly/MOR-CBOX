@@ -1,0 +1,63 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous non'''''''''''''''''''''''''''''''''''''''''''''''''''''''e
+party signer alice
+party sign’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’er bob
+author signer alice
+body 2441dfede180a3f5bf3c63dmor-act 1
+type piece
+signer nobody
+data words for people
+sigc63dmor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role buyer received a9ea89c8bf06cd3143b44d19f0fd01b97b745e1db25b44d75db5820a80fe6034 a19fa71c2fad322e2387eae240725792ab1c64a63df18145d5c3aa65f517d8f2 many until=100
+author signer alice
+in_forcae 1 signer alice
+power replaces 289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 alice
+clock ck1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig ca07d7fe71ea0eebfbe42a928669a0148cbf06b0810cc55cc7cf2b2c144bd81d
+
+mor-act 1
+type statement
+signer alice
+agreement bfd4d3598971c24acf90c6e6fe6d2ea880d94fabc98bda0a70dad7a7e7dae7a5
+temor-actrms bfd4d3598971c24acf90c6e6fe6d2ea880d94fabc98bda0a70dad7a7e7dae7a5
+kibdcde256 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role buyer received a9ea89c8bf06cd3143b44d19f0fd01b97b745e1db25b44d75db5820a80fe6034 a19fa71c2fad322e2387eae240725792ab1c64a63df18145d5c3aa65f517d8f2
+author signer alice
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 14cf991a49033697d139791897aec8d2f3d8be411787187e8e5458d5527faf31
+
+mor-act 1
+type piece
+signer n949c72b99c9306a9eae 1 signer alice
+body 2441dfede180a3f5bef3cf6bs63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f bf
+sig 903b60f92f08d50bc4a437cb097a332b6a11a092dc4c4e0f82680b009a0f4ad43
+

@@ -1,0 +1,19 @@
+mor9eaf3d0df21921f0b16ac326140envelope 13207a3aed8845a con#est
+previype stater alice
+agreement 1d09f745e260474bc72dfbaf
+
+mor-act 1
+type payment
+signer zed
+agreement 64b81e609eaf3d0df21921f0b16ac309847016dcbbbeedb8c76 0b16ec32614013207a3aed8841a7a4ff58d0d51ed
+callkind assent
+previous none
+sig b3c02c61f0f4380df7ef8c79c56bc5ent i-paid-you
+sig 1bf0e46cfef27fc3af3d5126ceac386a027ecf6890e3ae0377d1444bc72dfbaf
+
+mor-act 1
+type payment
+signer zed
+agreement 64b81e609eaf3d0df21921f07016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig c58
+0b16a

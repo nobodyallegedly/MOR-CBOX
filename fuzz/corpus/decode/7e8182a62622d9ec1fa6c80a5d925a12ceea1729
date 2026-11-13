@@ -1,0 +1,43 @@
+mor-act 1
+type piece
+signer nobody
+data delegation signer alice signer bob default
+sig 475d0d013186c0d9ac signer bof6cc16c0671295fd6d
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+power assent
+type piece
+signer nobody
+data the power is removed
+sig 07bf59eaf074e777dae707debe777e6AÀå¨	/¤t 1
+type piece
+signer nobody
+da8efde9c89bed887aa96ff3f74ef679d
+
+mor-act752e00f6cc16c0671295fd6d
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+power assent
+type piece
+signer nobody
+data the power is removed
+sig 07bf59eaf074e777dae707debe777e6AÀå¨	/¤ö÷~“¾#«°Á¹«T€ÀÇXÂÕáMe
+
+mor-act 1
+type terms
+signer alice
+previous 4de41e470c5cbe1d17cda488257264acb27f6284de3708a736cc1bc3e1a
+terms 9225654b381f4ede51b9
+

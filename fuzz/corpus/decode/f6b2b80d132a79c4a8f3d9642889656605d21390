@@ -1,0 +1,185 @@
+mor-act 1
+type piece
+signer nobody
+data words forsigner nobody
+data w
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alhe-side-letter
+relies_on our-usual-conditions
+bct 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-actpe terms
+signer sam
+previous none
+paalice
+author signer alice
+receiver agreement 986c39cf6638d36e79df8c440f7c02eba9dfadfa358d86756e5
+
+mor-actpe terms
+signer sam
+previous none
+paalice
+author signer alice
+receiver agreement 986c39cf6638d36e79df8c440f7c02f343c3c27c79904175b9a80944463ef5
+data words forsigner nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8õeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alhe-side-letter
+relies_on our-usual-conditions
+bct 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-actpe terms
+signer sam
+previous none
+paalice
+author signer alice
+receiver agreement 986c39cf6638d36e79df8c440f7c02f343c3c27c79904175b9a8094446pe piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-actpe terms
+signer sam
+previous none
+paalice
+author signer alice
+receiver agreement 986c39cf6638d36e79df8c440f7c02f343c3c27c79904175b9a80944463ef550
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbõööõù«ú»6 4e534bfd9cdb1cf4ef6b920977d9e47aer
+relies_on our-usual-conditions
+bct 1
+type pie6dcbbõööõù«ú»6 4e534bfd9cdb1cf4ef6b920977d9e47aer
+relies_on our-usualmor-a-conditions
+bct 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8õeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alhe-side-letter
+relies_on our-usual-conditions
+bct 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-actpe terms
+signer sam
+previous none
+paalice
+autcontesgner alice
+receiver agreement 986c39cf6638d36e79df8c440f7c02f343c3c27c79type clock
+944463ef550
+body 2441dfede180a3f5bf3c63dbdcde25639õù«ú»6 4e534bfd9cdb1cf4ef6b920977d9e47aer
+relies_on our-usual-conditions
+bct 1
+previous type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8õeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alhe-side-letter
+relies_on our-usual-conditions
+bct 1
+type pieceody ct 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer al2441dfede180a3f5bfice
+pre50
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbõööõù«ú»6 4e534bfd9cdb1cf4ef6b920977d9e47aer
+relies_on our-usual-conditions
+bct 1
+type pie6dcbbõööõùfor signer «ú»6 4e534bfd9cdb1cf4ef6b920977d9e47aer
+relies_on our-usualmor-a-conditions
+bct 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8õeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alhe-side-letter
+relies_on our-usual-conditions
+bct 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-actpe terms
+signer sam
+previous none
+paalice
+autcontesgner alice
+receiver agreement 986c39cf6638d36e79df8c440f7c02f343c3c27c79type clock
+944463ef550
+body 2441dfede180a3f5bf3c63dbdcde25639õù«ú»6 4e534bfd9cdb1cf4ef6b920977d9e47aer
+relies_on our-usual-conditions
+bct 1
+previous type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8õeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alhe-side-letter
+relies_on our-usual-conditions
+bct 1
+type pieceody ct 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer al2441dfede180a3f5bfice
+previ3c63dbdcde25ou

@@ -1,0 +1,33 @@
+morc51d1b7a6324e57e3efa861adcf4a182c36529efcf09d9
+
+mor-act 1
+t6e0ff563ef431e32279b3a68fe668bfea4134da2
+
+mor-act 1
+type settlement
+signer bank
+ind contest
+previous none
+settlement cf0d1igner alice
+agreement b7fc5ement
+signeaid-you
+sig œùôœöÀ…•fef27fc3afk
+amount 45 EUR
+sig 4da7c2ecfd4ec0b933a02d65e84fc563df68b532279b3a68fe668bfea4134da2
+
+mor-act 1
+type settlement
+signer bank
+ind contest
+previous none
+settlementccf0d1igner alice
+agreement b7fc5ement
+signer alice
+agreement b7fc5d67be7efba9b5834e440a23709fe5a49b5b2ce527igner 442
+content i-paid-ece
+signerÆnobody
+data delegation signer alice signer bob default
+sig 475d0d013186c0d9acf5a2f5135b0ae5f6825a4f752e00f6cc16c06712950e3ae0377d144mor-afd6d
+
+mor-act 1
+type tectr

@@ -1,0 +1,46 @@
+mor-ac7aaeba2608b2b060a9752d1e205b644c7f
+sig 655baedfe37462846863ae5ab6ba8e80f91c26313d1dd82c5dbf4741e2193be9
+
+mor-act 1
+type statemeet
+signer amor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0frty signer alice
+party role r
+author signer alice
+in_cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alicE
+party role r done a54183b37015fb93543b34b77aef8882c9c5326157f5aeba24c207i09dc0b389
+author signer alice
+in_force 4abe04080a4c8bf8effd08b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede18clock0a3f5bf3c63dbdcde256=395b3type piece
+752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 85aa6b96c391762cb82302eea77d6)7efc10918079bd6eaf4a8f69fc2b3400d3
+
+mor-act 1
+type piece
+signer nobody
+da words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d8cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role r done a54182b37015fb93543b34b77aef8882c9c5326157f5aeba24c207i09dc0b389
+author signer alice
+in_force 4abe04080a4c8bf8effd08b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 85aa6b96c391762cb82302eea77d627efc10918079bd6eaf4a8f69fc2b3400d3
+
+mor-a5441e3
+sig bf56fd384a9e81be04080a423632584b2d6995441e3
+termsc8bf8effd c7d9165408b8b8043aad5fbf6d7af5

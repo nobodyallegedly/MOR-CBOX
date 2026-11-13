@@ -1,0 +1,27 @@
+morf302f57f447cf6ed0f3d201cacc98cfadfa35d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role buyer received a9ea89c8bf06cd3143b44d19f0fd01b97b745e1db25b44d75db5820a80fe6034 a19fa71c2fad322e2387eae240725792ab1c64a63df18145d5c3aa65f517d8f2 many until=100
+author signer alice
+in_force 1afa5ed21fa61966bb858d05a02d7d8f87d3aacbaf732949c72b99c9306a9eae 1 signer alice
+power replaces 289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 alice
+clock ck1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig ca07d7fe71ea0eebf42bea928669a0148cbf06b0810cc55cc7cf2b2c144bd81d
+
+mor-act 1
+type statement
+signer alda0a70dad7a7e7dae7a5
+kae7a5
+sig c0f913a5f132ddb068ad6423ee352aa280ff8adb583fcfa74e43c66a9df1a432
+
+mor-act 1
+type clock
+signer ck1
+now 150
+sig 2f645e40bb09a4f96927e1e512aa1b1dbd3d7b29be5caedc8981d205bbf5c480
+

@@ -1,0 +1,41 @@
+# MOR Agreements draft 17: an example set in the stand-in act format (STANDINS.md).
+# Made by build/test-san --examples; read it with: mor-agreements verify examples/offer.mor
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role buyer received a9ea89c8bf06cd3143b44d19f0fd01b97b745e1db25b44d75db5820a80fe6034 a19fa71c2fad322e2387eae240725792ab1c64a63df18145d5c3aa65f517d8f2 many max=2
+author signer alice
+in_force 1afa5ed21fa61966bb858d05a02d7d8f87d3aacbaf732949c72b99c9306a9eae 1 signer alice
+power replaces 289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 alice
+condition 1f398b2dbc2d2f2e70bf5461d24ab7390e79322d7131545bb0dfdb844b1005b2
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 82b133e8a7d965a48c67f887649ef6c09a6a51fa5bdf9c30701c4208b490607d
+
+mor-act 1
+type statement
+signer alice
+agreement b5345d6789822fc5081fb0043e19d6499be71146c1a3a4f76e40f491854267f3
+terms b5345d6789822fc5081fb0043e19d6499be71146c1a3a4f76e40f491854267f3
+kind assent
+previous b5345d6789822fc5081fb0043e19d6499be71146c1a3a4f76e40f491854267f3
+sig 92ded6d2e946e2ce9b3e839115b2ef8119c113efc360f576c2d686cf1ad3ca71
+
+mor-act 1
+type statement
+signer zed
+agreement b5345d6789822fc5081fb0043e19d6499be71146c1a3a4f76e40f491854267f3
+terms b5345d6789822fc5081fb0043e19d6499be71146c1a3a4f76e40f491854267f3
+kind 9163742928485ebb3447a7bb70dc8be7a5d8a71abd39f1017b144871db678f2a
+previous none
+content buyer
+sig a341838db17a52a8aa340765293faa0804d3050e3d045f2550f11d1b8ee531a2
+

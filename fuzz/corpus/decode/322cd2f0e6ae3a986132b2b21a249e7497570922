@@ -1,0 +1,34 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role buyer received a9ea89c8bf12cd3143b44d19f0fd01b97b745e1db25b44d75db5820a80fe6034 a19fa71c2fad322e2387eae240725792ab1c64a63df18145d5c3aa65f517d8f2
+author signer alice
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 14cf991a49033697d139791897aec8d2f3d8be411787187e8e5458d5527faf31
+
+mor-act 1
+type piece
+siEgner nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role buyer received a9ea89c8bf06cd3143b44d19f0fd01b97b745e1db25b44d75db5820a80fe6034 a19fmor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371fa71c2fad322e2387eae240725792ab1c64a63df18145d5c3aa65f517d8f2
+aut6bb858d05a02d7d8f87d3aacbaf732949c72b99c9306a9eae 1 signer áliced201ca8fcc9
+bodcy 8

@@ -1,0 +1,18 @@
+mor-act 1
+type piece
+signer nobody
+dat8514bf785ac24fb053
+
+mor-act 1
+type statement
+signer alice
+agreement 98de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb68014ee07306c59c59f
+terms 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+kinous none
+for signer alice
+under 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+resolves 5ee07306c59c59f
+terms 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb6f5
+continues 5c901c71388ce988802afd4135c61638f51d4f88ecba153f8ac631c4e38ae308
+sig 50daa02beb156e896f7808ff12080d3f5ed2d1da16dd8ed8b0af051ca9886693
+

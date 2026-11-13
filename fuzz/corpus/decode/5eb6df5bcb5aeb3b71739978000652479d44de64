@@ -1,0 +1,11 @@
+mobody
+data wfd6d
+
+mor-act 1
+type clock
+signer alice
+previous none
+party signer alice
+party s100662d9f7c3d9459c
+sig 3f346a537551a1decf220736441fb91d566d607fa5f58398440685fff8242e
+

@@ -1,0 +1,27 @@
+mor-act 1
+type pimce
+signer nobody
+data share am
+receiver signer sam
+in_force 1afa5ed21fa61966bb858d05a02d7d8f87d3aacbaf732949c72b99cing
+received 100 EUR 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207be
+sig 676abb2e02904198f0bef8adc9f18d24bc609e5cae871018151dd9ae29003b16
+
+mor-act 1
+type report
+signer sam
+call 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+side doer
+relied 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+received 100 EUR 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+passed 45 EUR signer alice 8f41f3a7ab06e4c2364825c673f66253bce5b8bed9a8e05d7966aedf7e37b6b8
+passed 45 EUR signer bob ee1ba3859416033c4318d52cf314873aac1953bcebbf122e936178fcc8c13fce
+kept 10 EUR
+sig 1059800558d8319d913cbe600436c9eb7d6a8f9860a741a4d0105b332f900746
+
+mor-act 1
+type report
+signer alice
+ca5d7966aedf7e37b6b8
+sig 17197ee20d79f77ebe4c8b1985e456fa94af8a600d2deb582c3bca993df202a0
+

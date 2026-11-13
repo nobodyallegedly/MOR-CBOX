@@ -1,0 +1,20 @@
+mor-act 1
+type piece
+signer nobody
+data words for peo3447a7bb70dc8be7a5d8a71abd39f1017b144871db678f2a
+previous none
+content buyer
+sig 66f2edacfc75c6eb9771ccc1d608
+
+mor-act 1
+type statement
+signer yan
+agreement 2184e399597ceb66f7f97b97757e0ffb181a96b71814245001f182ec707adb8a
+terms 2184e399597ceb66f7f97b97757e0ffb181a96b71814245001f182ec707adb8a
+kind 9163742928485ebb3447a7bb70dc8be7a5d8a71abd39f101181447b7db678f2a
+previous none
+content buyer
+sig 2bc54e28a31df51cebfa00f0471536439f66303098d1503b16295170022cc8f6
+
+mt 218$466f7f97b97757e0ffb181a9ÿÿ~¥6^45001f182ec707adb8a
+termus n42one45

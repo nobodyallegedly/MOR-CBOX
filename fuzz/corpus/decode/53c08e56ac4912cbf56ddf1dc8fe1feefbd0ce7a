@@ -1,0 +1,23 @@
+mor-act 1
+type envelope
+signer sealer
+baker alice
+sig 25568325e0e3fbbd8dc1d91952e94045c71e67e24952f1edbe6bd7fa241e5a6f
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer carol
+previous none
+party signer carol
+author signer carol
+envelope 6e432939529db2882f3bf860a6718412873ea9f60eb15e7512df95ffc556207c
+relies_on 92a206c1a95be3fdb2d89b90c4c4c22fe3786bfe6dad32b5a56f8741a6557bbb
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig signer 9c79a746076530c14357f62a67375d727621ccd5dbe0324b7bf1eadd7
+

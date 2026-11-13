@@ -1,0 +1,30 @@
+mor-act 1
+type terms
+signer alice
+party signer7f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer ?lice
+party signer bob
+author signer alice
+place plc1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 28efa27bd2a1b1e33214dc9dbd8d65bb3e589325e4626e646734e2f0209cc980
+
+mor-act 1
+type s1cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer ?lice
+party signer bob
+authoÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ2608b2b060a9752d1e205b644c7f
+sig 28efA27bd2a1b1e33214dc9dbd8d65bb3eces d1f5182990b67deac9ÿÿÿÇ05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+agreemen60babcfa900c465eer bob
+author si8cd337a6ae5aa24d0f5d687671c9ab1b65b833b5df
+

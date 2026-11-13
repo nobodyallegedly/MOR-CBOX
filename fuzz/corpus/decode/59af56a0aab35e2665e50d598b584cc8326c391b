@@ -1,0 +1,63 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f047cf41dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd93ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+terms ed7396a863fa29fc3"c8f0a6afef12cf3c4ca962b3d537617b201d2295bdd529
+kind assentprevious a9adc6f73e96324d0b3fd0c9545d2db218d708e3c56783
+
+mor-act 1
+type settlement
+signer baa2
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+note second
+sig 028c2efc0c1d3d2e4377697ae91a6699bb970dbab703f39d0056c55fa79a0c89
+
+mor-act 1
+type payment
+signer zed
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+version ed7396a863fa29fc32c8f0a6afef12cf3c4ca962b3d5376172b1d02295bdd529
+settlement 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+amount 050 EUR
+sig 55937f58b7aae0ab6a0a3cbe735a3d18419069e44aff381cb87f30568c63cefb
+
+mrelied 1party s3359
+entry d8f24b7697eeÿÿRï((e519c633ee3c2tlement
+signer bank
+amount 45 EUR
+sig 4da7c2ecfd4ec0b933a02d65e84fc563df68b532279b3a68fe668bfea4134da2
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+9d0056c55fa79a0c89
+
+mor-act 1
+type payment
+signer zed
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+version ed7396a863fa29fc32c8f0a6afef12cf3c4ca962b3d5376172b1d02295bdd529
+settlement 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+amount 050 EUR
+sig 55937f58note second
+sig 028c2efc0c1d3d2e4377697ae91a6699bb970dbab703f39d0056c55fa79a0c89
+
+mor-act 1
+type payment
+signer zed
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+version ed7396a863fa29fc32c8f0a6afef12cf3c4ca962b3d537617b201d2295bdd529
+settlement 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+amount 050 EUR
+sig 55937f58b7aae0ab6a0a3cbe735a3d18419069e44aff381cb87f30568c63cefb
+
+5411c5mor-act 1
+type report
+signer sam
+call 39af33348462a777f1d5f7133d01ac20967f

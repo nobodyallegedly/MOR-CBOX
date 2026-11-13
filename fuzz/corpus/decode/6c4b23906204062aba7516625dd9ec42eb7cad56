@@ -1,0 +1,34 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer 256395b3752a3cd09847016dcbbbalice
+party signer bob
+author signer alice
+body 2441dfede180a3f5bf3c6;dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e,7aaeba2608b2b060a9752d1e205b644c7f
+smor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e4k207a3aed8841a7a4ff58d0d51ed
+kind tsenas
+previous 64b81e60ious none
+sig 74a49eed8796e616e8c09c9e49aee801061be1b761abd85ffc955407c615a5c2
+
+3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+

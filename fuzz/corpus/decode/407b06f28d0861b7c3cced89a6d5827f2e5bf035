@@ -1,0 +1,16 @@
+mor-act 0
+type piece
+ople
+sig3207a3aed8841a7a4ff58d0d51ed
+kind ass56bc56e931a764686e285927309eecbf521261d
+
+mor-act 1
+type statement
+signer alice
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind counter_signature
+previous e28a3438a16f3bcc6ed71af3347180ec24a7d4986e33a114976030686ee72667
+relies_on 5c568255ba4b874559afef83eb1ff678cf7c7df95174ec83c2b5754abdebdd76
+sig 51c291179381e0ff8cce9603493bfc604bf92e89c9859db9eab19287a9c8664a
+

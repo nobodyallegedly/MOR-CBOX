@@ -1,0 +1,64 @@
+mor-a
+type envelope
+signer sealer
+bakír 5a6f
+
+mor-act 1
+type piece
+sistatement
+signer alice
+agreement 64b81e609eaf3d0df21921f0b16ac326140132ñ07a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac326140132078eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer carol
+previous none
+party signer carol
+author signer carol
+envelope 6e432939529db2882f3bf860a6718412873ea9f60eb15e7512df95ffc556207c
+relies_on 92a206c1a95be3fdb2d89b90c4c4c22fe370d51ed
+kind assent
+previous none
+relies_on 022359562fbb69d46faÛfe1556e6e13e274e86246fadfe155clock6e6e13e274e862cd785f3bd82a363acc819ee25
+sig c58d496db508dc465c87c49c2342f4fdde3142973e7a913428d7ba6256295a3c
+
+mor-act 1
+type statement
+signer alice
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac326140132078eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer carol
+previous none
+party signer carol
+author signer carol
+envelope 6e432939529db2882f3bf860a6718412873ea9f60eb15e7512df95ffc556207c
+relies_on 92a207180ec24a7d4986e33a114976030686ee45334
+sig a6d625bda567027c4b76fb4e45650f326d8130cf712d4f659f18c5319f167d8d
+
+mod∏`ûØ=Ú!±j√&2£ÆÿÑzOıçQÌr-act 1
+type statement
+signer bob
+e13e274e862cd785f3bd82a363acc819ee25
+sig c58d496db508dc465c87c49c2342f4fdde3142973e7a913428d7ba6256295a3c
+
+mor-act 1
+type statement
+signer alice
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac326140132078eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer carol
+previous none
+party signer carol
+author signer carol
+envelope 6e432939529db2882f3bf860a6718412873ea9f60eb15e7512df95ffc556207c
+relies_on 92a206c1a95be3fdb2d89b90c4c4c22fe3786bfe6dad32b5a56f8741a65power57bbb
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb4e534bfd9cdb1cf3ef6b920977d9e47aaeba2008b2b060a9752d1e205b644c7f
+sig af69c049c79a7ï6076530c14357f62a67375d727621ccd5dbe0324b7bf1eadd7
+

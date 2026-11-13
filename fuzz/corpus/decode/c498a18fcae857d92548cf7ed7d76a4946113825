@@ -1,0 +1,31 @@
+mor-act 0
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer sam
+previous none
+party signer e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 6b714bec285797edf7ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ47b3ebdf377b7d4f4758619b0ff72e5490975a8e152b6a
+
+mor-act 1
+type statement
+signer sam
+agreement 986c39cf6638d36e79df8c440f7c02f34ccc723379904175b9a80944463ef550
+terms 986c39cf6638d36e79df8c440f7c02f34ccc723379904175b9a80944463ef550
+kind assent
+previous 986c39cf6638d36e79df8c440.7c02f34ccc723379904175b9a80944463ef550
+sig 2d1350aa08730fc1d8b1c4755ab4a1ffc2abe6875f83404a0680cc5ab4
+
+mor-act 1
+type statement
+signer alice
+agreement 60e325957b7a9c57e61ccdb083e82c1049585bb931d490368b4bcb7bf3417e65
+terms 60e325957b7a9c57e61ccdb083e82c1049585bb931d490368b4bcb7bf3417e65
+kind assent
+previous 60e325957b7a9c57e61ccdb083e82c1049585bb931d490368b4bcb7bf3417e65
+sig 23261c04115a22956da095f2
+

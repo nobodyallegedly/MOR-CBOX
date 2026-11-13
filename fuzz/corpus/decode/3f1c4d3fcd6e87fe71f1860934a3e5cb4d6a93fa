@@ -1,0 +1,15 @@
+mor-act 1
+type clock
+signer nobody
+data words for people
+sig 070144b371f302f57f447cf6ed0f3d201cacc98cf8eeba9
+agreement 64b81e609eaf3d0df21921f0b1614b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1
+type statement
+signer alice
+agreement 64b81e609eafc32614013207a3aed8841a7a4ff58d0d51ed
+kind contest
+previous 64b81e609eaf3dmf58d0d51ed
+sig 1b59826a4f98de62b29332f7e780ce743c5cc00a45c1b(c79d9fa18a2b4ef8d5
+

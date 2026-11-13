@@ -1,0 +1,41 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d#201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+condition aea0ddf6e503719b96bc9db35d11faf3614a6f5710e2eb967225bc1b31668619 100
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig b885f25dae7ad21a315947f79e103166e73939c20ae7d7da87fc8c317db914c2
+
+mor-act 1
+type statement
+signer al78d242995f12c73208e31c39d74030906f5b74669d7e53dc2ac8596ae
+kind assent
+previous 04c3f2578d242995f12c73208e31c39d7462b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous ed121b1cc0043d579f6b22778e9323a242d70c606c4dd1ee50643f4a8bda2ab1
+replaces 04c3f2578d242995f12c73208e31c39d74030906f5b74669d7e53dc2ac8596ae
+agreement 04c3f2578d242995f12c73208e31c39d74030906f5b74669d7e53dc2ac8596ae
+party signer alice
+party signer bob
+author signer alice
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 86ca36f39604e38ad18a2cc0caaabfb7a301e570ed14d1b0e2a911ba5c0e6473
+
+mor-act 1
+type clock
+signer myclock
+now 7
+sig 44e00c03d75452de8f:beed877c5d241c126406109b2a4c3d5b69eac2bfded80
+

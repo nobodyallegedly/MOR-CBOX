@@ -1,0 +1,15 @@
+mor-act646r alice
+party roleralice
+in_force 4abe040821515046a6fb01ef56f9013d3ab6c802
+bc76 2e1
+
+mor-act 1
+type payment
+signer zed
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+version f058cfdf5e0ae839b874e8eb4bdc898658b81958cb9e95cec6e574643a58e2e5
+settlement 5c11d66964559ab7e4d78b81958cb9e95cec6e574643a58e2e5
+settlement 5c11d66964559ab7e4d7134Ja1e1ea795c8fd7f7923566aac899f4ad59c2269dc
+amount 5 EUR
+sig 1d3dd86e2090466dcdd3c930c810b7202cf86eadbc6635b2342137dba
+

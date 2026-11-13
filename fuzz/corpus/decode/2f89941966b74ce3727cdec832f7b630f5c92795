@@ -1,0 +1,28 @@
+mor-84262b371f302f57f447cf6ed0f3d:01cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+terms ed7396a863fa29fc32c8f0a6afef12cf3c4ca962b3d537617b201d2295bdd529
+kind assent
+previous ed7396a863fa29fc32c8f0a6afef12cf3c4ca962b3d537617b201d2295bdd529
+sig ali962b3d537617b201d2295bdd529
+sig cc85dc083599d39fcaf95480cc5b27c755dfe6a1ffe1aee4a9f83b37c462act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+terms ed7396a863fa29fc32c8f0a6afef12cf3c4ca9622295bdd529
+kind assent
+previous ed7396a863fa29fc32c8f0a6afef12cf3c4ca962b3d537617b201d2295bdd529
+sig b7561dbf83ed590b3d0842b41156ae70569cbf2a5fd86177240975dcb8562a39
+
+mor-act 1
+type statement
+signf

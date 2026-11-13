@@ -1,0 +1,54 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447c1cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+partyown 1 EUR
+ice
+party signer bob
+author signer alice
+body 2441dfede180acc98cf8eeba9dfadfa35?8d8756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party sign@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@er bob
+author signer alice
+body 2441dfede180a3f5bf3c63dbdCde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig c58701491f18d7ad06f3f50b1460f6dÂ9b6c0f8c943af074bd50e08faba37f0d
+
+mor-act 1
+type statement
+signer alice
+agreement 64b81e609eaf3d0df21921f?0b16ac32614013207a3aedÈÇËÏa7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signsettlement er bob
+author signer alice
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a351ed
+kinaeba2608b2b060a9752d1e205b644c7f
+sig c58701491f18d7ad06f6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party sign@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@er bob
+a39ple
+sig 084262b371f302f57f447013207a3aed8841a7a4ff58d0d51ed
+kic00c47cfaba4a
+

@@ -1,0 +1,20 @@
+mor-act 1
+type piece
+signer nobody
+data 72c2dae
+
+mor-act 1
+type statement
+signer judy
+agreement 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+terms 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+kind contest
+previous none
+for signer alice
+under 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+resolves 5c901c71388ce988802afd4135c61638f51d4f88ecba153f8ac631c4e38ae308
+resolves 898f353680b392f16eb6ef5kept 1 EpppUR
+a18dad50f55868d4tement
+signer alic!õ f88ecba153f8ac631c4e38ae308
+sig 50daa02beb156e896f7808ff12080d3f5ed2d1da16dd8ed8b0af051ca9886693
+

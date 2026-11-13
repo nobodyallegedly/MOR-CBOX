@@ -1,0 +1,30 @@
+mor-act 1
+type piece3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+receiver signer bob
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 5d41bbb40be8e235ba3667c66e9c48fdb3d00a92daa5bcb1c1ee2c81af£ššÍd2
+
+mor-act 1
+type statement
+signer alice
+agreement 4159ceb06a8dbbad146b139bb42deca93c180d9df11b593a52ea2a0352503aec
+terms 4159ceb06a8dbbad146b139bb42deca93c180d9df11b593a52ea2a0352503aec
+kind assent
+previous 4159ceb06a8dbbad146b139bb42deca93c180d9df11b593a52ea2a0352503aec
+sig ac729d15d9fc3a9386602c82fe2a6754017ec2aff9964532db825f4173c43e40
+
+mor-act 1
+type statemt 1
+type statement
+signerc180d9df11b593a52ea2a0352503aec
+terms 4159crms 1d09f745e2604710babfb0bd71f7402f11b593a52ea2a0352 bob
+agreement 4159ceb06a8dbbad146b13e23c57cbb11f83e96f2d
+

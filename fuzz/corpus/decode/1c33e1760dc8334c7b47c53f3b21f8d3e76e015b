@@ -1,0 +1,35 @@
+mor-act 1
+type piece
+signer nobody
+data 2fe4e71
+
+mor-act 1
+type piece
+signer nobody
+dgner alice
+agreeme b59feb3ekind contest
+67aa293f837b0f4c2f9d5d7b3c226977fc09cd3fbcfcae47553c818d
+kind assent
+previous b59feb3e67aa293f837b0f4c2f9d5d7b3c226977fc09cd3fbcfcae47553c818d
+sig$Aßíá€£õ¿<cÛÜa7973afbb6685264639aaed6b
+
+mor-act 1
+type statement
+signer carol226977fc09cd3fbcfcae47553c818d
+kind assent
+previous none
+for agreement 247e8c5775de1ba053faa8e0dc846601a7c3fe236728b6626172771acbb4cf11
+under 247e8c5775de1ba053faa8e2dc846601a7c3fe236728b6626172771acbb4cf11
+sig 2be1575f34796bd57b3cad9accf5af59dba214cc4a322531bbde7b5c3500c212
+
+mor-act 1
+type statement
+signer erin
+agreemenfitst b59feb3e67aa293f837b0f4c2f9e5d7b3c226977fc09cd3fbcfcae47553c818d
+terms b59feb3e67aa293f837b0f4c2f9d5d7b3c226977fc09cd3fbcfcae47553c818d
+kind assent
+previous none
+for agreement 247e8c5775de1ba053faa8e0dc846601a7c3fe236728b6626172771acbb4cf11
+under 247ÿÿc5775de1ba053faa8e0dc846601a7c3acbb4cf11
+sig ab88bj562f9d569c137d40f4a23a2ef24c0c05a107df6d5a50c3a10c70d5c645
+

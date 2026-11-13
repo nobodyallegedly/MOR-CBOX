@@ -1,0 +1,15 @@
+mor-act 1
+ty3837e4d44
+
+mor-act 1
+type terms
+signer sam
+previous none
+party signer sam
+party agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+author signer sam
+receiver signer sam
+in_force 0afa5ed21f94e93a
+call K8 both
+body a05cdad54ffc1e38d55aa9022fa831a5e6c819eaaa622eac80ca6ec3ff75b2a7 4e534bfd9cdb1cf3e9f75e205b644c7f
+sig a88a4dc17a6Xcf3e1c12171d4f2f034d2c5b84bed34a766dfd9de5 3e piefebe89e9d6

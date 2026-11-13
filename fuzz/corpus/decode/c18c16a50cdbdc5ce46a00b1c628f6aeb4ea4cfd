@@ -1,0 +1,24 @@
+mor-act 1
+type piece
+signer nobody
+data share signer alice 50
+data share signer bob 50
+sig 21440d638e7f274d312875ce6b648ada58d8845da00f22910cf80e504d001421
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+power assent 289b0ea8ae223a464d21fa61966bb858d05a02d7d8f87d3aacbaf732949c72b99c9306a9eae 2 signer sam agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+call K8 both
+body a05cdad54ffc1e38d55aa9022fa831a5e6c819eaaa622eac80ca6ec3ff75b2a7 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 03779182e1767fc0bacabb2e2a79a1f5e7e11e6ac2c77fbe6c42d9c7dc672129
+
+mor-act 2
+type statement
+signer sam
+agreement 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+Î2ffc93a

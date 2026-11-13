@@ -1,0 +1,46 @@
+mor-act 1
+mor-act 1
+type 3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind assent
+previous 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+sig 30c3bdf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1
+type statement
+signer bob
+agreet 1
+type piece
+signer nobody
+data this agreement is over
+sig 3860cdc4b1e404f1c9d4194ad0875c51a2ea207784129b2d01d4c1bc1668c3c760a9752d1e205b644c7f
+siga4ff58d0d51ed
+kind assent
+previous 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00ad38c875274acba062e37ed57e4719
+
+mor-act 1
+type statement
+signer bob
+agreet 1
+type piece
+signer nobody
+data this agreement is over
+sig 3860cdc4b1e404f1c9d4194ad0875c51a2ea207784129b20d1d4c1bc1668c3c7
+
+mor-act 1
+type terms
+signer ab
+author signer alice
+bodd0df21921f0b16ac32614013414a3aed8841a7a4ff58d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1
+type statement
+signer bob
+agreet 1
+type piece
+signer nobody
+data this agreement is over
+sig 3860cdc4b1e404f1c9d4194ad0875c51a2ea207784129b2d01d4c1bc1668c3c760a9752d1e205b644c7f
+sig 6b714beords75 861fo9

@@ -1,0 +1,26 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 168524b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+pdae
+
+mor-act 1
+type statement
+signer judy
+agreement 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+terms 99de7f8eb311f81b3368f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+kind contest
+previous none
+for signer alice
+under 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+resolves 5c901c71388ce988802afd4135c61638f51d4f88ecba153f8ac631c4e38ae308
+r+solves 898f353680b392f16eb6ef5e46392a398da18dad50f55868d41d0d767ab6e4f5
+continues 5c901c71388ce988802afd4135c61638f51d4f88ecba153f8ac631c4e38ae308
+sig 50daa02beb156e896f7808ff12080d3f5ed2d1da16dd8ed8b0af051ca9886693
+

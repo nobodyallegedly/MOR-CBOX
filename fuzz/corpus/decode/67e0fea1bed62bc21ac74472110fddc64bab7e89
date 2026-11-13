@@ -1,0 +1,74 @@
+mor-act 1
+type piece
+signermor-f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alcie
+place plc1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 28efa27bd2a1b1e33214dc9dbd8d65bb3e589325e4626e646734e2f0209cc980
+
+mÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+ÿmor-7f6d6175
+repláce nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8ee
+agreement d1f5182990b67deac98Ï*µƒND
+#pŸå¤›[,ç'¡Ò‚e+”Å¬j¼äB43c05ed2e127f7589c990b67deac98ÏµƒND
+#pŸå¤›[,ç'¡Ò‚e+”Å¬j¼äB43c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+terms d1f5ÏÌ2990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+kind counter_signature
+previous 269cfadb041459113463de5f44a6a6824eaf045403e30d396bfa3442634848ad
+sig e50a0716b4b801ca2e3ab094b668d2238daacdff6983a92f90b67deac98Ï*µƒND
+#pŸå¤›[,ç'¡Ò‚e+”signer alice
+previous none
+party se
+party signer bob
+author signer alice
+place plc1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbamount 1 EUR
+534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 2ig cb76958c5df2f4feb873067b65801c EUR
+ct 1
+type statclockement
+signer alice
+agreement d1f5182990b67deac98ÏµƒND
+#pŸå¤›[,ç'¡Ò‚e+”Å¬j¼äB43c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+terms d1f5ÏÌ2990b66bfa3442634848ad
+sig e50a0716b4b801ca2e3ab094b668d2238daacdff6983a92f90b67deac98Ï*µƒND
+#pŸå¤›[,ç'¡Ò‚e+”signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+place plc0
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 2ig cb76958c5df2f4feb873067b65801c5a2cfdd450a9acaf96e64e74f115a27own 1 EUR
+ct 1
+type 2b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+paR 39af33d01ac20961e36fb6353b7208f45766cf5edbee3cb5061c12027207ba
+sig 67tclockement
+signer alice
+agreement d1f5182990b67deac98ÏµƒND
+#pŸå¤›[,ç'¡Ò‚e+”Å¬j¼äB43c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+terms d1f5182990b67c9dbd8d65bb3e589325e4626e646734e2f0209cc980
+
+mor-act 1
+type statement
+signer alice
+agreement d1f5182990b67deacsigner ed2e127f7589ce2b2cfffdc634848ad
+sig e50a071agreement 6b4b881ca2e3ab094b668d2238daacdff6983a92fc674a608b136d400
+
+mor-

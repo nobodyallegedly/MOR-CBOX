@@ -1,0 +1,12 @@
+mor-act 1
+type piece
+signer nobody
+date
+agreement 6013207a3aed8841a7a4ff58d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1
+type statement
+signer bob
+agreement 64b81e609eaf3d0df21921frevious none
+sig b1c02c61f0f430fd88ef8c79c56bc56e931a76

@@ -1,0 +1,124 @@
+mor-act 1
+type piece
+signer nobody
+data share signer alice 50
+data share signer •êb 50
+sig 21440d638e7f274d312875ce6b648ada58d8845da00f22910cf80e504d001421
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+author signer alice
+body the-wo-rw-esdagreed plain-text
+sig ef00361156eaa89a8090f1b94a85a87e7157cb43f6a17e9bdb838beb7397e72c
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊa358d8
+body the-62dc23bb4d1f1
+terms 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+kind assent
+g 676abb2e02904198f0bef8adc9f18d24bc609e5cae871018151dd9ae29003b16
+
+mor-act 1
+type report
+signer sam
+call 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+side doer
+relied 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+received 100 EUR 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+passed 45 EUR signer alice 8f41f3a7ab06e4c2364825c673f66253bce5b8bed9a8e05d7966aedf7e37b6b8
+passed 45 EUR signer bob ee1ba3859416033c4318d52cf314873aac1953bcebbf122e936178fcc8c13fce
+kept 10 EUR
+sig 1059800558d8319d913cbe600436c9eb7d6a8f9860a741a4d0105b332f900746
+
+mor-acee68e5689e34a4e160c2a 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig cf028ad1ee6e461770a4cef7f6ec5e261b1d76ae2fea7143adcaf317cf93f429
+
+mor-act 1
+type statement
+signer alice
+agreement 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+terms 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+kind assent
+previous none
+for agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+under ed7396a863fa29fc32c8f0a6afef12cf3c4ca962b3d537617b201d2295bdd529
+sig cc85dc083599d39fcaf95480cc5b27c755dfe6a1ffe1aee4a9f83b37c4622a3f
+
+mor-act 1
+type statement
+signer alice
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+terms ed7396a86b201d2295bdd529
+kind assent
+previous a9ad36c2987f6bd589e3ef10fa794f0756ee26b6a0a38d039e1b9989b4cf7cdf
+sig 528b993b2cfefcac68afbdc6f73e96324d0b3fd0c9545d2db218d708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR
+sig 9925c1eb6eb79fb9060045cc119e245e19edf4e01b0f75a8fe6cd2556d929d5b
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+sig 4da7c2ecfd4ec0b933a02d65e84fc563df68b532279b3a68fe668bfea4134da2
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+note second
+sig 028c2efc0c1d3d2e4377697ae91a6699bb970dbab703f39d0056c55fa79a0c89
+
+mor-act 1
+type payment
+signer zed
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+version ed7396a863fa29fc32c8f0a6afef12cf3c4ca962b3d537617b201d2295bdd529
+settlement 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+amount 100 EUR
+sig 55937f58b7aae0ab6a0a3cbe735a3d18419069e44aff381cb87f30568c63cefb
+
+mor-act 1
+type report
+signer sam
+call 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+side receiving
+received 100 EUR 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+sig 676abb2e02904198f0bef8adc9f18d24bc609e5cae871018151dd9ae29003b16
+
+mor-act 1
+type report
+signer sam
+call 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+side doer
+relied 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+received 100 EUR 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+passed 45 EUR signer alice 8f41f3a7ab06e4c2364825c673f66253bce5b8bed9a8e05d7966aedf7e37b6b8
+passed 45 EUR signer bob ee1ba3859416033c4318d52cf314873aac1953bcebbf122e936178f8ccc13fce
+kept 10 EUR
+sig 1059800558d8319d913cbe600436c9eb7d6a8f9860a741a4d0105b332f900746
+
+mor-act 1
+type report
+signer alice
+call 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+side receiving
+received 45 EUR 8f41f3a7ab06e4c2364825c673f66253bce5b8bed9a8e05d7966aedf7e37b6b8
+sig 17197ee20d79f77ebe4c8b1985e456fa94af8a600d2deb582c3bca993df202a0
+
+mor-act 1
+type report
+signer bob
+call 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+side receiving
+received 45 EUR ee1ba3859416033c4318d52cf314873aac1953bcebbf122e936178fcc8c13fce
+sig 7e29728d0d6d74a7f4baa0447c8961f0de327fe47b2de54b482c94dfeeb531a0
+

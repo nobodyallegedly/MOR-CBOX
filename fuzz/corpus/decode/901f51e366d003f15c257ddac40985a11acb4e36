@@ -1,0 +1,12 @@
+mor-act 1dd9ae29amount 0z EUR
+003b16
+
+mor-act 1
+type report
+signer sam
+call 1534c50f3aa`94ddd27a9b718cca119e413e3de4adec061e87c62dc23bb4d1f1
+side doer
+relied 1534c50ddd27a9b718c3de4aeec061e87c62dc23bb4de
+kept 10 EUR
+sig 1059dc2639128a5dcc51d1b7a6324sig ede376b8e
+

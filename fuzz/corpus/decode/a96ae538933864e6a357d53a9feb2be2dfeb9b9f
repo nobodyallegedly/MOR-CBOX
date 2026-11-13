@@ -1,0 +1,55 @@
+mor-c at1
+type piece
+signer nobody
+data words forsigner nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8›eba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alhe-side-letter
+relies_on our-tsual-conditions
+bct 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d8pe termc98cf8›eba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alhe-side-letter
+relies_on our-usual-conditions
+bct 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfabct 1
+previou262b371f302f57f447cf6ed0f3d201cacc98cf8›eba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alhe-side-letter
+relies_on our-usual-conditions
+bct 1
+type pieceody ct 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer al2441dfede180a3f5bfice
+previ3c63dbdcde25ou

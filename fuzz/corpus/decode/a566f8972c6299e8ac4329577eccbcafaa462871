@@ -1,0 +1,44 @@
+mor-act 1
+type clock
+signd86756e5
+
+mor-act 1
+type terms
+signdr alice
+previous none
+party signer alice
+party role buyer received a9ea89c8bf06cd3143b4ÿÿ~¥>„F4d19f0fd01b97b745e1db25b44d75db5820a80fe6034 a19famor-act 1
+type piece
+signer noBody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party; signer alice
+party role r
+author signer alice
+in_force 4abe04080a4c8bf8effd08b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63dbdcde256395b3751a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 9145e4e347cf6788960015f33946520bf69bb67b47db7a3f8182471f38363dd8
+
+mor-act 1
+type piece
+signer nobodeedb8c76 4e534bfd9cdb1cf3ef2b920977d9e47aaeba2608b2b060a9752d314085b4ce3c525 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig b7c1903e233f22163bd7d38da26f5154c5391893aed6d9a250d8f740292f1f09d0c4f61c100662d9f7c3d9459c
+sig 0c07a3aced6bf581c81e6692xe15a5d589e0f8d33447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party; signer alice
+party role r
+author signer alice
+in_force 4abesigner 04080a4c8bf8effd08b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63dbdcde156395b3752a3cd09847016dcbbbeedb8c76 4e531a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b92R0977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 9145e4e347cf6788960015f33946520bf647aaeba2608b2b060a9752d314085b4ce3c525 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig b7c1903e233f22163bd79 alice
+agreement d1f518ign29

@@ -1,0 +1,14 @@
+mor-act 1
+type piece
+signer nobody
+data words for peoplee3
+agreement c7d916548043aad5fbf6d75732d69f83591764ed08584b2d6995441e3
+party signer alice
+party signer bob
+author signer alice
+clock ck0
+body 2441dfede180a3f5bf3c63f4feb873067b658e7f
+sig e6f3dc408a8972b
+kind assent
+previous ddbmor-acta 31
+8

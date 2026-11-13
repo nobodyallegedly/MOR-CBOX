@@ -1,0 +1,32 @@
+mor-act 1
+ty756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alhe-side-letter
+relies_on our-usual-conditions
+bct 1
+type piece
+signer nobody
+data words for people
+s none
+party signer alice
+party signer bob
+author signer alhe-side-letter
+relies_on our-usual-condktions
+bct 1
+type piece
+signer nody
+data words for people
+sig 084262b371f302f57f447cf6ea9dfadfa358d86756e5
+
+mor-act 1
+typ57e61ccdb083e82c1049585bb931d490368b4bcb7bf3417e65
+kind assent
+previous 60e325957b7a9c756e1ccdb083e82c1049585bb931d490+68b4bcb7bf3417e65
+sig 23future115a22956da096456fdf0f14ef6ec612bebf18f4dbeb93c&8a22ef5f2
+

@@ -1,0 +1,59 @@
+mor-act 1
+type piece
+signer nobody
+data share signer alice 50
+data share signer bob 50
+sig 21440d638e7f274d312875ce6b648ada58d8845da00f22910cf80e504d001421
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+receiver signer alice
+call K8 doer
+body 7817577602cd43a8b4ad5632893174f2f85d960c3a2ee68e5689e34a4e160c2a 4eb644c7f
+sig 921eb52a263fbcfdd4dd380f7274d10108abb823c06f6756f6b7b2ca55333b97
+
+mor-act 1
+type statement
+signer alice
+agreement c081cc9d95a6a9a567d1926537cac79b258618cd03059f8f42d9b4f6a5d500a4
+terms c081cc9d95a6a9a567d1926537cac79b258618cd03059f8f42d9b4f6a5d500a4
+kind assent
+previous c081cc9d95a6a9a567d1926537cac79b258618cd03059f8f42d9b4f6a5d500a4
+sig 3f0f06f3ed0bbb64d0349588fe8b00bb8bdcb2e6a1aa5705172df72ff96f6955
+
+mor-act 1
+type statement
+signer bob
+agreement c081cc9d95a6a9a567d1926537cac79b258618cd03059f8f42d9b4f6a5d500a4
+terms c081cc9d95a6a9a567d1926537cac79b258618cd03059f8f42d9b4f6a5d500a4
+kind assent
+previous none
+sig 9b05ea204636890ff9f39302fd7ab150ecb1c90fb3e767690a336465cea8161f
+
+mor-act 1
+type settlement
+signer bank
+amount 10 EUR
+sig 56db426963dfec95452ed1e4b1b8cd09a1583a7c9c7bfd7269f0538a3c91c982
+
+mor-act 1
+type settlement
+signer bank
+amount 5 EUR
+sig e58f0d0ee40b045631387acbac8f39294af8ab4e869e37d3d8e6e2047eeaca98
+
+mor-act 1
+type report
+signer alice
+call c081cc9d95a6a9a567d1926537cac79b258618cd03059f8f42d9b4f6a5d500a4
+side doer
+received 10 EUR 690d63010382bf6821716bbb8dcec899fcf783c9bdf0b2c14bacb185f763f77f
+passed 5 EUR signer bob cf0d19b5834e440a23709fe5a49b5b2ce727a10cd20b82652b94c5ac6abce442
+own 5 EUR
+sig 254e24d3775d8877ef049d0ba4058afbed86aa6c57b5993adaa7a600a72c32c1
+

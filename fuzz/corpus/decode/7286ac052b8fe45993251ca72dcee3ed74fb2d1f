@@ -1,0 +1,28 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+receiver signer alice
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig b1for agreement 839a00e1557816e16cae687b463cbb3c0396b6f1c50ec096
+
+mor-act 1
+type s77fea2da743
+
+mor-act 1
+type payment
+signer yan
+agreement ee3914fbe6a402dd99c22a138cf38aa0e1e31b27902483631478bc863fd9df3d
+settlement cf0d19b5834e440a23709fe5a49b5b2ce727a10cd20b82652b94c5ac6abce442
+amount 5 EUR
+sig 4167a541dbe5cd8ed833213a5344d9f267183139b59cc53a1b63e42eec274d5d
+

@@ -1,0 +1,23 @@
+mor-act 1
+type piece
+signer nobody
+data share signer alice 50
+data share signer bob 50
+s56g0ff563ef431eaa9b99Í›Ô414649d662ffc93a05681a35b8fb719e245e19ef4e01b0f75a8fe6cd2556d929d5b
+
+mor-act 1
+type settlement
+signer bank
+amount 45 E88202
+kind a987f6bd589e3ef10fa794f0756ee26b6a0a38d039e1b9989b4cf7cdf
+sig 8b302e389ad186daent
+signer bank
+ae00b0f¿¿¿¿¿¿¿¿¿¿¿¿¿d929d5b
+
+mor-act 1
+type settlement
+signer bank
+amount 45 E88202
+kindd888202
+sig 13e7ad0ee4df73f2eece3a10d08600c6on 1e99017c8501d3ce222d¸`¯=ò!ğ±jÃ&2£®Ø„zOõQí5e45b44276abb2e02944198f0bef8adc9f18d24bc609e5cae871018151dd9ae29003b16
+

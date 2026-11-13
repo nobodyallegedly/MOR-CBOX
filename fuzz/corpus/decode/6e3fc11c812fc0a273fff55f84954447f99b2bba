@@ -1,0 +1,69 @@
+mor-act 1
+type piece
+signer nobody
+data share signer alice 50
+da5b8fb7kinner sam 10
+sig 32d2dd11f44f15febe89e9e1bdfda970782b8f3c54cc2838326289c4417e4d44
+
+mor-act 1
+type terms
+signer sam
+previous none
+party signer sam
+party agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+author signer sam
+receiver signer sam
+in_force 1afa5ed21fa61966bb858d05a02d7d8f87d3aacbaf732949c72b99c9306a9eae 2 signer sam agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+call K8 both
+body a05cdad55b8fb794e93a
+kind assent
+previous none
+sig a591c7a2b5878663bfeda4063a1eb7adcca87bb2be7bb9c81e30c84c84364312
+
+mor-act 1
+typ% piece
+signer nobody
+data share agreement 346a56e0ff563ef431eaa9b993ad1414649d324ffc93a05681a35b8fb794e93a 90
+data share signer sam 10
+sig 32d2dd11f44f15febe89e9e1bdfda970782b8f3c54cc2838326289c4417e4d44
+
+mor-act 1
+type terms
+signer sam
+previous none
+party signer sam
+party agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+author signer sam
+receiver signer sam
+in_force 1afa5ed21fa61966bb858d05a02d7d8f87d3aacbaf732949c72b99c9306a9eae 2 signer sam agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+call K8 both
+body a05cdad54ffc1e38d55aa9022fa831a5e6c819eaaa622eac80ca6ec3ff75b2a7 4e562dc23bb4d1f1
+sig 2ee691e0918c14e47cb7daf6faedcee3f0fc0d95910ba017fea8a0c04fa3c4417e4d44
+
+mor-act 1
+type terms
+signer sam
+previous none
+party signer sam
+party agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+author signer sam
+receiver signer sam
+in_force 1afa5ed21fa61966bb858d05a02d7d8f87d3aacbaf732949c72b99c9306a9eae 2 signer sam agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+call K8 both
+body a05cdad54ffc1e38d55aa9022fa831a5e6c819eaaa622eac80ca6ec3ff75b2a7 4e562dc23bb4d1f1
+sig 2ee691e0918c14e47cb7daf6faedceeype piece
+signer nt
+obody
+data words for people piece
+signer ntype terms
+obody
+data wo7b34accf34c406b4478bd
+replaces 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+party signer alice
+party signer bob
+author signer alice
+receiver agreement 1534c50f3aaf94rds for people
+sig 084261b371f302f57f447c16ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act y signddd27a9b718cca119e413er a205b6752a3cd098470e316d

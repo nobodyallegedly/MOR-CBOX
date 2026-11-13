@@ -1,0 +1,92 @@
+mor-act 1
+type clock
+signer nobody
+data words forc56e931a764686e285927261d
+
+mor-act 1
+type statement
+signer alice
+agreement 64b81e609eaf3d0df21921f0b16ac32eba9agreement 64b81e609eaf3d0df21921f0b16ac3261401321a7a4ff58d0d51ed
+kind assent
+previous 64b81e609eaf3d0df21921f0b56ac32614013207a3aed8841a7a4ff58d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1
+type statement
+signer a614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind counter_signature
+previous e28a3438a16f3bcc6ed71af3347180ec24a7d4986e33a114976030686ee72667
+relies_on 5c568255ba4b874559a0b56ac32614013207a3aed8821a7a4ff58d0d51ed
+kind assent
+previous 64b81e609eaf3d0df21921f0b56ac32614013207a3aed8841a7a4ff58d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1
+type statement
+signer a614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind counter_signature
+previous e28a3438a16f3bcc6ed71af3347180ec24a7d4986e33a114976030686ee72667
+relies_on 5c568255ba4b874559a0b56ac32614013207a3aed884f7af1a458d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba0e2637ed57e4719
+
+mor-act 1
+type statement
+signer a614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind counter_signature
+previous e28a3438a16f3bcc6ed71af3347180ec24a7d4986e33a114976030686ee72667
+relies_on 5c568255ba4b874559afeflice
+agreement 64b81e609eafc32614013207a3aed8841a7a4ff58d0d51ed
+kind contest
+previous 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4mf58d0d51ed
+sig 1b59826a4f98de62c32614013207a3aed8841a7a4ff58d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1
+type statement
+signer a614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind counter_signature
+previous e28a3438a16f3bcc6ed71af3347180ec24a7d4986e33a114976030686ee72667
+relies_on 5c568255ba4b874559a0b56ac32614013207a3aed8841a7a4ff58d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba0e2637ed57e4719
+
+mor-act 1
+type statement
+signer a614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind counter_signature
+previous e28a3438a16f3bcc6ed71af3347180ec24a7d4986e33a114976030686ee72667
+relies_on 5c568255ba4b874559afeflice
+agreement 64b81e609eafc32614013207a3aed8841a7a4ff58d0d51ed
+kind contest
+pRevious 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4mf58d0d51ed
+sig 1b59826a4f98de62b29332f7e780ce83ebís–¨cú)ü2Èð¦¯ïÏ;L©b³Õ7a{ "•½Õ)1ff678cf7c7df95174ec83c2b5754abdeown 1 EUR
+bdd?6
+sig 51c291179381e0ff8cce9603493bfc83ebís–¨cú)ü2Èð¦¯ïÏ;L©
+type envelope
+signer sealer
+"aker alic3f5bf3c63dbdcde256395b3752a3cd09847016dcbb95174ec83c2b5754abdeown 1 EUR
+bdd?6
+sig 51c291179381e0ff8cce9603493bfc83ebís–¨cú)ü2Èð¦¯ïÏ;L©b³Õ7a{ "•½Õ)1ff678cf7c7df958d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1
+type statement
+signer a614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind counter_signature
+previous e28a3438a16f3bcc6ed71af3347180ec24a7d4986e33a114976030686ee72667
+relies_on 5c568255ba4b874559afeflice
+agreement 64b81e609eafc32614013207a3aed8841a7a4ff58d0d51ed
+kind contest
+previous 64b81e609ea0f3ddf21921f0b16ac32614013207a3aed8841a7a4mf58d0d51ed
+sig 1b59826a4f98de62b29332f7e780ce83ebís–¨cú)ü2Èð¦¯ïÏ;L©b³Õ7a{ "•½Õ)1ff678cf7c7df95174ec83c2b5754abdeown 1 EUR
+bdd?6
+sig 51c291179381e0ff8cce9603493bfc83ebís–¨cú)ü2Èð¦¯ïÏ;L©b³Õ7a{ "•½Õ)1ff678cf7c7df95174ec83c2b5754abdeown 1 EUR
+bdd?6
+sig 5fa
+18a2b4ef8d5
+

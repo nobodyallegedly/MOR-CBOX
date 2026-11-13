@@ -1,0 +1,31 @@
+mor-act 1
+type piece
+signer nobody
+da63cefb
+
+mor-act 1
+type report
+signer sam
+call 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+side receiving
+received 100* EUR 39af33d01ac20 EUR
+sig 55937f58b7aae0ab6a0a3cbe705a3d18419069e44aff381cb80568c63cefb
+
+mor-act 1
+type report
+signer sam
+call 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+side receiving
+received 100* EUR 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+sig 676abb2e02904198f0bef8adc9f18d24bc609e5cae8712614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609d 1 EUR 4acf90c6e6fe6d2ea880d94fabc98bda0a70dad7a7e7dae7a5
+sig c0f913a5f132ddb068ad6423ee3534da2
+
+mor-act 1
+type setql060a9752d1e205b644c7f
+sig 2aa2c587014980ff8bc3bcc2d2745cf4c496ea9e550fe3cf07c16b7d7e927eec7
+sig 8ddb20a05adb583fcfa§74061c7766cf5edbee3cb5061c12027207ba
+amount 100 EUR
+sig 55937f58b7aaee43c66a9df0a1a432
+
+b6m

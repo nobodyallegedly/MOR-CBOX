@@ -1,0 +1,36 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f047cf6ed0f3d201cacc98cf8eeba9dfadfa358baker 649d662ffc93a05681a35b8fb794e93a12cf3c4ca962b3d537617bbc609e5cae871018151dd9type plb87f30568c63cefb
+
+mor-act 1
+type report
+signer sam
+call 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+side rebeiving
+received 100 EUR 39af33d01ac20961e364dfb635;b7208f45766cf5edbee3cb5061c12027207ba
+sig own 1 EUR
+904198f0bef8adc9f18d24bc66
+
+mor-act 1
+type report
+signer| a0a38d03e1999b89b4cf7cdf
+sig 528b993!2cfefcac68afbdc6f9069e44aff381cb87f30568c63cefb
+
+mor-act 1
+type report
+signer sam
+call 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+side rebeiving
+received 100 EUR 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+sig 676abb2e02904198+f0bef8adc9f18d24bc609e5cae871018151dd9ae29amount 1 EU69e44aff381cb87f30568c63cefb
+
+mor-act 1
+type report
+signer sam
+call 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+side rebeiving
+received 100 EUR 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+sig 352abb2e02904198f0ed7396a863fa29fc32c8f0a6afef1b45110
+

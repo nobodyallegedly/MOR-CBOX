@@ -1,0 +1,23 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-ape terms
+signer alice
+previous none
+party signer alice
+party signegner alice
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8842a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df219227ecf6890e3aereceived4bc72dfbaf
+
+mor-act 1
+type payment
+signer zed
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+version 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+settlement cf0d19b5834e440a23709fe5a49b5b2ce727a10cd20b82652b94c5ac6abce442
+amount 5 EUR
+sig 3e715d63b2eb39088b769942772ce479c3a55a2ff8f914b0897931b9b6a72682
+

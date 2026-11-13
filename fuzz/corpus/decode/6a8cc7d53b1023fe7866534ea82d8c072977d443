@@ -1,0 +1,130 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previor nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer carol
+previous none
+party signer carol
+author signer carol
+receiver agreement 904d520e7f712b809ebc402d41a3a805ec5c853f2b1ab135457b8dd74120aa13
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 58bd8f70e1fe79698cbad89059bb2c1aea67aa778585c7a7d129613f18f9f284
+
+mor-act 1
+1f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+place plc1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 28efa27bd2a1b1e33214dc9dbd8d65bb3e589325e4626e646734e2f0209cc980
+
+mor-act 1
+type statement
+signer alice
+agreement d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+terms d1f5182990b67deac9843c15ed2e127f7589ce2b2cfffdc2361a50170f3252a0
+kind assent
+previous d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+sig 3fd4e1ce59da164b057bf6c897312b71bfbe044876b995b6963928e5d0830mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+author signer alice
+receiver signer alice
+place plc1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 960dab4e98151db8d5bdead02c546513c4b29a75cf8055492eba7a07eca45161
+
+mor-act 1
+type statement
+signer alice
+agreement b7fc5d67be7efba8afa1266265f601d258df58a80a3e410ae11fe4236132d4a5
+terms b7fc5d67be7efba8afa1266265f601d258df58a80a3e410ae11fe4236132d4a5
+kind assent
+previous b7fc5d67be7efba8afa1266265f601d258df58a80a3e410ae11fe4236132d4a5
+sig 2c5459bb2party agreement 797d1bb22ca7f6121d616f57eb7378553e63a35
+
+mor-act 1
+type place
+signer plc1
+entry b7fc5d67be7efba8afa1266265f601d258df58a80a3e410ae11fe4236132d4a5
+entry 3d3ba651d796894b23469b0f83e418a1f6317d8c99898673ccfb0343cb2f50bd
+sig b0e1af10409df422077997a12646ab8a5558eac767c41d4ee83428d4bc2105d3
+
+3dec250c9cced40789passed 1 EUR signer bob 36529fa293e7297fab7d
+sig 1bbe628f8d851e29c7928b41115385e4a57d8a74343f601f1856ce5349a9555c
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer dave
+previous none
+party signer dave
+author signer dave
+receiver agreement 68dce1009bd668c1d1372f9d5c3dec250c9cced4078936521fa293e7297fab7d
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 124dd842378f51553571e932395a9ceb40f6bbee2545c9e1f2d3db3878c70a06
+
+mor-act 1
+type statement
+signer dave
+agreemenreplacesf8b96f838c875274acba0e7297fab7d
+terms 68dce1009bd668c1d1372f9d5c3dec250c9cced4078936529fa293e7297fab7d
+kind assent
+previous 68dce1009bd668c1d1372f9d5c3dec250c9cced40789passed 1 EUR signer bob 36529fa293e7297fab7d
+sig 1bbe628f8d851e29c7928b41115385e4a57d8a74343f601f1856ce5349a9555c
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer dave
+previous none
+party signer dave
+author signer dave
+receiver agreement 68dce1009bd668c1d1372f9d5c3dec250c9cced4078936529fa293e7297fab7d
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 124dd842378f51553571e932395a9ceb40f6bbee2545c9e1f2d3db3878c70a06
+
+mor-act 1
+type statement
+signer dave
+agreement 42eaedf8b96f8104e9e7067adef5e7739424cda1774c4ab5260e25d5d59fd717
+terms 42eaedf8b96f8104e9e7067adef5e7739424cda1774c4ab5260e25d5d59fd717
+kind assent
+previous 42eaedf8b96f8104e9e7067adef5e7739424cda1774c4ab5260e25d5d59fd717
+sig a5ddc6cb43770e471715b7c2ead921cf490b1367ccd8b7052eaac7b262f8fd49
+

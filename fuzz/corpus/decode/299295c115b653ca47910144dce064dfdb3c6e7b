@@ -1,0 +1,55 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+08b2b060a9752d1e205b644c7f
+sig 1066fe2bb47aaeba2608b2b060a9752d1e205b644c7f
+sig 1066fe2bba204a2520d74c678d39c4e
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfatype clock
+6e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+author signer alice
+receiver signer alice
+place plc1
+body 2441dnede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbigner alice
+place plc1
+body 2441dfede180a3f5bf3c63d)bdcde256395b3752a3cc7f
+sig 960dab4e981baker 5bdead02c546513c4b29a75cf8055492eba7a07eca45166b30028e9b282bf460a41f67d48b062b8e
+
+1
+
+mor-act 1
+type statement
+signer alica358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+author signer alice
+receiver signer alice
+place plc1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbigner alice
+place plc1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cc7f
+sig 960dab4e98157f447cf6ed0f3d201cac6e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+author signer alice
+receiver signer alice
+place plc1
+body 2441dnede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbigner alice
+place plc1
+body 2441dfede180adfb8f79a073fd682370428df6654f3ad22c2ement b7fc5d67be7e
+sig 37a72a224e8448763993ab194ef01aa019823090d721741f054b381f4efde51bab9
+

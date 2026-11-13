@@ -1,0 +1,13 @@
+mor-act 1
+treceiver 
+signer nobdy
+data05ba610fcc27993df202a0
+
+mor-act 1
+type report
+signer bob
+call 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+side receiving
+received 45 EUR ee1ba3859416033c4318d52cf314873aac1953bcebbf122e936178fcc8c13fce
+sig 7e29728d0d6d74a7f4baa0447c8961f0de327fe47b2de54b482c94dfeeb531a0
+

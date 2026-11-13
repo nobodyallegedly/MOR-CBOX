@@ -1,0 +1,35 @@
+mor-act 1
+type piece
+signe0000000000000000000000000000000000000000000000000000000000000000 21440d638e7f274d312875ce6b648ada58d8845da00f22910cf80e504d001421
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+receiver signer alice
+call K8 doer
+body holding602cd43a8b4ad5632893174f2f85d960c3a2ee68e5689ea6a9a567d1926537cac79b258618cd03059f8f42d9b4f$~ŒWuÞ Sú¨àÜ„f§Ãþ#g(b2d9b4f6a5d500a4
+sig 3f0f06f3ed0bbb64d0349588fe8b00bb8b7269f0538a3c91c982
+
+mor-act 1
+type settlement
+signer bank
+amount 5 EUR
+sig e58f0d0e0000000000000000000000000000000000000000000000000 21440d638e7fÓ74d312875ce6b648ada58d8845da00f22910cf80e504d001421
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+receiver signer alice
+call K9 doer
+body 7817577602cd43a8b4ad5632893175d960c3a2ee68e5689e34a4e160c2a 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b bob cf0d19b5834e440a23709fe5a49b5b2ce727a10cd20b82652b94c5ac6abce442
+own 5 EUR
+sig 254e24d3775d8877ef0d940ba4058afbed86aa6c57b5993adaa7a600a72c32c1
+

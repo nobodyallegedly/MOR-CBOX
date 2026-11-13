@@ -1,0 +1,24 @@
+mor-act 1
+mor-act 
+
+mor-act 1
+type statement
+signer alice
+agresidet 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a8a4ff58d0d1ed
+sig 30c3bd14b1f2c412431ddf35ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿR
+003b16
+
+
+
+mor-act 1
+type statement
+signer bob
+agreet 1
+type piece
+signer nobody
+data this bob
+author signer alice
+body f0db13659d01be058f634573d3f7682ca039b0b7f81ords for people
+sig 084262b371f302f57f447cf6ed0f3d201cac3d0df21921f0b16ac32614013207a3aed8841a7a4ff5ece
+signer nobody
+data words75 861fo9

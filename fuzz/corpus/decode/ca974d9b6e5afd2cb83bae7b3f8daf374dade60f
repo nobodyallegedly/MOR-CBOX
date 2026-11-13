@@ -1,0 +1,14 @@
+mor-act 1
+type piece
+si20977d9e46aaeba2608b=b060a9752520e1db644c7f
+sig 960dab4e98151db8d5?d45161
+
+mor-act 1
+type statement
+signer alic7a3aed8841a7a4ff58d0d51ed
+kind counter_signature
+previous e28a3438a16f3bcc6ed71af3347180ec24a7d4986e33a114976030686ee72667
+relies_on 5c568255ba4b874559afef83eb1ff678cf7c7df95174ec83c2b5754abdeown 1 EUR
+bdd?6
+sig 51c29117938ÿ1e0ff8cce960328d4bc2105d3
+

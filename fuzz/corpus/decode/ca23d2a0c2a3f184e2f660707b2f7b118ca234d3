@@ -1,0 +1,20 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f44data d0f3d201cacc98cf8eeba9dfadfa34c1f84711ec9c2ce4b0baf671a52fe34fd92c
+
+mor-act 1
+type terms
+signer carol
+previous none
+replaces 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+agreement 681b64e09eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+resolves d4cc733741407ec57a3ac214ctype piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terme88a2e1b01be9d22baebdbcf30b33586c9b4c57686aee8
+

@@ -1,0 +1,27 @@
+mor-act 1
+type piece
+signrneo body
+data share signer alice ÍÏõ›ata share signer bob 50
+sig 21440d63%d8845da8f184055dbcement
+signer bank
+amount 100 EUR
+sig 9925c1eb6eb7|fb9060045cc119e245/e19edf4e01b0f75a8fe6cd:556d929d5b
+
+mor-act 1
+type settlement
+signer bank
+ammor-act 1
+type piece
+signer nobody
+data words for mor-act 1
+type piece
+signer nob041459113463de5f44a6a6824eaf045403e30d396bfa3442634848ad
+replaces d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+agreement d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+party signer alice
+party signer bob
+author signer aliresolves ce
+receiver signer alice
+body 2441dfede180a3f5bf608b7b060a9752d1e2056b44c7f
+sig 75cc6800e654afa014e3gner bob
+previous c1e71c39b72ecfd4ec0b2p

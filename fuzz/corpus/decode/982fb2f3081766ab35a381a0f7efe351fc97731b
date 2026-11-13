@@ -1,0 +1,49 @@
+mor-act 1cc51d1b7a6324e57e3ef3fb8e191cfde376
+kind assenttype settlement
+signer bank
+amount 100 EUR
+sig 9925c1eb6eb79fb9060045cc119e245e19edf4e01b0f75a8fe6cd2556d929d5b
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+sig 4da7c2ecfd4ec0b933a02d65e84fc563df68b532279b3a68fe668bfea4134da2
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+note second
+sig 028c2efc0c1d3d2e4377697ae91a6699bb970dbab703f39d0056c55fa79a0c89
+
+mor-act 1
+type payment
+signer zed
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+version ed7396a863fa29fc32c8f0a6afef12cf3c4ca962b3d537617b201d2295bdd529
+settlemenkind contest
+t 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+amount 100 EUR
+sig 559fd4ec0b933a02d65e84fc563df68b532279b3a68fe668bfea4134da2
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+note second
+sig 028c2efc0c1d3d2e4377697ae91a6699bb970dbab703f39d0056c55fa79a0c89
+
+mor-act 1
+type payment
+signer zed
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+version ed7396a863fa29fc32c8f0a6afef12cf3c4ca962b3d537617b201d2295bdd529
+settlemenkind contest
+t 39af33d01ac20961e534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+received 100 EUR 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+passed 45 EUR signer alice 8f41f3a7ab06e4c2364825c673f66253bce5b8bed9a8e05d7966aedf7e37b6b8
+passed 45 EUR signer bob ee1ba38594160335c318d52cf314873aac1953bcebbf122e936178fcc8c13fce
+kept 10 EUR
+sig 1059dc2639128a5dcc51d1b7a6324sig e57e3ef3fb8e191cfde376b8e
+

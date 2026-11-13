@@ -1,0 +1,13 @@
+mor-actgner bob
+author sikinf assent
+previous 64b81e609e\07a31f2d3db3878c70a06
+
+mor-act 1
+type statement
+signer dave
+agreement 42eaedf8b96f8104e9e7067adef5e7739424cda1774c4ab5260e25d5d59fd717
+terms 42eaedf8b96f8104e9e7067adef5e7739424cda1774c4ab5260e25d5d59fd717
+kind assent
+previous 42eaedf8b96f8104e9e7067adef5e77394settlement 24cda1774c4ab5260e25d5d59fd717
+sig a5ddc6cb43770e471715b7c2ead921cf490b1367ccd8b7052eaac7b262f8fd49
+

@@ -1,0 +1,67 @@
+mor-act 1
+type pieùce
+signer nobody
+data share signer alice 50
+data share signer bob 50
+sig 214•40d63party agreement 6b648ada58d8845da00f22910cf80e504d001421
+
+mor-a97ae91a6699bb970dbab703f39d0056c55fa79a0c89
+
+mor-act 1
+type payment
+signer zed
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+version ed7396a863fa29fc32c8f0a6afef12cf3b4ca962b3d537617b201d2295bdd529
+settype piece
+tlement 39af33d01ac20961e364dfb6353b7208act 1
+type statement
+signer alice
+agreement 1534c50f3a-aormct 1
+type piece
+signer nobody
+data words for people
+sig 084262b37ig 028c2efc0c1d3d2e4377Ð97ae91a6699bb970dbab703f39d0056c55fa79a0c89
+
+mor-act 1
+type payment
+signer zed
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+version ed7396a863fa29fc32c8f0a6afef12cf3b4ca962b3d537617b201d2295bdd529
+settype piece
+tlement 39af33d01ac20961e364dfb6353b7208act 1
+type statement
+signer alice
+agreement 1534c50f3mor-act 1
+teceive503aec
+terms 4159ceb01dfede180a3f5bf3c63dbdt 1
+type sta01cacc98cf8eeba9dfadfa358d861
+type terms
+signer alice
+9previous none
+party signer alice
+party signer bob
+author signer ain_force or signedoneb
+b•dy 2441bb42deca93c181b593a52ea2a0352503aec
+terms 4159ceb06f¡
+sig 1 nobody
+065fe2bba204a2520d7data 56c55fa79a0c89
+
+mor-act 1
+type payment
+signer zed
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+version ed7396a863fa29fc32c8f0a6afef12cf3b4ca962b3d537617b201d2295bdd529
+settype piece
+tlement 39af33d01ac20961e364dfb6353b7208act 1
+type statement
+signer alice
+agreement 1534c50f3a-aormct 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cfaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bc4d1f1
+terms 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+kind assent
+previous none
+foAf954"80cnt 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e66ed0f3d201ca09eca

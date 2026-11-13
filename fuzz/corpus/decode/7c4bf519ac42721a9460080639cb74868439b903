@@ -1,0 +1,35 @@
+mor-act 1
+type piece
+signer ïïïïïïïïïïïïnobod nobody
+data words for people
+sig 042131b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alhce
+previous none
+party signer alice
+party signer beport
+signer bob
+call 1534c50f3aaf94dide receiving
+receivedbody envelope
+859mor-act 1
+type piece
+si people
+sig 042131b371f302756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer beport
+signer bob
+call 1534c50f3aaf94dide receiving
+receivedtype envelope
+859mor-act 1
+type piece
+signer nobody
+data words for peopl%
+sig 08426413e3de4aeec061e87type terms
+signer aliaaebar2

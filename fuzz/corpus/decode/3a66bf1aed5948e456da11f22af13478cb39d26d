@@ -1,0 +1,13 @@
+mor-act 1
+type-you
+sig 1bf0e46cfef27fc3af3d5126ceac386a027ecf6890e3ae0377d1444bc72dfbaf
+
+mor-act 1
+type payment
+signer zed
+agreement 63b81e609eaf3d0df21921f0b96ac32614013207a3aed8841a7a4ff58d0d51ed
+version 64b81d609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+settlemeNt cf0d19b5834e440a23709fe5a49b5b2ce727a10cd20b82652b94c5ac6abce442
+amount 5 EUR
+sig 3e715d63b21ce479c3a55a2ff8f914b0897931b9b6a72682
+

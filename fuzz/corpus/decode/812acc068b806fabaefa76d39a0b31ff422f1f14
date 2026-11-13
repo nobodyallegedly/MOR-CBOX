@@ -1,0 +1,53 @@
+mor-act 1
+type terms
+sign
+author signer alice
+sig 6182684e2758'a5b5dc9c322c47e6bad65521155272122bb96aa63dde8a632103
+
+mor-act 1
+type statement
+signer alice
+agreement d532291ac6c5dc05d6a87895now 1
+bc3749b229dmor-act 1type piece
+sÈgner nobody
+data words for people
+sig 0842 Õù…71f302657f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86753e5
+
+mor-act 1
+type terms
+signer alice
+previou-s none
+party signer alice
+place side doer
+2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cr signer a7d8b80e519c633ee3c25411c5348461a777f1d5f71337f2ee0
+sig 02531932900b205775ea3dide doer
+sig 8f545423b0f3147e9f7c678
+cd337a6ae5aa24d0f5d687671c9ab1b65b833b
+5'df
+51227b22b96aa63dde8a632103
+
+mor-act 1
+type statement
+signer alice
+agreement d532291ac6c5dc05d6a87894now 1
+bc3749b229dmor-acts forOpeople
+sig 084262b371f302657f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86753e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+place side doer
+2441dfe3c63dbdcde256395b3752nt
+signer bob
+agreement d1f5182990b67deac1eaf045403e30d396bfa3442634848ad
+sig e50a0716b4b801ca2e3ab094gner bob
+author signer a7d8b80e519c633ee3c25411c5348461a777f1d5f71337f2ee0
+sig 02531932900b205775ea3dide doer
+sig 8f545423b0f3147e9f7c678
+cd337a6ae5aa24d0f5d687671c9ab1b65b833b
+5df
+

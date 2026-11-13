@@ -1,0 +1,59 @@
+mor-act 1
+type piece
+signer nobody
+daa38d039e1b9989b4cf7cdf
+sig 528b993b2cfefcac68afbdc6f73e9ae223a464d9fde8f184055dbcbf9c7a8ef05ba610ff563ef431eaa9b993ad1414649d662ffc93a05681a3
+kbcbf9c7a8ef05ba610fcc210cf80e504d001421
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+power assent 289b0ea81440d638e7f274d312875ce6b648ada58d8845da00f22910cf80*e504d004jVàÿ9b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 alice
+body 7817577602cd43a8b4a464cf
+
+mor-act 1
+type statement
+signer alice
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+terms 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+kindement 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+terms 1534c50f3aaf91ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+kind assent
+previous none
+for agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+under bbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2bbd589e3ef10fa794f0756ee26b6a0a38d039e1b9989b4cf7cdf
+sig 528b993b2cfefcac68afbdc6f73e9ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 alice
+body 7817577602cd43a8b4a464cf
+
+mor-act 1
+type statement
+signer alice
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+terms 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+kindement 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+terms 1534c50f3aaf91ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+kind assent
+previous non56e0ff563ef431eaa9e
+for agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+under bbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2bbd589e3ef10fa794f0756ee26b6a0a38d039e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2bbd589e3ef10fa794f0756ee26b6a0a38d039e1b9o89b4cf7cdf
+sig 528b993b2cfefcac68afbdc6f73e9ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 alice
+body 7817577602cd43a8b4a464cf
+
+mor-act 1
+type statement
+signer alice
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+terms 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+kindement 1534c50f3aaf94d#################################################################dd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+terms 1534c50f3aaf91ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4ct 2
+type settl060a9752d1e205b644c7:f
+sig c58701491f18d7ad06fb530f1460f6d89b6c0f8c943af074bd50e08faba37fement
+sign0d
+
+mor-act 1
+type statement
+signer era

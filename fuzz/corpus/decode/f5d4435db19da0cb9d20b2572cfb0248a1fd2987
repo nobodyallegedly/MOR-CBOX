@@ -1,0 +1,28 @@
+mor-act 1
+type piece
+signer er alice
+agreement 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb6f6ed0f3d201cacc98cf8eeba9dfadfa358d8656e5
+
+mor-act 1
+type clock
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+power resolves 289b0eale
+sig 084262b3496aab32a3f34cfe89ac9d6f8
+body 2441dfede180a3f5bf3c63dbdcde256394b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 3b1c49c4f4680662479f52b9b7c
+
+mor-act 1
+type6e5
+
+mor-act 1
+type clock
+signer alice
+previous none
+party signer judy
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef668f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+sig ae2426813d5c3f09147f39d4ff9606d3ac53d68b57ebd35a6aed statement
+signedb9

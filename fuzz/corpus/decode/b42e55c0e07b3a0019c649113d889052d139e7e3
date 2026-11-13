@@ -1,0 +1,24 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+partyjjjj signer bob
+author signer alice
+clock ck1
+condition aea0ddf6e50397bb691c9db35d11faf3614a6f5710e2eb967225bc1b31d9165480436d75732d69faad5fbf6d75732d69f83591764ed084f23632584b2d6995441e3
+party signer alice
+party signer bob
+author signer alice
+clock ck1
+body 2441dfede180a3f5bf3c63dbdcde041779b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba23
+kind cssent
+previous c7d916548043aad5fX548043aad502f57f447cf6ed0f3d201cacc98cf8eEba9dfadfda5afafc260570
+sig e286f1b4531dfedddf61d109827d2
+

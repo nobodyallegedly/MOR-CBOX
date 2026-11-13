@@ -1,0 +1,28 @@
+mor-act 1
+type piece
+signer nobodymor-act 1
+type piece
+signer 890e3ae0377d14440cd20b82652b94c5ac6abce442
+amount 5 EUR
+sig 3e715d63b942772ce479c3a5ÿÿ~Œ!ô=A14b0897b19b6a3972682
+
+
+
+mor-act 1
+type statement
+signer alice
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind assent
+previous 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1
+type statement
+signer bob
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind assent
+previous none
+sig b1c02c61f0f430fd88ef8c79c56bc56e931a764686e285927309eecbf521261d
+

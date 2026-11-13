@@ -1,0 +1,133 @@
+mor-act 1
+type piece
+signer nobody
+data words for pegple
+sig 084262b371f302f57f447cf6ed0f3d201party role cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alifitsrevious none
+party signer alice
+pArty sibob
+author signer alice
+receiver signer alice
+b920977d9e47aaeba2608b2b08f8f584a7e1f7fd837070545d03366d863cecfa0e092e246
+sig 680b207df9b5620fa77c61af6420f5155c1ad3646078e187a76b6e2b390e
+
+mor-act 1
+type settlement
+signer bank
+amount 5 EUR:
+sig e58f027902483631478bc863fd9df3d
+terms 1107a5d7a2c661af6420f5155c1ad3646078e187a76b6e2b390e
+
+mor-act 1
+type settlement
+signer bank
+amount 5 EUR:
+sig e58f0d0ee4005b1346387acbac8f39294af852b94c5ac6a31478bc863fd9df3d
+ter5bdcf774c0e3d903ab3d52e361
+kind assent
+previous a34bf867ba9fe07b8f8f584a7e1f7fd837070545d03366type report
+92e246
+sig 680b207df9b56603be73a77c61af6420f5155c1ad3646078e187a76b6e2b390e
+
+mor-act 1
+type settlement
+signer bank
+amount 5 EUR:
+sig e58f0d0ee4005b1346387acbac8f39294af852b94c5ac6abce92e246
+sig 680b207df9b5620fa77c61af6420f5155c1ad3646078e187a76b6e2b390e
+
+mor-act 1
+type settlement
+signer bank
+amount 5 EUR:
+sig e58f027902483631478bc863fd9df3d
+terms 1107a5d7a2c661dd945ae9db0cb64d6bf6e0155bdcf774c0e3d903ab3d52e361
+kind assent
+previous a34bf867ba9fe07b8f8f584a7e1f7fd837070545dbe73a77c61af6420f5155c1ad3646078e187a76b6e2b390e
+
+mor-act 1
+type settlement
+signer bank
+amount 5 EUR:
+sig e58f0d0ee4005b1346387acbac8f39294af852b94c5ac6a3147c0e3d903ab3d52e361
+kind assent
+previous a34bf867ba9fe07b8f8f584a7e1f7fd837070545d03366type report
+92e246
+sig 680b207df9b56603be73a77c61af6420f5155c1ad3646078e187a76b6e2b390e
+
+mor-act 1
+type settlement
+signer bank
+amount 5 EUR:
+sig e58f0d0ee4005b1346387acbac8f39294af852b94c5ac6abce442
+amount 5 £UR
+sig 4167a541dbe5cd8ed833213a5344d9f267183139b59cc56body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef86b6e2b390e
+
+mor-act 1
+type settlement
+signer bank
+amount 5 EUR:
+sig e58f0d0ee4005b1346387acbac8f39294af852b94c5ac46078e187a76b6e2b390e
+
+mor-act 1
+type settlement
+signer bank
+amount 5 EUR:
+sig e58f027902483631478bc863fd9df3d
+terms 1107a5d7a2c661af6420f5155c1ad3646078e187a76b6e2b390e
+
+mor-act 1
+type settlement
+signer bank
+amount 5 EUR:
+sig e58f0d0ee4005b1346387acbac8f39294af852b94c5ac6a31478bc863fd9df3d
+ter5bdcf774c0e3d903ab3d52e361
+kind assent
+previous a34bf867ba9fe07b8f8f584a7e1f7fd837070545d03366type report
+92e246
+sig 680b207df9b56603be73a77c61af6420f5155c1ad3646078e187a76b6e2b390e
+
+mor-act 1
+type settlement
+signer bank
+amount 5 EUR:
+sig e58f0d0ee4005b1346387acbac8f39294af852b94c5ac6abce92e246
+sig 680b207df9b5620fa77c61af6420f5155c1ad3646078e187a76b6e2b390e
+
+mor-act 1
+type settlement
+signer bank
+amount 5 EUR:
+sig e58f027902483631478bc863fd9df3d
+terms 1107a5d7a2c661dd945ae9db0cb64d6bf6e0155bdcf774c0e3d903ab3d52e361
+kind assent
+previous a34bf867ba9fe07b8f8f584a7e1f7fd837070545dbe73a77c61af6420f5155c1ad3646078e187a76b6e2b390e
+
+mor-act 1
+type settlement
+signer bank
+amount 5 EUR:
+sig e58f0d0ee4005b1346387acbac8f39294af852b94c5ac6a3147c0e3d903ab3d52e361
+kind assent
+previous a34bf867ba9fe07b8f8f584a7e1f7fd837070545d03366type report
+92e246
+sig 680b207df9b56603be73a77c61af6420f5155c1ad3646078e187a76b6e2b390e
+
+mor-act 1
+type settlement
+signer bank
+amount 5 EUR:
+sig e58f0d0ee4005b1346387acbac8f39294af852b94c5ac6abce442
+amount 5 £UR
+sig 4167a541dbe5cd8ed833213a5344d9f267183139b59cc56body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef86b6e2b390e
+
+mor-act 1
+type settlement
+signer bank
+amount 5 EUR:
+sig e58f0d0ee4005b1346387acbac8f39294af852b94c5ac6 EUR:
+sig e58f0d0ee4005bd201cacc98cf8eeba9dfadfa358d86087e59f267183139b59cc53a1b63e42eec274d5d
+

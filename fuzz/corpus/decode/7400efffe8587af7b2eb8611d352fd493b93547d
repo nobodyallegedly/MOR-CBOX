@@ -1,0 +1,37 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8ba9dfadfa358d86756e5
+
+mor-act 1
+typ
+type ter)s
+signer alice
+previous none
+party signer alice
+party signer bob
+author sigparty role role plc1
+body ²²²²²²²²²²²²²2441dfede180a3f5bf3c64dbdcde256395b3752a3cd09847016dcbbbeedb876c 4e534bfd9cdb1cf3ef6b92097MÕò1³­¶€”î0lYÅŸdfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role buyer receiment 4159ceb06a8dbbad146b139bb42de9ac3c180d9df11b593a5dbbad146aa65f517d8f2 many
+author signer alice
+in_force 1afa5ed21fa61966bb858d05a02d7d8f87d3aacbaf732949c72b99c9306a9eae 1 signer alice
+power replaces 289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 alice
+condition 4abe04080a4c8bf8effd16b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63d8f87d3aacbaf732949c72b99c9306a9eae 1 signer alice
+power replaces 289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 alice
+condition 4abe04080a4c8bf8effd16b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63dbdcd2608b2b060a9752ÿSÄ™ç=Ö½‘øƒÚH‚W&JË'ö(MãpŠslÁ¼>d1e205b644c7f
+sig 371b30283c1d91ea53a28a16444614a4d5eec13fea035dba05f48660a735409d
+
+mor-act 1
+type statement
+signer alice
+agreement 62c28ed5e95c029c3dc1role buy111
+terms 62c28eer red5c422c

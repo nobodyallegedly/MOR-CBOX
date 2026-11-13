@@ -1,0 +1,67 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 05b644c7f
+sig c58701´91f18d7ad06fb530f1460f6d89b6c0f8c943af074bd50e08faba37f0d
+type terms
+
+mor-act 1
+type statement
+signer alice
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aedkept 1 EUR
+8841a7a4ff58d0d51ed
+terms6e285927309eecbf521261d
+
+mor-act 1
+type statement
+signer carol
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind contest
+previous none
+answers 0kind contest
+b2627d9769)=n„_ÐÇý~‹N+é7Js_¯×e«œj°3Ï5áã‡15b36bc3bcc2d2745cf4c496ea9e550fe3cf07c16b7d7e927eec7
+sig 8ddb00a05061c7b5d1ae605e7ca46c96a4294b7acbfa87b78654e91ff322af6c
+
+mor-act 1
+type statement
+signer alice
+agreement 64b81e609eaf3d0df21921f032614013207a3aedmor-act 1
+58d0d51~ed
+kind contest
+pf430fd87ef8c79c56bc56e931a764686e285927309eecbf521261d
+
+mor-act 1
+type statement
+signer carol
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind contest
+previous none
+answers 0b2627d976915b36bc3bcc2d2745cf4c496ea9e550f3ecf07c1df21921f0b16ac32614013207a3aed8842a7a7e927eec7
+sig 8ddb20a05061c7b5d1ae605e7ca46c96a421921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aedmor-act 1
+58d0d51ed
+kind contest
+pf430fd87ef8c79c56bc56e931a764686e285927309eecbf521261d
+
+mor-act 1
+type statement
+signer carol
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind contest
+previous none
+answers 0b2627d976915b36bc3bcc2d2745cf4c496ea9e550fe3cf07c1df21921f0b16ac32614013207a3aed8842a7a4ff58d0d51ed
+kind assentd51ed
+sig 745cf4c496ea9e550fe3cf07c1df21921f0b16atype report
+c32614013207a3aed8842a7a4ff58d0d51ed
+kind assentd51ed
+sig 30c3bd14b1f2c412431ddf35f00adeecf7e78°ce743c5cc00a45c1b1c79d9fa18a2b4ef8d5
+
+mor-act 1
+type statement
+signer bob
+agreement 64b81e609eaf3d0dc0fc9c62065a2c248c413f220f7da22415726
+
