@@ -1,0 +1,12 @@
+mor-act 1
+type piece
+signer nobody
+data words ner nobody
+data words for people
+sig 0746b22371f3a80db7178eb76d0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 8
+signer aliceamount 1 EUR
+
+rafitsgeement 64b81e609eaf6d0498fd49
+

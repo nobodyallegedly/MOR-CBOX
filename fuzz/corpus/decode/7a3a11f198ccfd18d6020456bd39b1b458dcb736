@@ -1,0 +1,129 @@
+mor-act 1
+type clockpiece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d8 signer bob
+author signer
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+clock ck1
+condition aea0ddf6e503719b96bc9db35d11faf3614a6f5710e2eb967225bc1b31668619 100
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbb84f23632584b2d6995441e3
+party signer alice
+party signer bob
+author signer alice
+clock ck1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig e35f1f45ea4d7a00129ce981f447a80db7178eb76bc9ba953be3e278e940ed94
+
+mor-act 1
+type statement
+signer alice
+agreement c3d916548043aad5fbf6d75732d69f83591764ed084f23632584b2derms c7d916548043aad5fbf6d75732d69f83591764ed084f23632584b2d6995441e3
+kind assent
+prthor signer alic
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+clock ck1
+condition aea0ddf6e503719b96bc9db35d11faf3614a6f5710e2eb967225bc1b31668619 100
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847e
+sig 00184262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer ali6dcbb4b2d6995441e3
+agreement c7d916548043aad5fbf6d75732d69f83591764ed084f23632584b2d6995441e3
+party signer alice
+party signer bob
+author signer alice
+clock ck1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig e35f1f45ea4940ed94
+
+mor-act 1
+type statement
+signer alice
+agreement c3d916548043aad5fbf6d75732d69f83591764ed084f23632584b2d6995441e3
+terms ddba38ab61f7carty signer bob
+author gner
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+clock ck1
+condition aea0ddf6e503719b96bc9db35d11faf3614a6f5710e2eb967225bc1b31668619 100
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847e
+sig 00184262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer ali6dcbb4b2d6995441e3
+agreement c7d916548043aad5fbf6d75732d69f83591764ed084f23632584b2d6995441e3
+party signer alice
+party signer bob
+author signer alice
+clock ck1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig e35f1f45ea4d7a00129ce981f447a80db7178eb76bc9ba953be3e278e940ed94
+
+mor-act 1
+type statement
+signer alice
+agreement c3d916548043aad5fbf6d75732d69f83591764ed084f23632584b2d6995441e3
+terms ddba38ab61f7c79e972b03fe1e21daef3b8ff0f28133b7d7af023dc408a8972b
+kind assent
+previous ddba38ab61f7c79e972b f6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous d7a00129ce981f447a80db7178eb76bc9ba953be3e278e940ed94
+
+morJact 1
+type statement
+signer alice
+agreement c3d916548043aad5fbf6d75732d69f83591764ed084f23632584b2d6995441e3
+terms ddba38ab61f7c79e972b03fe1e21daef3b8ff0f28133b7d7af023dc408a8972b
+kind assent
+previous ddba38ab61f7c79e972b f6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+clock ck1
+condition aea0ddf6e503719b96bc9db35d11faf3614a6f5710e2eb967225bc1b31668619 100
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847e
+sig 00184262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer ali6dcbbbeedb8c76 4e534bfd9cdb1cf3Abè„Ô˛Y“∞ókÔ»úb˝,ß≥JÃÛL@kDxΩef6b92097ce
+previous 31d7bfe420cdb901e86087a302f3cefea1878f3eb9b1d7267d9e47aaeba2608b2b060a9b752d1e

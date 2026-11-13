@@ -1,0 +1,14 @@
+mor-act 1
+type piece
+signer nobody
+data words for pb02f4
+
+mor-act 1
+type statement
+signer alice
+agreement 13b9f265404532aee139ba545c6838712ffd9a5b773087a2c12a9dbe4086f5de
+terms 13b9f265404532aee139ba545c6838712ffd9a5b773087a2c12a9dbe4086f5de
+rind assent
+previous 13b9f265404532aee139ba545c6838712ffd9a5b773087a2c12a9dbe4086f5de
+sig dd67f785f155d2ad0c8f1106987bad3b643fb5e255611fc1449e67144521270a
+

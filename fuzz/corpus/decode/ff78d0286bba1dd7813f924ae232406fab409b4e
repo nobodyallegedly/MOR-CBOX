@@ -1,0 +1,19 @@
+mor-act 1
+type piece
+signer nobody
+data delegation sigoer ali3d7d04b1f41d0dd8aca736cc1bc3e1a
+entry 4de4-act 1
+type terms
+signer alice
+previous 4de41e470c5cb7ffe1d1092851
+replaces ff56cc1bc3e1a
+agreembnt ff53c499e73dd6bbc3e1a
+party signer alice
+party signer bob
+autcontenv hor signer alice
+place plc1
+body 6428e0e7ca62fe244f5fdc35e9ff5eece8fe5a76
+entry 1e4ecd6aae92c4feb8ad1d9d1187be62ab758523ac44b7eb9ce8579f17d7465f
+entry 846c80e9447525dfb8f79a073fd682370428df6654f3ad22c2
+sig 37a72a224e8448763993ab194baker 219823090d721741f054b381f4ede51b9
+

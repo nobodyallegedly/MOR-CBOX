@@ -1,0 +1,24 @@
+mor-act 1cb4cf7cdf
+sc56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUact 0
+type settlement
+signer bank
+amount 45 EUR
+sig 4da7e settlement
+signer bank
+amount 100 EU99;b2cfefcac68afbdc6f73e96324d0b3fd0c9545d2db218d708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUact 0
+type settlement
+signer bank
+amoe936178fcc8c13fce
+kept 10 EUR
+sig 1059dc263:128a5dcc51d1b7a6324sig e57e3ef3fb8e191cfde376b8e
+

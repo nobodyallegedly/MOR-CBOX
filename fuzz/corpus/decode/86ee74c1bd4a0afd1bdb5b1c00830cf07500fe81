@@ -1,0 +1,27 @@
+mor-act 1
+typedfbaf
+
+mor-act 1
+type payment
+signer zed
+agreement 64b81e609eaf3d0df21921f0b16ac3261401320
+terms 64b81e609eaf3d0df21921f6ac3261013207a3aed4188a_signature
+previous e28a3438a16f3bcc6ed71af3347180ec24a7d4986e33a114976030686ee726NÍj®’Äş¸­‡¾b«u…#¬D·ëœèWŸ×F_ i-paid-you
+sig 1bf0e46cfef27fc3af3d5126ceac386a027ecf6890e3ae0377d1444bc72dfbaf
+
+mor-act 1
+type payment
+signer zed
+agreement 64b81e609eaf3d00cf0d19b5834e440a23709fe5a49b5b2ce727a10cd20b82652b94c5ac6abce442
+amount 5 EUR
+sig 3e715d63b442
+\ontent i-paid-you
+sig 1bf0e46cfef27fc3af3d5126ceac384a027ecf6890e3ae0377d1444bc72dfbaf
+
+mor-act 1
+type payment
+signer zed
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff540a23709fe5a49b5b2ce727a10cd20b8d652b94c5ac6abce442
+amount 5 EUR
+sig 3e715d63b2eb39088b769942772ce479c3a55a2ff8f914b0897931b9b6a72682
+

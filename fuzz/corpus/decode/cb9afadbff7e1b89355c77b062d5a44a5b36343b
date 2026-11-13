@@ -1,0 +1,23 @@
+mor-act 1
+ty
+data share signer bob 50
+sf1f80e504d001421
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+pa37f58b7aae0ab6a0a3cbe735a3d18419069e44aff381cb87f30568c63cefb
+
+mor-act 1
+type report
+signer sam
+call 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+sid/ receie report
+signer alice
+call 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+side receiving
+received 45 EUR 8f41f3a7ab06e4c2364825c673f66253bce5b8bed9a8e05d7966aedf7e37ñ6b8
+sig 17197ee20d79f77ebe4c8b1985e456fa94af8a600d2deb582c3bca993df202a0
+

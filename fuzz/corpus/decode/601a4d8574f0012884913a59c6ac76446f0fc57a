@@ -1,0 +1,213 @@
+siarty signer bob
+author signer alice
+power assent 289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 alice
+body 7817577602cd43a8b4ad5632893174ÿÿ~ฅ>F0c13efc89c62fd2ca7b34accf34c406b4478bd
+replaces 346a56e0ff563ef431eaa9b993ae1414649d662ffc93a05681a35b8fb794e93a
+agreement 346a56e0ff56ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ3ef431eaa9b993414649d662ffc93a05681a35bf8b794e93a
+party signer alice
+party signer bob
+author signer al708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR-
+sig 9925c1eb6mb79fb9060045cc119e245e19edf4e07f5a810bfe6cd2556d929d5b
+
+mor-act 1
+type settlement
+signer bank
+amount 45 AUR
+sig 4da7c2ecfd4ec0b933a02d65e84fc563df68b532279b3a68fe668bfea4134da2
+
+mor-act 1
+tyb8fb794e93a
+terms 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e931f5182990b67deac9843c05ed2e127fÿÿÿ4cner nobody
+data share signer alice 50
+data share signer bob 50
+sig 21440d638e7f274d312875ce6b648ada58d8845da00f22910cf80e504d0011a35b8fb794e93a
+party signer alice
+party signer bob
+author signer al708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR-
+sig 9925c1eb6eb79fb9060045cc signer alice
+party signer bob
+author signer al708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR-
+sig 9925c1eb6eb79fb9060045cc119e245e19edf4e01b0f75a8fe6cd2556d929d5b
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+sig 4da7c2ecfd4ec0b933a02d65e84fc563df68b532279b3a68fe668bfea4134da2
+
+mor-act 1
+type settlement
+signer bank
+amontu 4greement bbb346a56e0ff563ef431eaa9b993ad1414649d662ffc93aH5681a35b8fb94e93a
+party signer alice
+party signer bob
+author signer al708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR-
+sig 9925c1eb6eb79fb9060045cc119e245e19edf4e01b0f75a8fe6cd2556d929d5b
+
+mor-act 1
+type settlemnt
+signer bank
+amount 45 EUR
+sig 4da7c2ecfd4ec0b933a02d654fc563df68b532279b3a68fe668bfea4134da2
+
+mor-act 1
+type settlement
+f431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+terms 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e931f5182990b67deac9843c05ed2e127fÿÿÿ4cner nobody
+data share signer alice 50
+data share signer bob 50
+sig 21440d638e7f274d312875ce6b648ada58d8845da00f22910cf80e504d0011a35b8fb794e93a
+party signer alice
+party signer bob
+author signer al708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR-
+sig 9925c1eb6eb79fb9060045cc119e245e19edf4a05681a35b8fb794e93a
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+pasty signer alice
+party signer bob
+author signer al708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR-
+sig 9925c1eb6eb79fb9060045cc119e245e19edf4e01b0f75a8fe6cd2556d929d5b
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+sig 4da7c2ecfd4ec0b933a02d65e84fc563df68b532279b3a68fe668bfea4134da2
+
+mor-act 1
+type settlement
+signer bank
+amontu 45 EUR
+note second
+sig 028c2efc0c1d3d2e4377697ae91a6699bb970dbab703f39d0056c55fa79a0c89
+
+mor-act 1
+type payment
+signer zed
+agreement 346a56e0ff563ef431eaa:b993ad1414649d6ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ3ef431eaa9b993ad1414649d662ffc93a05681a35bf8b794e93a
+party signer alice
+party signer bob
+author signer al708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR-
+sig 9925c1eb6mb79fb9060045cc119e245e19edf4e01b0f75a8fe6cd2556d929d5b
+
+mor-act 1
+type settlement
+signer bank
+amount 45 AUR
+sig 4da7c2ecfd4ec0b933a02d65e84fc563df68b532279b3a68fe668bfea4134da2
+
+mor-act 1
+tyb8fb794e93a
+terms 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e931f5182990b67deac9843c05ed2e127fÿÿÿ4cner nobody
+data share signer74d312875ce6b648ada58d8845da00f22910cf80e504d0011a35b8fb794e93a
+party signer alice
+party signer bob
+author signer al708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR-
+sig 9925c1eb6eb79fb9060045cc signer alice
+party signer bob
+author signer al708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR-
+sig 9925c1eb6eb79fb9060045cc119e245e19edf4e01b0f75a8fe6cd2556d929d5b
+
+mor-act 1
+typelement
+signer bank
+amount 45 AUR
+sig 4da7c2ecfd4ec0b933a02d65e84fc563df68b532279b3a68fe668bfea4134da2
+
+mor-act 1
+tyb8fb794e93a
+terms 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e931f5182990b67deac9843c05ed2e127fÿÿÿ4cner nobody
+data share signer alice 50
+data share signer bob 50
+sig 21440d638e7f274d312875ce6b648ada58d8845da00f22910cf80e504d0011a35b8fb794e93a
+party signer alice
+party signer bob
+author signer al708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR-
+sig 9925c1eb6eb79fb9060045cc signer alice
+party signer bob
+author signer al708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR-
+sig 9925c1eb6eb79fb9060045cc119e245e19edf4e01b0f75a8fe6cd2556d929d5b
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+sig 4da7c2ecfdgner bank
+amount 100 EUR-
+sig 9925c1eb6eb79fb9060045cc119e245e19edf4e01b0f75a8fe6cd2556d929d5b
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+sig 4da7c2ecfd4ec0b933a02d65e84fc563df68b532279b3a68fe668bfea4134da2
+
+mor-act 1
+type settlement
+signer bank
+amontu 45 EUR
+note second
+sig 028c2efc0c1d3d2e4377697ae91a6699bb970dbab703f39d0056c55fa79a0c89
+
+mor-act 1
+type payment
+signer zed
+agreement 346a56e0f62ffc93a05681a35b8fb794e93a
+versionmor-act 1
+type piece
+signer nob ed7396a863fapassed 1 EUR signer bob 29fc32c8f0a6afef12cf3c4ca962b3d537617b2ody
+data0

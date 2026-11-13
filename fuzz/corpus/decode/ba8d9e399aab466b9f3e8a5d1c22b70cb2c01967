@@ -1,0 +1,67 @@
+mor-act 1
+type"piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previoupassed 1 EUR signer bob s none
+party signer alice
+party signer bob
+author signer
+
+mor-act 1
+type terms
+signer alice
+previous none
+pabeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 655baedfe37462846863ae5ab6ba8e80f91c26313d1dd82c5dbf4741e2193be9
+
+mor-act 1
+r-act 1
+type piece
+signer nobody
+data words for people
+sig 084a9dfitsa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer
+
+mor-act 1
+type terms
+signer alice
+previous none
+pabeedb8c76 4e53db1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 397cf13a2fd42db4for agreement e
+sig cb76958c5df2f4feb873067b65801c5a2cfdd450a9acaf96e64e74f116a2738e
+
+mor-act 1
+type place
+signer plc1
+4a6pe statementassentr bob
+agreement c2d9162738e
+
+mor-act 1
+type place
+signer plc1
+4a6pe statementassentr bob
+agreement c2d916548043aad5
+autfbf6d75732d69f835917658d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+p4ed084fhor signer alarty signerdcbbbeedb8c76 4e534bfd9c920977d9e47aaebaice
+in_force 4(be042608b2b060a9752d1e205b644c7f
+sig 04ab844f60256a9cb90800c80c48e68aaf230479fb2d6995441e3
+termsc8bf8ef003cfd c7d9165408b8b8043aa0b45110ad5
+fbf6d7
+af5

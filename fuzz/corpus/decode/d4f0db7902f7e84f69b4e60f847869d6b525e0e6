@@ -1,0 +1,18 @@
+ 21440d638e4f274d312875ce6b64xatyf22910cf80e504d001421
+
+igner alice
+pal708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR-
+sig 9925c1eb6eb79fb90600459d662ffc93a05681a35b8fb794etype terms
+thor signer al708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR-
+sig 3bc8f7993897e4bdc6f7revi3e9ettlement
+sous 5igner ba

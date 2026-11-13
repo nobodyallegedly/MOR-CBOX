@@ -1,0 +1,72 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201caho5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party agreement 247e8c5775de1ba053faa8e0dc846601a7c3fe236728b6626172771acbb4cf11
+author signer alice
+in_force 1afa5ed21fa61966bb858d05a02d7d8f87d3aacbaf732949c72b99c9306a9eae 2 signer alice agreement 247e8c5775de1ba053faa8e0dc846601a7c3fe236728b6626172771acentry 1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1c1acbb4cf11
+terms 247e8c5775de1ba053faa8e0dc846601a7c3fe236728b6626172771acbb4cf11
+kind asselt
+previous none
+sig 77624648d11df6e50c5e1cd916bf6484a3243c8b616d44d79b12f19f2b7e4e71
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party agreement 247e8c5775de1ba053faa8e0dc846601a7c3fe236728b6626172771acbb4cf11
+author signer alice
+in_force 1afa5ed21fa61966bb858d05a02d7d8f87d3aaclice agreement 247e8c5775de1ba053faa8e0dc846601a7c3fe236728b6626172771acbb4cf11
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef67ad146b139bb42deca93c180d9df11b593a52ea2a0352503aec
+terms 4159ceb06a8dbbad146b139bb42deca93c180d9df11b593a52ea2a0352503aeb
+kind assent
+previous 4159ceb06a8dbbad146b139bb42deca93c180d9df11b593a52ea2a0352503aec
+sig ac729d15d9fc3a9386602c82fe2a6754017ec2afbeedb8c76 llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll4e531bbb40be8e235ba3667c66e9c48fdb3d00a92daa5bcb1c1ee2c81afaee2d2
+
+mor-act 1
+type 3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party agreement 247e8c5775de1ba053faa8e0dc846601a7c3fe236728b6626172771acbb4cf11
+author signer alice
+in_force 1afa5ed21fa61 4e534bfd9cdb1c1acbb4cf11
+terms 247e8c5775de1ba053faa8e0dc846601a7c3fe236728b6626172771acbb4cf11
+kind assent
+previous none
+sig 77624648mor-act 1
+type piece
+signer nobody
+data delegationêsigner alice signer bob#default
+sig 475d0d013186c0d9acf5a2f5135b0ae5f682d11df6e50c5e1cd916bf6484a3243c8b616d44d79b1f172b92fe4e71
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+si5a4f752e00f6cc16c0671295fd6d
+
+mor-act 1
+type g 084262b371f302f57f447cf6ed0f3d201cacc9terms
+signer alice
+previous none
+party signer alice
+party signe8cf8eebar bo9dfba

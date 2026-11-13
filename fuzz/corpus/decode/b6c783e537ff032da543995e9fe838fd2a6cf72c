@@ -1,0 +1,24 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 006fb530f1460f6d89b6c0f8c943af074bd50e08faba37f0d
+
+mor-act 1
+type statement
+signer alice
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind assent
+previous 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1
+type statement
+signer alice
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a3a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind contest
+previous 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+sig 1b59826a4f98de62b29332f7e780ce743c5cc00a45c1b1c79d9fa18a2b4ef8d5
+

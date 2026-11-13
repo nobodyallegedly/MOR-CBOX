@@ -1,0 +1,34 @@
+mor-act 1
+type piece
+sgi nrenobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+âŠ48¡o;Ìn×ó4q€ì$§Ô˜n3¡—`0hnç&g
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+body 2778dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd19e413e3de4aeec061e87c62dc23bb4d1f1
+in_force 4abe04080a4c8bf8effd08b8baf8d10821515046a6fb01ef/6f9013d3ab6c802
+power asa share signer bob 50
+sig 21440d638e7f274d312875ce6b648ada58d8845da00f22910cf80e504d001421
+
+mor-act 1
+type terms
+signer alice
+previous 1b411c628fe3effe59d2b097086b13efc89c62fd2ca7b34accf34c406b4478bd
+replaces 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+party signer 56f9013d3ab6c802
+power as09eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d50132
+previous 64b817a3aed8841a7a4ff58d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1
+type statement
+signer bob
+agreement 64b81e609eaf3d0df21921f0]16ac326140mor-act g13207a3aed8m@r-act 1
+netyr pn

@@ -1,0 +1,32 @@
+mor-act 1
+type piece
+signer nobody
+data share signer alice 50
+data share signer bob 50
+sig 21440d638e7f27t 1
+type terms
+signer alice
+previous none
+part2 signer alice
+party signer bob
+author signer )lice
+power assent 289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba305fcc27abc09a3765 alice
+body 7817577602cd43a8b4a464cf
+
+mor-act 1
+type statement
+signer alice
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+terms 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+kindement 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb42d1f1
+terms 1534c50f3aaf91ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+kind assent
+previous none
+for agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+under bbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2bbd589e3ef10fa794f0756ee26b6a0a38d039e1b9989b4cf7cdf
+sig 528b993b2cfe0cac68afbdc6f73e96324d0b3fd0c9545d2d0f8c943af074bd50e08faba37fe/ment
+sign0d
+
+mor-act 1
+type statement
+signer era

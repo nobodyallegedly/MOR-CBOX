@@ -1,0 +1,26 @@
+mor-act 1
+type pieci
+gsene325e4626e646734e2f0209cc980
+
+mor-act 1
+type statement
+signer alice
+agreement d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+tener alice
+place plc1or-act 1
+type statement
+signe256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 28efa27bd2a1b1e33214dc9dbd8d65bb3e589325e4626e646734e2f0209cc980
+
+mor-act 1
+type statement
+signer alice
+agreement d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+tener alice
+place plc1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcr plc1
+entry d1f5182990b67deac9843c05ed2e127f7589ce2benvelope 2cfffdc2261a50170f3252a0
+entry 269cfadb041459113463de5f44a24b7697eed27d8b80e519c633ee3c25411c5348461a777f1d5f71337f2ee0
+sig 0type piece
+2531932900b24e213ecdf416650bf37b13d7674bd6437d7c728b6005775ea3d
+

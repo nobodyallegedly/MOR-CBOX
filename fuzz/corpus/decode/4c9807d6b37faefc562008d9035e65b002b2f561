@@ -1,0 +1,176 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role r
+author signer alice
+in_force 4abe04080a4c8bf8effd08b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 9145e4e347cf6788960015f33946520bf69bb67b47db7a3f8182471f38363dd8
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role r winner a54183b37015fb93543b34b77aef8882c9c5326157f5aeba24c207309dc0b389 a19fa71c2fad322e2387eae240725792ab1c64a63df18145d5c3aa65f517d8f2
+author signer alice
+in_force 4abe04080a4c8bf8effd08b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig e33ad3789b73c3c87a2fd2d7e9f5eb9088245e068cf209c4552213646e86a194
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role r done - a19fa71c2fad322e2387eae240725792ab1c64a63df18145d5c3aa65f517d8f2
+author signer alice
+in_force 4abe04080a4c8bf8effd08b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig d68f2c0a91bd65f6e95f35b32ec35e8f57360e51921392db90a57cd503fb5631
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role r done a54183b37015fb93543b34b77aef8882c9c5326157f5aeba24c207i09dc0b389
+author signer alice
+in_force 4abe04080a4c8bf8effd08b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 85aa6b96c391762cb82302eea77d627efc10918079bd6eaf4a8f69fc2b3400d3
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role r future - a19fa71c2fad322e2387eae240725792ab1c64a63df18145d5c3aa65f517d8f2
+author signer alice
+in_force 4abe04080a4c8bf8effd08b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 4b3b946cb6c31e127a0d3097c06be
+party signer alice
+party role r
+author signer alice
+in_force 4abe04080a4c8bf8effd08b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 9145e4e347cf6788960015f33946520bf69bb67b47db7a3f8182471f38363dd8
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role r winner a54183b37015fb93543b34b77aef8882c9c5326157f5a01cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type t
+signer alice
+previous 1b411c628fe3effe59d2b097086b13efc89c62fa70dad7a7e7dae7a5
+kind assent
+previous bfd4d3598971c2received 1 EUR 4acf90c6e6fe6d2ea880d94fabc98bda0a70dad7a7e7dae7a5
+sig c0f913a5f132ddb068ad6423ee3534da2
+
+mor-act 1
+type setql060a9752d1e205b644c7f
+sig 2aa2c587014980ff8adb583fcfa§74e43c66a9df1a432
+
+mor-act 1
+type clock
+signer ck1
+now 11f18d7ad06fb53050
+sig 2f645e40]bb09a4f96927e1e512aa1b1[bd6d89b6c0f8c943af074bd50e08f2
+
+mor-act 1
+type clock
+signer ck1
+now 11f18d7ad06fb53050
+sig 2f645e40]bb09a4f96927e1e512aa1b1[bd6d89b6c0f8c943af074bd50e08faba37fement
+sigbb201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type t
+sids for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type t
+signer alice
+previous 1b411c628fe3effe59d2b097086b13efc89c62fa70dad7a7e7dae7a5
+kind assent
+previous bfd4d3598971c2received 1 EUR 4acf90c6e6fe6d2ea880d94fabc98bda0a70dad7a7e7dae7a5
+sig c0f913a5f132ddb068ad6423ee3534da2
+
+mor-act 1
+type setql060a9752d1e205b644c7f
+sig 2aa2c587014980ff8adb583fcfa§74e43c66a9df1a432
+
+mor-act 1
+type clock
+signer ck1
+now 11f18d7ad06fb53050
+sig 2f645e40]bb09a4f96927e1e512aa1b1[bd6d89b6c0f8c943af074bd50e08f2
+
+mor-act 1
+type clock
+signer ck1
+now 11fe
+in_force 4abe04080a4c8bf8effd08b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 85aa6b96c391762cb82302eea77d627efc10918079bd6eaf4a8f69fc2b3400d3
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role r future - a19fa71c2fad322e2387eae240725792ab1c64a63df18145d5c3aa65f517d8f2
+author signer alice
+in_force 4abe04080a4c8bf8effd08b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+bodyedb2d4be2abce9784a3358f60*dad07d7892
+

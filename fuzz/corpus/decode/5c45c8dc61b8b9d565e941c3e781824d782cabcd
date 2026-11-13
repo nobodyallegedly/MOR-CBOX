@@ -1,0 +1,118 @@
+mor-act 1
+type piece
+signe0000000000000000000000000000000000000000000000000000000000000000 21440d638e7f274d312875ce6b648ada58d8845da00f2ZZZZZZÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ21
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+receiver signer alice
+call K7 doer
+body 7817577602cd43a8b4ad5632893174f2f85d960c3a2ee68e5689e34a4e160c2a 4e534bfd9cdb1cf3ef6b920978d9e47f5bf3cf
+sig 04ab844f60256a9cb90800c80c48e68aaf230479f9f0a6199c00003ca0b45110
+
+2d9b4f6a5d500a4
+sig 3f0f06f3ed0bbb64d0349ea8161f
+
+mor-act 1
+type settlement
+signer bank
+amount 10 EUR
+sig 56db426963dfec95452ed1e4b1b8c0000000000000000000000000000000000 21440d638e7f274d312875ce6b648ada58d8845da00f22910cf80e504d001421
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+receiver signer alice
+call K8 doer
+body 7817577602cd43a8b4ad5632893174f2f85d960c3a2ee68e5689e34a4e160c2a 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 921eb52a263LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLr alice
+call c081cc9d95a6a9a567d1926537cac79b258618cd03059f8f42d9¸b4f6a5d500a4
+side doer
+received 10 EUR 690d63010382bfiece
+signe0000000000000000000000000000000000000000000000000000000000000000 21440d638e7f274d312875ce6b648ada58d8845da00f2ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ2910cf80e504d001421
+
+mor-act 1
+typlacerms
+signer ali4d312875ce6b648ada58d8845da00f22910cf80e504d0014ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿmor-act 1
+type piece
+signer nobody
+data words for people
+sf6ed0f3d201cacc98cf8eeba9dfadfaadauthor signer 
+mor-act 1
+type terms
+signer alice
+previous noÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ21
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+receiver signer alice
+call K5 doer
+body 7817577602cd43a8b4ad5632893174f2f85d960c3a2ee68e5689e34a4e160c2a 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 921eb52a2mor-act 1
+type piece
+sig-act 1
+type stateme74d312875ce6b648ada58d8845da00f22910cf80e504d001421
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+receiver signer alice
+call K8 doer
+body 7817577602cd43a8b4ad5632893174f2f85d960c3a2ee68e5689e34a4e160c2a 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 921eb52a263fbe4005b1346387acbac8f39294af8ab4e869e37d3d8e6e2047eeaca98
+
+mor-act 1
+type report
+signeLLLLLLLLLLLLLLLLLLLL'LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLr alice
+call c081cc9d95a6a9a567d1926537cac79b258618cd03059f8f42d9¸b4f6a5d500a4
+side doer
+received 10 EUR 690d63010382bf6821716bbb8dcec899fcf783c9bdf0b2c14bacb185f763f77f
+passed 5 EUR signer bob cf0d19b5834e440a23709fe5a49b5b2ce727a10cd20b82652b94c5ac6abce442
+own 5 EUR
+sig 254e24d312875ce6b648ada58d8845da00f22910cf80e504d001421
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+receiver signer alice
+call K4 doer
+body 7817577602cd43a8b4ad5632893174f2f85d960c3a2ee68e5689e34a4e1c6abce442
+own 5 EUR
+sig 254e24d312875ce6b648ada58d8845da00f22910cf80e504d001421
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+receiver signer alice
+call K8 doer
+body 7817577602cd43a8b4ad5632893174f2f85d960c3a2ee68e5689e34a4e160c2a 4e534bfd9cdb1cf3ef6b92097·d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 921eb52a263fbe4005b1346387acbac8fne
+party signer ali-------------ce
+pa’ty sggner bdy 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbee[b8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b0639294af8ab4e869e37d0a9752d1e205b644c7f
+sig 3d8e6e2047eeaca98ba3b9
+8a105

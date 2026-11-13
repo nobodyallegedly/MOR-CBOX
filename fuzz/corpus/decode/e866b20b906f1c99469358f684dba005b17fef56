@@ -1,0 +1,23 @@
+mor-act 12cad8863c17a58698e7243
+
+morban££££££££££££k
+amount 100 EUR
+sig 992e41b0f75a8fe6cd2556d92Ad5b
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+sbody ig 4da7c2ecfd4ec0b933a02d65e84fc563db6353b7208f45766cf5edbee3cb5061c12027207ba
+amount 100 EUR
+sig 55937f58b7aae0ab6a0a3cbe735a3d1841 EUR
+sig 9925ceb16eb5b
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+sbody ig 4da7c2ecfd4ec0b933a02d65e84fc563df68b5e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+amount 100 EUR
+sig 9069e44aff381cb87f30568c63cefb
+

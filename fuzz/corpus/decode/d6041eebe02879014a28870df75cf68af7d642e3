@@ -1,0 +1,21 @@
+mor-act 1
+type terms
+signer alice
+party signer alice
+author signer alice
+sig 6182684e2758a5b5dc9c322c47e6bad65521155272122bb96aa63dde8a632103
+
+mor-act 1
+type statement
+signer alice
+agreement d532291ac6c5dc05d6a87894bc3749b229d65ff2fc392605d58ad4899b855052
+kind assent
+previous none
+sig 3ac930af24b95f206ca7940b4092524daab17010555b16c2f36761dad7a926c2
+
+mor-act 1
+type report
+signer sam
+side doer
+sig 8f545423b0f3147e9f7c678cd337a6ae5aa24d0f5d687671c9ab1b65b833b5df
+

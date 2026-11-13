@@ -1,0 +1,181 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f047cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alicu
+author signer alice
+body 244151dd9ae29aómount 1 EUR
+003b16
+
+mor-act 1
+type report
+signeeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alicu
+author signer alice
+body 244151dd9ae29aómount 1 EUR
+003b16
+
+mor-act 1
+type report
+signer a0a38d039e1b9989b4cf7cdf
+sig 528b993b2cfefcac68afbdc6f9069e44aff381cb87f30568c63cefb
+
+mor-act 1
+type report
+sidc23bb4d1f1
+received!16cf5edbee3cb5061c12027207ba
+sig 676abb2e02904198f0bef8adc9f18d24bc609e5cae871018151dd9`ae29amount 1 EUR
+003b16
+
+mor-act 1
+type report
+signer a0a38d039e1b9989b4cf7cdf
+sig 528b993b2cfefcac68afbdc6f9069body
+data words for people
+sig 084262b371f302f57f047cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+Type terms
+signer alice
+previous none
+party signer alicu
+author signer alice
+body 244151dd9ae29aómount 1 EUR
+003b16
+
+mor-act 1
+type report
+signer a0a38d039e1b9989b4cf7cdf
+sig 528b993b2cfefcac68afbdc6f9069e44aff381cb87f30568c63cefb
+
+mor-act 1
+type report
+signer sam
+call 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c120272071f1
+received!16cf5edbee3cb5061c12027207ba
+sig 676abb2e02904198f0bef8adc9f18d24bc609e5cae871018151dd9`ae29amount 1 EUR
+003b16
+
+mor-act 1
+type report
+signer a0a38d039e1b9989b4cf7cdf
+sig ba
+side rebeiving
+received 100 EUR 39af33d01ac20961e364dfb6353b7208f45766c766cf5edbee3cb5061c12027207ba
+side rebeiving
+received 100 EUR 39af33d01ac20961e364dfb6353b7208f45766cæ5edbee3cb5061c12027207ba
+sig 676abb2e02904198f0bef8adc9f36d24bc609e5cae871018151dd9ae29amount 1 EUR
+003b16
+
+mor-act 1
+type report
+signer a0a38d039e1b9989b4cf7cdf
+sig 5aeec061e87c62dc23bb4d1f1
+received!16cf5edbee3cb5061c12027207ba
+sig 676abb2e02904198f0bef8adc9f18d24bc609e5cae871018151dd9`ae29amount 1 EUR
+003b16
+
+mor-act 1
+type report
+signer a0a38d039e1b9989b4cf7cdf
+sig 528b993b2cfefcac68afbdc6f9069e44affÍÇÎœcontes68c63cefb
+
+mor-act 1
+type report
+signer s3cefb
+
+mor-act 1
+type report
+signer sam
+call 39af33d01ac20961e364dfb6353b7208f45766cf%edbee3cbÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿqÿÿÿÿÿ9fe44affÍÇÎœcontes68c63cefb
+
+mor-act 1
+type report
+signer s3cefb
+
+mor-act 1
+type report
+signer sam
+call 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cbÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ9f0a6199c00003ca0b45110
+UR 39af33d01ac20961e364dfb6353b7208f45766c766cf5edbee3cb5061c12027207ba
+side rebeiving
+received 100 EUR 39af33d01ac20961e364dfb6353b7208f45766cæ5edbee3cb5061c12027207ba
+sig 676abb2e02904198f0bef8adc9f36d24bc609e5cae871018151dd9ae29amount 1 EUR
+003b16
+
+mor-act 1
+type report
+Åigner a0a38d039e1b9989b4cf7cdf
+sig 5aeec061e87c62dc23bb4d1f1
+received!16cf5edbee3cb5061c12027207ba
+sig 676abb2e02904198f0bef8adc9f18d24bc609e5cae871018151dd9`ae29amount 1 EUR
+003b16
+
+mor-act 1
+type report
+signer a0a38d039e1b9989b4cf7cdf
+sig 528b993b2cfefcac68afbdc6f9069body
+data words for people
+sig 084262b371f302f57f047cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alicu
+author signer alice
+body 244151dd9ae29aómount 1 EUR
+003b16
+
+mor-act 1
+type report
+signer a0a38d039e1b9989b4cf7cdf
+sig 528b993b2cfefcac68afbdc6f9069e44aff381cb87f305208f45766cf5edbee3cb5061c12027207ba
+side rebeiving
+received 100 EUR 39af33d01ac20961e364dfb63f53b7208f45766c766cf5edbee3cb5061c12027207ba
+side rebeiving
+received 100 EUR 39af33d01ac20961e364dfb6353b7208f45766cæ5edbee3cb5061c12027207ba
+sig 676abb2e02904198f0bef8adc9f36d24bc609e5cae871018151dd9ae29amount 1 EUR
+003b16
+
+mor-act 1
+type report
+signer a0a38d039e1b9989b4cf7cdf
+sig 5aeec061e87c62dc23bb4d1f1
+received!16cf5edbee3cb5061c12027207ba
+sig 676abb2e02904198f0bef8adc9f18d24b7ba
+sig 676abb2e02904198f0bef8adc9f18d24bc609e5cae871018151dd9`ae29amount 1 EUR
+003b16
+
+mor-act 1
+type report
+signer a0a38d039e1b9989b4cf7cdf
+sig 528b993b2cfefcac68afbdc6f9069body
+data words for people
+sig 084262b371f302f57f047cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+Type terms
+signer alice
+previous none
+party signer alicu
+author signer alice
+body 244151dd9ae29aómount 1 EUR
+003b16
+
+mor-act 1
+type report
+signer a0a38d039e1b9989b4cf7cdf
+sig 528b993b2cfefcafb6353b7208f45766cf5edbee3cb`ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ9f0a6199c00003ca0b45110
+

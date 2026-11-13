@@ -1,0 +1,26 @@
+mor-act 1
+typedonece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiparty role alice
+place plc1
+body 27a for people
+sig 084262b31f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signeiiiiiiiiiiiiiiiiiiiiiiorce 1afa5d0
+sig 02531932900b24e213ecdf416650bf37b13d7674bd6437d7c728b6005775ea3d
+

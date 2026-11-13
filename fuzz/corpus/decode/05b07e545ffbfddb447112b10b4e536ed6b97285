@@ -1,0 +1,43 @@
+mor-act 1
+type piece
+signer nobody
+data words fa2608b2b060a9752d1e205b644c7f
+sig c58701491f18d7ad06f6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party sign@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@er bob
+author signer alice
+body 2441dfede180a3f5bf3c63dbdcdÿSÄ™ç=Ö½‘øƒÚH‚W&JË'ö(MãpŠslÁ¼>e019491ööööööööööööööööööööööööööööööööööööööööööööööööööööööööööcontes7a4ff58d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kinaeba26079bb620a9752d1e205b644c7f
+sig c58701491f18d7ad06f6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+pru eivsonone
+party sig#ner alice
+party sign@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@52d1e205b644c7f
+sig c58701491f18d7an06f6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party sign@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@er bob
+author signer alice
+bo$y <441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig c58701491f18d7ad06fb530f1460f6dÂ9b6c0f8c943af074bd50e08faba37f0d
+
+mor-act 1
+type statement
+signer alice
+agreemenbfc69f315f0df133f6fbfec00c47cfaba4a
+

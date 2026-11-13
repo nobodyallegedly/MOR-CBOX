@@ -1,0 +1,29 @@
+mor-act 1
+type piece
+signer nobody
+data share signer alice 50
+data share signer bob 50
+sig 21440d638e7f274d312875ce6b648ada58d8845da9b993ad141vious 346a56e5681a35b8fb794e93a
+kind assent
+previous none
+siff381cb87f30568c63cefb
+
+mor-act 1
+type report
+signer sam
+call 39af33d01ac20961e364dfb6153b7208f45766cf5edbee3cb5061c12027207ba
+sienvelope de receiving
+received 100 EUR 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+sig 676abb7d8f87d3aacbaf732949c72b99c9306a9eae 1 signer alice
+body 2441 zed
+ag
+settlement 39af33d01ac20961e364dfb635358b7aae0a
+mor-act 1
+type report
+signer sam
+call 39af33d01ac20961e364dfb6153b7208f45766cf5edbee3cb5061c12027207ba
+sienvelope de receiving
+received 100 EUR 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+sig 676abb2e02904198f06 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig d68f2c0a91bd65fa3582c4f5561864a7e4ab4
+

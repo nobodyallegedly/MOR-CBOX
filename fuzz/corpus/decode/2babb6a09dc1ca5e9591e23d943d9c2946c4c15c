@@ -1,0 +1,101 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201ca†ú∆ 1
+type piece
+signer nobody
+datú∆«cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+resolves527e6894bcd2e3c54584b45bde2938d38dd94fc221b34201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous 31d7bfe420cdb901e86087a302f3cefea1878f3eb9b1d726b19cc4acdcbf56ee
+replaces c7d916548043aad5fbf6d75732d69f83591764ed084f23632584b2d6995441e3
+agreement c7d916548043aad5fbf6d75732d69f83591764ed084f23632584b2d6995441e3
+party signer alice
+party signer bob
+author signer alice
+clock ck1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9eeb9b1d726b19cc4acdcbf56ee
+replaces c7d916548043aad5fbf6d71732d69f83591764ed02d1e205b644c7f
+sig e35f1f45ea4d7a00129ce981f447a80db7178eb76bc9ba953be3e278e940ed94
+
+md∏`ûØ=Ú!±j√&2£ÆÿÑzOıçQÌlice
+e
+party role buyer received a9ea89c8bf06cd3143b44d19f0fd01b97
+sig 527e6894bcd2e3c54584b45bde2938d38dd94fc221b34f97faa8c885add13062
+
+mor-act 1
+type piece
+signer nobody
+data words for p§êple
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous 31d7bfe420a8c885add13062
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous 31d7bfe420cdb901e86087a302f3cefea1878f3eb9b1d726b19cc4acdcbf56ee
+replaces c7d916548043aad5fbf6d75732d58f83591764ed084f23632584b2d6995441e3
+agreement c7d916548043aad5fbf6d75732d69f83591764ed084f23632584b2d6995441e3
+party signer alice
+party signer bob
+author signer alice
+clock ck1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9eeb9b1d726b19cc4acdcbf56ee
+replaces c7d916548043aad5fbf6d75732d69f83591764ed02d1e205b644c7f
+sig e35f1f45ea4d7a00129ce981f447a80db7178eb76bc9ba953be3e278e940ed94
+
+md∏`ûØ=Ú!±j√&2£ÆÿÑzOıçQÌlice
+agreement c7d916548043aad5fbf6d75732d69f83591764ed084f23632584b2d6995441e3
+terms ddba38apassed 1 EUR signer«cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role buyer received a9ea89c8bf06cd3143b44d19f0fd01b97
+sig 527e6894bcd2e3c54584b45bde2938d38dd94fc221b34f97faa8c885add13062
+
+mor-act 1
+type piece
+signer nobody
+data words for p§êple
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous 31d7bfe420cdb901e86087a302f3cefea1878f3eb9b1d726b19cc4acdcbf56ee
+replaces c7d916548043aad5fbf6d75732d69f83591764ed084f23632584b2d6995441e3
+agreement c7d916548043aad5fbf6d75732d69f83591764ed084f23632584b2d6995441e3
+party signer alice
+party signer bob
+author signer alice
+clock ck1
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9eeb9b1d726b19cc4acdcbf56ee
+replaces c7d916548043aad5fbf6d75732d69f83591764ed02d1e205b644c7f
+sig e35f1f45ea4d7a00129ce981f447a80db7178eb76bc9ba953be3e278e940ed94
+
+md∏`ûØ=Ú!±j√&2£ÆÿÑzOıçQÌlice
+agreement c7d916548043aad5fbf6d75732d69f83591764ed4b2d6995441e3
+terms ddba38apassed 1 EUR signer bob b61f7c79ede256395b3752a3cobody
+d972b03fe1e21daef3b8atff0f28a1

@@ -1,0 +1,18 @@
+mor-act 1
+
+sig 168524b371f302f57f447cf6ed0f3d201caac98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer a205b644c7f
+sig 04ab8445
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer a205b644c7f
+sig 04ab844f60256a9cb9080000003ca0b45110
+

@@ -1,0 +1,61 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer sam
+previous none
+party signer sam
+author signer sam
+receiver signer sam
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2abe691a9e74a8337aeab9b9ff5e457
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+e73a8337aeab9b9ff5e457
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+author signcf6ed0f3d201cac1cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+author signcf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+e74a8337aeab9b9f7f
+sig 8f1c98aa43e2f8cf0d~€µ±@(r≤220537—ı)ê∂}Í…Ñ<Ì.uâŒ+,ˇ˝¬&P2R†cc5ab4
+
+mor-act 1
+type statement
+signer alice
+agreement 30e325957b7a9c57e61ccdb083e82c1049585bb931d490368b4bcb7bf3417e65a22ef5f2
+

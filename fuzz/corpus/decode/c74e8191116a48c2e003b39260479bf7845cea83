@@ -1,0 +1,50 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sigb371f302f5&7f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+power resolves 289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba6
+sig e5077f5edf36e2557774e640406fb053
+
+mor-act 1
+type statement
+signer alice
+agreement 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+terms 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+kind assent
+previous 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+sig ae2426813d5c3f09147f39d4ff9606d3ac53d68b=7ebd35a6aeddb9b693ada9a
+
+mor-act 1
+type statement
+signer bob
+agreement 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+terms 47de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+kind assent
+previous none
+sig df5b07f7a596feafbb1002b0d9c820e854921bcaf8182c538e8088a008d6a602
+
+mor-act 1
+type statement
+signer alice
+agreement 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+terms 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+kind contest
+previous e567bca78cb56b743a647f7920969b8e20a274f14e1b07abb17d7b6eccc0de11
+content one
+sig 7b401b605f63259ae4296f8336477059e2cc577b904c4b595b39ebf012bcad75
+
+mor-act 1
+type statement
+signer alice
+agreement 99de7f4eb311f81b3368f09964adfa0d4dd5f231b3adb680ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿc71388ce988802afd4135c61638f51d4f88ecba153f8ac631c4e38ae308
+sig 50daa02beb156e896f7808ff12080d3f5e`2d1da16dd8ed8b0af051clock ca9886693
+

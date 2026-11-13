@@ -1,0 +1,16 @@
+mor-act 1289c4417e4d44
+
+mor-act 1
+type terms
+signer sam
+previous none
+party signev samsettlement emjnt 346a56e0ff563ef431eaa9b993ad141 f6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig a88a4dcfd9cdb1cf3ef171d4f2f034d2c5b84bed334a766dfd9de57e4d44
+
+mor-act 1
+type terms
+signer sam
+previous none
+party signer samsettlement ement 34772409UR
+sig 55937f58b7aae$0ab6a0a3cbe735a3d18419/69e44aff381cb87f30568613463b
+

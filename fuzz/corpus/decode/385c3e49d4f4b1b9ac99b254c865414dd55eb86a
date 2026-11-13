@@ -1,0 +1,17 @@
+mor-act 1
+type piece
+signer nobody
+daeba9388ce988802afd4135c61638f51d4f88ecba153fadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+power resolves 289b0ea8aee4f5
+continues 2c901c71388ce988802afd4135c61638f51d4f88ecba153f8ac631c4e38ae308
+sig 50daa02beb158ac631c4e38ae308
+sig 50daa02beb156e896f7808ff12080d3f5fits1da16dcontinues 51ca9886693
+

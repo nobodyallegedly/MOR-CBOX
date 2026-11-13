@@ -1,0 +1,22 @@
+mor-a875ce6b648ada58d8845da00f22910cf80e9eae 5681a35b8fb794e93a
+call K8 bpassed 1 EUR signer bob 8d55aa9022fa831a5e6c819eXaa622eac80ca6b1cf3ef6b9209ÿ200f22910cf80e504d001421
+
+morpower assent 29eae 5681a35b8fb794e93a
+call K8 bpassed 1 EUR signer bob 8d55aa9022fa831a5e6c819eXaa622eac80ca6b1cf3ef6b9209ÿ2987d0578a9cf2a1a29 0
+
+mor-act 1
+type place
+signer none
+entry ff53c499e73dd6bd91f80f8=3da488257264acb27f6284de3708a736cc1bc3e1a
+entry 6dacbac02f702c2acbac02602119861
+sig 4c2818fbfea41e6ba9dfed815907c314085b4c987d0578a9cf2a1a29 0
+
+mor-act 1
+type place
+signer none
+entry ff53c499e73dd6bd91f80f8=3da488257264acb27f6284de3708a736cc1bc3e1a
+entry 6dacbac02f702c2acbac02602119861
+sig 4c2818fbfea41e6ba9dfed815907c314085b4ce3c525
+entrf474b1647437d83958299949e587e01d41f41e1a3f°02c2acb1
+type terms9e73dd6bd91f80
+sf

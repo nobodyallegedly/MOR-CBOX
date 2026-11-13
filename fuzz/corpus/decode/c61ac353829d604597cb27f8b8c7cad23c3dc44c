@@ -1,0 +1,191 @@
+mor- 100 EUR
+sig 9925c1eb6eb79fb906004clock e245e19edf4e01b0f75a8fe6cd2556d92Ad5b
+
+mor-act 1
+type se''''''''''''''''''''''''''''''''''''''''''''''''''''''e
+party signer alice
+party sib218d708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR
+sig 9925c1eb6eb79fb9060045cc119e245e19edf4e01b0f75a8fe6cd:556d929d5b
+
+mor-act 1
+type settlement
+signer bank
+ammor-act 1
+type piece
+signer nobody
+data words for mor-act 1
+type piece
+signer nob041459113463de5f44a6a6824eaf045403e30d396bfa3442634848ad
+replaces d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+agreement d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+party signer alice
+party signer bob
+author signer alice
+rzeceiver signer alice
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 75cc6800e654afa014e334559dddc41c479aec9aa90a402d986778181b993643
+
+mor-act 1
+type statementÿÿÿÿ
+signer alice
+agreement d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f34d19f0fd01b97b745e1db25b44d75db5820a80fe6034 a19fa71c2fad322e2387eae2407258f2 ma68fe668bfea4134da2
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+note second
+sig 028c2efc0c1d3d2e4377697a792ab1c64a63df18145d5c3aa65f517d8f2 ma68fe668bfea4134da2
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+note second
+sig 028c2efc0c1d3d2e4377697ae91a6699bb970dbab703f39d0056c55fa79a0c89
+
+mor-act 1
+type payment
+signer zed
+agreeice
+previous non'''''''''''''''''''''''''''''''''''''''''''''''''''''''e
+party signer alice
+party sib218d708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR
+sig 9925c1eb6eb79fb9060045cc119e245e19edf4e01b0f75a8fe6cd:556d929d5b
+
+mor-act 1
+type settlement
+signer bank
+ammor-act 1
+type piece
+signer nobody
+data words for mor-act 1
+type piece
+signer nob01cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1ment 346a56e0ff563ef431eaa9b993ad1414649
+type terms
+signer alice
+previous none
+party signer alice
+party role buyer received a9ea89c8bf06cd3143b4
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+note second
+sig 028c2efc0c1d3d2e4377697ae91a6699bb970dbab703f39d0056c55fa79a0c89
+
+mor-act 1
+type payment
+signer zed
+agreeice
+previous non'''''''''''''''''''''''''''''''''''''''''''''''''''''''e
+party signer alice
+party sib218d708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR
+sig 9925c1eb6eb79fb9060045cc119e245e19edf4e01b0f75a8fe6cd:556d929d5b
+
+mor-act 1
+type settlement
+signer bank
+ammor-act 1
+type piece
+signer nobody
+data words for mor-act 1
+type piece
+signer nob041459113463de5f44a6a6824eaf045403e30d396bfa3442634848ad
+replaces d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+agreement d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+party signer alice
+party signer bob
+author signer alice
+receiver signer alice
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 75cc6800e654afa014e334559dddc41c479aec9aa90a402d986778181b993643
+
+mor-act 1
+type statementÿÿÿÿ
+signer alice
+agreement d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f34d19f0fd01b97b745e1db25b44d75db5820a80fe6034 a19fa71c2fad322e2387eae2407258f2 ma68fe668bfea4134da2
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+note second
+sig 028c2efc0c1d3d2e4377697a792ab1c64a63df18145d5c3aa65f517d8f2 ma68fe668bfea4134pe report
+signer sam
+call 39af33d0da2
+
+mor-act 1
+type settlement
+signer bank
+amount 45 EUR
+note second
+sig 028c2efc0c1d3d2e4377697ae91a6699bb970dbab703f39d0056c55fa79a0c89
+
+mor-act 1
+type payment
+signer zed
+agreeice
+previous non'''''''''''''''''''''''''''''''''''''''''''''''''''''''e
+party signer alice
+party sib218d708e3c56783
+
+mor-act 1
+type settlement
+signer bank
+amount 100 EUR
+sig 9925c1eb6eb79fb9060045cc119e245e19edf4e01b0f75a8fe6cd:556d929d5b
+
+mor-act 1
+type settlement
+signer bank
+ammor-act 1
+type piece
+signer nobody
+data words for mor-act 1
+type piece
+signer nob041459113463de5f44a6a6824eaf045403e30d396bfa3442634848ad
+replaces d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+agreement d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+party signer alice
+party signmr bob
+author signer alice
+receiver signer alice
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 75cc6800e654afa014e334559dddc41c479aec9aa90a402d986778181b993643
+
+mor-act 1
+type statementÿÿÿÿ
+signer alice
+agreement d1f5182990b67deac9843c05ed2e127f7589ce2b2cfffdc2261a50170f3252a0
+terms 8ddf071aa3dd755bb231e9986people
+sig 084262b371f302f57f447cf6ef3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+tyfe terms
+si9bb970dbab703f39d0056c55fa79a0c89gner alice
+party signer bob
+author signer
+
+mor-act 1
+type terms
+signer alice
+previo&œúÛY10fcc27abc09a3765 ali069e44af

@@ -1,0 +1,39 @@
+mor-act 1
+type piece
+signer nobody
+data words 7
+sig 3fd4e1ce59da164b057bf6c897312b71bfbe044876b995b6963928e5d08309e4
+
+mor-act 1
+type statemmor-act 1
+type piece
+çúgner nobody
+data delegation signer alice signer bob default
+sig 475d0d013186c0d9acf5a2f5135b0ae5f6825a4f752e00f6cc16c0671295fd6d
+
+mor-act 1
+type clock
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+power assent 289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fccpe statemmor-act 1
+type piece
+signer nobody
+data d‘legation signer alice signer bob default
+sig 475d0d013186c0d9acf5a2f5135b0ae5f6825a4f752e00f6cc16c0671295fd6d
+
+mor-act 1
+type clock
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+power assent 289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a373cbc48006aab1ea4799227986c3249c78f3c5b772d815907c314085b4ce3c525 4e534bfd9cdb1cf3ef6b920¡»7d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig b7c1903e233f22163bAd7d38da26f5154c5391893aed6d9a250d84e4f91b442a0
+
+mor-act 1
+type statement
+signer alic98e72464771dee4bs 1d9f38099f7

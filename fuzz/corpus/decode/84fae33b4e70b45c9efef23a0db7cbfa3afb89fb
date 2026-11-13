@@ -1,0 +1,22 @@
+mor-act 1
+type pi80f963b99e1b298a81d
+
+mor-act 1
+type terms
+signer alice
+previous c9a28c55337b1df0e0931f778752748a98b529buyer
+sig 47450type envelope
+eed21276 stops
+sig c8813dababc99db5dea50e2b3e2eb76bbbf18aaa0ef5e80f963b99e1b298a81d
+
+mor-act 1
+type terms
+signer alice
+previous c9a28c55337b1df0e0931f778752748a98b529563c6911ba6b367c9+01d10833
+replaces 62c28ed5c4229b0120e8224eeab0ebpe terms
+sorce 4abe04080a4c8®bf8effdafggggggggggggggggggggggggggggreplaces 62c28ed5c4229b0120e
+signer nobody
+data the licence stops
+sigb1cf3ef6b920977d9e47aaeba2608b2b060a97envelopeb644c7f
+sig 35d883eae78515348377ce.4c4iafa253ba6019574cc1aee31e9135beb3c5c1e
+

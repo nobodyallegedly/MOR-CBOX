@@ -1,0 +1,40 @@
+mor-act 1
+type piece
+signer nobod nobody
+data words for pefa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer beport
+signer bob
+call 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+side receiving
+receivedtydy
+data words for people
+sig 042131b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer beporgtsi
+ner bob
+call 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+side receiving
+receivedtype envelope
+859mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-
+ya1 tctpe terms
+signer d86756e5
+
+mor-act 1
+taaebar2

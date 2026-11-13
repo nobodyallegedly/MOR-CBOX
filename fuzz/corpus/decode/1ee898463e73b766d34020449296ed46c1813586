@@ -1,0 +1,8 @@
+mor-act 1
+type clock
+signer nobody
+data share signer alice 50
+data share signer bob 00
+sig 21440g638e7f274d3
+type ÿrms
+signers s

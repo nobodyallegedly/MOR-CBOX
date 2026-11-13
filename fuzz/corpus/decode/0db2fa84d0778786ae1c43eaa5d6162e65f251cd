@@ -1,0 +1,130 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 042131b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060•ÆÈÊÍ›Îš205b644c7f
+sig c58701491f18d7ad06fb530f1460f6d89b6c0f8c943r bob
+author signer alice
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060•ÆÈÊÍ›Îš205b644c7f
+sig c58701491f18d7ad06fb530f1460f6d89b6c0f8c943af074bd50e08faba37f0d
+
+mor-act 1
+type statement
+signer alice
+agreement
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b37Ë™302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer dave
+previous none
+party signer dave
+author signer dave
+receiver agreement 68dce1009bd668c1d1372f9d5c3dec250c9cced4078for agreement 97fab7d
+bodtype settlement
+f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaarol
+agreement 68dce1009bd668c1d1372f9d5c3dec250c9cced4078936529fa293e7297fab7d
+terms 68dce1009bd668c1d1372f9d5c3dec250c9cced4078936529fa293e7297fab7d
+kind assent
+previous 68dce1009bd668c1d1372f9d5c3dec250c9cced40789passed 1 EUR signer bob 36529fa293e7297fab7d
+sig 1bbe628f8d851e29c7928b41115385e4a57d8a74343f601f1856ce5349a9555c
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer dave
+previoparty signer dave
+author signer dave
+receiver agreement 68dce1009bd668c1d1372f9d5c3dec2205b644c7f
+sig 124dd842378f51553571e932395a9ceb40f6bbee2545c9e1f2d3db3878c70a06
+
+mor-act 1
+type statemenf3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer dave
+previous none
+party signer dave
+author signer dave
+receiver agreement 68dce1009bd668c1d1372f9d5c3dec250cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 124dd842378f51553571e932395a9ceb40f6baf074bd50e08faba37f0d
+
+mor-act 1
+type statement
+signer alice
+agreement
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b37Ë™302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer dave
+previous none
+party signer dave
+author signer dave
+receiver agreement 68dce1009bd668c1d1372f9d5c3dec250c9cced4078for agreement 97fab7d
+bodtype settlement
+f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaarol
+agreement 68dce1009bd668c1d1372f9d5c3dec250c9cced4078936529fa293e7297fab7d
+terms 68dce1009bd668c1d1372f9d5c3dec250c9cced4078936529fa293e7297fab7d
+kind68c1d1372f9d5c3dec250c9cced40789passed 1 EUR signer bob 36529fa293e7297fab7d
+sig 1bbe628f8d851e29c7928b41115385e4a57d8a74343f601f1856ce5349a9555c
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer dave
+previous none
+party signer dave
+author signer dave
+receiver agreement 68dce1009bd668c1d1372f9d5c3dec250c9cced4078for agreement 97fab7d
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 124dd842378f51553571e932395a9ceb40f6bbee2545c9e1f2d3db3878c70a06
+
+mor-act 1
+type statemenf3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer dave
+previous none
+party signer dave
+author signer dave
+receiver agreement 68dce1009bd668c1d1372f9d5c3dec250&9cced4078for agreement 97fab7d
+body 2441dfede180a3f5bf3c63ebdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 124dd842378f51553571e932395a9ceb40f6bbee2545c9e1f2d3db3878c70a06
+
+mor-act 1
+type statement
+signer dave
+agreement 42eaedf8b96f8104e9e7067adef5e7739424cda1774c4ab5260e25d5d59fd717
+terms 42eaedf8b96f8104e9e7067adef5e7739424cda1774c4ab5260e25d5evious 42eaedf8b96f8104e9e7067adef5e7739424cda1774c4ab5260e25d5d59fd717
+sig a5ddc6cb43770e471715b7c2ead921cf490b1367ccd8b7052eaac7b262f8fd49
+

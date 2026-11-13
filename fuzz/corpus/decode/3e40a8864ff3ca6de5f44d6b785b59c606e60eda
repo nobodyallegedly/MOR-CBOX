@@ -1,0 +1,16 @@
+mor-act 1
+type 47cf6ed0f3d(01cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+receiver signer bob
+body 8541dfede180a3f5bf3c63der alice
+receiver signer bob
+body56395b37none
+sig bf0a144b9ff068712f27aauthor signer d720108
+

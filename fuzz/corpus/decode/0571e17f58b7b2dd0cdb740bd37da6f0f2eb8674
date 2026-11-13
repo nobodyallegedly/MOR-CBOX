@@ -1,0 +1,75 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f547cf6ed0f3d201cacc98cf8eeba9dfadfa358d86d09847016dcbbbeedb8c76 4e534bfd1cf3ef6b920977d9e47aaeba260311f81b3368f09964adfa1d4dd5f231bÕûõù…ô…ìd0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type clock
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alicedd5f231b3adb68094ee07306c59c59f
+kind assent
+previous n52d1e205b644c7f
+sig e5077f5edf36e2557774e64040646e170ad49464adfa1d4dd5f231b3adb6f6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+m64adfa1d4dd5f231b3adb6f6ed0f$d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type clock
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+power resolves 289b0ea8ae223a464d9fde8f184055dbcbf9c7/8ef05ba610fcc27abc09a3765 judy
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef668f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+sig ae2426813d5c3f09147f39d4ff9606d3ac53d68b57ebd35a6aeddb9b693ada9a
+
+mor-act 1
+type statement
+signer bob
+agreement 99de7f4eb31368f09964adfa1d4dd5f231b3adb68'094ee07306c59c59f
+terms 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb68094ee07306c59c59f
+kind assent
+previous n52d1e205b644c7f
+sig e5077f5edf36e2557774e64040646e170ad494a903ca708514bf785ac24fb053
+
+mor-act 1
+type statement
+signer alice
+agreement 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb6f6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type clocent
+signer alice
+agreement 99de7f4eb311f81b3368f09964adfa1d4dd5f231b3adb6f6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type clock
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+power resolves 289b0ea8ae223a464d9fde8f184055dmor-act 1
+type piece
+signer nobody
+data delegation signer alice signer bob default
+sig 475d0d013186c0d9acf5a2f5135b0ae)5f6825a4f752e00f6cc16c0671295fd6d
+
+mor-act 1
+type terms
+signer alice
+previous none
+partybcbf9c7a8ef05ba610fcc27abc09a3765 judy
+body 2441dfede180a3f5bf3c63 signer alice
+party signer bob
+author signer alice
+power assent+289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abcdrdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef668f09964adfa1d4dd5f2368094ee073009a3765 bob
+place plc16c59c59f
+lice
+
+b

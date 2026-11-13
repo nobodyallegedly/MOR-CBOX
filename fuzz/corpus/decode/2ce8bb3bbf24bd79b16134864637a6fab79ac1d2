@@ -1,0 +1,88 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previoueedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig c58701491f18d7ad06fb530f1460f6dÂ9b6c0@f8c943af074bd50e3207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind assent
+previous 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1
+type statement
+sign9eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609alice
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeeign@@@@@@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$$$$$$ä$$$$$$$$$$$$$$$$$$$$$$$@@@@@@@@@@@@@@@@@@@@@@@@er bob
+author signer alice
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a975amount 1 EUR
+2d1e205b644c7f
+sig c58701491f18d7ad06fb530f1460f6dÂ9b6c0f8c943af074bd50e08baba37f0d
+
+mor-act 1
+type statement
+signer alice
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff37ed57e4719¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+mor-act 1
+type statement
+sign9eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df01491f18d7ad04ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind assent
+previous 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1
+type statement
+sign9eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kinaeba2608b2b060a9752d1e205b644c7f
+sig c58701491f18d7ad06f6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+7f0d
+
+mor-act 1
+type statement
+signer alice
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind assent
+previous 64b81e609eaf3d0df21921f0b16ac32604013207a3aed8841a7a4ff58d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+mor-act 1
+type statement
+sign9eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df01491f18d7ad04ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind assent
+previous 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1
+type statement
+sign9eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a79eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kinaeba2608b2b060a9752d1e205b644c7f
+sig c58701491f18d7ad06f6ed0f3d22614013207a3aed8841a7a4ff58d0d5158d0d51ed
+tig c58701491f18d7ad06fb530f1460f6dÂ9b6c0f8c943af074bd50e08faba37f0d
+
+mor-act 1
+type statement
+signer alice
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4fc3bd14b1f2c412431ddf35f00adeec51d538c875274acba062e37ed57e4719
+
+mor-act 1
+type statement
+sign9eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind contest
+previous e28a3438a16f3bcc6ed71af3347180ec24a7d4986e33a114976030686ee72667
+sig ae70b6fb3ab6ebce081e59b69858bbfc69f315f0df133f6fbfec00c47cfaba4a
+

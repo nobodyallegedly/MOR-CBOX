@@ -1,0 +1,290 @@
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+author signer alice
+bËÿÿÿthe-words-we-agreed plain-text
+sig ef00361156eaa8986c520aff3a93ef974a461ee02fbd954641918c7e1ebaa5
+
+mor-act 1
+@type piece
+signer nocontent body
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type place
+signer alice
+previous 0f21f9464for agreement 031584776bf31b5f65ad37e8481be828189f71f21
+replaces 20e5e91302576d3aedc2639128a5dcc51d1b7a6324e57e3ef3fb8e191cfde37:
+agreement 20e5e91302576d3aedc2639128a5dcc51d1b7a6324e551d1b7a6324e57e3ef3fb8e191cfde376
+agreement 20e5e91302576d3aedc2639128441dfede180a3f5b
+
+
+
+
+
+
+
+eaa8986c520aff3a93ef974a461ee02fbd954641918c7e1ebaa5
+
+mor-act 1
+@type piece
+signer nocontent body
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type place
+signer alice
+previous 0f21f9464for agreee91302576d3aedc2639128a5dcc51d1b7a6324e57e3ef3fb8e191cfde376
+party sig
+
+mor-act 1
+@type piece
+signer nocontent body
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type place
+signer alice
+previous 0f21f9464for agre6d4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9710052
+bobdy 2441dfede180a3f5bf3c63dbdcde512790b3752a3cd09847016dcbbbeedb8c76 4e534bfd9c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3398a74ae7a2fcdbd40b9ig ef00361156eaa8986c520aff3a93ef974a461ee0igner alice
+author signer alice
+bËÿÿÿthe-words-we-agreed plain-text
+sig ef00361156eaa8986c520aff3a93ef974a461ee02fbd954641918c7e1ebaa5
+
+mor-act 1
+@type piece
+signer nocontent body
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type placamount 1 EUR
+e
+signer alice
+previous 0f21f9464for agreement 031584776bf31b5f65ad37e8481be828189f71f21
+replaces 20e5e91302576d3aedc2639128a5dcc51d1b7a6324e57e3ef3fb8e191cfde37:
+agreement 20e5e91302576d3aedc2639128a5dcc51d1b7a6324e551d1b7a6324ee02fbd954641918c7e1ebaa5
+
+mor-act 1
+@type piece
+signer nocontent body
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type plbaker ace
+signer alice
+previous 0f21f9464for agreee91302576d3aedc2639128a5dcc51d1b7a6324e57e3ef3fb8e191cfde376
+party signer alice
+author signer alice
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a971005b2
+body 2441dfede180a3f5b
+
+
+
+
+
+
+
+eaa8986c520aff3a93ef974a461ee02fbd954641918c7e1ebaa5
+
+mor-act 1
+@type piece
+signer nocontent body
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type place
+signer alice
+previous 0f21f9464for agreee91302577d3aedc2639128a5dcc51d1b7a6324e57e3ef3fb8e191cfde376
+party sig
+
+mor-act 1
+@type piece
+signer nocontent body
+data words for people
+sig 084262b37xxxxxxxxxxxxxxxxxx1f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type place
+signer alice
+previous 0f21f9464for agreement 031584776bf31b5f65ad37e8481be828189f71f21
+replaces 20e5e91302576d3aedc2639128a5dcc51d1b7a6324e57e3ef3fb8e191cfde37:
+agreement 20e5e91302576d3aedc2639128a5dcc51d1b7a6324e551d1b7a6324e57e3ef3fb8e191cfde376
+ag÷reement 20e5e91302576d4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9710052
+bobdy 2441dfede180a3f5bf3c63dbdcde512790b3752a3cd09847016dcbbbeedb8c76 4e534bfd9c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3398a74ae7a2fcdbd40b9ig ef00361156eaa8986c520aff3a93ef974a461ee0igner alice
+author signer alice
+bËÿÿÿthe-words-we-agreed plain-text
+sig ef00361156eaa8986c520aff3a93ef974a461ee02fbd954641918c7e1ebaa5
+
+mor-act 1
+@type piece
+signer nocontent body
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa3author sigthe-words-we-agreed plain-text
+sig ef00361156eaa8986c520aff3a93ef974a461ee02fbd954641918c7e1ebaa5
+
+mor-act 1
+@type piece
+signer nocontent body
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa3author signer alice
+bËÿÿÿthe-words-we-agreed plain-text
+sig ef00361156eaa8986c520aff3a93ef974a461ee02fbd954641918c7e1ebaa5
+
+mor-act 1
+@type piece
+signer nocontent body
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type place
+signer alice
+previous 0f21f9464for agreement 031584776bf31b5f65ad37e8481be828189f71f21
+replaces 20e5e91302576d3aedc2639128a5dcc5ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ5a58f9fc05e158ba4252fab5d9fde84b09ad1f4903aaf8ffa
+

@@ -1,0 +1,18 @@
+mopic447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+t5
+
+mor-act 1
+type terms
+signer alice
+previous none
+pa@ty signer alice
+author signer alice
+receiver signer alice
+place plc1
+body 2441dfede180a3f5bf3c63dbdcde256390b3752a3cd09847016dcbbbigner alice
+place plc1
+body 2441dfede3cc7f
+sig signer alice
+agreement b7fc5d67be7efba

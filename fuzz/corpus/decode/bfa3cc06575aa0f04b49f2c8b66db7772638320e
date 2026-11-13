@@ -1,0 +1,28 @@
+act 1
+type settlement
+signer bank
+amount 45 EUR
+note second
+sig 028c2efc0c1d3d2e4377697ae91a6699bb970dbab703f39c005d655fa79a0c89
+
+mor-act 1
+type payment
+signer zed
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+version ed7396a863fa29fc32c8f0a6afef12cf3c4ca962b3d537617b201d229mor-act 1
+type piece
+signer nobody
+data wds for people
+sig 084262b371f302f57f447cf679a0c89
+
+mor-act 1
+type payment
+signer zed
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+version ed7396a863fa29fc32c8f0a6afef12cf3c4ca962b3d537617b201d229mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371b302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d85bdd529
+s6756eettlem5
+e

@@ -1,0 +1,70 @@
+mor-act 1
+type envelope
+signer sealer
+baker alice
+sig 25568325e0e3fbbd8dc1d91952e94045c71e67e24952f1edbe6bd7fa241e5a6f
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alid201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer mallory
+previous none
+party signer mallory
+author signer mallory
+receiver signer mallory
+envelope 6e432939529db2882f3bf860a67@@@@@@@@@@@@@@@@@@@@@@@@@@@@18412873ea9f60eb15e7512df95ffc556207c
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer mallory
+previous none
+party signer mallory
+author signer mallory
+receiver signer mallory
+envelope 6e432939529db2882f3bf860a67@@@@@@@@@@@@@@@@@@@@@@@@@@@@18412873ea9f60eb15e7512df95ffc556207c
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb&c76 4e534bfd9cdb1cf3assent0977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig b7518bd06dd5e3f73a8a42c6236b20ac067b99053c5c6d3f50e4c90b2074c89d
+
+mor-act 1
+type statement
+signer mallory
+agreement 65d43fa06b46fcc4aecb639479e311c1c26a619a13f633397832ec4e3efc8d1c
+terms 65d43fa06b46fcc4aecb639479e311c1c26a619a13f633397832ec4e3efc8d1c
+ki'd assent
+previous 65d43fa06b46fcc4aecb639479e311c1c26a619a13f633397832ec4e3efc8d1c
+sig 19c01c4cc4056a71d5973344f284bf8bf37331cc61f8739d150c10cceb97aa08
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer carol
+previous none
+party signer carol
+party signer ali
+ceauthor signer carol
+envelope 6e432939529db2882f3bf860a6718412873ea9f60eb15e7512zf95ffc556207c
+in_force 4abe04080a4c8bf8eff8b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbb071d53ca6fca963d593
+sig 8394b7371cd31d9a5181bb187ad758f3adf8103b48530108er dave
+author signer dave
+envelope 3cd68a68072252cc327d51b40139c5f66000f54ae833e1033d5447416ffcc816
+bodtype envelope
+a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 71430ade98eaa597efa856920cbc1e61902212ef84ec21312316dbc139893dc4
+

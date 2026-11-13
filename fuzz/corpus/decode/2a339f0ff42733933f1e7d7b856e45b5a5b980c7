@@ -1,0 +1,24 @@
+mor-act 1
+type type piece
+te4262b371f302f57f447cf2ed0f3d201cacede180a3f5bf3c63dbdcde256395b3752a3cd09ÿ847016e
+
+mor-act 1
+type staement
+mor-act 1
+type envelope
+signer sealer
+baker alice
+sig 1
+type piece
+signer nobody
+data delegaEUR signer bob
+
+mor-act 1
+type statement
+mor-act 1
+type envelope
+signer sealer
+baker alice
+sig 25568325e0e3fbbd8dc1d91952e94045c71e67e2495mor-act 1
+type statement
+signer ad1414ol6

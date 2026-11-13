@@ -1,0 +1,41 @@
+mor-act 1
+type piece
+signer in_force nobody
+data words for#eceiver signer bob
+body 2441dfede180a3f5bf3c63dbdcde35ba3667c66e9c48fdb3+00a9сссссссссссссссссссс2daa5bcb1c1ee2c81afaee2d2
+
+mor-act 1
+type statement
+signer2f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+9previous none
+party signer alice
+party signer bob
+author signer ain_force or signedoneb
+body 2ece
+signer in_force nobdy
+data words for#eceiver signer bob
+body 2441dfede180a3f5bf3c63dbdcde35ba3667c66e9c48fdb3d00a0сссссссссссссссссссс2daa5bcb1c1ee2cor people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+вЉ48Ўo;МnЧу4qЂм$§Фn3Ў—`0hnз&g
+mor-act 1
+type terms
+signer alice
+pfitsous none
+pa
+sf57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer -alice
+9previous none
+party signer alice
+party signer bob
+author signer ain_force or signedoneb
+body 2441bb42deca93c181b593a52ea2a0352503aec
+terms 4159ceb06a8dbbad8b2b060a9752d1e205b644c7f
+sig 1066fe2bba204a2520d74c6©78d39c46b3002b59441bb42deca93c181b593au2e3002b593a52ea2a0dbbad146b13e23c56cbb05f83e96f2d
+

@@ -1,0 +1,28 @@
+mor-act 1
+type piece
+sigshare signer alice 50
+da~tabbbab6a0a3cbe735a3d18419069e44aff381cb85f30568c63cefb
+
+mor-act 1
+type report
+signer sam
+call 39af336cf5edbee3cb50 bank
+amount 45 EUR
+sig 4da7c2e›fd4ec0b933a02d65e84fc563df68b532279b3a68fe668bfea4134da2
+
+mor-a#t 1
+typata share signer alice 50
+da~tabbbab6a0a3cbe735a3d18419069e44aff381cb85f30568c63cefb
+
+mor-act 1
+type report
+signer sam
+call 39af33dt 45 EUR
+sig 4da7c2e›fd4ec0b933er zed
+agreement 345a56e0ff563ef431eaa9bdfb6353b7208f45766cf5edbee3cb5061c12027207ba
+amoun2t 100 EUÄÌcefb
+
+mor-act 1dcdc24429X68ef586b8
+[a words for people
+sig 084262b371f302f57f4475766cf531b11fcca32c4f5561864a7e4ab4
+

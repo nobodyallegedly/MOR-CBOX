@@ -1,0 +1,12 @@
+mor-act 1
+type piece
+signer 890e3ae0377d1444bc72dfbaf
+
+mor-act 1
+type payment
+signer zed
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+version 64b81e609eafe727a10cd20b82652b94c5ac6abce442
+amount 5 EUR
+sig 3e715d63b942772ce479c3a5ÿÿ~Œ!ô=A14b0897b19b6a3972682
+

@@ -1,0 +1,27 @@
+mor-act 1
+type piece
+signer nobody
+data share signeement d1f5182990b67deac9843c05e0782b8f3c54cc2838326289c4417e4d44
+
+mor-act 1
+type terms
+signer sam
+previous none
+party signer sam
+party agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+author signer sam
+receiver signer sam
+in_force 1afa5ed21fa6196condition 02d7d8f87d3aacbaf732949c2 signer sam agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+body a05cdad54ffc1e38d55aa9022fmor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous nf5182990b67deac9348c0e13ad2e1890274ce5ed2e127f7589ce2b2or-act 1
+type statement
+signer ss d1f5182990b67deac9843c05ed2e127f7589ce2b2cfff&dc2261a50170f3252a0
+kind assam

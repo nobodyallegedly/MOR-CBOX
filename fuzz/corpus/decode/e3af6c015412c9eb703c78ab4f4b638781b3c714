@@ -1,0 +1,17 @@
+mor-act 1
+type piece
+signer nobody
+data words fob25e4ebb71584d372590b3d7bb0aef2103b8d394ebae5dcc34a341b9
+
+mor-act 1
+type statement
+signer zed
+agreement 62c28ed5c4229b0120e8224eeab0eb0a8ad4e6fd598037a9be95c029c3dc1111
+terms 62c28ed5c4229b0120e8224eeab0eb0a8ad4e6fd598037a9be95c029c3dc1111
+kind 9163742928485ebb3447a7bb70dc8be7a5d8a71abd39f1017b144871db678f2a
+previous none
+content bone
+content buyer
+sig 47450eed21276r signer bob
+in_force tмио8b2b0;60a9752d1e205b644c7f
+si025f5f698adfe15a58f9fc05e158ba4252fab5d9f8e 

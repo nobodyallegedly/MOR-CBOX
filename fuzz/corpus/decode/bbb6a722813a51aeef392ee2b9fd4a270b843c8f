@@ -1,0 +1,13 @@
+ìêr-act 1
+type piebaker ner nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9d58d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party agreement 605ecfb85ee68a9f82ddh23c660d5e9a2f0583
+sig 48b2cf2c0fa766c27bfba7996e8a90c74464e83ccee15e3a8096e44179424d52
+

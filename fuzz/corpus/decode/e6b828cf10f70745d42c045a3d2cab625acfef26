@@ -1,0 +1,14 @@
+mor-act
+data words for people
+sig 0sig 2b4102e20e29d902b01d415d9344c1f84711ec9c2ce4b0baf671a52fe34fd92c
+
+mor-act 1
+type terms
+signer carol
+previous none
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+resolves d4cc733741407e9752d1e205b644c7f
+sig c58701491f18d7ad06fb530f1460f6d89b6c7f0d
+
+mor-act 88a2e1b01besig c58701491f18d7ad06fb530f1460f6
+

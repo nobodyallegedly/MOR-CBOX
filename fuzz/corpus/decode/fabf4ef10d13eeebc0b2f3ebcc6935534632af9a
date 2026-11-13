@@ -1,0 +1,18 @@
+mor-act 1
+type piece
+signer nobody
+da9847016dcbbbeedb8c76 4f0d0ee4005b1346387acbac8f39294af8ab4e869e37d3d8e6e2047eeaca98
+
+mor-act 1
+type statement
+signer zed
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind contest
+previous none
+settlement cf0d19b5834e440a23709fe5a49b5b2ce727a10cd20b82652b94c5ac6abceauthor signer 442
+content i-paid-you
+sig 1bf0e4442
+amount 5 EUR
+sig 3e715d63b2eb39088b769942772ce479c3a55a2ff8f914b0897931b9b6a72682
+

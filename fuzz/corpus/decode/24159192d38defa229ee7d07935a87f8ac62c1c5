@@ -1,0 +1,193 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role r
+author signer alice
+in_force 4abe04080a4c8bf8effd08b8baf8d10821515046a6fb01ef56f9013d3ab6c802
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 9145e4e347cf6788960015f33946520bf69bb67b47db7a3f8182471f38363dd8
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role r winner a54183b37015fb93543b34b77aef8882c9c5326157f5aeba24c207309dc0b389 a19fa71c2fad322e2387eae240725792ab1c64a63df18145d47aaeba2608b2b060a9752d1e205b644c756395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 9145e4e347cf6788960015f33946520bf69bb67b47db7a3f8182471f38363dd8
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role r winner a54183b37015fb93543b34b77aef8882c9c5326157f5aa2608b2b060a9752d1e205b644c7f
+sig 85aa6b96c391762cb82302eea77d627kind contest
+6eaf4a8f69fc2b3400d3
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ÿÿRï((1cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type te
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1c3de4ae95910ba017fea8a0c04fa388b5
+
+mor-act 1
+type piece
+signer nobody
+data share signer alice 50
+data share signer bob 50
+sig 21440d638e7freceiver274d312875ce6b648ada58d8845da00f22910cf80e504d001421
+
+mor-act 1
+type termc62dc23bb4d1f1
+kind assent
+previous none
+for agreement 346a56e0ff563ef431eaa1
+side doer
+relied 1534c50f3ahare signer bob 50
+sig 21440d638e7f274d312875ce6b648ada5718cca119e413e3de4ae95910ba017fea8a0c04fa388b5
+
+mor-act 1
+type piece
+signer nobody
+data share signer alice 50
+data share signer bob 50
+sig 21440d638e7freceiver274d312875ce6b648ada58d8845da00f22910cf80e504d001421
+
+mor-act 1
+type termc62dc239b993ad141464fb794e93a
+under ed7396f8adc9f18d24bc609e5cae871018151dd9ae29003b16
+
+mor-act 1
+type report
+signer sam
+call 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+side doer
+relied 1534c50f3aaf94ddd27a9b718cca119e413e3dend assent
+previous none
+for agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a056814ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+side receiving
+received 45 EUR 8f41f3a7ab06e4c2364825c673f66253bce5b8bed9a8e05d7966aedf7e37b6b8
+sig 17197ee20d79f77ebe4c8b1985e656falice 51
+data sa05681a35b8fb794e93a
+under ed7396f8adc9f18d24bc609e5cae871018151dd9ae29003b16
+
+mor-act 1
+type report
+signer sam
+call 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+side doer
+relied 1534c50f3ahare signer bob 50
+sig 21440d638e7f274d312875ce6b648ada5718cca119e413e3de4ae95910ba017fea8a0c04fa388b5
+
+mor-act 1
+type piece
+signer nobody
+data share signer alice 50
+data share signer bob 50
+sig 21440d638e7freceiver274d312875ce6b648ada58d8845da00f22910cf80e504d001421
+
+mor-act 1
+type termc62dc23bb4d1f1
+kind assent
+previous none
+for agreement 346a56e0ff563ef431eaa1
+side doer
+relied 1534c50f3ahare signer bob 50
+sig 21440d638e7f274d312875ce6b648ada5718cca119e413e3de4ae95910ba017fea8a0c04fa388b5
+
+mor-act 1
+type piece
+signer nobody
+data f
+sig 85aa6b96c391762cb82302eea77d627kind contest
+6eaf4a8f69fc2b3400d3
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ÿÿRï((1cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type te
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1c3de4ae95910ba017fea8a0c04fa388b5
+
+mor-act 1
+type piece
+signer nobody
+data share signer alice 50
+data share signer bob 50
+sig 21440d638e7freceiver274d312875ce6b648ada58d8845da00f22910cf80e504d001421
+
+mor-act 1
+type termc62dc23bb4d1f1
+kind assent
+previous none
+for agreement 346a56e0ff563ef431eaa1
+side doer
+relied 1534c50f3ahare signer bob 50
+sig 21440d638e7f274d312875ce6b648ada5718cca119e413e3de4ae95910ba017fea8a0c04fa388b5
+
+mor-act 1
+type piece
+signer nobody
+data share signer alice 50
+data share signer bob 50
+sig 21440d638e7freceiver274d312875ce6b648ada58d8845da00f22910cf80e504d001421
+
+mor-act 1
+type termc62dc239b993ad141464fb794e93a
+under ed7396f8adc9f18d24bc609e5cae871018151dd9ae29003b16
+
+mor-act 1
+type report
+signer sam
+call 1534c50f3aaf94ddd27a9b718cca119e4for agreement 13e3de4aeec061e87c62dc23bb4d1f1
+side doer
+relied 1534c50f3aaf94ddd27a9b718cshare signer alice 50
+data share signer bob 50
+sig 21440d638e7freceiver274d312875ce6b648ada58d8845da00f22910cf80e504d001421
+
+mor-act 1
+type termcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc62dc239b993ad141464fb794e93a
+under ed7396f8adc9f18d24bc609e5cae87a94af8a600d2deb582c3bca993df202a0
+
+e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role r gone a54183b37015fb93543b34b77aef8882c9c5326157f5aeba24cle
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa3583c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig d68f2c0a91bd65f6e95f35b32ec35e8f57360e51921392db90a57cd503fb5631
+
+mor-act 1
+type piece
+sig097c06bedb2d4be2abce9784a3358f604dad07d7892
+

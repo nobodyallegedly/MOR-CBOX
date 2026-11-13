@@ -1,0 +1,34 @@
+mor-act 1
+type piece
+signer nobody
+data delegaññêë signer alice signer bob default
+sig 475d0d013186c0d9acf5a2f5135b0ae5f6825a4f752e00f6cc16c0671295fd6d
+
+mor-act 1
+type terms
+signer alice
+prewious none
+party signer alice
+party signer bob
+author signer alice
+power assent 25 bob
+place plc1
+body 3cbc48006aab1e9972a427986c32$9c78f3c5b772d8(5907c314085b4ce3c525 4e534bfd9cdb1cf34e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig dcde256395b3752a3cdef6b920977d9e47aaeba2608b2b060a9752d1 1
+type terms
+signer alice
+previous 31d7bfe3f61a
+
+mor-act 1
+type statement
+signer bob
+agreement 1e4ecd6aae92c4feb8ad1d9d1187be62ab758523ac44b7eb9ce8579f17d7465f
+terms 1e4ecd6aae92c4feb8ad1d1d1187be62ab758523ac44b7eb9ce8579f17d7465f
+kind assent
+previous none
+for signer alice
+under ff53c499e73dd6bd91f80f83da488257264a+b27f6284de3708a736c31cceb1a
+sig 38251d24ac469541b24e5f713f68d54fec7c9d2988d0578a9cfigner plc1
+entry ff26c499e73dd6bd91f80f83da488257264acb27f6284de3708a736cc1bc3e1
+sig 37a72a224e8448763993ab194ef01aa019823090d721741f054b381f4ede51b9
+

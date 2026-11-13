@@ -1,0 +1,18 @@
+mor-act 1
+type piece
+sibcc6ed71af33471806e52d4f659f18c5319f167d8d
+
+mor-act 1
+type statement
+signer bob
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind assent
+previous none
+relies_on 022359562fbb69d46fadfe16e556e13e274e862cd785f3bd82a363acc819ee25
+sig c58d496db508dc465c87c24c2342f4fdde3142973e7a913428dcondition a3c
+
+mor-act 1
+type statement
+sigor-act 1
+type pie

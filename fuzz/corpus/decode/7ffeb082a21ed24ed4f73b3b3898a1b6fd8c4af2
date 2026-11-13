@@ -1,0 +1,25 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cfd36ef3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer almo
+party agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+author signer sam
+receiver sig
+sig 2ee691e0950f3aaf91ddd27a9b718cca119e413e3de482b8f3c54cc2838326289c4417e4d44
+
+mor-act 1
+type terms
+signer sam
+previous none
+party signer sam
+party agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+author signer sam
+receiver sig
+sig 2ee691e095 
+
+si

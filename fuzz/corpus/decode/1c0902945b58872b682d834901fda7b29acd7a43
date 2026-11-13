@@ -1,0 +1,11 @@
+mor 4e534bfd9cdb1cf3ef6b920977de609eaf3d0df21921f0b16ac3ae91a6699bb970dbab703f39d0056c55fa79a0c89
+
+mor-act 1
+type payment
+signer zed
+agreement 346a56e0ff563ef431eaa56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+kind assent
+previous none
+sig a591c7a2b6033544bfeda4063a1eb7envelope as 346 alice
+previous codnbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b06
+agreement 346 alicec76 4e534bfd9cdb1cf3ef6b920977d7de

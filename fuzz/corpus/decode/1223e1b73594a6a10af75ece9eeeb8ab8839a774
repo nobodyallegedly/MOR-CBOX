@@ -1,0 +1,207 @@
+mor-act 1
+type piece
+sig 1
+type piece
+signer nobody
+data delegation signer alice signer bob default
+sig 475d0d013186c0d9acf5]a2f5135b0ae5f6825a4f752e00f6cc16c0671295fd6d
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer aliunder ty signer bob
+author s,igner alice
+power assent 289b0ea8ae223^464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 bob
+place plc1
+boey 3cbc48006aab1e9972a427986c3249c78f3c5b772d815907c314085b4ce3c525 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig d31a55c0da0 signer bob default
+sig 475d0d013186c0d9acf5]a2f5135b0ae5f6825a4f752e00f6cc16c0671295fd6d
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer aliunder ty signer bob
+author s,igner alice
+power assent 289b0ea8ae223^464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 bob
+place plc1
+body 3cbc48006aab1e9972a427986c3249c78f3c5b772d815907c314085b4ce305b644c7f
+sig d31a55c0da0 signer bob default
+sig 475d0d013186c0d9acf5]a2f5135b0ae5f6825a4f752e00f6cc16c0671295fd6d
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer aliunder ty signer bob
+author s,igner alice
+power assent 289b0ea8ae223^464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 bob
+place plc1
+body 3c bob default
+sig 475d0d013186c0d9acf5]a2f5135b0ae5f6825a4f752e00f6cc16c0671295fd6d
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer aliunder ty signer bob
+b2b060a9752d1e205b644c7f
+sig d31a55c0da0 signer bob default
+sig 475d0d013186c0d9acf5]a2f5135b0ae5f6825a4f752e00f6cc16c0671295fd6d
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer aliunder ty signer bob
+author s,igner alice
+power assent 289b0ea8ae223^464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 bob
+place plc1
+body 3cbc48006aab1e9972a427986c3249c78f3c5b772d815907c314085b4ce305b644c7f
+sig d31a55c0da0 signer bob default
+sig 475d0d013186c0d9acf5]a2f5135b0ae5f6825a4f752e00f6cc16c0671295fd6d
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer aliunder ty signer bob
+author s,igner alice
+power assent 289b0ea8ae223^464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 bob
+place plc1
+body 3cbc48006aab1e9972a427986c3249c78f3c5b772d815907c314085b4ce3c525 4e534or people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer carol
+previous none
+pbdpe payment
+igner nobody
+data delegation signer alice signev bob default
+sig 475d0d013186c0d9acf5a2f5135b0ae5f6825a4f752e00f6cc16c0671295fd6d
+
+mor-act 1
+type terms
+signer alice
+previrus none
+party signer aliunder ty signer bob
+author signer alice
+power assent 289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc2b1cf3ef6b920977d9e47aaeba2608b2b060a97Ë2d1e205b644c7f
+sig d31a55c0da0bd7c3a954eb09f6e3537f9e7db13731d524bfad3place 2a813ce
+
+mor-act 1
+type statement
+mor-act 1
+type envelope
+signer sealer
+baker alice
+sig 25568325e0e3fbbd8dc1d91952e94045c71e67e24952f1edbe6bd7fa241e5a6f
+
+mor-act 1
+type piece
+signer nfdner nobody
+data delegation signer alice signer bob default
+sig 475d0d013186c0d9acf5]a2f5135b0ae5f6825a4f752e00f6cc16c0671295fd6d
+
+mor-act 1
+type terms
+signerbc48006aab1e9972a427986c3249c78f3c5b772d815907c314085b4ce3c525 4e534or people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer carol
+previous none
+pbdpe payment
+igner nobody
+data delegation signer alice signer bob default
+sig 475d0d013186c0d9acf5a2f5135b0ae5f6825a4f752e00f6cc16c0671295fd6d
+
+mor-act 1
+type terms
+signer alice
+previrus none
+party signer aliunder ty signer bob
+author signer alice
+power assent 289b0ea8ae223a464d9fde8f184055dbcbf9c7a8ef05ba610fcc2b1cf3ef6b920977d9e4
+type envelope
+signer sealer
+baker alice
+sig 25568325e0e3fbbd8dc1d91952e94045c71e67e24952f1edbe6bd7fa241e5a6f
+
+mor-act 1
+type piece
+signer nfdner nobody
+data delegation signer alice signer bob default
+sig 475d0d013186c0d9acf5]a2f5135b0ae5f6825a4f752e00f6cc16c0671295fd6d
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer aliunder ty signer bob
+author s,igner alice
+power assent 289b0ea8ae223^464d9fde8f184055dbcbf9c7a8ef05ba61986c3249c78f3c5b772d815907c314085b4ce3c525 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig d31a55c0da0 signer bob default
+sig 475d0d013186c0d9acf5]a2f5135b0ae5f6825a4f752e00f6cc16c0671295fd6d
+
+mor-act 1
+type terms
+signer alice
+'previous none
+party signer aliunder ty signer bob
+author s,igner alice
+power assent 289b0ea8ae223^464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 bob
+place plc1
+body 3cbc48006aab1e9972a427986c3249c78f3c5b772d815907c314085b4ce3c52bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig d31a55c0da0 signer bob default
+sig 475d0d013186c0d9acf5]a2f5135b0ae5,f6825a4f752e00f6cc16c0671295fd6d
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer aliunder ty signer bob
+author s,igner alice
+power assent 289b0ea8ae223^464d9fde8f184055dbcbf9c7a8ef05ba610fcc27abc09a3765 bob
+place plc1
+body 3cbc48006aab1e9972a427986c3249c78f3c5b772d815907c314085b4ce3c525 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig d31a55c0da0bd7c3a954eb09f6e3537f9e7db13731d524bfad372373e2a813ce
+
+mor-act 1
+type statement
+mor-act 1
+type envelope
+signer sealer
+baker alice
+sig 25568325e0e3fbbd8dc1d91952e94045c71e67e24952f1edbe6bd7fa241e5a6f
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer carol
+previous none
+pbd7c3a954eb09f6e3537f9e7db13731d524bfad372373e2a813ce
+
+mor-act 1
+type statement
+mor-act 1
+type envelope
+signer sealer
+baker alice
+sig 25568325e0e3fbbd8dc1d91952e94045c71e67e24952f1edbe6bd7fa241e5a6f
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba36receiver cc1bc3e1a
+kind assent
+previous ff53c499e73dd6bd91f80f83da488257264acb27f623aedc2639128a5dcc51d1b7a6324e57e3ef3fb88e191cfde43

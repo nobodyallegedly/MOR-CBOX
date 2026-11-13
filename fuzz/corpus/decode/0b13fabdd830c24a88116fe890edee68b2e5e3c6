@@ -1,0 +1,51 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8ty signer alice
+party signer bob
+author signer alice
+b5870ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+aut†hor signer alice
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8cc79c56bc56e931a764686e28ˇˇˇˇˇˇˇˇecbf521261d
+
+mor-act 1
+type statement
+signer carol
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8801a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind ccalt K8 both
+us none
+answers 0b2627d976915b36bc3bcc2d2745cf4c496ea9e550fe3cf0ˇˇˇˇˇˇˇˇˇ41a7a4ff58d0d51ed
+kind assent
+prbd274a97ce
+prev0df21921f0b16ac3261
+evious none
+sig b3ˇˇ~•>ÑFc02c61f0f430fd87ef87cf6ed0f3d201cacc98cf8õöùû∆õôûdfa358d86756e5
+
+mor-act 1
+typ etbc56e931a764686e285927309eecbf521261d
+
+mor-act 1
+type statement
+signer carol
+agreement 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+kind ccall K8 both
+us none
+answers 0b2627d976915b36bc3bcc2d2745cf4c496ea9e550fe7cf07c16b7d7e927eec7
+sig 8ddb20a05061c7b5d1ae605e7ca46c96a4294b7acbfa87b78654e91ff322af6c
+
+mor-act 1
+type sÙatement
+signer alice
+agr
+sig e7fc9eda91604519cb4f4d3f83cc0fc9c62065a2b248c413f220f7da22415726
+

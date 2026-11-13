@@ -1,0 +1,24 @@
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+s86a194
+
+mor-act 1
+type piece
+signer nobody
+data words for people
+sig 084262b3sign02f57f447cf6ed0f3d201cacc%8cf8eeba9dfadfa158d86756e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role r done - a19fa71c2fad322e2387eae240725792ab1c∆4a63df181cd6a6fb01ef56f9013d3ab6c802
+body 2bce9784a3358f604dad07d7892
+

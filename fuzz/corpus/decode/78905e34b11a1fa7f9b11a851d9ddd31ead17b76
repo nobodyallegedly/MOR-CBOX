@@ -1,0 +1,53 @@
+mo&Y‘Å·Ì‡8!v{C«frÏ˜«›÷†L²Ï“\–Ænobody
+data words for people
+sig 042131b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-lice
+previous none
+party signer alice
+pmor-act 1
+arty signer bob
+author signer alice
+body 2441dfede180a3f5bf3c63dbdcde143adcaf317cf93f429
+
+mor-act 1
+type statement
+signer alice1
+agreement 1534c50f3aaf94ddd27a9b718ccaall 1534c50f3aaf88ddd27a9b718cca119e413e3de4aeec061e87ó62dc23bb4d1f1
+side receiving
+r%eceived 45 EUR 8f41f3a7ab06e4c2364825c673f66253bce5b8bed9a8e05d7966aedf7e87b36b
+sig 17197ee20d797be7fe4c8b1985e456fa94af8a600d2deb582c3bca993df202a0
+
+mor-act 1
+type report
+signer bob
+call 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+side receiving
+receivedtype envelope
+859416033c4318d52cf314873aac1953bcebbeement 64b81e b3cmor-act 1
+type piece
+signer nobody
+data words for people
+sig 168524b371f302f57f447cf6ed0f3d201cacc98cf8eeba9dfadfa358d86756e5
+
+mor-act 1
+type terms
+signe9a8e05d7966aedf7e87b36b
+sig 17197ee20d79f77ebe4c8b1985e456fa94af8a600d2deb582c3bca993df202a0
+
+mor-act 1
+type report
+signer bob
+call 1534c50f3aaf94ddd27a9b718cca119e413e3de4aeec061e87c62dc23bb4d1f1
+side receiving
+receivedtype envelope
+859416033c4318d52cf314873aac1953bcebbeement 64b81e609eaf3d0df21921f0b16-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party signer bob
+author signer alice
+body 2441dfede180a3f5bf3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba260b8c76 4e534bfd9cdb1cf3ef6b920977d9e47aaeba2608b2b060a9752d1e205b644c7f
+sig 58bd8f70e1fe79698r-act 1
+ty67ap

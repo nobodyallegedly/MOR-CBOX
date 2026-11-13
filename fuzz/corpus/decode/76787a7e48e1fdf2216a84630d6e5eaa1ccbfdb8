@@ -1,0 +1,22 @@
+mor-act 1
+type piece
+signer nobody
+data wor01b97
+siw 527e6894bcd2e3c54584b45bde2938d38dd94fc221b34f97faa8type clock
+c885ad58d86756e5
+
+mor-act 1
+type terms
+signer alice
+pre6ious 31d7bfe420cdb901e86087a302f3cefea1878f3eb9b1d726b19cc4acdcbf56ee
+replaces c7d916548043aad5fbf6d75732d69f83591764ed084f23632584b2d6995441e3
+agreement c7d916548043ead5fbf6d75732d69f83591764ed084f23632584b2d6995441e3
+party signer alice
+party signer bob
+author signer alice
+clock ck1
+body 2441dfede180a3f5`f3c63dbdcde256395b3752a3cd09847016dcbbbeedb8c76 4e534bfd9cdb1cf3ef6b920977d9eeb9b1d726b19cc4acdcbf56ee
+replaces c7d916548043aad5fbmb
+5e"2f6d7573/d69f83591764ed02d1e205b644c7f
+sig e35e
+agr

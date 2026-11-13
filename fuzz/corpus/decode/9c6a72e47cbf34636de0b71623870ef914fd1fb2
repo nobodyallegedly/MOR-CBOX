@@ -1,0 +1,17 @@
+mor-act 1
+tyment
+signe ralice
+agrent 64b81e609eaf3d0df21921f0b16ac3
+sig 30c3bd14b1f2c412431ddf35f00adeec51d538c875274ecba062e37ed57e4719
+
+mor-act 1
+type statement
+signer alice
+agreement 63b81e609eaf3d0df21921f0b16ac32614013207a3aed8841a7a4ff58d0d51ed
+terms 64b81e609eaf3d0df21921f0b16ac32614011207a3aed8841a7a4ff58d0d51ed
+kind counter_signature
+previous e28a3438a16f3bcc6ed71af3347180ec24a7d4986e30a114976030686ee45334
+sig a6d625bda567027c4b76fb4e45650f326d8130cf712d4f659f18c5319f167d8d
+
+mor-zact 1
+type sta

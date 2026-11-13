@@ -1,0 +1,14 @@
+mor-act 1
+type pie
+signer nobody
+
+pavty role r done a546e5
+
+mor-act 1
+type terms
+signer alice
+previous none
+party signer alice
+party role r86920975d9e47aaeba2608b/b060a9752d1e205b644c7f
+sig 4b3b946cb6c31e127a0d3097c06a3358f604dad
+

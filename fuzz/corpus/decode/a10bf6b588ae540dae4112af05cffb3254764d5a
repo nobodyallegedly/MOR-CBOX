@@ -1,0 +1,26 @@
+mor-act 1
+type piece
+signer nobody
+datt 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a 90
+data share signer sam 10
+sig 32d2dd11f44ype terms
+signe81a38d8845da00f22910cf80e504d001421
+
+mor-act 1
+type terms
+signer alice
+previous 1b411c628fe3effe59d2b097086b13efc89c62fd2ca7b34accf34c406b4478bd
+replaces 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+agreement 346a56e0ff563ef431eaa9b993ad1414649d662ffc93a05681a35b8fb794e93a
+party signer alice
+party signer bob
+author signer alice
+receiver agreement 06ebb01c4bc67c274428a57ce7038751ac5e09e7d2ab1c8cbe7bc94a4d888202
+in_force 4abe04080a4c8bf8effd08b8baf8d10821515046a6fb01ef56f9013d3aact 1
+type report
+signer sam
+call 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+side receiving
+received 100 EUR 39af33d01ac20961e364dfb6353b7208f45766cf5edbee3cb5061c12027207ba
+sig 676abb2e02904198f0bef8adc9fae29003b16
+

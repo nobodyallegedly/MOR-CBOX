@@ -1,0 +1,25 @@
+mor-act 1
+type piece
+signer no`ody
+data share si0200c8a56d312a8015f0d1b48cnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnor signer alice
+power assen| 288b0ea8a610fcc27abc09a3765 bside doer
+ob
+bodby 3cbc48006aab1e9972a427986c3249c78f3c5b772d815907c314085b4ce3c525 4e534bfd9cdb0f75a8fe6cd2556d929d5b
+
+mor-act 1
+type settlement
+signer bank
+amount 45 E1cf3ef6b920977d9e47aaeba2608b2b060a994a
+kind assen________________________________________________________________t
+previous 346a56e0ffprevious 563ef431eaa9b993ad1414649d662ffc93a05681a35b8f9e4b793a
+sig 07e7905961b0f3c7f1db695cdb0f75a8fe6cd2556d929d5b
+
+mor-act 1
+type settlement
+signer bank
+amount 45 E1cf3e44c7f
+sig b7c1903e233f22163bd7d38da26f5154cUR
+sibody 7c2ecfd4ec0b933a02d65e84fc563df68b532279b3a68fe668bfea4134da2
+
+mor-act 1
+typee4377697ae91a6699bb970dbab703f39d0056c55fa79a0c853*91893aed6d9a250d98
