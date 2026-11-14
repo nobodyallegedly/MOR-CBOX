@@ -1,0 +1,134 @@
+# A work with two owners; one receives for both. A buyer pays, the owner
+# confirms, passes on a half, and the other owner confirms. Then two rival
+# updates fork the Terms.
+=plain
+mor-act 1 cmip
+stub plain
+
+=words
+mor-act 1 words
+text A song. Each owner has a half.
+line share @ada 50
+line share @ben 50
+
+=song
+mor-act 1 terms
+signer @ada
+previous none
+party signer @ada
+party signer @ben
+author @ada
+body $words $plain
+receiver @ada
+call control both
+
+=ada1
+mor-act 1 statement
+signer @ada
+previous $song
+agreement $song
+terms $song
+kind assent
+
+=ben1
+mor-act 1 statement
+signer @ben
+previous none
+agreement $song
+terms $song
+kind assent
+
+=set1
+mor-act 1 settlement
+signer @bank
+payment pay-001
+
+=set2
+mor-act 1 settlement
+signer @bank
+payment pay-002
+
+=pay
+mor-act 1 payment
+signer @buyer
+to $song
+version $song
+settlement $set1
+amount 100 EUR
+
+=confirm
+mor-act 1 report
+signer @ada
+call $pay
+received 100 EUR $set1
+
+=legdoer
+mor-act 1 report
+signer @ada
+call $song
+relies_on $song
+received 100 EUR $set1
+passed 49 EUR @ben $set2
+own 50 EUR
+kept 1 EUR
+
+=legben
+mor-act 1 report
+signer @ben
+call $song
+received 48 EUR $set2
+
+=v2a
+mor-act 1 terms
+signer @ada
+previous $ada1
+replaces $song
+agreement $song
+party signer @ada
+party signer @ben
+author @ada
+body $words $plain
+receiver @ben
+
+=ada2
+mor-act 1 statement
+signer @ada
+previous $v2a
+agreement $song
+terms $v2a
+kind assent
+
+=ben2
+mor-act 1 statement
+signer @ben
+previous $ben1
+agreement $song
+terms $v2a
+kind assent
+
+=v2b
+mor-act 1 terms
+signer @ben
+previous $ben2
+replaces $song
+agreement $song
+party signer @ada
+party signer @ben
+author @ben
+body $words $plain
+
+=ada3
+mor-act 1 statement
+signer @ada
+previous $ada2
+agreement $song
+terms $v2b
+kind assent
+
+=ben3
+mor-act 1 statement
+signer @ben
+previous $v2b
+agreement $song
+terms $v2b
+kind assent

@@ -1,0 +1,6 @@
+build/
+build-gcc/
+build-clang/
+fuzz/corpus/
+fuzz/seeds/decode/
+fuzz/seeds/draft/
